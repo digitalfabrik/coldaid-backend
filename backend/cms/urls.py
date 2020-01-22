@@ -4,19 +4,18 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.conf import settings as django_settings
 from django.contrib.auth import views as auth_views
-
+from django.urls import path
 from .forms.authentication import PasswordResetConfirmForm
 from .views import (
-    accommodations,
     authentication,
     analytics,
-    bed_target_groups,
     dashboard,
     events,
     extras,
     extra_templates,
     language_tree,
     languages,
+    logbooks,
     media,
     organizations,
     pages,
@@ -26,13 +25,30 @@ from .views import (
     roles,
     settings,
     statistics,
-    users
+    users,
+    vehicles,
 )
 
 
 urlpatterns = [
     url(r'^$', dashboard.RedirectView.as_view(), name='redirect'),
     url(r'^admin_dashboard/$', dashboard.AdminDashboardView.as_view(), name='admin_dashboard'),
+    url(r'^logbooks/', include ([
+        url(r'^$', logbooks.logbook_list_view, name='logbooks'),
+        url(r'^new$', logbooks.logbook_create_view, name='new_logbook'),
+        url(r'^(?P<logbook_id>[0-9]+)/', include([
+            url(r'^$', logbooks.logbook_detail_view, name='logbook'),
+            url(r'^finish$', logbooks.logbook_finish_view, name='finish_logbook'),
+        ])),
+    ])),
+    url(r'^vehicles/', include ([
+        url(r'^$', vehicles.vehicle_list_view, name='vehicles'),
+        url(r'^new$', vehicles.vehicle_create_view, name='new_vehicle'),
+        url(r'^(?P<vehicle_id>[0-9]+)/', include([
+            url(r'^$', vehicles.vehicle_detail_view, name='vehicle'),
+            url(r'^edit$', vehicles.vehicle_edit_view, name='edit_vehicle'),
+        ])),
+    ])),
     url(r'^regions/', include([
         url(r'^$', regions.RegionListView.as_view(), name='regions'),
         url(r'^new$', regions.RegionView.as_view(), name='new_region'),
@@ -110,22 +126,6 @@ urlpatterns = [
                 r'^delete$',
                 organizations.OrganizationView.as_view(),
                 name='delete_organization'
-            ),
-        ])),
-    ])),
-    url(r'^bed_target_groups/', include([
-        url(r'^$', bed_target_groups.BedTargetGroupListView.as_view(), name='bed_target_groups'),
-        url(r'^new$', bed_target_groups.BedTargetGroupView.as_view(), name='new_bed_target_group'),
-        url(r'^(?P<bed_target_group_id>[0-9]+)/', include([
-            url(
-                r'^edit$',
-                bed_target_groups.BedTargetGroupView.as_view(),
-                name='edit_bed_target_group'
-            ),
-            url(
-                r'^delete$',
-                bed_target_groups.delete_bed_target_group,
-                name='delete_bed_target_group'
             ),
         ])),
     ])),
@@ -287,21 +287,6 @@ urlpatterns = [
                     url(r'^archive$', pois.archive_poi, name='archive_poi'),
                     url(r'^restore$', pois.restore_poi, name='restore_poi'),
                     url(r'^delete$', pois.delete_poi, name='delete_poi'),
-                ])),
-            ])),
-        ])),
-        url(r'^accommodations/', include([
-            url(r'^$', accommodations.AccommodationListView.as_view(), name='accommodations'),
-            url(r'^(?P<language_code>[-\w]+)/', include([
-                url(r'^$', accommodations.AccommodationListView.as_view(), name='accommodations'),
-                url(r'^archived$', accommodations.AccommodationListView.as_view(archived=True), name='archived_accommodations'),
-                url(r'^new$', accommodations.AccommodationView.as_view(), name='new_accommodation'),
-                url(r'^(?P<accommodation_id>[0-9]+)/', include([
-                    url(r'^view$', accommodations.view_accommodation, name='view_accommodation'),
-                    url(r'^edit$', accommodations.AccommodationView.as_view(), name='edit_accommodation'),
-                    url(r'^archive$', accommodations.archive_accommodation, name='archive_accommodation'),
-                    url(r'^restore$', accommodations.restore_accommodation, name='restore_accommodation'),
-                    url(r'^delete$', accommodations.delete_accommodation, name='delete_accommodation'),
                 ])),
             ])),
         ])),
