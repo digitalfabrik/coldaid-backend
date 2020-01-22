@@ -136,14 +136,9 @@
 	            <i data-feather="calendar" class="absolute"></i>
 		        {% trans 'Events' %}
 	        </a>
-			<a href="{% url 'pois' region_slug=region.slug %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'pois' %}active{% endif %}">
-				<i data-feather="map-pin" class="absolute"></i>
-				{% trans 'Points of Interest' %}
-			</a>
-			<a href="{% url 'accommodations' region_slug=region.slug %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'accommodations' %}active{% endif %}">
-				<i data-feather="home" class="absolute"></i>
-				{% trans 'Accommodations' %}
-			</a>
+		    <a href="{% url 'pois' region_slug=region.slug %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'pois' %}active{% endif %}">
+			    <i data-feather="map-pin" class="absolute"></i>
+			    {% trans 'Points of Interest' %}
 	        <a href="{% url 'region_users' region_slug=region.slug %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'region_users' %}active{% endif %}">
 	            <i data-feather="users" class="absolute"></i>
 		        {% trans 'Users' %}
@@ -197,13 +192,17 @@
 		    <i data-feather="key" class="absolute"></i>
 		    {% trans 'Roles' %}
 	    </a>
+      <a href="{% url 'vehicles' %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'roles' %}active{% endif %}">
+		    <i data-feather="key" class="absolute"></i>
+        Fahrzeuge
+	    </a>
+      <a href="{% url 'logbooks' %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'roles' %}active{% endif %}">
+		    <i data-feather="key" class="absolute"></i>
+        Fahrtenbuecher
+	    </a>
 		    <a href="{% url 'organizations' %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'organizations' %}active{% endif %}">
 			    <i data-feather="umbrella" class="absolute"></i>
 			    {% trans 'Organizations' %}
-		    </a>
-		    <a href="{% url 'bed_target_groups' %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'bed_target_groups' %}active{% endif %}">
-			    <i data-feather="moon" class="absolute"></i>
-			    {% trans 'Bed Target Groups' %}
 		    </a>
 		    <a href="{% url 'extra_templates' %}" class="relative block text-grey-light hover:text-grey-darker hover:bg-integreat {% if current_menu_item == 'extra_templates' %}active{% endif %}">
 			    <i data-feather="star" class="absolute"></i>
@@ -222,7 +221,7 @@
 </nav>
 <main class="relative">
     <div class="p-6">
-        {% include "messages.html" %}   
+        {% include "messages.html" %}
         {% block content %}{% endblock content %}
     </div>
 </main>

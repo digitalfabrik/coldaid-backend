@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% load i18n %}
+{% load rules %}
+{% load static %}
+
+{% block content %}
+<h1> Fahrzeug {{vehicle.id}} </h1>
+<div class="table-listing">>
+  <p>Fahrzeug Typ: {{vehicle.type}}</p>
+  <p>Kennzeichen: {{vehicle.licencePlate}}</p>
+  <p>Sitzplätze: {{vehicle.seats}}</p>
+  <p>Sitzplätze hinten: {{vehicle.backSeats}}</p>
+  <p>Ausstattung: {{vehicle.equipment}}</p>
+</div>
+  <div>
+    <form action="/vehicles/{{vehicle.id}}/edit">
+      <button title="Fahrzeug editieren" class="confirmation-button bg-red hover:bg-red-dark text-white font-bold py-2 px-4 rounded" }">
+          Fahrzeug editieren
+      </button>
+    </form>
+
+  </div>
+
+{% endblock %}
