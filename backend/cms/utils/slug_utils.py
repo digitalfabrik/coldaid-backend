@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def generate_unique_slug(form_object, foreign_model):
 
-    content_models = ['page', 'event', 'poi', 'accommodation']
+    content_models = ['page', 'event', 'poi', 'request', 'accommodation']
 
     logger.info('generate_unique_slug()')
     logger.info('foreign_model: "%s"', foreign_model)
@@ -43,7 +43,7 @@ def generate_unique_slug(form_object, foreign_model):
     i = 1
     pre_filtered_objects = form_object.Meta.model.objects
 
-    # if the foreign model is a content type (e.g. page, event or poi), make sure slug is unique per region and language
+    # if the foreign model is a content type (e.g. page, event, request or poi), make sure slug is unique per region and language
     if foreign_model in content_models:
         pre_filtered_objects = pre_filtered_objects.filter(**{
             foreign_model + '__region': form_object.region,

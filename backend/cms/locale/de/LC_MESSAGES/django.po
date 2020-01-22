@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 13:49+0000\n"
+"POT-Creation-Date: 2020-01-22 19:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Timo Ludwig <ludwig@integreat-app.de>\n"
 "Language-Team:\n"
@@ -23,6 +23,9 @@ msgstr ""
 #: templates/accommodations/accommodation_list_archived.html:30
 #: templates/events/event_form.html:231 templates/pois/poi_form.html:151
 #: templates/pois/poi_list.html:56 templates/pois/poi_list_archived.html:29
+#: templates/requests/request_form.html:151
+#: templates/requests/request_list.html:56
+#: templates/requests/request_list_archived.html:29
 msgid "City"
 msgstr "Stadt"
 
@@ -196,6 +199,7 @@ msgstr "Review ausstehend"
 #: constants/status.py:11
 #: forms/accommodations/accommodation_translation_form.py:26
 #: forms/pois/poi_translation_form.py:26
+#: forms/requests/request_translation_form.py:26
 msgid "Public"
 msgstr "Öffentlich"
 
@@ -245,6 +249,7 @@ msgstr "Vierte Woche"
 
 #: forms/accommodations/accommodation_translation_form.py:27
 #: forms/pois/poi_translation_form.py:27
+#: forms/requests/request_translation_form.py:27
 msgid "Private"
 msgstr "Privat"
 
@@ -343,8 +348,10 @@ msgstr "Rechts nach Links"
 #: templates/pages/page_tree.html:29 templates/pois/poi_list.html:27
 #: templates/pois/poi_list_archived.html:16
 #: templates/push_notifications/push_notification_list.html:9
-#: templates/regions/region_list.html:14 templates/users/admin/list.html:14
-#: templates/users/region/list.html:9
+#: templates/regions/region_list.html:14
+#: templates/requests/request_list.html:27
+#: templates/requests/request_list_archived.html:16
+#: templates/users/admin/list.html:14 templates/users/region/list.html:9
 msgid "Search"
 msgstr "Suchen"
 
@@ -412,16 +419,18 @@ msgstr "Veranstaltungen"
 msgid "Points of Interest"
 msgstr "Points of Interest"
 
-#: templates/_base.html:145 templates/accommodations/accommodation_list.html:11
-msgid "Accommodations"
-msgstr "Unterkünfte"
+#: templates/_base.html:145 templates/requests/request_list.html:11
+#, fuzzy
+#| msgid "Bad request"
+msgid "Requests"
+msgstr "Inkorrekte Anfrage"
 
 #: templates/_base.html:149 templates/_base.html:194
 #: templates/regions/region_form.html:204
 msgid "Users"
 msgstr "Benutzer"
 
-#: templates/_base.html:153 templates/_base.html:214
+#: templates/_base.html:153 templates/_base.html:218
 msgid "Feedback"
 msgstr "Feedback"
 
@@ -445,7 +454,7 @@ msgstr "Impressum"
 msgid "Language tree"
 msgstr "Sprach-Baum"
 
-#: templates/_base.html:177 templates/_base.html:218
+#: templates/_base.html:177 templates/_base.html:222
 #: templates/statistics/statistics_dashboard.html:62
 msgid "Settings"
 msgstr "Einstellungen"
@@ -469,15 +478,11 @@ msgstr "Sprachen"
 msgid "Roles"
 msgstr "Rollen"
 
-#: templates/_base.html:202
+#: templates/_base.html:210
 msgid "Organizations"
 msgstr "Organisationen"
 
-#: templates/_base.html:206
-msgid "Bed Target Groups"
-msgstr "Betten-Kategorien"
-
-#: templates/_base.html:210
+#: templates/_base.html:214
 msgid "Extra templates"
 msgstr "Extra-Vorlagen"
 
@@ -497,6 +502,7 @@ msgstr "Unterkunft \"%(accommodation_title)s\" bearbeiten"
 #: templates/events/event_list_archived.html:25
 #: templates/pages/page_form.html:47 templates/pages/page_tree.html:73
 #: templates/pages/page_tree.html:77 templates/pois/poi_form.html:47
+#: templates/requests/request_form.html:47
 msgid "Title in"
 msgstr "Titel auf"
 
@@ -510,7 +516,7 @@ msgstr "Neue Unterkunft erstellen"
 
 #: templates/accommodations/accommodation_form.html:61
 #: templates/events/event_form.html:62 templates/pages/page_form.html:61
-#: templates/pois/poi_form.html:61
+#: templates/pois/poi_form.html:61 templates/requests/request_form.html:61
 msgid "Save as draft"
 msgstr "Als Entwurf speichern"
 
@@ -519,12 +525,13 @@ msgstr "Als Entwurf speichern"
 #: templates/organizations/organization_form.html:22
 #: templates/pages/page_form.html:65 templates/pois/poi_form.html:65
 #: templates/regions/region_form.html:22
+#: templates/requests/request_form.html:65
 msgid "Publish"
 msgstr "Veröffentlichen"
 
 #: templates/accommodations/accommodation_form.html:67
 #: templates/events/event_form.html:67 templates/pages/page_form.html:67
-#: templates/pois/poi_form.html:67
+#: templates/pois/poi_form.html:67 templates/requests/request_form.html:67
 msgid "Submit for review"
 msgstr "Zur Überprüfung vorlegen"
 
@@ -532,7 +539,7 @@ msgstr "Zur Überprüfung vorlegen"
 #: templates/events/event_form.html:101 templates/events/event_list.html:43
 #: templates/events/event_list_archived.html:19
 #: templates/pages/page_form.html:113 templates/pages/page_tree.html:71
-#: templates/pois/poi_form.html:99
+#: templates/pois/poi_form.html:99 templates/requests/request_form.html:99
 msgid "Version"
 msgstr "Version"
 
@@ -542,17 +549,19 @@ msgstr "Version"
 #: templates/pages/page_form.html:115 templates/pages/page_tree.html:72
 #: templates/pois/poi_form.html:101 templates/regions/region_form.html:97
 #: templates/regions/region_list.html:34
+#: templates/requests/request_form.html:101
 msgid "Status"
 msgstr "Status"
 
 #: templates/accommodations/accommodation_form.html:104
 #: templates/events/event_form.html:106 templates/pages/page_form.html:118
 #: templates/pois/poi_form.html:104 templates/regions/region_form.html:54
+#: templates/requests/request_form.html:104
 msgid "Permalink"
 msgstr ""
 
 #: templates/accommodations/accommodation_form.html:106
-#: templates/pois/poi_form.html:106
+#: templates/pois/poi_form.html:106 templates/requests/request_form.html:106
 msgid " Leave blank to derive from title"
 msgstr " Freilassen, um vom Titel abzuleiten"
 
@@ -564,51 +573,57 @@ msgstr " Freilassen, um vom Titel abzuleiten"
 #: templates/pois/poi_list.html:44 templates/pois/poi_list_archived.html:26
 #: templates/push_notifications/push_notification_form.html:49
 #: templates/push_notifications/push_notification_list.html:24
+#: templates/requests/request_form.html:114
+#: templates/requests/request_list.html:44
+#: templates/requests/request_list_archived.html:26
 msgid "Title"
 msgstr "Titel"
 
 #: templates/accommodations/accommodation_form.html:115
 #: templates/events/event_form.html:120 templates/pages/page_form.html:132
 #: templates/pages/page_sbs.html:30 templates/pois/poi_form.html:115
+#: templates/requests/request_form.html:115
 msgid "Insert title here"
 msgstr "Titel hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:117
-#: templates/pois/poi_form.html:117
+#: templates/pois/poi_form.html:117 templates/requests/request_form.html:117
 msgid "Short description"
 msgstr "Kurzbeschreibung"
 
 #: templates/accommodations/accommodation_form.html:118
-#: templates/pois/poi_form.html:118
+#: templates/pois/poi_form.html:118 templates/requests/request_form.html:118
 msgid "Insert short description here"
 msgstr "Kurzbeschreibung hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:120
 #: templates/bed_target_groups/bed_target_group_list.html:26
 #: templates/events/event_form.html:122 templates/pois/poi_form.html:120
+#: templates/requests/request_form.html:120
 msgid "Description"
 msgstr "Beschreibung"
 
 #: templates/accommodations/accommodation_form.html:122
 #: templates/events/event_form.html:125 templates/pages/page_form.html:137
-#: templates/pois/poi_form.html:122
+#: templates/pois/poi_form.html:122 templates/requests/request_form.html:122
 msgid "Implications on other translations"
 msgstr "Auswirkungen auf andere Übersetzungen"
 
 #: templates/accommodations/accommodation_form.html:124
 #: templates/events/event_form.html:127 templates/pages/page_form.html:139
-#: templates/pois/poi_form.html:124
+#: templates/pois/poi_form.html:124 templates/requests/request_form.html:124
 msgid "This change does not require an update of the translations"
 msgstr "Diese Änderung erfordert keine angepasste Übersetzung"
 
 #: templates/accommodations/accommodation_form.html:135
 #: templates/events/event_form.html:138 templates/pages/page_form.html:150
-#: templates/pois/poi_form.html:135
+#: templates/pois/poi_form.html:135 templates/requests/request_form.html:135
 msgid "Settings for all translations"
 msgstr "Einstellungen für alle Übersetzungen"
 
 #: templates/accommodations/accommodation_form.html:144
 #: templates/events/event_form.html:222 templates/pois/poi_form.html:144
+#: templates/requests/request_form.html:144
 msgid "Address"
 msgstr "Adresse"
 
@@ -617,11 +632,14 @@ msgstr "Adresse"
 #: templates/accommodations/accommodation_list_archived.html:28
 #: templates/events/event_form.html:229 templates/pois/poi_form.html:145
 #: templates/pois/poi_list.html:54 templates/pois/poi_list_archived.html:27
+#: templates/requests/request_form.html:145
+#: templates/requests/request_list.html:54
+#: templates/requests/request_list_archived.html:27
 msgid "Street"
 msgstr "Straße"
 
 #: templates/accommodations/accommodation_form.html:146
-#: templates/pois/poi_form.html:146
+#: templates/pois/poi_form.html:146 templates/requests/request_form.html:146
 msgid "Insert street here"
 msgstr "Straße hier eingeben"
 
@@ -630,16 +648,19 @@ msgstr "Straße hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:29
 #: templates/pois/poi_form.html:148 templates/pois/poi_list.html:55
 #: templates/pois/poi_list_archived.html:28
+#: templates/requests/request_form.html:148
+#: templates/requests/request_list.html:55
+#: templates/requests/request_list_archived.html:28
 msgid "Postal Code"
 msgstr "Postleitzahl"
 
 #: templates/accommodations/accommodation_form.html:149
-#: templates/pois/poi_form.html:149
+#: templates/pois/poi_form.html:149 templates/requests/request_form.html:149
 msgid "Insert postal code here"
 msgstr "Postleitzahl hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:152
-#: templates/pois/poi_form.html:152
+#: templates/pois/poi_form.html:152 templates/requests/request_form.html:152
 msgid "Insert city here"
 msgstr "Stadt hier eingeben"
 
@@ -648,16 +669,19 @@ msgstr "Stadt hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:31
 #: templates/pois/poi_form.html:154 templates/pois/poi_list.html:57
 #: templates/pois/poi_list_archived.html:30
+#: templates/requests/request_form.html:154
+#: templates/requests/request_list.html:57
+#: templates/requests/request_list_archived.html:30
 msgid "Country"
 msgstr "Land"
 
 #: templates/accommodations/accommodation_form.html:155
-#: templates/pois/poi_form.html:155
+#: templates/pois/poi_form.html:155 templates/requests/request_form.html:155
 msgid "Insert country here"
 msgstr "Land hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:159
-#: templates/pois/poi_form.html:159
+#: templates/pois/poi_form.html:159 templates/requests/request_form.html:159
 msgid "Position"
 msgstr "Position"
 
@@ -665,11 +689,13 @@ msgstr "Position"
 #: templates/accommodations/accommodation_list_archived.html:32
 #: templates/pois/poi_form.html:160 templates/pois/poi_list_archived.html:31
 #: templates/regions/region_form.html:76
+#: templates/requests/request_form.html:160
+#: templates/requests/request_list_archived.html:31
 msgid "Longitude"
 msgstr "Geographische Länge"
 
 #: templates/accommodations/accommodation_form.html:161
-#: templates/pois/poi_form.html:161
+#: templates/pois/poi_form.html:161 templates/requests/request_form.html:161
 msgid "Insert longitude here"
 msgstr "Geographische Länge hier eingeben"
 
@@ -677,11 +703,13 @@ msgstr "Geographische Länge hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:33
 #: templates/pois/poi_form.html:163 templates/pois/poi_list_archived.html:32
 #: templates/regions/region_form.html:73
+#: templates/requests/request_form.html:163
+#: templates/requests/request_list_archived.html:32
 msgid "Latitude"
 msgstr "Geographische Breite"
 
 #: templates/accommodations/accommodation_form.html:164
-#: templates/pois/poi_form.html:164
+#: templates/pois/poi_form.html:164 templates/requests/request_form.html:164
 msgid "Insert latitude here"
 msgstr "Geographische Breite hier eingeben"
 
@@ -742,6 +770,7 @@ msgstr "Bis"
 #: templates/accommodations/accommodation_form.html:214
 #: templates/events/event_form.html:247 templates/pages/page_form.html:199
 #: templates/pois/poi_form.html:168 templates/regions/region_form.html:81
+#: templates/requests/request_form.html:168
 msgid "Icon"
 msgstr "Icon"
 
@@ -750,6 +779,7 @@ msgstr "Icon"
 #: templates/organizations/organization_form.html:66
 #: templates/pages/page_form.html:203 templates/pois/poi_form.html:172
 #: templates/regions/region_form.html:90
+#: templates/requests/request_form.html:172
 msgid "Set icon"
 msgstr "Icon festlegen"
 
@@ -784,45 +814,49 @@ msgstr "Diese Unterkunft löschen"
 
 #: templates/accommodations/accommodation_form.html:286
 #: templates/events/event_form.html:380 templates/pages/page_form.html:309
-#: templates/pois/poi_form.html:240
+#: templates/pois/poi_form.html:240 templates/requests/request_form.html:240
 msgid "Do not translate the selected text."
 msgstr "Der markierte Text wird nicht übersetzt."
 
 #: templates/accommodations/accommodation_form.html:305
 #: templates/events/event_form.html:399 templates/pages/page_form.html:328
-#: templates/pois/poi_form.html:259
+#: templates/pois/poi_form.html:259 templates/requests/request_form.html:259
 msgid "Location"
 msgstr "Ort"
 
 #: templates/accommodations/accommodation_form.html:312
 #: templates/events/event_form.html:406 templates/pages/page_form.html:335
-#: templates/pois/poi_form.html:266
+#: templates/pois/poi_form.html:266 templates/requests/request_form.html:266
 msgid "Link"
 msgstr "Link"
 
 #: templates/accommodations/accommodation_form.html:319
 #: templates/events/event_form.html:413 templates/pages/page_form.html:342
-#: templates/pois/poi_form.html:273
+#: templates/pois/poi_form.html:273 templates/requests/request_form.html:273
 msgid "Phone"
 msgstr "Telefon"
 
 #: templates/accommodations/accommodation_form.html:326
 #: templates/events/event_form.html:420 templates/pages/page_form.html:349
-#: templates/pois/poi_form.html:280
+#: templates/pois/poi_form.html:280 templates/requests/request_form.html:280
 msgid "Opening Hours"
 msgstr "Öffnungszeiten"
 
 #: templates/accommodations/accommodation_form.html:333
 #: templates/events/event_form.html:427 templates/pages/page_form.html:356
-#: templates/pois/poi_form.html:287
+#: templates/pois/poi_form.html:287 templates/requests/request_form.html:287
 msgid "Email"
 msgstr "Email"
 
 #: templates/accommodations/accommodation_form.html:340
 #: templates/events/event_form.html:434 templates/pages/page_form.html:363
-#: templates/pois/poi_form.html:294
+#: templates/pois/poi_form.html:294 templates/requests/request_form.html:294
 msgid "Hint"
 msgstr "Tipp"
+
+#: templates/accommodations/accommodation_list.html:11
+msgid "Accommodations"
+msgstr "Unterkünfte"
 
 #: templates/accommodations/accommodation_list.html:16
 #: templates/accommodations/accommodation_list_archived.html:10
@@ -839,6 +873,8 @@ msgstr "Unterkunft erstellen"
 #: templates/events/event_list_archived.html:18
 #: templates/pages/page_tree.html:70 templates/pois/poi_list.html:43
 #: templates/pois/poi_list_archived.html:25
+#: templates/requests/request_list.html:43
+#: templates/requests/request_list_archived.html:25
 msgid "ID"
 msgstr ""
 
@@ -849,6 +885,8 @@ msgstr ""
 #: templates/events/event_list_archived.html:39
 #: templates/pages/page_tree.html:89 templates/pois/poi_list.html:58
 #: templates/pois/poi_list_archived.html:33
+#: templates/requests/request_list.html:58
+#: templates/requests/request_list_archived.html:33
 msgid "Options"
 msgstr "Optionen"
 
@@ -860,6 +898,7 @@ msgstr "Noch keine Unterkünfte vorhanden."
 #: templates/accommodations/accommodation_list_archived_row.html:38
 #: templates/pois/poi_form.html:179 templates/pois/poi_form.html:180
 #: templates/pois/poi_list_archived_row.html:35
+#: templates/requests/request_list_archived_row.html:35
 msgid "Restore POI"
 msgstr "POI Wiederherstellen"
 
@@ -867,6 +906,8 @@ msgstr "POI Wiederherstellen"
 #: templates/pois/poi_form.html:192 templates/pois/poi_form.html:193
 #: templates/pois/poi_list_archived_row.html:40
 #: templates/pois/poi_list_row.html:49
+#: templates/requests/request_list_archived_row.html:40
+#: templates/requests/request_list_row.html:49
 msgid "Delete POI"
 msgstr "POI löschen"
 
@@ -896,6 +937,9 @@ msgstr "Ja, diese Unterkunft jetzt archivieren"
 #: templates/pois/confirmation_popups/delete_poi.html:14
 #: templates/pois/confirmation_popups/restore_poi.html:14
 #: templates/regions/region_form.html:216
+#: templates/requests/confirmation_popups/archive_request.html:14
+#: templates/requests/confirmation_popups/delete_request.html:14
+#: templates/requests/confirmation_popups/restore_request.html:14
 #: templates/users/confirmation_popups/delete_region_user.html:12
 #: templates/users/confirmation_popups/delete_user.html:12
 msgid "Cancel"
@@ -1915,6 +1959,7 @@ msgstr "Diesen POI wiederherstellen"
 
 #: templates/pois/poi_form.html:184 templates/pois/poi_form.html:185
 #: templates/pois/poi_list_row.html:44
+#: templates/requests/request_list_row.html:44
 msgid "Archive POI"
 msgstr "POI archivieren"
 
@@ -1935,10 +1980,12 @@ msgid "Create POI"
 msgstr "POI erstellen"
 
 #: templates/pois/poi_list.html:67 templates/pois/poi_list_archived.html:42
+#: templates/requests/request_list_archived.html:42
 msgid "No POIs available yet."
 msgstr "Noch keine POIs vorhanden."
 
 #: templates/pois/poi_list_archived.html:10
+#: templates/requests/request_list_archived.html:10
 msgid "Archived Points of Interest"
 msgstr "Archivierte Points of Interest"
 
@@ -2172,6 +2219,136 @@ msgstr "WebApp-URL"
 #: templates/regions/region_list.html:43
 msgid "No regions available yet."
 msgstr "Noch keine Regionen vorhanden."
+
+#: templates/requests/confirmation_popups/archive_request.html:5
+#, fuzzy
+#| msgid "Please confirm that you really want to archive this event"
+msgid "Please confirm that you really want to archive this Request"
+msgstr "Bitte bestätigen Sie, dass dieses Event archiviert werden soll."
+
+#: templates/requests/confirmation_popups/archive_request.html:8
+#, fuzzy
+#| msgid "All translations of this event will also be archived."
+msgid "All translations of this Request will also be archived."
+msgstr "Es werden auch alle Übersetzungen dieses Events archiviert."
+
+#: templates/requests/confirmation_popups/archive_request.html:12
+#, fuzzy
+#| msgid "Yes, archive this event now."
+msgid "Yes, archive this Request now."
+msgstr "Ja, dieses Event jetzt archivieren"
+
+#: templates/requests/confirmation_popups/delete_request.html:5
+#, fuzzy
+#| msgid "Please confirm that you really want to delete this event"
+msgid "Please confirm that you really want to delete this Request"
+msgstr "Bitte bestätigen Sie, dass dieses Event gelöscht werden soll"
+
+#: templates/requests/confirmation_popups/delete_request.html:8
+#, fuzzy
+#| msgid "All translations of this event will also be deleted."
+msgid "All translations of this Request will also be deleted."
+msgstr "Alle Übersetzungen dieses Events werden gelöscht."
+
+#: templates/requests/confirmation_popups/delete_request.html:12
+#, fuzzy
+#| msgid "Yes, delete this event now."
+msgid "Yes, delete this Request now."
+msgstr "Ja, dieses Event jetzt löschen"
+
+#: templates/requests/confirmation_popups/restore_request.html:5
+#, fuzzy
+#| msgid "Please confirm that you really want to restore this event"
+msgid "Please confirm that you really want to restore this Request"
+msgstr ""
+"Bitte bestätigen Sie, dass diese Veranstaltung wiederhergestellt werden soll"
+
+#: templates/requests/confirmation_popups/restore_request.html:8
+#, fuzzy
+#| msgid "All translations of this event will also be restored."
+msgid "All translations of this Request will also be restored."
+msgstr "Alle Übersetzungen dieser Veranstaltung werden wiederhergestellt."
+
+#: templates/requests/confirmation_popups/restore_request.html:12
+#, fuzzy
+#| msgid "Yes, restore this event now."
+msgid "Yes, restore this Request now."
+msgstr "Ja, diese Veranstaltung wiederherstellen."
+
+#: templates/requests/request_form.html:40
+#, fuzzy, python-format
+#| msgid "Edit event \"%(event_title)s\""
+msgid "Edit Request \"%(request_title)s\""
+msgstr "Event \"%(event_title)s\" bearbeiten"
+
+#: templates/requests/request_form.html:51
+#, fuzzy
+#| msgid "Create new event translation"
+msgid "Create new Request translation"
+msgstr "Neue Event-Übersetzung erstellen"
+
+#: templates/requests/request_form.html:54
+#, fuzzy
+#| msgid "Create new event"
+msgid "Create new Request"
+msgstr "Veranstaltung erstellen"
+
+#: templates/requests/request_form.html:179
+#: templates/requests/request_form.html:180
+#, fuzzy
+#| msgid "Restore event"
+msgid "Restore Request"
+msgstr "Veranstaltung wiederherstellen"
+
+#: templates/requests/request_form.html:181
+#, fuzzy
+#| msgid "Restore this event"
+msgid "Restore this Request"
+msgstr "Diese Veranstaltung wiederherstellen"
+
+#: templates/requests/request_form.html:184
+#: templates/requests/request_form.html:185
+#, fuzzy
+#| msgid "Archive event"
+msgid "Archive Request"
+msgstr "Veranstaltung archivieren"
+
+#: templates/requests/request_form.html:186
+#, fuzzy
+#| msgid "Archive this event"
+msgid "Archive this Request"
+msgstr "Diese Veranstaltung archivieren"
+
+#: templates/requests/request_form.html:192
+#: templates/requests/request_form.html:193
+#, fuzzy
+#| msgid "Delete event"
+msgid "Delete Request"
+msgstr "Veranstaltung löschen"
+
+#: templates/requests/request_form.html:194
+#, fuzzy
+#| msgid "Delete this event"
+msgid "Delete this Request"
+msgstr "Diese Veranstaltung löschen"
+
+#: templates/requests/request_list.html:16
+#, fuzzy
+#| msgid "Archive event"
+msgid "Archived Requests"
+msgstr "Veranstaltung archivieren"
+
+#: templates/requests/request_list.html:32
+#, fuzzy
+#| msgid "Create new event"
+msgid "Create Request"
+msgstr "Veranstaltung erstellen"
+
+#: templates/requests/request_list.html:67
+#, fuzzy
+#| msgid "No events available yet."
+msgid "No Requests available yet."
+msgstr "Noch keine Veranstaltungen vorhanden."
 
 #: templates/roles/list.html:9
 msgid "Manage Roles"
@@ -2532,7 +2709,8 @@ msgstr "Sie können diese Unterkunft nicht bearbeiten, weil sie archiviert ist."
 #: views/accommodations/accommodation_view.py:114
 #: views/events/event_view.py:132 views/pages/page_sbs_view.py:107
 #: views/pages/page_view.py:122 views/pois/poi_view.py:114
-#: views/regions/region_view.py:67 views/users/region_user_actions.py:113
+#: views/regions/region_view.py:67 views/requests/request_view.py:114
+#: views/users/region_user_actions.py:113
 #: views/users/region_user_list_view.py:113 views/users/region_user_view.py:113
 #: views/users/user_actions.py:90 views/users/user_list_view.py:90
 #: views/users/user_view.py:90
@@ -2947,6 +3125,97 @@ msgstr "Region wurde erfolgreich gespeichert."
 msgid "Region created successfully"
 msgstr "Region wurde erfolgreich erstellt."
 
+#: views/requests/request_actions.py:27 views/requests/request_view.py:132
+#, fuzzy
+#| msgid "Event was successfully archived."
+msgid "Request was successfully archived."
+msgstr "Veranstaltung wurde erfolgreich archiviert."
+
+#: views/requests/request_actions.py:44
+#, fuzzy
+#| msgid "Event was successfully restored."
+msgid "Request was successfully restored."
+msgstr "Veranstaltung wurde erfolgreich wiederhergestellt."
+
+#: views/requests/request_actions.py:58
+#, fuzzy
+#| msgid "Event was successfully deleted."
+msgid "Request was successfully deleted."
+msgstr "Veranstaltung wurde erfolgreich gelöscht."
+
+#: views/requests/request_list_view.py:44
+#, fuzzy
+#| msgid "Please create at least one language node before creating events."
+msgid "Please create at least one language node before creating Requests."
+msgstr ""
+"Bitte erstellen Sie mindestens einen Sprach-Knoten, bevor Sie "
+"Veranstaltungen verwalten."
+
+#: views/requests/request_list_view.py:51
+#, fuzzy
+#| msgid "You don't have the permission to edit or create events."
+msgid "You don't have the permission to edit or create Requests."
+msgstr ""
+"Sie haben nicht die nötige Berechtigung, um Veranstaltungen zu bearbeiten "
+"oder zu erstellen."
+
+#: views/requests/request_list_view.py:56
+#, fuzzy, python-format
+#| msgid "You can only create POIs in the default language (%(language)s)."
+msgid "You can only create Requests in the default language (%(language)s)."
+msgstr "Sie können POIs nur in der Standard-Sprache (%(language)s) anlegen"
+
+#: views/requests/request_view.py:48
+#, fuzzy
+#| msgid "You don't have the permission to edit this event."
+msgid "You don't have the permission to edit this Request."
+msgstr ""
+"Sie haben nicht die nötige Berechtigung, um diese Veranstaltung zu "
+"bearbeiten."
+
+#: views/requests/request_view.py:51
+#, fuzzy
+#| msgid "You cannot edit this event because it is archived."
+msgid "You cannot edit this Request because it is archived."
+msgstr ""
+"Sie können diese Veranstaltung nicht bearbeiten, weil sie archiviert ist."
+
+#: views/requests/request_view.py:135
+#, fuzzy
+#| msgid "Event was successfully created and published."
+msgid "Request was successfully created and published."
+msgstr "Veranstaltung wurde erfolgreich erstellt und veröffentlicht."
+
+#: views/requests/request_view.py:137
+#, fuzzy
+#| msgid "Event was successfully created."
+msgid "Request was successfully created."
+msgstr "Veranstaltung wurde erfolgreich erstellt."
+
+#: views/requests/request_view.py:145
+#, fuzzy
+#| msgid "Translation was successfully created and published."
+msgid "Request Translation was successfully created and published."
+msgstr "Übersetzung wurde erfolgreich erstellt und veröffentlicht."
+
+#: views/requests/request_view.py:147
+#, fuzzy
+#| msgid "Translation was successfully created."
+msgid "Request Translation was successfully created."
+msgstr "Übersetzung wurde erfolgreich erstellt."
+
+#: views/requests/request_view.py:150
+#, fuzzy
+#| msgid "Translation was successfully published."
+msgid "Request Translation was successfully published."
+msgstr "Übersetzung wurde erfolgreich veröffentlicht."
+
+#: views/requests/request_view.py:152
+#, fuzzy
+#| msgid "Translation was successfully saved."
+msgid "Request Translation was successfully saved."
+msgstr "Übersetzung wurde erfolgreich gespeichert."
+
 #: views/roles/role_view.py:40
 msgid "Role saved successfully"
 msgstr "Rolle wurde erfolgreich gespeichert."
@@ -3010,6 +3279,9 @@ msgstr "Benutzer wurde erfolgreich erstellt."
 #: views/users/user_view.py:108
 msgid "User was successfully deleted."
 msgstr "Benutzer wurde erfolgreich gelöscht."
+
+#~ msgid "Bed Target Groups"
+#~ msgstr "Betten-Kategorien"
 
 #~ msgid "All translations of this Bed Target Group will also be deleted."
 #~ msgstr "Alle Übersetzungen dieser Betten-Kategorie werden gelöscht."

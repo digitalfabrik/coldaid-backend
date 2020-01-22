@@ -14,6 +14,8 @@ from .models import LanguageTreeNode
 from .models import Organization
 from .models import Page
 from .models import PageTranslation
+from .models import Request
+from .models import RequestTranslation
 from .models import POI
 from .models import POITranslation
 from .models import Region
@@ -30,6 +32,8 @@ admin.site.register(Logbook)
 admin.site.register(Organization)
 admin.site.register(Page)
 admin.site.register(PageTranslation)
+admin.site.register(Request)
+admin.site.register(RequestTranslation)
 admin.site.register(POI)
 admin.site.register(POITranslation)
 admin.site.register(Region)

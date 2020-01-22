@@ -30,6 +30,9 @@ from .pages.page_translation import PageTranslation
 from .pois.poi import POI
 from .pois.poi_translation import POITranslation
 
+from .requests.request import Request
+from .requests.request_translation import RequestTranslation
+
 from .vehicles.vehicle import Vehicle
 from .logbooks.logbook import Logbook
 

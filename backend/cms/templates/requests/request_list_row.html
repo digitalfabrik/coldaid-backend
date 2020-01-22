@@ -1,0 +1,57 @@
+{% load i18n %}
+{% load rules %}
+{% load request_filters %}
+
+<tr class="border-t border-solid border-grey-lighter hover:bg-grey-lightest">
+	<td class="py-3 px-2">
+		{{ request.id }}
+	</td>
+	<td>
+		<a href="{% url 'edit_request' request_id=request.id region_slug=region.slug language_code=language.code %}" class="block py-3 px-2 text-grey-darkest">
+			{{ request|request_translation_title:language }}
+		</a>
+	</td>
+	<td>
+		<div class="block py-3 px-2 text-grey-darkest">
+			<div class="lang-grid">
+				{% for other_language in languages %}
+					<a href="{% url 'edit_request' request_id=request.id region_slug=region.slug language_code=other_language.code %}">
+						<i data-feather="{% if other_language in request.languages %}edit-2{% else %}plus{% endif %}" class="text-grey-darkest"></i>
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+	</td>
+	<td>
+		{{ request.address }}
+	</td>
+	<td>
+		{{ request.postcode }}
+	</td>
+	<td>
+		{{ request.city }}
+	</td>
+	<td>
+		{{ request.country }}
+	</td>
+    <td class="pl-2 pr-4">
+        <!-- TODO: add link to view request in web app -->
+        <a href="#" class="py-3" style="padding-right:4px;">
+            <i data-feather="eye" class="text-grey-darkest"></i>
+        </a>
+        {% has_perm 'cms.edit_requests' request.user as can_edit_request %}
+        {% if can_edit_request %}
+            <button title="{% trans 'Archive POI' %}" class="confirmation-button py-3 pl-4" data-request-id="{{ request.id }}" data-request-title="{{ request|request_translation_title:language }}" data-action="{% url 'archive_request' request_id=request.id region_slug=region.slug language_code=language.code %}" data-confirmation-popup="#confirm-archive-request">
+                <i data-feather="archive" class="text-grey-darkest"></i>
+            </button>
+        {% endif %}
+        {% if user.is_superuser or user.is_staff %}
+            <button title="{% trans 'Delete POI' %}" class="confirmation-button py-3 pl-4" data-request-id="{{ request.id }}" data-request-title="{{ request|request_translation_title:language }}" data-action="{% url 'delete_request' request_id=request.id region_slug=region.slug language_code=language.code %}" data-confirmation-popup="#confirm-delete-request">
+                <i data-feather="trash-2" class="text-grey-darkest"></i>
+            </button>
+        {% endif %}
+    </td>
+</tr>
+{% if user.is_superuser or user.is_staff %}
+    {% include "./confirmation_popups/delete_request.html" with request=request %}
+{% endif %}
