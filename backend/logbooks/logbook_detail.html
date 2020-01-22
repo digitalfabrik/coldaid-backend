@@ -1,0 +1,31 @@
+{% extends "_base.html" %}
+{% load i18n %}
+{% load rules %}
+{% load static %}
+
+{% block content %}
+<h1> Fahrtenbuch {{logbook.id}} </h1>
+<div class="table-listing">>
+<a href="/vehicles/{{logbook.vehicle.id}}/">  <p>Fahrzeug Kennzeichen: {{logbook.vehicle.licencePlate}}</p> </a>
+  <p>Fahrer: {{logbook.driver}}</p>
+  <p>Beifahrer: {{logbook.coDriver}}</p>
+  <p>Presse: {{logbook.press}}</p>
+  <p>Anfangs Kilometerstand: {{logbook.startMileage}}</p>
+  <p>Anfangs Datum: {{logbook.startDate}}</p>
+  <p>End Kilometerstand: {{logbook.endMileage}}</p>
+  <p>End Datum: {{logbook.endDate}}</p>
+  <p>Kommentare: {{logbook.comments}}</p>
+  <p>Fahrt Beendet: {{logbook.finished}}</p>
+</div>
+  {% if not logbook.finished %}
+  <div>
+    <form action="/logbooks/{{logbook.id}}/finish">
+      <button title="Fahrt beenden" class="confirmation-button bg-red hover:bg-red-dark text-white font-bold py-2 px-4 rounded" }">
+          Fahrt beenden
+      </button>
+    </form>
+
+  </div>
+  {%endif%}
+
+{% endblock %}
