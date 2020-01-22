@@ -1,7 +1,3 @@
-from .accommodations.accommodation import Accommodation
-from .accommodations.accommodation_translation import AccommodationTranslation
-from .accommodations.bed_target_group import BedTargetGroup
-from .accommodations.beds import Beds
 from .config.configuration import Configuration
 
 from .events.event import Event
@@ -29,6 +25,9 @@ from .pages.page_translation import PageTranslation
 
 from .pois.poi import POI
 from .pois.poi_translation import POITranslation
+
+from .vehicles.vehicle import Vehicle
+from .logbooks.logbook import Logbook
 
 from .push_notifications.push_notification import PushNotification
 from .push_notifications.push_notification_translation import PushNotificationTranslation
