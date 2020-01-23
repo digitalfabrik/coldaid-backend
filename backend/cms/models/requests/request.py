@@ -2,6 +2,7 @@
 
 """
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.validators import RegexValidator
 from django.db import models
 from django.utils.timezone import now
 from ..regions.region import Region
@@ -29,8 +30,10 @@ class Request(models.Model):
         ('w', 'female'),
         ('x', 'other'),
     )
-    GROUPSIZE = [("0", "-"), *(zip(range(1, 10), range(1, 10))), ("11", ">10")]
-
+    GROUPSIZE = [("0", "-")] #, *(zip(range(1, 10), (range(1, 10)))), ("11", ">10")]
+    for i in range(1,10):
+        GROUPSIZE.append([str(i), str(i)])
+    GROUPSIZE.append(("11", ">10"))
     # Infos about person in need (pin)
     pinname = models.CharField(max_length=250, default="")
     wheelchair = models.BooleanField(default=False)
@@ -39,7 +42,7 @@ class Request(models.Model):
     luggage = models.BooleanField(default=False)
     children = models.BooleanField(default=False)
     pets = models.BooleanField(default=False)
-    group = models.CharField(max_length=5, choices=GROUPSIZE, default="0", unique=True)
+    group = models.CharField(max_length=5, choices=GROUPSIZE, default="0", unique=False)
 
     # Infos about helping person
     helpername = models.CharField(max_length=250, default="")
@@ -47,7 +50,7 @@ class Request(models.Model):
     # Infos about location
     region = models.ForeignKey(Region, related_name='requests', on_delete=models.CASCADE)
     address = models.CharField(max_length=250)
-    postcode = models.CharField(max_length=10)
+    postcode = models.CharField(max_length=10, validators=[RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
     city = models.CharField(max_length=250, default="Berlin")
     country = models.CharField(max_length=250, default="Berlin")
     latitude = models.FloatField()

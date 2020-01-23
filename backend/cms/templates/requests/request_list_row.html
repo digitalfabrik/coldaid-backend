@@ -2,15 +2,20 @@
 {% load rules %}
 {% load request_filters %}
 
-<tr class="border-t border-solid border-grey-lighter hover:bg-grey-lightest">
+
+	<tr class="border-t border-solid border-grey-lighter hover:bg-grey-lightest">
 	<td class="py-3 px-2">
 		{{ req.id }}
 	</td>
 	<td>
+		{{ req.medicalNeeds }}
+	</td>
+	<td>
 		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 px-2 text-grey-darkest">
-			{{ req|request_translation_title:language }}
+			{{ req.pinname }}
 		</a>
 	</td>
+	<!--
 	<td>
 		<div class="block py-3 px-2 text-grey-darkest">
 			<div class="lang-grid">
@@ -22,8 +27,11 @@
 			</div>
 		</div>
 	</td>
+	-->
 	<td>
+		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 px-2 text-grey-darkest">
 		{{ req.address }}
+		</a>
 	</td>
 	<td>
 		{{ req.postcode }}
@@ -31,12 +39,14 @@
 	<td>
 		{{ req.city }}
 	</td>
+	<!--
 	<td>
 		{{ req.country }}
 	</td>
+	-->
     <td class="pl-2 pr-4">
         <!-- TODO: add link to view request in web app -->
-        <a href="#" class="py-3" style="padding-right:4px;">
+        <a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="py-3" style="padding-right:4px;">
             <i data-feather="eye" class="text-grey-darkest"></i>
         </a>
         {% has_perm 'cms.edit_requests' request.user as can_edit_req %}

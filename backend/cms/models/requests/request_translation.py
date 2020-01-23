@@ -17,7 +17,7 @@ class RequestTranslation(models.Model):
         models : Database model inherit from the standard django models
     """
 
-    title = models.CharField(max_length=250)
+    title = models.CharField(max_length=250, blank=True)
     slug = models.SlugField(max_length=200, blank=True, allow_unicode=True)
     request = models.ForeignKey(
         Request,
@@ -25,7 +25,7 @@ class RequestTranslation(models.Model):
         on_delete=models.CASCADE
     )
     status = models.CharField(max_length=6, choices=status.CHOICES, default=status.DRAFT)
-    short_description = models.CharField(max_length=250)
+    short_description = models.CharField(max_length=250, blank=True)
     description = models.TextField(blank=True)
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
     version = models.PositiveIntegerField(default=0)

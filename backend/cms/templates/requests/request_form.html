@@ -36,8 +36,8 @@
             <h2 class="heading font-normal">
                 {% if request_form.instance.id %}
                     {% if request_translation_form.instance.id %}
-                        {% with request_translation_form.instance.title as request_title %}
-                        {% blocktrans %}Edit Request "{{ request_title }}"{% endblocktrans %}
+                        {% with request_form.instance.id as request_title %}
+                {% blocktrans %}Edit Request ID  <span class="font-bold"> {{ request_title }} </span>{% endblocktrans %}
                         {% endwith %}
                         {% get_current_language as LANGUAGE_CODE %}
                         {% unify_language_code LANGUAGE_CODE as LANGUAGE_CODE %}
