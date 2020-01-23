@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-23 12:59+0000\n"
+"POT-Creation-Date: 2020-01-23 18:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Timo Ludwig <ludwig@integreat-app.de>\n"
 "Language-Team:\n"
@@ -23,8 +23,9 @@ msgstr ""
 #: templates/accommodations/accommodation_list_archived.html:30
 #: templates/events/event_form.html:231 templates/pois/poi_form.html:151
 #: templates/pois/poi_list.html:56 templates/pois/poi_list_archived.html:29
-#: templates/requests/request_form.html:111
-#: templates/requests/request_list.html:56
+#: templates/requests/request_form.html:115
+#: templates/requests/request_list.html:50
+#: templates/requests/request_list.html:83
 #: templates/requests/request_list_archived.html:29
 msgid "City"
 msgstr "Stadt"
@@ -517,7 +518,7 @@ msgstr "Neue Unterkunft erstellen"
 #: templates/accommodations/accommodation_form.html:61
 #: templates/events/event_form.html:62 templates/pages/page_form.html:61
 #: templates/pois/poi_form.html:61 templates/requests/request_form.html:61
-#: templates/requests/request_form.html:155
+#: templates/requests/request_form.html:159
 msgid "Save as draft"
 msgstr "Als Entwurf speichern"
 
@@ -527,14 +528,14 @@ msgstr "Als Entwurf speichern"
 #: templates/pages/page_form.html:65 templates/pois/poi_form.html:65
 #: templates/regions/region_form.html:22
 #: templates/requests/request_form.html:65
-#: templates/requests/request_form.html:159
+#: templates/requests/request_form.html:163
 msgid "Publish"
 msgstr "Veröffentlichen"
 
 #: templates/accommodations/accommodation_form.html:67
 #: templates/events/event_form.html:67 templates/pages/page_form.html:67
 #: templates/pois/poi_form.html:67 templates/requests/request_form.html:67
-#: templates/requests/request_form.html:161
+#: templates/requests/request_form.html:165
 msgid "Submit for review"
 msgstr "Zur Überprüfung vorlegen"
 
@@ -559,12 +560,12 @@ msgstr "Status"
 #: templates/accommodations/accommodation_form.html:104
 #: templates/events/event_form.html:106 templates/pages/page_form.html:118
 #: templates/pois/poi_form.html:104 templates/regions/region_form.html:54
-#: templates/requests/request_form.html:141
+#: templates/requests/request_form.html:145
 msgid "Permalink"
 msgstr ""
 
 #: templates/accommodations/accommodation_form.html:106
-#: templates/pois/poi_form.html:106 templates/requests/request_form.html:143
+#: templates/pois/poi_form.html:106 templates/requests/request_form.html:147
 msgid " Leave blank to derive from title"
 msgstr " Freilassen, um vom Titel abzuleiten"
 
@@ -576,7 +577,6 @@ msgstr " Freilassen, um vom Titel abzuleiten"
 #: templates/pois/poi_list.html:44 templates/pois/poi_list_archived.html:26
 #: templates/push_notifications/push_notification_form.html:49
 #: templates/push_notifications/push_notification_list.html:24
-#: templates/requests/request_list.html:44
 #: templates/requests/request_list_archived.html:26
 msgid "Title"
 msgstr "Titel"
@@ -600,7 +600,7 @@ msgstr "Kurzbeschreibung hier eingeben"
 #: templates/accommodations/accommodation_form.html:120
 #: templates/bed_target_groups/bed_target_group_list.html:26
 #: templates/events/event_form.html:122 templates/pois/poi_form.html:120
-#: templates/requests/request_form.html:137
+#: templates/requests/request_form.html:141
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -632,14 +632,15 @@ msgstr "Adresse"
 #: templates/accommodations/accommodation_list_archived.html:28
 #: templates/events/event_form.html:229 templates/pois/poi_form.html:145
 #: templates/pois/poi_list.html:54 templates/pois/poi_list_archived.html:27
-#: templates/requests/request_form.html:105
-#: templates/requests/request_list.html:54
+#: templates/requests/request_form.html:109
+#: templates/requests/request_list.html:48
+#: templates/requests/request_list.html:81
 #: templates/requests/request_list_archived.html:27
 msgid "Street"
 msgstr "Straße"
 
 #: templates/accommodations/accommodation_form.html:146
-#: templates/pois/poi_form.html:146 templates/requests/request_form.html:106
+#: templates/pois/poi_form.html:146 templates/requests/request_form.html:110
 msgid "Insert street here"
 msgstr "Straße hier eingeben"
 
@@ -648,19 +649,20 @@ msgstr "Straße hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:29
 #: templates/pois/poi_form.html:148 templates/pois/poi_list.html:55
 #: templates/pois/poi_list_archived.html:28
-#: templates/requests/request_form.html:108
-#: templates/requests/request_list.html:55
+#: templates/requests/request_form.html:112
+#: templates/requests/request_list.html:49
+#: templates/requests/request_list.html:82
 #: templates/requests/request_list_archived.html:28
 msgid "Postal Code"
 msgstr "Postleitzahl"
 
 #: templates/accommodations/accommodation_form.html:149
-#: templates/pois/poi_form.html:149 templates/requests/request_form.html:109
+#: templates/pois/poi_form.html:149 templates/requests/request_form.html:113
 msgid "Insert postal code here"
 msgstr "Postleitzahl hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:152
-#: templates/pois/poi_form.html:152 templates/requests/request_form.html:112
+#: templates/pois/poi_form.html:152 templates/requests/request_form.html:116
 msgid "Insert city here"
 msgstr "Stadt hier eingeben"
 
@@ -669,19 +671,20 @@ msgstr "Stadt hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:31
 #: templates/pois/poi_form.html:154 templates/pois/poi_list.html:57
 #: templates/pois/poi_list_archived.html:30
-#: templates/requests/request_form.html:114
-#: templates/requests/request_list.html:57
+#: templates/requests/request_form.html:118
+#: templates/requests/request_list.html:52
+#: templates/requests/request_list.html:85
 #: templates/requests/request_list_archived.html:30
 msgid "Country"
 msgstr "Land"
 
 #: templates/accommodations/accommodation_form.html:155
-#: templates/pois/poi_form.html:155 templates/requests/request_form.html:115
+#: templates/pois/poi_form.html:155 templates/requests/request_form.html:119
 msgid "Insert country here"
 msgstr "Land hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:159
-#: templates/pois/poi_form.html:159 templates/requests/request_form.html:119
+#: templates/pois/poi_form.html:159 templates/requests/request_form.html:123
 msgid "Position"
 msgstr "Position"
 
@@ -689,13 +692,13 @@ msgstr "Position"
 #: templates/accommodations/accommodation_list_archived.html:32
 #: templates/pois/poi_form.html:160 templates/pois/poi_list_archived.html:31
 #: templates/regions/region_form.html:76
-#: templates/requests/request_form.html:120
+#: templates/requests/request_form.html:124
 #: templates/requests/request_list_archived.html:31
 msgid "Longitude"
 msgstr "Geographische Länge"
 
 #: templates/accommodations/accommodation_form.html:161
-#: templates/pois/poi_form.html:161 templates/requests/request_form.html:121
+#: templates/pois/poi_form.html:161 templates/requests/request_form.html:125
 msgid "Insert longitude here"
 msgstr "Geographische Länge hier eingeben"
 
@@ -703,13 +706,13 @@ msgstr "Geographische Länge hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:33
 #: templates/pois/poi_form.html:163 templates/pois/poi_list_archived.html:32
 #: templates/regions/region_form.html:73
-#: templates/requests/request_form.html:123
+#: templates/requests/request_form.html:127
 #: templates/requests/request_list_archived.html:32
 msgid "Latitude"
 msgstr "Geographische Breite"
 
 #: templates/accommodations/accommodation_form.html:164
-#: templates/pois/poi_form.html:164 templates/requests/request_form.html:124
+#: templates/pois/poi_form.html:164 templates/requests/request_form.html:128
 msgid "Insert latitude here"
 msgstr "Geographische Breite hier eingeben"
 
@@ -812,44 +815,44 @@ msgstr "Diese Unterkunft löschen"
 
 #: templates/accommodations/accommodation_form.html:286
 #: templates/events/event_form.html:380 templates/pages/page_form.html:309
-#: templates/pois/poi_form.html:240 templates/requests/request_form.html:229
+#: templates/pois/poi_form.html:240 templates/requests/request_form.html:233
 msgid "Do not translate the selected text."
 msgstr "Der markierte Text wird nicht übersetzt."
 
 #: templates/accommodations/accommodation_form.html:305
 #: templates/events/event_form.html:399 templates/pages/page_form.html:328
-#: templates/pois/poi_form.html:259 templates/requests/request_form.html:248
+#: templates/pois/poi_form.html:259 templates/requests/request_form.html:252
 msgid "Location"
 msgstr "Ort"
 
 #: templates/accommodations/accommodation_form.html:312
 #: templates/events/event_form.html:406 templates/pages/page_form.html:335
-#: templates/pois/poi_form.html:266 templates/requests/request_form.html:255
+#: templates/pois/poi_form.html:266 templates/requests/request_form.html:259
 msgid "Link"
 msgstr "Link"
 
 #: templates/accommodations/accommodation_form.html:319
 #: templates/events/event_form.html:413 templates/pages/page_form.html:342
-#: templates/pois/poi_form.html:273 templates/requests/request_form.html:132
-#: templates/requests/request_form.html:262
+#: templates/pois/poi_form.html:273 templates/requests/request_form.html:136
+#: templates/requests/request_form.html:266
 msgid "Phone"
 msgstr "Telefon"
 
 #: templates/accommodations/accommodation_form.html:326
 #: templates/events/event_form.html:420 templates/pages/page_form.html:349
-#: templates/pois/poi_form.html:280 templates/requests/request_form.html:269
+#: templates/pois/poi_form.html:280 templates/requests/request_form.html:273
 msgid "Opening Hours"
 msgstr "Öffnungszeiten"
 
 #: templates/accommodations/accommodation_form.html:333
 #: templates/events/event_form.html:427 templates/pages/page_form.html:356
-#: templates/pois/poi_form.html:287 templates/requests/request_form.html:276
+#: templates/pois/poi_form.html:287 templates/requests/request_form.html:280
 msgid "Email"
 msgstr "Email"
 
 #: templates/accommodations/accommodation_form.html:340
 #: templates/events/event_form.html:434 templates/pages/page_form.html:363
-#: templates/pois/poi_form.html:294 templates/requests/request_form.html:283
+#: templates/pois/poi_form.html:294 templates/requests/request_form.html:287
 msgid "Hint"
 msgstr "Tipp"
 
@@ -872,7 +875,8 @@ msgstr "Unterkunft erstellen"
 #: templates/events/event_list_archived.html:18
 #: templates/pages/page_tree.html:70 templates/pois/poi_list.html:43
 #: templates/pois/poi_list_archived.html:25
-#: templates/requests/request_list.html:43
+#: templates/requests/request_list.html:44
+#: templates/requests/request_list.html:77
 #: templates/requests/request_list_archived.html:25
 msgid "ID"
 msgstr ""
@@ -884,7 +888,8 @@ msgstr ""
 #: templates/events/event_list_archived.html:39
 #: templates/pages/page_tree.html:89 templates/pois/poi_list.html:58
 #: templates/pois/poi_list_archived.html:33
-#: templates/requests/request_list.html:58
+#: templates/requests/request_list.html:54
+#: templates/requests/request_list.html:87
 #: templates/requests/request_list_archived.html:33
 msgid "Options"
 msgstr "Optionen"
@@ -2273,7 +2278,7 @@ msgstr "Ja, diese Veranstaltung wiederherstellen."
 #: templates/requests/request_form.html:40
 #, fuzzy, python-format
 #| msgid "Edit event \"%(event_title)s\""
-msgid "Edit Request \"%(request_title)s\""
+msgid "Edit Request ID  <span class=\"font-bold\"> %(request_title)s </span>"
 msgstr "Event \"%(event_title)s\" bearbeiten"
 
 #: templates/requests/request_form.html:51
@@ -2289,100 +2294,104 @@ msgid "Create new Request"
 msgstr "Veranstaltung erstellen"
 
 #: templates/requests/request_form.html:82
+msgid "Assigned ColdAid Bus"
+msgstr ""
+
+#: templates/requests/request_form.html:86
 msgid "Infos about Person in Need"
 msgstr "Infos über Hilfsbedürftigen"
 
-#: templates/requests/request_form.html:83
-#: templates/requests/request_form.html:84
+#: templates/requests/request_form.html:87
+#: templates/requests/request_form.html:88
 msgid "Name of Person in Need"
 msgstr "Name des Hilfsbedürftigen"
 
-#: templates/requests/request_form.html:88
+#: templates/requests/request_form.html:92
 msgid "Gender"
 msgstr "Geschlecht"
 
-#: templates/requests/request_form.html:92
+#: templates/requests/request_form.html:96
 msgid "Wheelchair"
 msgstr "Rollstuhl"
 
-#: templates/requests/request_form.html:93
+#: templates/requests/request_form.html:97
 msgid "Children"
 msgstr "Kinder"
 
-#: templates/requests/request_form.html:94
+#: templates/requests/request_form.html:98
 msgid "Needs Medical Support"
 msgstr "Medizinische Ünterstützung notwendig"
 
-#: templates/requests/request_form.html:95
+#: templates/requests/request_form.html:99
 msgid "carries Pets"
 msgstr "hat Haustiere dabei"
 
-#: templates/requests/request_form.html:96
+#: templates/requests/request_form.html:100
 msgid "has Luggage"
 msgstr "hat viel Gepäck dabei"
 
-#: templates/requests/request_form.html:99
+#: templates/requests/request_form.html:103
 msgid "Group of Persons"
 msgstr "Gruppe von Personen"
 
-#: templates/requests/request_form.html:104
+#: templates/requests/request_form.html:108
 msgid "Current Location"
 msgstr "Aktuelle Position"
 
-#: templates/requests/request_form.html:128
+#: templates/requests/request_form.html:132
 msgid "Infos about Helping Person"
 msgstr "Helferinfos"
 
-#: templates/requests/request_form.html:129
+#: templates/requests/request_form.html:133
 msgid "Name of Helper"
 msgstr "Helfername"
 
-#: templates/requests/request_form.html:130
+#: templates/requests/request_form.html:134
 msgid "Name of Helping Person"
 msgstr "Name der helfenden Personen"
 
-#: templates/requests/request_form.html:133
+#: templates/requests/request_form.html:137
 #, fuzzy
 #| msgid "Phone number"
 msgid "Insert phone number"
 msgstr "Telefonnummer"
 
-#: templates/requests/request_form.html:168
-#: templates/requests/request_form.html:169
+#: templates/requests/request_form.html:172
+#: templates/requests/request_form.html:173
 #, fuzzy
 #| msgid "Restore event"
 msgid "Restore Request"
 msgstr "Veranstaltung wiederherstellen"
 
-#: templates/requests/request_form.html:170
+#: templates/requests/request_form.html:174
 #, fuzzy
 #| msgid "Restore this event"
 msgid "Restore this Request"
 msgstr "Diese Veranstaltung wiederherstellen"
 
-#: templates/requests/request_form.html:173
-#: templates/requests/request_form.html:174
-#: templates/requests/request_list_row.html:45
+#: templates/requests/request_form.html:177
+#: templates/requests/request_form.html:178
+#: templates/requests/request_list_row.html:63
 #, fuzzy
 #| msgid "Archive event"
 msgid "Archive Request"
 msgstr "Veranstaltung archivieren"
 
-#: templates/requests/request_form.html:175
+#: templates/requests/request_form.html:179
 #, fuzzy
 #| msgid "Archive this event"
 msgid "Archive this Request"
 msgstr "Diese Veranstaltung archivieren"
 
-#: templates/requests/request_form.html:181
-#: templates/requests/request_form.html:182
-#: templates/requests/request_list_row.html:50
+#: templates/requests/request_form.html:185
+#: templates/requests/request_form.html:186
+#: templates/requests/request_list_row.html:68
 #, fuzzy
 #| msgid "Delete event"
 msgid "Delete Request"
 msgstr "Veranstaltung löschen"
 
-#: templates/requests/request_form.html:183
+#: templates/requests/request_form.html:187
 #, fuzzy
 #| msgid "Delete this event"
 msgid "Delete this Request"
@@ -2401,12 +2410,43 @@ msgstr "Veranstaltung archivieren"
 msgid "Create Request"
 msgstr "Veranstaltung erstellen"
 
-#: templates/requests/request_list.html:67
+#: templates/requests/request_list.html:40
+#, fuzzy
+#| msgid "Bad request"
+msgid "Open Requests"
+msgstr "Inkorrekte Anfrage"
+
+#: templates/requests/request_list.html:45
+#, fuzzy
+#| msgid "Medical Care Needed"
+msgid "Medical Needs"
+msgstr "Medizinische Versorgung notwendig"
+
+#: templates/requests/request_list.html:46
+#: templates/requests/request_list.html:79
+msgid "Assigned Bus"
+msgstr "Zugeordneter Bus"
+
+#: templates/requests/request_list.html:47
+#: templates/requests/request_list.html:80
+msgid "PiN Name"
+msgstr "Name des Hilfsbedürftigen"
+
+#: templates/requests/request_list.html:65
+#: templates/requests/request_list.html:98
 #: templates/requests/request_list_archived.html:42
 #, fuzzy
 #| msgid "No events available yet."
 msgid "No Requests available yet."
 msgstr "Noch keine Veranstaltungen vorhanden."
+
+#: templates/requests/request_list.html:73
+msgid "Requests assigned to Bus ID "
+msgstr ""
+
+#: templates/requests/request_list.html:78
+msgid "Medical Care Needed"
+msgstr "Medizinische Versorgung notwendig"
 
 #: templates/roles/list.html:9
 msgid "Manage Roles"

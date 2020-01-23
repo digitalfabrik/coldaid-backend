@@ -6,6 +6,7 @@ from django.core.validators import RegexValidator
 from django.db import models
 from django.utils.timezone import now
 from ..regions.region import Region
+from ..vehicles.vehicle import Vehicle
 
 
 # pylint: disable=too-few-public-methods
@@ -30,8 +31,8 @@ class Request(models.Model):
         ('w', 'female'),
         ('x', 'other'),
     )
-    GROUPSIZE = [("0", "-")] #, *(zip(range(1, 10), (range(1, 10)))), ("11", ">10")]
-    for i in range(1,10):
+    GROUPSIZE = [("0", "-")]  # , *(zip(range(1, 10), (range(1, 10)))), ("11", ">10")]
+    for i in range(1, 10):
         GROUPSIZE.append([str(i), str(i)])
     GROUPSIZE.append(("11", ">10"))
     # Infos about person in need (pin)
@@ -48,9 +49,10 @@ class Request(models.Model):
     helpername = models.CharField(max_length=250, default="")
     phone = models.CharField(max_length=20, default="0049")
     # Infos about location
-    region = models.ForeignKey(Region, related_name='requests', on_delete=models.CASCADE)
+    region = models.ForeignKey(Region, related_name='requests', on_delete=models.SET_NULL, null=True)
     address = models.CharField(max_length=250)
-    postcode = models.CharField(max_length=10, validators=[RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
+    postcode = models.CharField(max_length=10, validators=[
+        RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
     city = models.CharField(max_length=250, default="Berlin")
     country = models.CharField(max_length=250, default="Berlin")
     latitude = models.FloatField()
@@ -59,6 +61,12 @@ class Request(models.Model):
     # date=models.DateTimeField(default=now)
     archived = models.BooleanField(default=False)
     objects = RequestManager()
+    assignedBus = models.ForeignKey(Vehicle, related_name='assignedRequests', on_delete=models.SET_NULL, null=True,
+                                    blank=True)
+
+    @staticmethod
+    def vehicles():
+        return Vehicle.objects.all()
 
 
 @classmethod
@@ -98,3 +106,4 @@ def get_translation(self, language_code):
     except ObjectDoesNotExist:
         request_translation = None
     return request_translation
+

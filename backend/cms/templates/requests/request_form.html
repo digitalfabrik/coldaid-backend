@@ -78,6 +78,10 @@
                         {{ request_translation_form.instance.get_status_display }}
                     {% endif %}
 
+                    <div class="pt-4 pb-2">
+                        <label for="id_assignedBus" class="font-bold block mb-2 cursor-pointer">{% trans 'Assigned ColdAid Bus' %}</label>
+                        {% render_field request_form.assignedBus class+="w-full"  %}
+                    </div>
                     <div class="pt-2 pb-4">
                         <span class="block mb-2 font-bold">{% trans 'Infos about Person in Need' %}</span>
                         <label for="id_pinname" class="text-xs uppercase block cursor-pointer mt-4 mb-1">{% trans 'Name of Person in Need' %}</label>

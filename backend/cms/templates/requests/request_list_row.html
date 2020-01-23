@@ -4,14 +4,23 @@
 
 
 	<tr class="border-t border-solid border-grey-lighter hover:bg-grey-lightest">
-	<td class="py-3 px-2">
+	<td class="py-3 px-3">
 		{{ req.id }}
 	</td>
 	<td>
 		{{ req.medicalNeeds }}
 	</td>
 	<td>
-		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 px-2 text-grey-darkest">
+		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 text-grey-darkest">
+			{% if req.assignedBus %}
+				{{ req.assignedBus.licencePlate }}
+			{% else %}
+				{{ req.assignedBus }}
+			{% endif %}
+		</a>
+	</td>
+	<td>
+		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 text-grey-darkest">
 			{{ req.pinname }}
 		</a>
 	</td>
@@ -45,7 +54,6 @@
 	</td>
 	-->
     <td class="pl-2 pr-4">
-        <!-- TODO: add link to view request in web app -->
         <a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="py-3" style="padding-right:4px;">
             <i data-feather="eye" class="text-grey-darkest"></i>
         </a>

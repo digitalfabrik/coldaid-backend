@@ -36,47 +36,78 @@
     </div>
 </div>
 
-
 <div class="table-listing">
+    <h3 class="heading font-normal mb-2 mt-10">{% trans 'Open Requests' %}</h3>
     <table class="w-full mt-4 rounded border border-solid border-grey-light shadow bg-white table-fixed">
         <thead>
-            <tr class="border-b border-solid border-grey-light">
-                <th class="text-sm text-left uppercase py-3 pl-4 pr-2" style="width: 50px;">{% trans 'ID' %}</th>
-                <th class="text-sm text-left uppercase py-3 px-2">{% trans 'Medical Needs' %}</th>
-                <th class="text-sm text-left uppercase py-3 px-2">{% trans 'PiN Name' %}</th>
-                <!--
-                <th class="text-sm text-left uppercase py-3 px-2">
-                    <div class="lang-grid flags" style="white-space: nowrap;">
-	                    {% for lang in languages %}
-		                    <a href="{% url 'requests' region_slug=region.slug language_code=lang.code %}">
-			                    <img src="{% static '' %}images/flags/{{ lang.code }}.png" title="{{ lang.name }}" />
-		                    </a>
-	                    {% endfor %}
-                    </div>
-                </th>
-                -->
-                <th class="text-sm text-left uppercase py-3">{% trans 'Street' %}</th>
-                <th class="text-sm text-left uppercase py-3">{% trans 'Postal Code' %}</th>
-	            <th class="text-sm text-left uppercase py-3">{% trans 'City' %}</th>
-                <!--
-	            <th class="text-sm text-left uppercase py-3">{% trans 'Country' %}</th>
-	            -->
-                <th class="text-sm text-left uppercase py-3 pl-2 pr-4">{% trans 'Options' %}</th>
-            </tr>
+        <tr class="border-b border-solid border-grey-light">
+            <th class="text-sm text-left uppercase py-3 pl-4" style="width: 50px;">{% trans 'ID' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Medical Needs' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Assigned Bus' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'PiN Name' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Street' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Postal Code' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'City' %}</th>
+            <!--
+            <th class="text-sm text-left uppercase py-3">{% trans 'Country' %}</th>
+            -->
+            <th class="text-sm text-left uppercase py-3 pl-2 pr-4">{% trans 'Options' %}</th>
+        </tr>
         </thead>
         <tbody>
         {% for request in requests %}
-            {% include "requests/request_list_row.html" with req=request %}
+            {% if not request.assignedBus %}
+                {% include "requests/request_list_row.html" with req=request %}
+            {% endif %}
         {% empty %}
-            <tr>
-                <td colspan="7" class="px-4 py-3">
-	                {% trans 'No Requests available yet.' %}
-                </td>
-            </tr>
+        <tr>
+            <td colspan="7" class="px-4 py-3">
+                {% trans 'No Requests available yet.' %}
+            </td>
+        </tr>
         {% endfor %}
         </tbody>
     </table>
-</div>
+
+    {% for veh in vehicles %}
+        <h3 class="heading font-normal mb-2 mt-10">{% trans 'Requests assigned to Bus ID '%} <span style="font-weight: bold "">{{veh.id}}</span></h3>
+        <table class="w-full mt-4 rounded border border-solid border-grey-light shadow bg-white table-fixed">
+            <thead>
+                <tr class="border-b border-solid border-grey-light">
+                    <th class="text-sm text-left uppercase py-3 pl-4" style="width: 50px;">{% trans 'ID' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Medical Care Needed' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Assigned Bus' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'PiN Name' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Street' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Postal Code' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'City' %}</th>
+                    <!--
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Country' %}</th>
+                    -->
+                    <th class="text-sm text-left uppercase py-3 pl-2 pr-4">{% trans 'Options' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for request in requests %}
+                {% if request.assignedBus.id == veh.id %}
+                    {% include "requests/request_list_row.html" with req=request %}
+                {% endif %}
+            {% empty %}
+                <tr>
+                    <td colspan="7" class="px-4 py-3">
+                        {% trans 'No Requests available yet.' %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+{% empty %}
+{% endfor %}
+
+
+
+
 {% if can_edit_request %}
     {% include "./confirmation_popups/archive_request.html" %}
 {% endif %}

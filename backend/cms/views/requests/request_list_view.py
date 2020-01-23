@@ -7,7 +7,7 @@ from django.utils.translation import ugettext as _
 from django.views.generic import TemplateView
 
 from ...decorators import region_permission_required
-from ...models import Region, Language
+from ...models import Region, Language, Request
 
 
 @method_decorator(login_required, name='dispatch')
@@ -63,6 +63,7 @@ class RequestListView(PermissionRequiredMixin, TemplateView):
             {
                 'current_menu_item': 'requests',
                 'requests': region.requests.filter(archived=self.archived),
+                'vehicles': Request.vehicles(),
                 'archived_count': region.requests.filter(archived=True).count(),
                 'language': language,
                 'languages': region.languages,
