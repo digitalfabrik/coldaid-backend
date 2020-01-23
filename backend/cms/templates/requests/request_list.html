@@ -60,7 +60,7 @@
         </thead>
         <tbody>
         {% for request in requests %}
-            {% include "requests/request_list_row.html" with request=request %}
+            {% include "requests/request_list_row.html" with req=request %}
         {% empty %}
             <tr>
                 <td colspan="7" class="px-4 py-3">

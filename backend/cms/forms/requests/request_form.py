@@ -21,7 +21,7 @@ class RequestForm(forms.ModelForm):
 
     class Meta:
         model = Request
-        fields = ['address', 'postcode', 'city', 'country', 'latitude', 'longitude']
+        fields = ['address', 'postcode', 'city', 'country', 'latitude', 'longitude', 'wheelchair', 'children', 'luggage', 'pets', 'medicalNeeds', 'pinname', 'helpername', 'phone', 'gender', 'group']
 
     def __init__(self, data=None, instance=None, disabled=False):
         logger.info('RequestForm instantiated with data %s and instance %s', data, instance)

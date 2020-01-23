@@ -19,10 +19,10 @@ logger = logging.getLogger(__name__)
 @region_permission_required
 @permission_required('cms.manage_requests', raise_exception=True)
 def archive_request(request, request_id, region_slug, language_code):
-    request = Request.objects.get(id=request_id)
+    request1 = Request.objects.get(id=request_id)
 
-    request.archived = True
-    request.save()
+    request1.archived = True
+    request1.save()
 
     messages.success(request, _('Request was successfully archived.'))
 
@@ -36,10 +36,10 @@ def archive_request(request, request_id, region_slug, language_code):
 @region_permission_required
 @permission_required('cms.manage_requests', raise_exception=True)
 def restore_request(request, request_id, region_slug, language_code):
-    request = Request.objects.get(id=request_id)
+    request1 = Request.objects.get(id=request_id)
 
-    request.archived = False
-    request.save()
+    request1.archived = False
+    request1.save()
 
     messages.success(request, _('Request was successfully restored.'))
 
@@ -53,8 +53,8 @@ def restore_request(request, request_id, region_slug, language_code):
 @staff_required
 def delete_request(request, request_id, region_slug, language_code):
 
-    request = Request.objects.get(id=request_id)
-    request.delete()
+    request1 = Request.objects.get(id=request_id)
+    request1.delete()
     messages.success(request, _('Request was successfully deleted.'))
 
     return redirect('requests', **{
@@ -69,9 +69,9 @@ def delete_request(request, request_id, region_slug, language_code):
 # pylint: disable=unused-argument
 def view_request(request, request_id, region_slug, language_code):
     template_name = 'requests/request_view.html'
-    request = Request.objects.get(id=request_id)
+    request1 = Request.objects.get(id=request_id)
 
-    request_translation = request.get_translation(language_code)
+    request_translation = request1.get_translation(language_code)
 
     if not request_translation:
         raise Http404

@@ -67,32 +67,8 @@
             <input type="submit" name="submit_review" class="cursor-pointer bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 rounded" value="{% trans 'Submit for review' %}" />
         {% endif %}
         </div>
-        <div class="w-2/3 flex flex-wrap flex-col pr-2">
-            <ul class="flex flex-wrap" style="list-style: none;">
-                {% for other_language in languages %}
-                    <li class="mr-1 {% if other_language == language %}z-10{% endif %} -mb-1">
-                        <div class="bg-white text-blue-dark {% if other_language != language %}hover:bg-blue-dark hover:text-white{% endif %} border-l-2 border-t-2 border-r-2 border-blue-dark font-bold rounded-t-lg">
-                            <div class="border-b-2 border-white">
-                        {% if other_language == language %}
-                            <div class="py-2 px-4">
-                            <i data-feather="{% if other_language in request_form.instance.id.languages %}edit-2{% else %}plus{% endif %}"></i>
-                            <span style="vertical-align: super;">
-                                {{ other_language.translated_name }}
-                            </span>
-                            </div>
-                        {% else %}
-                            <a class="inline-block py-2 px-4" style="color: inherit;" href="{% url 'edit_request' request_id=request_form.instance.id region_slug=region.slug language_code=other_language.code %}">
-                                <i data-feather="{% if other_language in request_form.instance.id.languages %}edit-2{% else %}plus{% endif %}"></i>
-                                <span style="vertical-align: super;">
-                                    {{ other_language.translated_name }}
-                                </span>
-                            </a>
-                        {% endif %}
-                            </div>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
+        <div class="w-full flex flex-wrap flex-col pr-2">
+
             <div class="w-full mb-4 rounded border-2 border-blue-dark bg-white">
                 <div class="w-full p-4">
                     {% if request_translation_form.instance.id %}
@@ -101,47 +77,31 @@
                         <label for="events_enabled" class="inline-block mb-2 font-bold">{% trans 'Status' %}:</label>
                         {{ request_translation_form.instance.get_status_display }}
                     {% endif %}
-                    <label class="block mb-2 font-bold">{% trans 'Permalink' %}</label>
-                    <div id="slug-div" class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey">
-                        {% trans ' Leave blank to derive from title' as slug_placeholder%}
-                        {% spaceless %}
-                            <div style="display: table; white-space: nowrap;">
-                                <span style="display: table-cell;">https://integreat.app/{{ region.slug }}/{{ language.code }}/</span>
-                                <span style="display: table-cell; width: 100%;">{% render_field request_translation_form.slug|add_error_class:"slug-error" placeholder=slug_placeholder class="w-full rounded" %}</span>
-                            </div>
-                        {% endspaceless %}
-                    </div>
-                    <label class="block mb-2 mt-4 font-bold">{% trans 'Title' %}</label>
-                    {% trans 'Insert title here' as title_placeholder%}
-                    {% render_field request_translation_form.title|add_error_class:"border-red" placeholder=title_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
-                    <label class="block mb-2 mt-4 font-bold">{% trans 'Short description' %}</label>
-                    {% trans 'Insert short description here' as short_description_placeholder%}
-                    {% render_field request_translation_form.short_description|add_error_class:"border-red" placeholder=short_description_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
-                    <label class="block mb-2 mt-4 font-bold">{% trans 'Description' %}</label>
-                    {% render_field request_translation_form.description class="bg-grey-lighter w-full p-2 border border-grey-lighter focus:outline-none focus:bg-white focus:border-grey rounded tinymce_textarea" %}
-                    <span class="block mb-2 mt-4 font-bold">{% trans 'Implications on other translations' %}</span>
-                    {% render_field request_translation_form.minor_edit id="minor_edit" %}
-                    <label for="minor_edit" class="text-s">{% trans 'This change does not require an update of the translations' %}</label>
-                </div>
-            </div>
-        </div>
-        <div class="w-1/3 pl-4 flex flex-wrap flex-col">
-            <ul class="flex" style="list-style: none;">
-                <li class="z-10" style="margin-bottom: -0.1rem;">
-                    <div class="bg-white text-blue-dark border-l-2 border-t-2 border-r-2 border-blue-dark font-bold rounded-t-lg py-2 px-4">
-                    <div class="border-b-4 border-white">
-                    <i data-feather="flag"></i>
-                    <span style="vertical-align: super;">
-                        {% trans 'Settings for all translations' %}
-                    </span>
-                    </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="w-full mb-4 rounded border-2 border-solid border-blue-dark shadow bg-white">
-                <div class="w-full p-4">
+
                     <div class="pt-2 pb-4">
-                        <span class="block mb-2 font-bold">{% trans 'Address' %}</span>
+                        <span class="block mb-2 font-bold">{% trans 'Infos about Person in Need' %}</span>
+                        <label for="id_pinname" class="text-xs uppercase block cursor-pointer mt-4 mb-1">{% trans 'Name of Person in Need' %}</label>
+                        {% trans 'Name of Person in Need' as pinname_placeholder%}
+                        {% render_field request_form.pinname|add_error_class:"border-red" placeholder=pinname_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
+
+                        <div class="pt-4 pb-2">
+                            <label for="id_gender" class="font-bold block mb-2 cursor-pointer">{% trans 'Gender' %}</label>
+                            {% render_field request_form.gender class+="w-full"  %}
+                        </div>
+                        <div class="checkbox-wrap relative mt-5 pl-16" style="padding-top:2px;padding-bottom:2px;padding-left:2px;">
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.wheelchair id="wheelchair-checkbox" %} {% trans 'Wheelchair' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.children id="children-checkbox" %} {% trans 'Children' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.medicalNeeds id="wheelchair-checkbox" %} {% trans 'Needs Medical Support' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.pets id="pets-checkbox" %} {% trans 'carries Pets' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.luggage id="luggage-checkbox" %} {% trans 'has Luggage' %}</div>
+                        </div>
+                        <div class="pt-4 pb-2">
+                            <label for="id_group" class="font-bold block mb-2 cursor-pointer">{% trans 'Group of Persons' %}</label>
+                            {% render_field request_form.group class+="w-full"  %}
+                        </div>
+                    </div>
+                    <div class="pt-2 pb-4">
+                        <span class="block mb-2 font-bold">{% trans 'Current Location' %}</span>
                         <label for="id_address" class="text-xs uppercase block cursor-pointer mt-4 mb-1">{% trans 'Street' %}</label>
                         {% trans 'Insert street here' as street_placeholder%}
                         {% render_field request_form.address|add_error_class:"border-red" placeholder=street_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
@@ -165,14 +125,43 @@
                         {% render_field request_form.latitude|add_error_class:"border-red" placeholder=latitude_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
                     </div>
                     <div class="pt-2 pb-4">
-                        <span class="block font-bold mb-4">{% trans 'Icon' %}</span>
-                        {% render_field request_form.icon|add_error_class:"border-red" id="icon" class="image-field" %}
-                        <label for="icon" class="w-full block text-center font-bold bg-blue hover:bg-blue-dark focus:bg-blue-dark text-white font-bold py-3 px-4 rounded cursor-pointer relative">
-                            <i data-feather="upload" class="mr-2" style="vertical-align: middle;"></i>
-                            <span class="standard_text">{% trans 'Set icon' %}</span>
-                            <span class="filename"></span>
-                        </label>
+                        <span class="block mb-2 font-bold">{% trans 'Infos about Helping Person' %}</span>
+                        <label for="id_helper_name" class="text-xs uppercase block cursor-pointer mt-4 mb-1">{% trans 'Name of Helper' %}</label>
+                        {% trans 'Name of Helping Person' as helpername_placeholder%}
+                        {% render_field request_form.helpername|add_error_class:"border-red" placeholder=helpername_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
+                    <label for="id_phone" class="text-xs uppercase block cursor-pointer mt-4 mb-1">{% trans 'Phone' %}</label>
+                        {% trans 'Insert phone number' as phone_placeholder%}
+                        {% render_field request_form.phone|add_error_class:"border-red" placeholder=phone_placeholder class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" %}
                     </div>
+                    <div class="pt-2 pb-4">
+                        <label class="block mb-2 mt-4 font-bold">{% trans 'Description' %}</label>
+                        {% render_field request_translation_form.description class="bg-grey-lighter w-full p-2 border border-grey-lighter focus:outline-none focus:bg-white focus:border-grey rounded tinymce_textarea" %}
+                    </div>
+
+                    <label class="block mb-2 font-bold">{% trans 'Permalink' %}</label>
+                    <div id="slug-div" class="appearance-none block w-full bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey">
+                        {% trans ' Leave blank to derive from title' as slug_placeholder%}
+                        {% spaceless %}
+                        <div style="display: table; white-space: nowrap;">
+                            <span style="display: table-cell;">https://integreat.app/{{ region.slug }}/{{ language.code }}/</span>
+                            <span style="display: table-cell; width: 100%;">{% render_field request_translation_form.slug|add_error_class:"slug-error" placeholder=slug_placeholder class="w-full rounded" %}</span>
+                        </div>
+                        {% endspaceless %}
+                    </div>
+
+                    <div class="pt-2 pb-4">
+                        {% has_perm 'cms.edit_request' request.user request_form.instance.id as can_edit_request %}
+                        {% if can_edit_request %}
+                        <input type="submit" name="submit_draft" class="bg-grey hover:bg-grey-dark cursor-pointer text-white font-bold py-3 px-4 rounded mr-2 relative" style = "vertical-align:middle; width:49%" value="{% trans 'Save as draft' %}" />
+                        {% endif %}
+                        {% has_perm 'cms.publish_request' request.user request_form.instance.id as can_publish_request %}
+                        {% if can_publish_request %}
+                        <input type="submit" name="submit_public" class="cursor-pointer bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 rounded relative" style = "vertical-align:middle; width: 49%" value="{% trans 'Publish' %}" />
+                        {% else %}
+                        <input type="submit" name="submit_review" class="cursor-pointer bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 rounded relative" style = "vertical-align:middle; width: 49%" value="{% trans 'Submit for review' %}" />
+                        {% endif %}
+                    </div>
+
                     {% if request_form.instance.id and can_edit_request %}
                         <div class="pt-2 pb-4">
                             {% if request_form.instance.archived %}
@@ -235,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function(){
         content_css : '{% static "css/tinymce_custom.css" %}',
         language: '{{LANGUAGE_CODE|slice:"0:2"}}',
         setup: (editor) => {
-            editor.ui.registry.addButton('notranslate', 
+            editor.ui.registry.addButton('notranslate',
             {
                 tooltip: '{% trans 'Do not translate the selected text.' %}',
                 icon: 'permanent-pen',

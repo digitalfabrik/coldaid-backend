@@ -36,9 +36,9 @@ class RequestView(PermissionRequiredMixin, TemplateView):
         language = Language.objects.get(code=kwargs.get('language_code'))
 
         # get request and translation objects if they exist
-        request = Request.objects.filter(id=kwargs.get('request_id')).first()
+        request1 = Request.objects.filter(id=kwargs.get('request_id')).first()
         request_translation = RequestTranslation.objects.filter(
-            request=request,
+            request=request1,
             language=language,
         ).first()
 
@@ -46,14 +46,14 @@ class RequestView(PermissionRequiredMixin, TemplateView):
         if not request.user.has_perm('cms.edit_requests'):
             disabled = True
             messages.warning(request, _("You don't have the permission to edit this Request."))
-        elif request and request.archived:
+        elif request1 and request1.archived:
             disabled = True
             messages.warning(request, _("You cannot edit this Request because it is archived."))
         else:
             disabled = False
 
         request_form = RequestForm(
-            instance=request,
+            instance=request1,
             disabled=disabled,
         )
         request_translation_form = RequestTranslationForm(
@@ -67,7 +67,7 @@ class RequestView(PermissionRequiredMixin, TemplateView):
             'request_translation_form': request_translation_form,
             'language': language,
             # Languages for tab view
-            'languages': region.languages if request else [language],
+            'languages': region.languages if request1 else [language],
         })
 
     # pylint: disable=too-many-branches,too-many-locals,unused-argument
@@ -119,11 +119,11 @@ class RequestView(PermissionRequiredMixin, TemplateView):
                 if not request.user.has_perm('cms.publish_requests'):
                     raise PermissionDenied
 
-            request = request_form.save(
+            request1 = request_form.save(
                 region=region,
             )
             request_translation = request_translation_form.save(
-                request=request,
+                request=request1,
                 user=request.user,
             )
             published = request_translation.public and 'public' in request_translation_form.changed_data
@@ -136,7 +136,7 @@ class RequestView(PermissionRequiredMixin, TemplateView):
                 else:
                     messages.success(request, _('Request was successfully created.'))
                     return redirect('edit_request', **{
-                        'request_id': request.id,
+                        'request_id': request1.id,
                         'region_slug': region.slug,
                         'language_code': language.code,
                     })
