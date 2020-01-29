@@ -42,7 +42,8 @@
         <thead>
         <tr class="border-b border-solid border-grey-light">
             <th class="text-sm text-left uppercase py-3 pl-4" style="width: 50px;">{% trans 'ID' %}</th>
-            <th class="text-sm text-left uppercase py-3">{% trans 'Medical Needs' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Medical Care Needed' %}</th>
+            <th class="text-sm text-left uppercase py-3">{% trans 'Route Point' %}</th>
             <th class="text-sm text-left uppercase py-3">{% trans 'Assigned Bus' %}</th>
             <th class="text-sm text-left uppercase py-3">{% trans 'PiN Name' %}</th>
             <th class="text-sm text-left uppercase py-3">{% trans 'Street' %}</th>
@@ -70,12 +71,16 @@
     </table>
 
     {% for veh in vehicles %}
-        <h3 class="heading font-normal mb-2 mt-10">{% trans 'Requests assigned to Bus ID '%} <span style="font-weight: bold "">{{veh.id}}</span></h3>
+        <h3 class="heading font-normal mb-2 mt-10">{% trans 'Requests assigned to Bus ID '%} <span style="font-weight: bold "> {{veh.id}} </span></h3> {% trans 'Generate Route' %}
+        <a href="{{ veh.generate_route }}" class="py-3 px-3">
+            <i data-feather="map" class="text-grey-darkest"></i>
+        </a>
         <table class="w-full mt-4 rounded border border-solid border-grey-light shadow bg-white table-fixed">
             <thead>
                 <tr class="border-b border-solid border-grey-light">
                     <th class="text-sm text-left uppercase py-3 pl-4" style="width: 50px;">{% trans 'ID' %}</th>
                     <th class="text-sm text-left uppercase py-3">{% trans 'Medical Care Needed' %}</th>
+                    <th class="text-sm text-left uppercase py-3">{% trans 'Route Point' %}</th>
                     <th class="text-sm text-left uppercase py-3">{% trans 'Assigned Bus' %}</th>
                     <th class="text-sm text-left uppercase py-3">{% trans 'PiN Name' %}</th>
                     <th class="text-sm text-left uppercase py-3">{% trans 'Street' %}</th>
@@ -85,6 +90,7 @@
                     <th class="text-sm text-left uppercase py-3">{% trans 'Country' %}</th>
                     -->
                     <th class="text-sm text-left uppercase py-3 pl-2 pr-4">{% trans 'Options' %}</th>
+
                 </tr>
             </thead>
             <tbody>

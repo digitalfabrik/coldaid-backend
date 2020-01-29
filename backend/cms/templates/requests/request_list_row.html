@@ -13,9 +13,18 @@
 	<td>
 		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 text-grey-darkest">
 			{% if req.assignedBus %}
+			{{ req.activeRoute }}
+			{% else %}
+			-
+			{% endif %}
+		</a>
+	</td>
+	<td>
+		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 text-grey-darkest">
+			{% if req.assignedBus %}
 				{{ req.assignedBus.licencePlate }}
 			{% else %}
-				{{ req.assignedBus }}
+				-
 			{% endif %}
 		</a>
 	</td>
@@ -69,6 +78,11 @@
                 <i data-feather="trash-2" class="text-grey-darkest"></i>
             </button>
         {% endif %}
+	</td>
+		<td class="pl-2 pr-4">
+<!--
+		<div class="inline mb-2 mr-5">{{ req.assignedBus.generate_route }} {% trans 'Route Point' %}</div>
+-->
     </td>
 </tr>
 {% if user.is_superuser or user.is_staff %}

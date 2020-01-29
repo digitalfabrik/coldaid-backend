@@ -6,7 +6,6 @@ import logging
 from django import forms
 
 from ...models import Request
-from ...models import Vehicle
 
 logger = logging.getLogger(__name__)
 
@@ -25,8 +24,9 @@ class RequestForm(forms.ModelForm):
                   'pinname', 'gender', 'group',
                   'medicalNeeds',
                   'wheelchair', 'children', 'luggage', 'pets',
+                  'isoMat', 'blanket', 'jacket', 'sleepingBag',
                   'helpername', 'phone',
-                  'assignedBus']
+                  'assignedBus', 'activeRoute', ]
 
     def __init__(self, data=None, instance=None, disabled=False):
         logger.info('RequestForm instantiated with data %s and instance %s', data, instance)
@@ -44,9 +44,6 @@ class RequestForm(forms.ModelForm):
         logger.info('RequestForm saved with cleaned data %s and changed data %s', self.cleaned_data, self.changed_data)
 
         request = super(RequestForm, self).save(commit=False)
-        print(request.assignedBus)
-        for v in Request.vehicles():
-            print(v.id)
 
         if not self.instance.id:
             # only update these values when request is created

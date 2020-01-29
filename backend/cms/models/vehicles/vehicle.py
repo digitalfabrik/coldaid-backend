@@ -20,6 +20,17 @@ class Vehicle(models.Model):
     backSeats = models.IntegerField()
     equipment = models.CharField(max_length=200)
 
+    def generate_route(self):
+        url = "https://www.google.com/maps/dir//"
+
+        for r in self.assignedRequests.filter(activeRoute=True):
+            a = r.address.replace(" ", "+") + ",+" + r.postcode + ",+" + r.city + "/"
+            url = url + a
+        #url = url.replace(" ", "+")
+        print(url)
+
+        return url
+
     @classmethod
     def get_list_view(cls):
         """Provides List of all vehicles in german
@@ -31,6 +42,9 @@ class Vehicle(models.Model):
         vehicles = cls.objects.all()
 
         return vehicles
+
+    def __str__(self):
+        return self.licencePlate
 
     class Meta:
         default_permissions = ()

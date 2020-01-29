@@ -80,7 +80,8 @@
 
                     <div class="pt-4 pb-2">
                         <label for="id_assignedBus" class="font-bold block mb-2 cursor-pointer">{% trans 'Assigned ColdAid Bus' %}</label>
-                        {% render_field request_form.assignedBus class+="w-full"  %}
+                        <div class="inline mb-2 mr-5">{% render_field request_form.activeRoute id="activeRP-checkbox" %} {% trans 'Add to Route' %}</div>
+                        {% render_field request_form.assignedBus class+="w-1/2 bg-grey-lighter text-xl text-grey-darkest border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"  %}
                     </div>
                     <div class="pt-2 pb-4">
                         <span class="block mb-2 font-bold">{% trans 'Infos about Person in Need' %}</span>
@@ -97,7 +98,14 @@
                             <div class="inline-block mb-2 mr-5">{% render_field request_form.children id="children-checkbox" %} {% trans 'Children' %}</div>
                             <div class="inline-block mb-2 mr-5">{% render_field request_form.medicalNeeds id="wheelchair-checkbox" %} {% trans 'Needs Medical Support' %}</div>
                             <div class="inline-block mb-2 mr-5">{% render_field request_form.pets id="pets-checkbox" %} {% trans 'carries Pets' %}</div>
-                            <div class="inline-block mb-2 mr-5">{% render_field request_form.luggage id="luggage-checkbox" %} {% trans 'has Luggage' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.luggage  %} {% trans 'Count of Luggage' %}</div>
+                        </div>
+                        <div class="checkbox-wrap relative mt-5 pl-16" style="padding-top:2px;padding-bottom:2px;padding-left:2px;">
+                            <span class="block mb-2 font-bold">{% trans 'warming objects' %}</span>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.jacket id="jacket-checkbox" %} {% trans 'Jacket' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.isoMat id="isoMat-checkbox" %} {% trans 'Iso Mat' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.blanket id="blanket-checkbox" %} {% trans 'Blanket' %}</div>
+                            <div class="inline-block mb-2 mr-5">{% render_field request_form.sleepingBag id="sleepingBag-checkbox" %} {% trans 'Sleeping Bag' %}</div>
                         </div>
                         <div class="pt-4 pb-2">
                             <label for="id_group" class="font-bold block mb-2 cursor-pointer">{% trans 'Group of Persons' %}</label>

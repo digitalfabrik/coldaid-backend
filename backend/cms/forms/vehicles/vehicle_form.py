@@ -4,7 +4,6 @@ from django import forms
 
 from ...models import Vehicle
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -18,4 +17,4 @@ class VehicleCreateForm(forms.ModelForm):
 
     class Meta:
         model = Vehicle
-        fields = ['region','type','licencePlate', 'seats', 'backSeats', 'equipment']
+        fields = ['region', 'type', 'licencePlate', 'seats', 'backSeats', 'equipment']

@@ -36,17 +36,21 @@ class Request(models.Model):
         GROUPSIZE.append([str(i), str(i)])
     GROUPSIZE.append(("11", ">10"))
     # Infos about person in need (pin)
-    pinname = models.CharField(max_length=250, default="")
+    pinname = models.CharField(max_length=250, default="", blank=True)
     wheelchair = models.BooleanField(default=False)
     gender = models.CharField(max_length=20, choices=GENDER_CHOICES, default=OTHER)
     medicalNeeds = models.BooleanField(default=False)
-    luggage = models.BooleanField(default=False)
+    luggage = models.IntegerField(default=0, choices=zip(range(10), range(10)), unique=False)
+    isoMat = models.BooleanField(default=False)
+    blanket = models.BooleanField(default=False)
+    jacket = models.BooleanField(default=False)
+    sleepingBag = models.BooleanField(default=False)
     children = models.BooleanField(default=False)
     pets = models.BooleanField(default=False)
     group = models.CharField(max_length=5, choices=GROUPSIZE, default="0", unique=False)
 
     # Infos about helping person
-    helpername = models.CharField(max_length=250, default="")
+    helpername = models.CharField(max_length=250, default="", blank=True)
     phone = models.CharField(max_length=20, default="0049")
     # Infos about location
     region = models.ForeignKey(Region, related_name='requests', on_delete=models.SET_NULL, null=True)
@@ -55,14 +59,15 @@ class Request(models.Model):
         RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
     city = models.CharField(max_length=250, default="Berlin")
     country = models.CharField(max_length=250, default="Berlin")
-    latitude = models.FloatField()
-    longitude = models.FloatField()
+    latitude = models.FloatField(default=0, blank=True)
+    longitude = models.FloatField(default=0, blank=True)
     # other meta infos
     # date=models.DateTimeField(default=now)
     archived = models.BooleanField(default=False)
     objects = RequestManager()
     assignedBus = models.ForeignKey(Vehicle, related_name='assignedRequests', on_delete=models.SET_NULL, null=True,
                                     blank=True)
+    activeRoute = models.BooleanField(default=True)
 
     @staticmethod
     def vehicles():
@@ -106,4 +111,3 @@ def get_translation(self, language_code):
     except ObjectDoesNotExist:
         request_translation = None
     return request_translation
-

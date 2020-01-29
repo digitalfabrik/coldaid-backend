@@ -7,7 +7,7 @@ from django.utils.translation import ugettext as _
 from django.views.generic import TemplateView
 
 from ...decorators import region_permission_required
-from ...models import Region, Language, Request
+from ...models import Region, Language, Request, Vehicle
 
 
 @method_decorator(login_required, name='dispatch')
@@ -28,7 +28,6 @@ class RequestListView(PermissionRequiredMixin, TemplateView):
         # current region
         region_slug = kwargs.get('region_slug')
         region = Region.objects.get(slug=region_slug)
-
         # current language
         language_code = kwargs.get('language_code', None)
         if language_code:
@@ -47,7 +46,8 @@ class RequestListView(PermissionRequiredMixin, TemplateView):
                 'region_slug': region_slug,
             })
 
-        if not request.user.has_perm('cms.edit_requests'):
+        allowed = request.user.has_perm('cms.edit_requests')
+        if not allowed:
             messages.warning(request, _("You don't have the permission to edit or create Requests."))
 
         if language != region.default_language:
@@ -63,7 +63,7 @@ class RequestListView(PermissionRequiredMixin, TemplateView):
             {
                 'current_menu_item': 'requests',
                 'requests': region.requests.filter(archived=self.archived),
-                'vehicles': Request.vehicles(),
+                'vehicles': Vehicle.objects.all(),
                 'archived_count': region.requests.filter(archived=True).count(),
                 'language': language,
                 'languages': region.languages,

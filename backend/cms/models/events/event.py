@@ -10,7 +10,6 @@ from django.db import models
 
 from .recurrence_rule import RecurrenceRule
 from ..pois.poi import POI
-from ..requests.request import Request
 from ..regions.region import Region
 from ...constants import frequency
 

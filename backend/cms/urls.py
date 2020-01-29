@@ -48,6 +48,7 @@ urlpatterns = [
         url(r'^(?P<vehicle_id>[0-9]+)/', include([
             url(r'^$', vehicles.vehicle_detail_view, name='vehicle'),
             url(r'^edit$', vehicles.vehicle_edit_view, name='edit_vehicle'),
+            url(r'^route$', requests.RequestListView.as_view(), name='get_route'),
         ])),
     ])),
     url(r'^regions/', include([
