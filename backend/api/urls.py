@@ -10,8 +10,15 @@ from .v3.push_notifications import sent_push_notifications
 from .v3.regions import regions, liveregions, hiddenregions, pushnew
 from .v3.extras import extras
 from .v3.accommodations import accommodations
+from .v3.vehicles import vehicles
+from .v3.logbooks import logbooks,new
+from .v3.requests import requests
+from .v3.csrf import csrf
 
 urlpatterns = [
+    url(r'csrf/$', csrf, name='csrf'),
+    url(r'logbooks/$', logbooks, name='logbooks'),
+    url(r'logbooks/new/$', new, name='new'),
     url(r'regions/$', regions, name='regions'),
     url(r'regions/live/$', liveregions, name='liveregions'),
     url(r'regions/hidden/$', hiddenregions, name='hiddenregions'),
@@ -25,4 +32,6 @@ urlpatterns = [
         url(r'(?P<language_code>[-\w]+)/extras/$', extras),
         url(r'(?P<language_code>[-\w]+)/accommodations/$', accommodations)
     ])),
+    url(r'requests/$', requests, name='requests'),
+    url(r'vehicles/$', vehicles, name='vehicles'),
 ]
