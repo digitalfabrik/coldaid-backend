@@ -19,11 +19,10 @@ logger = logging.getLogger(__name__)
 @region_permission_required
 @permission_required('cms.manage_requests', raise_exception=True)
 def get_route(request, vehicle_id, region_slug, language_code):
-    veh = Vehicle.objects.get(assignedBus=vehicle_id)
+    veh = Vehicle.objects.get(id=vehicle_id)
     reqs = Request.objects.get(assignedBus=vehicle_id)
-
-
-    print(reqs)
+    #print(veh.get_route())
+    #print(reqs)
 
     messages.success(request, _('Route was successfully generated.'))
 

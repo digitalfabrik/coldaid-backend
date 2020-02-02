@@ -142,14 +142,14 @@ class RequestView(PermissionRequiredMixin, TemplateView):
                     })
             elif not request_translation_instance:
                 if published:
-                    messages.success(request, _('Request Translation was successfully created and published.'))
+                    messages.success(request, _('Request was successfully created and published.'))
                 else:
-                    messages.success(request, _('Request Translation was successfully created.'))
+                    messages.success(request, _('Request was successfully created.'))
             else:
                 if published:
-                    messages.success(request, _('Request Translation was successfully published.'))
+                    messages.success(request, _('Request was successfully published.'))
                 else:
-                    messages.success(request, _('Request Translation was successfully saved.'))
+                    messages.success(request, _('Request was successfully saved.'))
 
         return render(request, self.template_name, {
             **self.base_context,

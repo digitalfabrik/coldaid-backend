@@ -27,7 +27,7 @@ class Vehicle(models.Model):
             a = r.address.replace(" ", "+") + ",+" + r.postcode + ",+" + r.city + "/"
             url = url + a
         #url = url.replace(" ", "+")
-        print(url)
+        #print(url)
 
         return url
 

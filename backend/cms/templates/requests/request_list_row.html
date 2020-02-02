@@ -7,13 +7,14 @@
 	<td class="py-3 px-3">
 		{{ req.id }}
 	</td>
-	<td>
-		{{ req.medicalNeeds }}
+	<td>{% if req.medicalNeeds %}<i data-feather="check" class="text-grey-darkest"></i>
+		{% else %}<i data-feather="x" class="text-grey-darkest"></i>{% endif %}
 	</td>
 	<td>
 		<a href="{% url 'edit_request' request_id=req.id region_slug=region.slug language_code=language.code %}" class="block py-3 text-grey-darkest">
 			{% if req.assignedBus %}
-			{{ req.activeRoute }}
+				{% if req.activeRoute == True %}<i data-feather="check" class="text-grey-darkest"></i>
+				{% else %}<i data-feather="x" class="text-grey-darkest"></i>{% endif %}
 			{% else %}
 			-
 			{% endif %}

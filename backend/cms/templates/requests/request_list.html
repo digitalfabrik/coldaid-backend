@@ -94,9 +94,10 @@
                 </tr>
             </thead>
             <tbody>
-            {% for request in requests %}
+            {% for request in veh.assignedRequests.all %}
                 {% if request.assignedBus.id == veh.id %}
                     {% include "requests/request_list_row.html" with req=request %}
+                {% else %}
                 {% endif %}
             {% empty %}
                 <tr>

@@ -94,6 +94,7 @@ class Meta:
     permissions = (
         ('manage_requests', 'Can manage Requests'),
     )
+    ordering = ['pinname']
 
 
 @property
