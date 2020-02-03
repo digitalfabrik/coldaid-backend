@@ -1,1 +1,0 @@
-from .bed_target_group_form import BedTargetGroupForm
