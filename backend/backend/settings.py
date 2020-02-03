@@ -39,6 +39,7 @@ BASE_URL = 'http://localhost:8000'
 
 INSTALLED_APPS = [
     'cms.apps.CmsConfig',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,6 +57,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -67,7 +69,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backend.urls'
 THUMBNAIL_HIGH_RESOLUTION = True
-
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000','http://localhost:3001']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
