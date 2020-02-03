@@ -4,9 +4,8 @@
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.validators import RegexValidator
 from django.db import models
-from django.utils.timezone import now
-from ..regions.region import Region
-from ..vehicles.vehicle import Vehicle
+from cms.models.regions.region import Region
+from cms.models.vehicles.vehicle import Vehicle
 
 
 # pylint: disable=too-few-public-methods
@@ -71,6 +70,10 @@ class Request(models.Model):
 
     @staticmethod
     def vehicles():
+        """
+
+        :return: all objects that belong to vehicle model
+        """
         return Vehicle.objects.all()
 
 

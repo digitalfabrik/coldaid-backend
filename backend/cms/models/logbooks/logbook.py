@@ -7,11 +7,12 @@ from django.utils import timezone
 from ..regions.region import Region
 from ..vehicles.vehicle import Vehicle
 
+
 class Logbook(models.Model):
     """Object for a logbook
 
     Args:
-        models : Databas model inherit from the standard django models
+        models : Database model inherit from the standard django models
     """
     vehicle = models.ForeignKey(Vehicle, related_name='logbooks', on_delete=models.CASCADE)
     driver = models.CharField(max_length=20)

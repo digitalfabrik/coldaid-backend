@@ -14,23 +14,24 @@ from django.views.generic import TemplateView
 from django.http import HttpResponse
 from ...constants import status
 from ...decorators import region_permission_required, staff_required
-from ...forms.logbooks import LogbookCreateForm,LogbookFinishForm
+from ...forms.logbooks import LogbookCreateForm, LogbookFinishForm
 from ...models import Logbook, Region, Language
 
 logger = logging.getLogger(__name__)
 
+
 def logbook_list_view(request):
-    queryset= Logbook.objects.all().order_by('-startDate')
+    queryset = Logbook.objects.all().order_by('-startDate')
     context = {
         "object_list": queryset
     }
-    return render(request,'logbooks/logbook_list.html',context)
+    return render(request, 'logbooks/logbook_list.html', context)
+
 
 # pylint: disable=unused-argument
 def logbook_detail_view(request, logbook_id):
     template_name = 'logbooks/logbook_detail.html'
     logbook = get_object_or_404(Logbook, id=logbook_id)
-
 
     return render(
         request,
@@ -39,6 +40,8 @@ def logbook_detail_view(request, logbook_id):
             "logbook": logbook
         }
     )
+
+
 def logbook_create_view(request):
     form = LogbookCreateForm(request.POST or None)
     if form.is_valid():
@@ -48,9 +51,10 @@ def logbook_create_view(request):
     context = {
         "form": form
     }
-    return render(request,'logbooks/logbook_create.html',context)
+    return render(request, 'logbooks/logbook_create.html', context)
 
-def logbook_finish_view(request,logbook_id):
+
+def logbook_finish_view(request, logbook_id):
     logbook = get_object_or_404(Logbook, id=logbook_id)
     form = LogbookFinishForm(request.POST or None, instance=logbook)
     if form.is_valid():
@@ -61,4 +65,4 @@ def logbook_finish_view(request,logbook_id):
     context = {
         "form": form
     }
-    return render(request,'logbooks/logbook_finish.html',context)
+    return render(request, 'logbooks/logbook_finish.html', context)

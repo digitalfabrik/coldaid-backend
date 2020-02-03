@@ -32,6 +32,16 @@ Welcome to coldaid's documentation!
 .. autoclass:: cms.models.accommodations.beds.Beds
     :members:
 
+.. autoclass:: cms.models.requests.request.Request
+    :members:
+
+.. autoclass:: cms.models.logbooks.logbook.Logbook
+    :members:
+
+.. autoclass:: cms.models.vehicles.vehicle.Vehicle
+    :members:
+
+
 Indices and tables
 ==================
 

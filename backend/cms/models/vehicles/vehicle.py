@@ -11,7 +11,7 @@ class Vehicle(models.Model):
     """Object for a vehicle
 
     Args:
-        models : Databas model inherit from the standard django models
+        models : Database model inherit from the standard django models
     """
     region = models.ForeignKey(Region, related_name='vehicles', on_delete=models.CASCADE)
     type = models.CharField(max_length=250)
@@ -21,13 +21,22 @@ class Vehicle(models.Model):
     equipment = models.CharField(max_length=200)
 
     def generate_route(self):
+        """
+        generates a url that is conform to google maps api. When the url is clicked, the google maps app will open
+        (resp. a browser tab on non-mobile devices) and a route based on all requests is shown that:
+        1. are assigned to this vehicle object
+        and
+        2. have the activeRoute field set to true (TODO pre-specify a sequence that is used to generate the route here)
+        The url is generated from the given address, postcode and city fields of each request
+        :return: url containing als selected requests
+        """
         url = "https://www.google.com/maps/dir//"
 
         for r in self.assignedRequests.filter(activeRoute=True):
             a = r.address.replace(" ", "+") + ",+" + r.postcode + ",+" + r.city + "/"
             url = url + a
-        #url = url.replace(" ", "+")
-        #print(url)
+        # url = url.replace(" ", "+")
+        # print(url)
 
         return url
 
@@ -44,6 +53,10 @@ class Vehicle(models.Model):
         return vehicles
 
     def __str__(self):
+        """
+        by default print the license plate number as a representation of a vehicle object
+        :return:
+        """
         return self.licencePlate
 
     class Meta:
