@@ -40,3 +40,21 @@ def newlogbook(request):
         return HttpResponse(status=200)
     except ValueError:
         return HttpResponse("Bad request.", content_type='text/plain', status=400)
+
+@csrf_exempt
+def finishlogbook(request):
+    if request.method != 'POST':
+        return HttpResponse(f'Invalid request method.', status=405)
+
+    data = json.loads(request.body)
+    data = data.get("data")
+    data = json.loads(data)
+    try:
+        logbook = get_object_or_404(Logbook, id=data["id"])
+        logbook.endMileage = data["endMileage"]
+        logbook.comments = data["comments"]
+        logbook.finished = True
+        logbook.save()
+        return HttpResponse(status=200)
+    except ValueError:
+        return HttpResponse("Bad request.", content_type='text/plain', status=400)
