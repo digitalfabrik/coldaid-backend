@@ -12,18 +12,6 @@ Welcome to coldaid's documentation!
    cms.views.rst
 
 
-
-
-.. autoclass:: cms.models.requests.request.Request
-    :members:
-
-.. autoclass:: cms.models.logbooks.logbook.Logbook
-    :members:
-
-.. autoclass:: cms.models.vehicles.vehicle.Vehicle
-    :members:
-
-
 Indices and tables
 ==================
 

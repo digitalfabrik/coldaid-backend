@@ -20,6 +20,9 @@ Subpackages
    cms.views.media
    cms.views.organizations
    cms.views.pages
+   cms.views.requests
+   cms.views.vehicles
+   cms.views.logbooks
    cms.views.pois
    cms.views.push_notifications
    cms.views.regions

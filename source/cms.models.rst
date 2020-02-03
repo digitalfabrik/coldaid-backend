@@ -14,6 +14,9 @@ Subpackages
    cms.models.languages
    cms.models.media
    cms.models.pages
+   cms.models.vehicles
+   cms.models.logbooks
+   cms.models.requests
    cms.models.pois
    cms.models.push_notifications
    cms.models.regions
