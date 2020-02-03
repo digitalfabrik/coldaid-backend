@@ -74,12 +74,12 @@ def newrequest(request):
     data = data.get("data")
     data = json.loads(data)
     try:
-        region = get_object_or_404(Region, name=data["region"])
-        request = Request(pinname =data.get["pinname"],wheelchair = data.get["wheelchair"],gender = data.get["gender"]
-         ,medicalNeeds= data.get["medicalNeeds"],luggage = data.get["luggage"], isoMat= data.get["isoMat"], blanket= data.get["blanket"],jacket = data.get["jacket"]
-         ,sleepingBag = data.get["sleepingBag"],children = data.get["children"],pets = data.get["pets"],group = data.get["group"],helpername = data.get["helpername"]
-         ,phone = data.get["phone"],region = region,address = data.get["address"],postcode = data.get["postcode"],latitude = data.get["latitude"]
-         ,longitude = data.get["longitude"])
+        region = get_object_or_404(Region, name="Nürnberg")
+        request = Request(pinname =data["pinname"],wheelchair = data["wheelchair"],gender = data["gender"]
+         ,medicalNeeds= data["medicalNeeds"],luggage = data["luggage"], isoMat= data["isoMat"], blanket= data["blanket"],jacket = data["jacket"]
+         ,sleepingBag = data["sleepingBag"],children = data["children"],pets = data["pets"],group = data["group"],helpername = data["helpername"]
+         ,phone = data["phone"],region = region,address = data["address"],postcode = data["postcode"],latitude = data["latitude"]
+         ,longitude = data["longitude"])
         request.save()
         return HttpResponse(status=200)
     except ValueError:
@@ -93,7 +93,6 @@ def acceptrequest(request):
     data = json.loads(request.body)
     data = data.get("data")
     data = json.loads(data)
-    print(data)
     try:
         requestobj = get_object_or_404(Request, id=data["id"])
         vehicle = get_object_or_404(Vehicle, id=data["vehicle"])
