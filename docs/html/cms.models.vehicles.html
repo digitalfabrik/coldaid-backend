@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>cms.models.vehicles package &#8212; coldaid 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="cms.models.requests package" href="cms.models.requests.html" />
+    <link rel="prev" title="cms.models.pages package" href="cms.models.pages.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="cms-models-vehicles-package">
+<h1>cms.models.vehicles package<a class="headerlink" href="#cms-models-vehicles-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cms-models-vehicles-vehicle-module">
+<h2>cms.models.vehicles.vehicle module<a class="headerlink" href="#cms-models-vehicles-vehicle-module" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-cms.models.vehicles.vehicle"></span><p>Model for vehicle</p>
+<dl class="class">
+<dt id="cms.models.vehicles.vehicle.Vehicle">
+<em class="property">class </em><code class="sig-prename descclassname">cms.models.vehicles.vehicle.</code><code class="sig-name descname">Vehicle</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Object for a vehicle</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>models : Database model inherit from the standard django models</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>AutoField</em>) – Id</p></li>
+<li><p><strong>region</strong> (ForeignKey to <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>) – Region</p></li>
+<li><p><strong>type</strong> (<em>CharField</em>) – Type</p></li>
+<li><p><strong>licencePlate</strong> (<em>CharField</em>) – Licenceplate</p></li>
+<li><p><strong>seats</strong> (<em>IntegerField</em>) – Seats</p></li>
+<li><p><strong>backSeats</strong> (<em>IntegerField</em>) – Backseats</p></li>
+<li><p><strong>equipment</strong> (<em>CharField</em>) – Equipment</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="exception">
+<dt id="cms.models.vehicles.vehicle.Vehicle.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="cms.models.vehicles.vehicle.Vehicle.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.assignedRequests">
+<code class="sig-name descname">assignedRequests</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.assignedRequests" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> assignedBus, accesses the M2M <a class="reference internal" href="cms.models.requests.html#cms.models.requests.request.Request" title="cms.models.requests.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a> model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.backSeats">
+<code class="sig-name descname">backSeats</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.backSeats" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> backSeats</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.equipment">
+<code class="sig-name descname">equipment</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.equipment" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> equipment</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cms.models.vehicles.vehicle.Vehicle.generate_route">
+<code class="sig-name descname">generate_route</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.generate_route" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates a url that is conform to google maps api. When the url is clicked, the google maps app will open
+(resp. a browser tab on non-mobile devices) and a route based on all requests is shown that:
+1. are assigned to this vehicle object
+and
+2. have the activeRoute field set to true (TODO pre-specify a sequence that is used to generate the route here)
+The url is generated from the given address, postcode and city fields of each request
+:return: url containing als selected requests</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cms.models.vehicles.vehicle.Vehicle.get_list_view">
+<em class="property">classmethod </em><code class="sig-name descname">get_list_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.get_list_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides List of all vehicles in german</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>[vehicles]: List of all vehicles</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.id" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> ID</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.licencePlate">
+<code class="sig-name descname">licencePlate</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.licencePlate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> licencePlate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.logbooks">
+<code class="sig-name descname">logbooks</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.logbooks" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> vehicle, accesses the M2M <a class="reference internal" href="cms.models.logbook.html#cms.models.logbooks.logbook.Logbook" title="cms.models.logbooks.logbook.Logbook"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logbook</span></code></a> model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.region">
+<code class="sig-name descname">region</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.region" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.region_id">
+<code class="sig-name descname">region_id</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.region_id" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> region</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.seats">
+<code class="sig-name descname">seats</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.seats" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> seats</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cms.models.vehicles.vehicle.Vehicle.type">
+<code class="sig-name descname">type</code><a class="headerlink" href="#cms.models.vehicles.vehicle.Vehicle.type" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Model field:</strong> type</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="cms-models-vehicles-vehicle-translation-module">
+<h2>cms.models.vehicles.vehicle_translation module<a class="headerlink" href="#cms-models-vehicles-vehicle-translation-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cms.models.vehicles">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cms.models.vehicles" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">coldaid</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cms.models.html">Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cms.models.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cms.models.accommodations.html">Accommodation Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.config.html">Configs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.events.html">Event Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.extras.html">Extras Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.feedback.html">Feedback Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.languages.html">Languages Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.media.html">cms.models.media package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.pages.html">cms.models.pages package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">cms.models.vehicles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.requests.html">cms.models.requests package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.pois.html">cms.models.pois package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.push_notifications.html">cms.models.push_notifications package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.regions.html">cms.models.regions package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.models.users.html">cms.models.users package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cms.models.html#module-cms.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cms.views.html">cms.views package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="cms.models.html">Models</a><ul>
+      <li>Previous: <a href="cms.models.pages.html" title="previous chapter">cms.models.pages package</a></li>
+      <li>Next: <a href="cms.models.requests.html" title="next chapter">cms.models.requests package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, TU-Berlin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/cms.models.vehicles.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
