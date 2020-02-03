@@ -1,21 +1,21 @@
-cms.models.pois package
+cms.models.requests package
 =======================
 
 Submodules
 ----------
 
-cms.models.pois.poi module
+cms.models.requests.request module
 --------------------------
 
-.. automodule:: cms.models.pois.poi
+.. automodule:: cms.models.requests.request
    :members:
    :undoc-members:
    :show-inheritance:
 
-cms.models.pois.poi\_translation module
+cms.models.requests.request\_translation module
 ---------------------------------------
 
-.. automodule:: cms.models.pois.poi_translation
+.. automodule:: cms.models.requests.request_translation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -24,7 +24,7 @@ cms.models.pois.poi\_translation module
 Module contents
 ---------------
 
-.. automodule:: cms.models.pois
+.. automodule:: cms.models.requests
    :members:
    :undoc-members:
    :show-inheritance:

@@ -16,6 +16,9 @@ Subpackages
    cms.forms.media
    cms.forms.organizations
    cms.forms.pages
+   cms.forms.requests
+   cms.forms.logbooks
+   cms.forms.vehicles
    cms.forms.pois
    cms.forms.push_notifications
    cms.forms.regions

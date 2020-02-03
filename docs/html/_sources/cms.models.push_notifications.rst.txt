@@ -1,10 +1,10 @@
-PushNotification Module
+cms.models.push\_notifications package
 ======================================
 
 Submodules
 ----------
 
-PushNotification
+cms.models.push\_notifications.push\_notification module
 --------------------------------------------------------
 
 .. automodule:: cms.models.push_notifications.push_notification
@@ -12,7 +12,7 @@ PushNotification
    :undoc-members:
    :show-inheritance:
 
-PushNotificationTranslation
+cms.models.push\_notifications.push\_notification\_translation module
 ---------------------------------------------------------------------
 
 .. automodule:: cms.models.push_notifications.push_notification_translation

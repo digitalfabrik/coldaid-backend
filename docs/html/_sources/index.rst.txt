@@ -12,8 +12,6 @@ Welcome to coldaid's documentation!
    cms.views.rst
 
 
-
-
 Indices and tables
 ==================
 

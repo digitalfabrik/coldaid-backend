@@ -1,21 +1,21 @@
-cms.models.pois package
+cms.models.logbooks package
 =======================
 
 Submodules
 ----------
 
-cms.models.pois.poi module
+cms.models.logbooks.logbook module
 --------------------------
 
-.. automodule:: cms.models.pois.poi
+.. automodule:: cms.models.logbooks.logbook
    :members:
    :undoc-members:
    :show-inheritance:
 
-cms.models.pois.poi\_translation module
+cms.models.logbooks.logbook\_translation module
 ---------------------------------------
 
-.. automodule:: cms.models.pois.poi_translation
+.. automodule:: cms.models.logbooks.logbook_translation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -24,7 +24,7 @@ cms.models.pois.poi\_translation module
 Module contents
 ---------------
 
-.. automodule:: cms.models.pois
+.. automodule:: cms.models.logbooks
    :members:
    :undoc-members:
    :show-inheritance:

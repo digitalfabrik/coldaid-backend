@@ -1,21 +1,21 @@
-cms.models.pois package
+cms.models.vehicles package
 =======================
 
 Submodules
 ----------
 
-cms.models.pois.poi module
+cms.models.vehicles.vehicle module
 --------------------------
 
-.. automodule:: cms.models.pois.poi
+.. automodule:: cms.models.vehicles.vehicle
    :members:
    :undoc-members:
    :show-inheritance:
 
-cms.models.pois.poi\_translation module
+cms.models.vehicles.vehicle\_translation module
 ---------------------------------------
 
-.. automodule:: cms.models.pois.poi_translation
+.. automodule:: cms.models.vehicles.vehicle_translation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -24,7 +24,7 @@ cms.models.pois.poi\_translation module
 Module contents
 ---------------
 
-.. automodule:: cms.models.pois
+.. automodule:: cms.models.vehicles
    :members:
    :undoc-members:
    :show-inheritance:
