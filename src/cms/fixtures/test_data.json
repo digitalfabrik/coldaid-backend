@@ -1627,5 +1627,18 @@
       "backseats": 4,
       "equipment": "all"
     }
+  },
+  {
+    "model": "cms.request",
+    "pk": 1,
+    "fields": {
+      "pinname": "pin",
+      "region": "1",
+      "address": "test address",
+      "postcode": "12345",
+      "city": "Augsburg",
+      "state": "Bavaria",
+      "assigned_bus": "1"
+    }
   }
 ]
