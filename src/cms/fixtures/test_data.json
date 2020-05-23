@@ -1603,5 +1603,29 @@
       "target_group": 3,
       "num_beds": 60
     }
+  },
+  {
+    "model": "cms.vehicle",
+    "pk": 1,
+    "fields": {
+      "region": 1,
+      "vehicle_type": "VW",
+      "license_plate": "B-US 505",
+      "seats": 8,
+      "backseats": 6,
+      "equipment": "all"
+    }
+  },
+  {
+    "model": "cms.vehicle",
+    "pk": 2,
+    "fields": {
+      "region": 2,
+      "vehicle_type": "Toyota",
+      "license_plate": "B-US 123",
+      "seats": 6,
+      "backseats": 4,
+      "equipment": "all"
+    }
   }
 ]

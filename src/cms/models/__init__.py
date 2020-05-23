@@ -39,3 +39,5 @@ from .regions.region import Region
 from .users.organization import Organization
 from .users.user_profile import UserProfile
 from .users.user_mfa import UserMfa
+
+from .vehicles.vehicle import Vehicle
