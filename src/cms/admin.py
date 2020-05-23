@@ -22,6 +22,7 @@ from .models import POI
 from .models import POITranslation
 from .models import Region
 from .models import RecurrenceRule
+from .models import Vehicle
 
 admin.site.register(Accommodation)
 admin.site.register(AccommodationTranslation)
@@ -40,3 +41,4 @@ admin.site.register(POI)
 admin.site.register(POITranslation)
 admin.site.register(Region)
 admin.site.register(RecurrenceRule)
+admin.site.register(Vehicle)
