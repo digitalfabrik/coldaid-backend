@@ -154,7 +154,7 @@ def linkcode_resolve(domain, info):
             )
         except (TypeError, IOError):
             pass
-    return "https://github.com/digitalfabrik/coldaid-backend/blob/master/src/{}.py{}".format(
+    return "https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/{}.py{}".format(
         filename,
         line_number_reference
     )
