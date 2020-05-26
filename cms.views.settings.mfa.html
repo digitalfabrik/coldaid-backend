@@ -513,140 +513,65 @@
 <h2>MFA<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-cms.views.settings.mfa.mfa"></span><dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.AddMfaKeyForm">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AddMfaKeyForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>field_order=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyForm" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AddMfaKeyForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>field_order=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyForm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.forms.Form</span></code></p>
 <p><strong>Form fields:</strong></p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">nickname</span></code>: Nickname (<code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code>)</li>
 </ul>
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.AddMfaKeyForm.media">
-<em class="property">property </em><code class="descname">media</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyForm.media" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.AddMfaKeyView">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AddMfaKeyView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AddMfaKeyView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/generic-editing/#django.views.generic.edit.FormView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.FormView</span></code></a></p>
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.AddMfaKeyView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py attribute">
 <dt id="cms.views.settings.mfa.mfa.AddMfaKeyView.form_class">
-<code class="descname">form_class</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView.form_class" title="Permalink to this definition">¶</a></dt>
+<code class="descname">form_class</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView.form_class" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="#cms.views.settings.mfa.mfa.AddMfaKeyForm" title="cms.views.settings.mfa.mfa.AddMfaKeyForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddMfaKeyForm</span></code></a></p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.settings.mfa.mfa.AddMfaKeyView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'settings/mfa/add_key.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AddMfaKeyView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AuthenticateModifyMfaView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L40" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AuthenticateModifyMfaView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L40" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/generic-editing/#django.views.generic.edit.FormView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.FormView</span></code></a></p>
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py attribute">
 <dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_class">
-<code class="descname">form_class</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_class" title="Permalink to this definition">¶</a></dt>
+<code class="descname">form_class</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_class" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="#cms.views.settings.mfa.mfa.AuthenticationForm" title="cms.views.settings.mfa.mfa.AuthenticationForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">AuthenticationForm</span></code></a></p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_valid">
-<code class="descname">form_valid</code><span class="sig-paren">(</span><em><span class="n">form</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L45" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_valid" title="Permalink to this definition">¶</a></dt>
+<code class="descname">form_valid</code><span class="sig-paren">(</span><em><span class="n">form</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L45" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.form_valid" title="Permalink to this definition">¶</a></dt>
 <dd><p>If the form is valid, redirect to the supplied URL.</p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.success_url">
-<code class="descname">success_url</code><em class="property"> = '/user_settings/add_new_mfa_key/'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L40" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.success_url" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'settings/mfa/authenticate.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L40" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticateModifyMfaView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.AuthenticationForm">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AuthenticationForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>field_order=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticationForm" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">AuthenticationForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>field_order=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticationForm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.forms.Form</span></code></p>
 <p><strong>Form fields:</strong></p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">password</span></code>: Password (<code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code>)</li>
 </ul>
-<dl class="py attribute">
-<dt id="cms.views.settings.mfa.mfa.AuthenticationForm.attrs">
-<code class="descname">attrs</code><em class="property"> = {'required': True, 'type': 'password'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticationForm.attrs" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.AuthenticationForm.media">
-<em class="property">property </em><code class="descname">media</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.AuthenticationForm.media" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.DeleteMfaKey">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">DeleteMfaKey</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L75" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">DeleteMfaKey</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L75" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.DeleteMfaKey.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.DeleteMfaKey.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L78" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.DeleteMfaKey.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L85" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.settings.mfa.mfa.DeleteMfaKey.template_name">
-<code class="descname">template_name</code><em class="property"> = 'settings/mfa/delete.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L75" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.DeleteMfaKey.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.settings.mfa.mfa.GetChallengeView">
-<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">GetChallengeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L56" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.GetChallengeView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">GetChallengeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/settings/mfa/mfa.py#L56" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.GetChallengeView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.View" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.View</span></code></a></p>
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.GetChallengeView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.GetChallengeView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.settings.mfa.mfa.GetChallengeView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L57" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.GetChallengeView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.settings.mfa.mfa.register_mfa_key">
-<code class="descclassname">cms.views.settings.mfa.mfa.</code><code class="descname">register_mfa_key</code><span class="sig-paren">(</span><em><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/settings/mfa/mfa.py#L91" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.settings.mfa.mfa.register_mfa_key" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 </div>

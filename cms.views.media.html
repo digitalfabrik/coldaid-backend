@@ -510,43 +510,13 @@
 <p>Python standard Init-File</p>
 <div class="section" id="module-cms.views.media.media_actions">
 <span id="media-actions"></span><h2>Media Actions<a class="headerlink" href="#module-cms.views.media.media_actions" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="cms.views.media.media_actions.delete_file">
-<code class="descclassname">cms.views.media.media_actions.</code><code class="descname">delete_file</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">document_id</span></em>, <em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_actions.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_actions.delete_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.media.media_edit_view">
 <span id="media-edit-view"></span><h2>Media Edit View<a class="headerlink" href="#module-cms.views.media.media_edit_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.media.media_edit_view.MediaEditView">
-<em class="property">class </em><code class="descclassname">cms.views.media.media_edit_view.</code><code class="descname">MediaEditView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.media.media_edit_view.</code><code class="descname">MediaEditView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/media/media_edit_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.media.media_edit_view.MediaEditView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'media'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.media.media_edit_view.MediaEditView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.media.media_edit_view.MediaEditView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.media.media_edit_view.MediaEditView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L38" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.media.media_edit_view.MediaEditView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'media/media_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_edit_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_edit_view.MediaEditView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -554,28 +524,8 @@
 <span id="media-list-view"></span><h2>Media List View<a class="headerlink" href="#module-cms.views.media.media_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.media.media_list_view.MediaListView">
-<em class="property">class </em><code class="descclassname">cms.views.media.media_list_view.</code><code class="descname">MediaListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_list_view.py#L12" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.media.media_list_view.</code><code class="descname">MediaListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/media/media_list_view.py#L12" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.media.media_list_view.MediaListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'media'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_list_view.py#L12" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.media.media_list_view.MediaListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_list_view.py#L89" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.media.media_list_view.MediaListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.media.media_list_view.MediaListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'media/media_list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/media/media_list_view.py#L12" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.media.media_list_view.MediaListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

@@ -510,48 +510,13 @@
 <p>Python standard Init-File</p>
 <div class="section" id="module-cms.views.users.region_user_actions">
 <span id="region-user-actions"></span><h2>Region User Actions<a class="headerlink" href="#module-cms.views.users.region_user_actions" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="cms.views.users.region_user_actions.delete_region_user">
-<code class="descclassname">cms.views.users.region_user_actions.</code><code class="descname">delete_region_user</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_actions.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_actions.delete_region_user" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.users.region_user_list_view">
 <span id="region-user-list-view"></span><h2>Region User List View<a class="headerlink" href="#module-cms.views.users.region_user_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.users.region_user_list_view.RegionUserListView">
-<em class="property">class </em><code class="descclassname">cms.views.users.region_user_list_view.</code><code class="descname">RegionUserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.region_user_list_view.</code><code class="descname">RegionUserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'region_users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_list_view.RegionUserListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/region/list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_list_view.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_list_view.RegionUserListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -559,43 +524,8 @@
 <span id="region-user-view"></span><h2>Region User View<a class="headerlink" href="#module-cms.views.users.region_user_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.users.region_user_view.RegionUserView">
-<em class="property">class </em><code class="descclassname">cms.views.users.region_user_view.</code><code class="descname">RegionUserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.region_user_view.</code><code class="descname">RegionUserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_view.RegionUserView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'region_users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.region_user_view.RegionUserView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.region_user_view.RegionUserView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L24" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_view.RegionUserView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.region_user_view.RegionUserView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L45" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_view.RegionUserView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.region_user_view.RegionUserView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/region/user.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/region_user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.region_user_view.RegionUserView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -603,255 +533,45 @@
 <span id="user-actions"></span><h2>User Actions<a class="headerlink" href="#module-cms.views.users.user_actions" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.users.user_actions.UserListView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_actions.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_actions.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_actions.UserListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_actions.UserListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L24" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.users.user_actions.UserView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_actions.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_actions.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_actions.UserView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_actions.UserView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L46" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_actions.UserView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L61" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_actions.UserView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/user.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.UserView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.users.user_actions.delete_user">
-<code class="descclassname">cms.views.users.user_actions.</code><code class="descname">delete_user</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_actions.py#L102" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_actions.delete_user" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 <div class="section" id="module-cms.views.users.user_list_view">
 <span id="user-list-view"></span><h2>User List View<a class="headerlink" href="#module-cms.views.users.user_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.users.user_list_view.UserListView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_list_view.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_list_view.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_list_view.UserListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_list_view.UserListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L24" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.users.user_list_view.UserView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_list_view.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_list_view.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_list_view.UserView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_list_view.UserView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L46" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_list_view.UserView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L61" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_list_view.UserView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/user.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.UserView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.users.user_list_view.delete_user">
-<code class="descclassname">cms.views.users.user_list_view.</code><code class="descname">delete_user</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_list_view.py#L102" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_list_view.delete_user" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 <div class="section" id="module-cms.views.users.user_view">
 <span id="user-view"></span><h2>User View<a class="headerlink" href="#module-cms.views.users.user_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.users.user_view.UserListView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_view.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_view.</code><code class="descname">UserListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_view.UserListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_view.UserListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L24" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt id="cms.views.users.user_view.UserView">
-<em class="property">class </em><code class="descclassname">cms.views.users.user_view.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.users.user_view.</code><code class="descname">UserView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'users'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_view.UserView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_view.UserView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L46" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.change_user'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.users.user_view.UserView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L61" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.users.user_view.UserView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'users/admin/user.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L39" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.UserView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.users.user_view.delete_user">
-<code class="descclassname">cms.views.users.user_view.</code><code class="descname">delete_user</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/users/user_view.py#L102" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.users.user_view.delete_user" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 </div>

@@ -515,7 +515,7 @@
 </dl>
 <dl class="py class">
 <dt id="cms.models.events.event.Event">
-<em class="property">class </em><code class="descclassname">cms.models.events.event.</code><code class="descname">Event</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.events.event.</code><code class="descname">Event</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Database object representing an event with name, date and the option to add recurrency.</p>
 <dl class="docutils">
@@ -546,48 +546,19 @@ ValidationError: Raised if the end date is before the start date</dd>
 </table>
 <dl class="py exception">
 <dt id="cms.models.events.event.Event.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.events.event.Event.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.archived">
-<code class="descname">archived</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.archived" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> archived</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.archived_count">
-<em class="property">classmethod </em><code class="descname">archived_count</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L62" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.archived_count" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.end_date">
-<code class="descname">end_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.end_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> end date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.end_time">
-<code class="descname">end_time</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.end_time" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> end time</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.eventfeedback_set">
-<code class="descname">eventfeedback_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.eventfeedback_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event, accesses the M2M <a class="reference internal" href="cms.models.feedback.html#cms.models.feedback.event_feedback.EventFeedback" title="cms.models.feedback.event_feedback.EventFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventFeedback</span></code></a> model.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="cms.models.events.event.Event.get_list">
-<em class="property">classmethod </em><code class="descname">get_list</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em>, <em><span class="n">archived</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L66" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_list" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="descname">get_list</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em>, <em><span class="n">archived</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event.py#L66" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function: Get List View</p>
 <dl class="docutils">
 <dt>Args:</dt><dd>region_slug: slug of the region the event belongs to
@@ -597,139 +568,13 @@ archived: whether or not archived pages should be returned</dd>
 </dd></dl>
 
 <dl class="py method">
-<dt id="cms.models.events.event.Event.get_next_by_end_date">
-<code class="descname">get_next_by_end_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateField: end_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_next_by_end_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.events.event.Event.end_date" title="cms.models.events.event.Event.end_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">end_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.get_next_by_start_date">
-<code class="descname">get_next_by_start_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateField: start_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_next_by_start_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.events.event.Event.start_date" title="cms.models.events.event.Event.start_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">start_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
 <dt id="cms.models.events.event.Event.get_occurrences">
-<code class="descname">get_occurrences</code><span class="sig-paren">(</span><em><span class="n">start</span></em>, <em><span class="n">end</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L86" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_occurrences" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_occurrences</code><span class="sig-paren">(</span><em><span class="n">start</span></em>, <em><span class="n">end</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event.py#L86" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_occurrences" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns start datetimes of occurrences of the event that overlap with [start, end]
 Expects start &lt; end
 :type start: datetime
 :type end: datetime
 :return:</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.get_previous_by_end_date">
-<code class="descname">get_previous_by_end_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateField: end_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_previous_by_end_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.events.event.Event.end_date" title="cms.models.events.event.Event.end_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">end_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.get_previous_by_start_date">
-<code class="descname">get_previous_by_start_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateField: start_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_previous_by_start_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.events.event.Event.start_date" title="cms.models.events.event.Event.start_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">start_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.get_public_translation">
-<code class="descname">get_public_translation</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L124" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_public_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.get_translation">
-<code class="descname">get_translation</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L59" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.get_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.has_location">
-<em class="property">property </em><code class="descname">has_location</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.has_location" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.is_all_day">
-<em class="property">property </em><code class="descname">is_all_day</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.is_all_day" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.is_recurring">
-<em class="property">property </em><code class="descname">is_recurring</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.is_recurring" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event.Event.languages">
-<em class="property">property </em><code class="descname">languages</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.languages" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.location">
-<code class="descname">location</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.location" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> location, accesses the <a class="reference internal" href="cms.models.pois.html#cms.models.pois.poi.POI" title="cms.models.pois.poi.POI"><code class="xref py py-class docutils literal notranslate"><span class="pre">POI</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.location_id">
-<code class="descname">location_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.location_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> location</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.picture">
-<code class="descname">picture</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.picture" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> picture
-<strong>Return type:</strong> <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/models/fields/#django.db.models.fields.files.FieldFile" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldFile</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.recurrence_rule">
-<code class="descname">recurrence_rule</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.recurrence_rule" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> recurrence rule, accesses the <a class="reference internal" href="#cms.models.events.recurrence_rule.RecurrenceRule" title="cms.models.events.recurrence_rule.RecurrenceRule"><code class="xref py py-class docutils literal notranslate"><span class="pre">RecurrenceRule</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.recurrence_rule_id">
-<code class="descname">recurrence_rule_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.recurrence_rule_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> recurrence rule</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.start_date">
-<code class="descname">start_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.start_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> start date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.start_time">
-<code class="descname">start_time</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.start_time" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> start time</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event.Event.translations">
-<code class="descname">translations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event.Event.translations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event, accesses the M2M <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation" title="cms.models.events.event_translation.EventTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventTranslation</span></code></a> model.</p>
 </dd></dl>
 
 </dd></dl>
@@ -743,7 +588,7 @@ Expects start &lt; end
 </dl>
 <dl class="py class">
 <dt id="cms.models.events.event_translation.EventTranslation">
-<em class="property">class </em><code class="descclassname">cms.models.events.event_translation.</code><code class="descname">EventTranslation</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.events.event_translation.</code><code class="descname">EventTranslation</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Database object representing an event translation</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -771,195 +616,14 @@ Expects start &lt; end
 </table>
 <dl class="py exception">
 <dt id="cms.models.events.event_translation.EventTranslation.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.events.event_translation.EventTranslation.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.available_languages">
-<em class="property">property </em><code class="descname">available_languages</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.available_languages" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.creator">
-<code class="descname">creator</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.creator" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> creator, accesses the <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/contrib/auth/#django.contrib.auth.models.User" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.creator_id">
-<code class="descname">creator_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.creator_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> creator</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.currently_in_translation">
-<code class="descname">currently_in_translation</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.currently_in_translation" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> currently in translation</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.description">
-<code class="descname">description</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.description" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> description</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.event">
-<code class="descname">event</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.event" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event, accesses the <a class="reference internal" href="#cms.models.events.event.Event" title="cms.models.events.event.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.event_id">
-<code class="descname">event_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.event_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.foreign_object">
-<em class="property">property </em><code class="descname">foreign_object</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.foreign_object" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation.created_date" title="cms.models.events.event_translation.EventTranslation.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation.last_updated" title="cms.models.events.event_translation.EventTranslation.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation.created_date" title="cms.models.events.event_translation.EventTranslation.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation.last_updated" title="cms.models.events.event_translation.EventTranslation.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.get_status_display">
-<code class="descname">get_status_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: status&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.get_status_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.events.event_translation.EventTranslation.status" title="cms.models.events.event_translation.EventTranslation.status"><code class="xref py py-attr docutils literal notranslate"><span class="pre">status</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.is_outdated">
-<em class="property">property </em><code class="descname">is_outdated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.is_outdated" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.is_up_to_date">
-<em class="property">property </em><code class="descname">is_up_to_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.is_up_to_date" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.language">
-<code class="descname">language</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.language" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the <a class="reference internal" href="cms.models.languages.html#cms.models.languages.language.Language" title="cms.models.languages.language.Language"><code class="xref py py-class docutils literal notranslate"><span class="pre">Language</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.language_id">
-<code class="descname">language_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.language_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.latest_major_public_revision">
-<em class="property">property </em><code class="descname">latest_major_public_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.latest_major_public_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.latest_major_revision">
-<em class="property">property </em><code class="descname">latest_major_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.latest_major_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.latest_public_revision">
-<em class="property">property </em><code class="descname">latest_public_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.latest_public_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.minor_edit">
-<code class="descname">minor_edit</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.minor_edit" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> minor edit</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.permalink">
-<em class="property">property </em><code class="descname">permalink</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.permalink" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.previous_revision">
-<em class="property">property </em><code class="descname">previous_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.previous_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.slug">
-<code class="descname">slug</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.slug" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> slug</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.event_translation.EventTranslation.source_translation">
-<em class="property">property </em><code class="descname">source_translation</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.source_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.status">
-<code class="descname">status</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.status" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> status</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.title">
-<code class="descname">title</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.title" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> title</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.event_translation.EventTranslation.version">
-<code class="descname">version</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/event_translation.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.event_translation.EventTranslation.version" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> version</p>
 </dd></dl>
 
 </dd></dl>
@@ -973,7 +637,7 @@ Expects start &lt; end
 </dl>
 <dl class="py class">
 <dt id="cms.models.events.recurrence_rule.RecurrenceRule">
-<em class="property">class </em><code class="descclassname">cms.models.events.recurrence_rule.</code><code class="descname">RecurrenceRule</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.events.recurrence_rule.</code><code class="descname">RecurrenceRule</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Object to define the recurrence frequency</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -999,85 +663,14 @@ from 0 to 6 or when the value of weekdays_for_monthly isn’t between -5 and 5.<
 </table>
 <dl class="py exception">
 <dt id="cms.models.events.recurrence_rule.RecurrenceRule.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.events.recurrence_rule.RecurrenceRule.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.event">
-<code class="descname">event</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.event" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> recurrence rule, accesses the <a class="reference internal" href="#cms.models.events.event.Event" title="cms.models.events.event.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.frequency">
-<code class="descname">frequency</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.frequency" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> frequency</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.get_frequency_display">
-<code class="descname">get_frequency_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: frequency&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.get_frequency_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.events.recurrence_rule.RecurrenceRule.frequency" title="cms.models.events.recurrence_rule.RecurrenceRule.frequency"><code class="xref py py-attr docutils literal notranslate"><span class="pre">frequency</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.get_week_for_monthly_display">
-<code class="descname">get_week_for_monthly_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.IntegerField: week_for_monthly&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.get_week_for_monthly_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.events.recurrence_rule.RecurrenceRule.week_for_monthly" title="cms.models.events.recurrence_rule.RecurrenceRule.week_for_monthly"><code class="xref py py-attr docutils literal notranslate"><span class="pre">week_for_monthly</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.get_weekday_for_monthly_display">
-<code class="descname">get_weekday_for_monthly_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.IntegerField: weekday_for_monthly&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.get_weekday_for_monthly_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.events.recurrence_rule.RecurrenceRule.weekday_for_monthly" title="cms.models.events.recurrence_rule.RecurrenceRule.weekday_for_monthly"><code class="xref py py-attr docutils literal notranslate"><span class="pre">weekday_for_monthly</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.interval">
-<code class="descname">interval</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.interval" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> interval</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.recurrence_end_date">
-<code class="descname">recurrence_end_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.recurrence_end_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> recurrence end date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.week_for_monthly">
-<code class="descname">week_for_monthly</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.week_for_monthly" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> week for monthly</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.weekday_for_monthly">
-<code class="descname">weekday_for_monthly</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.weekday_for_monthly" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> weekday for monthly</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.events.recurrence_rule.RecurrenceRule.weekdays_for_weekly">
-<code class="descname">weekdays_for_weekly</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/events/recurrence_rule.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.events.recurrence_rule.RecurrenceRule.weekdays_for_weekly" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> weekdays for weekly</p>
 </dd></dl>
 
 </dd></dl>

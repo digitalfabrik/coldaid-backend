@@ -509,16 +509,6 @@
 <span id="feedback"></span><h1>Feedback<a class="headerlink" href="#module-api.v3.feedback" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-api.v3.feedback.accommodations">
 <span id="accommodations"></span><h2>Accommodations<a class="headerlink" href="#module-api.v3.feedback.accommodations" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="api.v3.feedback.accommodations.accommodations">
-<code class="descclassname">api.v3.feedback.accommodations.</code><code class="descname">accommodations</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/accommodations.py#L70" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.accommodations.accommodations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.feedback.accommodations.transform_accommodation">
-<code class="descclassname">api.v3.feedback.accommodations.</code><code class="descname">transform_accommodation</code><span class="sig-paren">(</span><em><span class="n">accommodation</span><span class="p">:</span> <span class="n"><a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation.Accommodation" title="cms.models.accommodations.accommodation.Accommodation">cms.models.accommodations.accommodation.Accommodation</a></span></em>, <em><span class="n">translation</span><span class="p">:</span> <span class="n"><a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation_translation.AccommodationTranslation" title="cms.models.accommodations.accommodation_translation.AccommodationTranslation">cms.models.accommodations.accommodation_translation.AccommodationTranslation</a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/accommodations.py#L6" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.accommodations.transform_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-api.v3.feedback.event_list_feedback">
 <span id="event-list-feedback"></span><h2>Event List Feedback<a class="headerlink" href="#module-api.v3.feedback.event_list_feedback" title="Permalink to this headline">¶</a></h2>
@@ -530,7 +520,7 @@
 <span id="page-feedback"></span><h2>Page Feedback<a class="headerlink" href="#module-api.v3.feedback.page_feedback" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="api.v3.feedback.page_feedback.FeedbackData">
-<em class="property">class </em><code class="descclassname">api.v3.feedback.page_feedback.</code><code class="descname">FeedbackData</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">permalink</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">emotion</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">api.v3.feedback.page_feedback.</code><code class="descname">FeedbackData</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">permalink</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">emotion</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/feedback/page_feedback.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This class is a generic api representation of cms feedback incl. its meta information stored in the database.
 It is used to examine feedback sent to the feedback api endpoint.</p>
@@ -550,41 +540,11 @@ It is used to examine feedback sent to the feedback api endpoint.</p>
 </table>
 <dl class="py method">
 <dt id="api.v3.feedback.page_feedback.FeedbackData.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">permalink</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">emotion</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L26" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">permalink</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">emotion</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/feedback/page_feedback.py#L26" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="api.v3.feedback.page_feedback.FeedbackData.from_dict">
-<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em><span class="n">feedback_dict</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L32" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.from_dict" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="api.v3.feedback.page_feedback.FeedbackData.get_comment">
-<code class="descname">get_comment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L47" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.get_comment" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="api.v3.feedback.page_feedback.FeedbackData.get_emotion">
-<code class="descname">get_emotion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L50" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.get_emotion" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="api.v3.feedback.page_feedback.FeedbackData.has_content">
-<code class="descname">has_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L44" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.has_content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="api.v3.feedback.page_feedback.FeedbackData.has_id">
-<code class="descname">has_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L41" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.FeedbackData.has_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.feedback.page_feedback.feedback">
-<code class="descclassname">api.v3.feedback.page_feedback.</code><code class="descname">feedback</code><span class="sig-paren">(</span><em><span class="n">req</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">languages</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/feedback/page_feedback.py#L59" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.feedback.page_feedback.feedback" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 <div class="section" id="module-api.v3.feedback.region_feedback">

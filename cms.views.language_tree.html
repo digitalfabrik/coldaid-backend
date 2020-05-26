@@ -515,43 +515,8 @@
 </dl>
 <dl class="py class">
 <dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView">
-<em class="property">class </em><code class="descclassname">cms.views.language_tree.language_tree_node_view.</code><code class="descname">LanguageTreeNodeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.language_tree.language_tree_node_view.</code><code class="descname">LanguageTreeNodeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'language_tree'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L28" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_language_tree'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_tree_node_id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L52" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'language_tree/language_tree_node_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_node_view.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_node_view.LanguageTreeNodeView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -559,38 +524,8 @@
 <span id="language-tree-view"></span><h2>Language Tree View<a class="headerlink" href="#module-cms.views.language_tree.language_tree_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.language_tree.language_tree_view.LanguageTreeView">
-<em class="property">class </em><code class="descclassname">cms.views.language_tree.language_tree_view.</code><code class="descname">LanguageTreeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.language_tree.language_tree_view.</code><code class="descname">LanguageTreeView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'language_tree'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L20" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_language_tree'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.language_tree.language_tree_view.LanguageTreeView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'language_tree/language_tree.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/language_tree/language_tree_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.language_tree.language_tree_view.LanguageTreeView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

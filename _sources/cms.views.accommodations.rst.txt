@@ -1,0 +1,36 @@
+Accommodations
+================================
+
+.. automodule:: cms.views.accommodations
+   :members:
+   :show-inheritance:
+
+
+Accommodation Actions
+------------------------------------------------------
+
+.. automodule:: cms.views.accommodations.accommodation_actions
+   :members:
+   :show-inheritance:
+
+Accommodation List View
+---------------------------------------------------------
+
+.. automodule:: cms.views.accommodations.accommodation_list_view
+   :members:
+   :show-inheritance:
+
+Accommodation View
+---------------------------------------------------
+
+.. automodule:: cms.views.accommodations.accommodation_view
+   :members:
+   :show-inheritance:
+
+Beds View
+------------------------------------------
+
+.. automodule:: cms.views.accommodations.beds_view
+   :members:
+   :show-inheritance:
+

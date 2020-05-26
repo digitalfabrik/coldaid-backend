@@ -1,0 +1,15 @@
+Bed Target Groups
+=====================================
+
+.. automodule:: cms.forms.bed_target_groups
+   :members:
+   :show-inheritance:
+
+
+Bed Target Group Form
+-------------------------------------------------------------
+
+.. automodule:: cms.forms.bed_target_groups.bed_target_group_form
+   :members:
+   :show-inheritance:
+

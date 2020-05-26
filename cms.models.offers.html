@@ -513,7 +513,7 @@
 events that are usually provided by foreign services.</p>
 <dl class="py class">
 <dt id="cms.models.offers.offer.Offer">
-<em class="property">class </em><code class="descclassname">cms.models.offers.offer.</code><code class="descname">Offer</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.offers.offer.</code><code class="descname">Offer</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>An offer (addon) is activated per region. For each offer,
 a template exists which can be used during activation.</p>
@@ -534,117 +534,15 @@ a template exists which can be used during activation.</p>
 </table>
 <dl class="py exception">
 <dt id="cms.models.offers.offer.Offer.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.offers.offer.Offer.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.offers.offer.Offer.created_date" title="cms.models.offers.offer.Offer.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.offers.offer.Offer.last_updated" title="cms.models.offers.offer.Offer.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.offers.offer.Offer.created_date" title="cms.models.offers.offer.Offer.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.offers.offer.Offer.last_updated" title="cms.models.offers.offer.Offer.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.name">
-<em class="property">property </em><code class="descname">name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.offerfeedback_set">
-<code class="descname">offerfeedback_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.offerfeedback_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> offer, accesses the M2M <a class="reference internal" href="cms.models.feedback.html#cms.models.feedback.offer_feedback.OfferFeedback" title="cms.models.feedback.offer_feedback.OfferFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">OfferFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.post_data">
-<em class="property">property </em><code class="descname">post_data</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.post_data" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.slug">
-<em class="property">property </em><code class="descname">slug</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.slug" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.template">
-<code class="descname">template</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.template" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> template, accesses the <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate" title="cms.models.offers.offer_template.OfferTemplate"><code class="xref py py-class docutils literal notranslate"><span class="pre">OfferTemplate</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer.Offer.template_id">
-<code class="descname">template_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.template_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> template</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.thumbnail">
-<em class="property">property </em><code class="descname">thumbnail</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.thumbnail" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer.Offer.url">
-<em class="property">property </em><code class="descname">url</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer.Offer.url" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -654,7 +552,7 @@ a template exists which can be used during activation.</p>
 <p>Model to represent an Offer</p>
 <dl class="py class">
 <dt id="cms.models.offers.offer_template.OfferTemplate">
-<em class="property">class </em><code class="descclassname">cms.models.offers.offer_template.</code><code class="descname">OfferTemplate</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.offers.offer_template.</code><code class="descname">OfferTemplate</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Model class for representing an Offer database object</p>
 <dl class="docutils">
@@ -681,109 +579,14 @@ a template exists which can be used during activation.</p>
 </table>
 <dl class="py exception">
 <dt id="cms.models.offers.offer_template.OfferTemplate.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.offers.offer_template.OfferTemplate.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer_template.OfferTemplate.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate.created_date" title="cms.models.offers.offer_template.OfferTemplate.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer_template.OfferTemplate.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate.last_updated" title="cms.models.offers.offer_template.OfferTemplate.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer_template.OfferTemplate.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate.created_date" title="cms.models.offers.offer_template.OfferTemplate.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer_template.OfferTemplate.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate.last_updated" title="cms.models.offers.offer_template.OfferTemplate.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.offers.offer_template.OfferTemplate.get_use_postal_code_display">
-<code class="descname">get_use_postal_code_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: use_postal_code&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.get_use_postal_code_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.offers.offer_template.OfferTemplate.use_postal_code" title="cms.models.offers.offer_template.OfferTemplate.use_postal_code"><code class="xref py py-attr docutils literal notranslate"><span class="pre">use_postal_code</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.name">
-<code class="descname">name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.name" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> name</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.offers">
-<code class="descname">offers</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.offers" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> template, accesses the M2M <a class="reference internal" href="#cms.models.offers.offer.Offer" title="cms.models.offers.offer.Offer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Offer</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.post_data">
-<code class="descname">post_data</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.post_data" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> post data</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.slug">
-<code class="descname">slug</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.slug" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> slug</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.thumbnail">
-<code class="descname">thumbnail</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.thumbnail" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> thumbnail</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.url">
-<code class="descname">url</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.url" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> url</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.offers.offer_template.OfferTemplate.use_postal_code">
-<code class="descname">use_postal_code</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/offers/offer_template.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.offers.offer_template.OfferTemplate.use_postal_code" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> use postal code</p>
 </dd></dl>
 
 </dd></dl>

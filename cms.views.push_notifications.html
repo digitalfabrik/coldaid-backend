@@ -512,113 +512,20 @@
 <span id="push-notification-list-view"></span><h2>Push Notification List View<a class="headerlink" href="#module-cms.views.push_notifications.push_notification_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView">
-<em class="property">class </em><code class="descclassname">cms.views.push_notifications.push_notification_list_view.</code><code class="descname">PushNotificationListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.push_notifications.push_notification_list_view.</code><code class="descname">PushNotificationListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'push_notifications'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.view_push_notifications'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_list_view.PushNotificationListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'push_notifications/push_notification_list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_list_view.PushNotificationListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
 <div class="section" id="module-cms.views.push_notifications.push_notification_sender">
 <span id="push-notification-sender"></span><h2>Push Notification Sender<a class="headerlink" href="#module-cms.views.push_notifications.push_notification_sender" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="cms.views.push_notifications.push_notification_sender.PushNotificationSender">
-<em class="property">class </em><code class="descclassname">cms.views.push_notifications.push_notification_sender.</code><code class="descname">PushNotificationSender</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_sender.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_sender.PushNotificationSender" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_sender.PushNotificationSender.fcm_url">
-<code class="descname">fcm_url</code><em class="property"> = 'https://fcm.googleapis.com/fcm/send'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_sender.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_sender.PushNotificationSender.fcm_url" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sends push notifications via FCM legacy http api.
-Returns boolean indicating success or failure</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_sender.PushNotificationSender.logger">
-<code class="descname">logger</code><em class="property"> = &lt;Logger cms.views.push_notifications.push_notification_sender (INFO)&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_sender.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_sender.PushNotificationSender.logger" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_sender.PushNotificationSender.send">
-<code class="descname">send</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em>, <em><span class="n">channel</span></em>, <em><span class="n">title</span></em>, <em><span class="n">message</span></em>, <em><span class="n">lan_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_sender.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_sender.PushNotificationSender.send" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.push_notifications.push_notification_view">
 <span id="push-notification-view"></span><h2>Push Notification View<a class="headerlink" href="#module-cms.views.push_notifications.push_notification_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.push_notifications.push_notification_view.PushNotificationView">
-<em class="property">class </em><code class="descclassname">cms.views.push_notifications.push_notification_view.</code><code class="descname">PushNotificationView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.push_notifications.push_notification_view.</code><code class="descname">PushNotificationView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'push_notifications'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.view_push_notifications'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L56" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.push_sender">
-<code class="descname">push_sender</code><em class="property"> = &lt;cms.views.push_notifications.push_notification_sender.PushNotificationSender object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.push_sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.push_notifications.push_notification_view.PushNotificationView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'push_notifications/push_notification_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/push_notifications/push_notification_view.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.push_notifications.push_notification_view.PushNotificationView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

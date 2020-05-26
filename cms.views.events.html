@@ -509,73 +509,13 @@
 <span id="events"></span><h1>Events<a class="headerlink" href="#module-cms.views.events" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-cms.views.events.event_actions">
 <span id="event-actions"></span><h2>Event Actions<a class="headerlink" href="#module-cms.views.events.event_actions" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="cms.views.events.event_actions.archive">
-<code class="descclassname">cms.views.events.event_actions.</code><code class="descname">archive</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">event_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_actions.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_actions.archive" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.events.event_actions.delete">
-<code class="descclassname">cms.views.events.event_actions.</code><code class="descname">delete</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">event_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_actions.py#L56" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_actions.delete" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.events.event_actions.restore">
-<code class="descclassname">cms.views.events.event_actions.</code><code class="descname">restore</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">event_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_actions.py#L37" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_actions.restore" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.events.event_actions.search_poi_ajax">
-<code class="descclassname">cms.views.events.event_actions.</code><code class="descname">search_poi_ajax</code><span class="sig-paren">(</span><em><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_actions.py#L71" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_actions.search_poi_ajax" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.events.event_list_view">
 <span id="event-list-view"></span><h2>Event List View<a class="headerlink" href="#module-cms.views.events.event_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.events.event_list_view.EventListView">
-<em class="property">class </em><code class="descclassname">cms.views.events.event_list_view.</code><code class="descname">EventListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.events.event_list_view.</code><code class="descname">EventListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.LoginRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.LoginRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.events.event_list_view.EventListView.archived">
-<code class="descname">archived</code><em class="property"> = False</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.archived" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.events.event_list_view.EventListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L49" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.events.event_list_view.EventListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L28" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_list_view.EventListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.view_events'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_list_view.EventListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_list_view.EventListView.template">
-<code class="descname">template</code><em class="property"> = 'events/event_list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.template" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_list_view.EventListView.template_archived">
-<code class="descname">template_archived</code><em class="property"> = 'events/event_list_archived.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.template_archived" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.events.event_list_view.EventListView.template_name">
-<em class="property">property </em><code class="descname">template_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_list_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_list_view.EventListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -583,38 +523,8 @@
 <span id="event-view"></span><h2>Event View<a class="headerlink" href="#module-cms.views.events.event_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.events.event_view.EventView">
-<em class="property">class </em><code class="descclassname">cms.views.events.event_view.</code><code class="descname">EventView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.events.event_view.</code><code class="descname">EventView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/events/event_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py method">
-<dt id="cms.views.events.event_view.EventView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.events.event_view.EventView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L29" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_view.EventView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.view_events'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.events.event_view.EventView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L75" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_view.EventView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.events.event_view.EventView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'events/event_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/events/event_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.events.event_view.EventView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

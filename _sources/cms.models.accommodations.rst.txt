@@ -1,0 +1,36 @@
+Accommodations
+=================================
+
+.. automodule:: cms.models.accommodations
+   :members:
+   :show-inheritance:
+
+
+Accommodation
+----------------------------------------------
+
+.. automodule:: cms.models.accommodations.accommodation
+   :members:
+   :show-inheritance:
+
+Accommodation Translation
+-----------------------------------------------------------
+
+.. automodule:: cms.models.accommodations.accommodation_translation
+   :members:
+   :show-inheritance:
+
+Bed Target Group
+---------------------------------------------------
+
+.. automodule:: cms.models.accommodations.bed_target_group
+   :members:
+   :show-inheritance:
+
+Beds
+-------------------------------------
+
+.. automodule:: cms.models.accommodations.beds
+   :members:
+   :show-inheritance:
+

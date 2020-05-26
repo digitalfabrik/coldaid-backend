@@ -512,7 +512,7 @@
 <p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.event_feedback.EventFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.event_feedback.</code><code class="descname">EventFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.event_feedback.</code><code class="descname">EventFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <p>Feedback on single events</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -536,38 +536,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.event_feedback.EventFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.event_feedback.EventFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_feedback.EventFeedback.event">
-<code class="descname">event</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.event" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event, accesses the <a class="reference internal" href="cms.models.events.html#cms.models.events.event.Event" title="cms.models.events.event.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_feedback.EventFeedback.event_id">
-<code class="descname">event_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.event_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> event</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_feedback.EventFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_feedback.EventFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_feedback.EventFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
 </dd></dl>
 
 </dd></dl>
@@ -577,7 +553,7 @@
 <span id="event-list-feedback"></span><h2>Event List Feedback<a class="headerlink" href="#module-cms.models.feedback.event_list_feedback" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.feedback.event_list_feedback.EventListFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.event_list_feedback.</code><code class="descname">EventListFeedback</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">emotion</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">is_technical</span></em>, <em><span class="n">read_status</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em>, <em><span class="n">feedback_ptr</span></em>, <em><span class="n">region</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.event_list_feedback.</code><code class="descname">EventListFeedback</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">emotion</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">is_technical</span></em>, <em><span class="n">read_status</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em>, <em><span class="n">feedback_ptr</span></em>, <em><span class="n">region</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -600,38 +576,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.event_list_feedback.EventListFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.event_list_feedback.EventListFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_list_feedback.EventListFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_list_feedback.EventListFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_list_feedback.EventListFeedback.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.event_list_feedback.EventListFeedback.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/event_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.event_list_feedback.EventListFeedback.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
 </dd></dl>
 
 </dd></dl>
@@ -642,7 +594,7 @@
 <span class="target" id="module-cms.models.feedback.feedback"></span><p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.feedback.Feedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.feedback.</code><code class="descname">Feedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.feedback.</code><code class="descname">Feedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Base class for collecting feeedback from users.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -664,138 +616,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.feedback.Feedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.EMOTION">
-<code class="descname">EMOTION</code><em class="property"> = (('Pos', 'Positive'), ('Neg', 'Negative'), ('NA', 'Not Available'))</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.EMOTION" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py exception">
 <dt id="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.comment">
-<code class="descname">comment</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.comment" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> comment</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.emotion">
-<code class="descname">emotion</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.emotion" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> emotion</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.eventfeedback">
-<code class="descname">eventfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.eventfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.event_feedback.EventFeedback" title="cms.models.feedback.event_feedback.EventFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.eventlistfeedback">
-<code class="descname">eventlistfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.eventlistfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.event_list_feedback.EventListFeedback" title="cms.models.feedback.event_list_feedback.EventListFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventListFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.feedback.feedback.Feedback.get_emotion_display">
-<code class="descname">get_emotion_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: emotion&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.get_emotion_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.emotion" title="cms.models.feedback.feedback.Feedback.emotion"><code class="xref py py-attr docutils literal notranslate"><span class="pre">emotion</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.feedback.feedback.Feedback.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.created_date" title="cms.models.feedback.feedback.Feedback.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.feedback.feedback.Feedback.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.last_updated" title="cms.models.feedback.feedback.Feedback.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.feedback.feedback.Feedback.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.created_date" title="cms.models.feedback.feedback.Feedback.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.feedback.feedback.Feedback.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.last_updated" title="cms.models.feedback.feedback.Feedback.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.is_technical">
-<code class="descname">is_technical</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.is_technical" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> is technical</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.offerfeedback">
-<code class="descname">offerfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.offerfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.offer_feedback.OfferFeedback" title="cms.models.feedback.offer_feedback.OfferFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">OfferFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.offerlistfeedback">
-<code class="descname">offerlistfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.offerlistfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback" title="cms.models.feedback.offer_list_feedback.OfferListFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">OfferListFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.pagefeedback">
-<code class="descname">pagefeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.pagefeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.page_feedback.PageFeedback" title="cms.models.feedback.page_feedback.PageFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.read_status">
-<code class="descname">read_status</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.read_status" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> read status</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.regionfeedback">
-<code class="descname">regionfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.regionfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.region_feedback.RegionFeedback" title="cms.models.feedback.region_feedback.RegionFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegionFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.feedback.Feedback.searchresultfeedback">
-<code class="descname">searchresultfeedback</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.feedback.Feedback.searchresultfeedback" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback" title="cms.models.feedback.search_result_feedback.SearchResultFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">SearchResultFeedback</span></code></a> model.</p>
 </dd></dl>
 
 </dd></dl>
@@ -806,7 +634,7 @@
 <p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.offer_feedback.OfferFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.offer_feedback.</code><code class="descname">OfferFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.offer_feedback.</code><code class="descname">OfferFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <p>Feedback on offers (offer model)</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -830,38 +658,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.offer_feedback.OfferFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.offer_feedback.OfferFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_feedback.OfferFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_feedback.OfferFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_feedback.OfferFeedback.offer">
-<code class="descname">offer</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.offer" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> offer, accesses the <a class="reference internal" href="cms.models.offers.html#cms.models.offers.offer.Offer" title="cms.models.offers.offer.Offer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Offer</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_feedback.OfferFeedback.offer_id">
-<code class="descname">offer_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_feedback.OfferFeedback.offer_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> offer</p>
 </dd></dl>
 
 </dd></dl>
@@ -871,7 +675,7 @@
 <span id="offer-list-feedback"></span><h2>Offer List Feedback<a class="headerlink" href="#module-cms.models.feedback.offer_list_feedback" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.offer_list_feedback.</code><code class="descname">OfferListFeedback</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">emotion</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">is_technical</span></em>, <em><span class="n">read_status</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em>, <em><span class="n">feedback_ptr</span></em>, <em><span class="n">region</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.offer_list_feedback.</code><code class="descname">OfferListFeedback</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">emotion</span></em>, <em><span class="n">comment</span></em>, <em><span class="n">is_technical</span></em>, <em><span class="n">read_status</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em>, <em><span class="n">feedback_ptr</span></em>, <em><span class="n">region</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -894,38 +698,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.offer_list_feedback.OfferListFeedback.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/offer_list_feedback.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.offer_list_feedback.OfferListFeedback.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
 </dd></dl>
 
 </dd></dl>
@@ -936,7 +716,7 @@
 <p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.page_feedback.PageFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.page_feedback.</code><code class="descname">PageFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.page_feedback.</code><code class="descname">PageFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <p>Feedback on a specific page</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -960,38 +740,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.page_feedback.PageFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.page_feedback.PageFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.page_feedback.PageFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.page_feedback.PageFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.page_feedback.PageFeedback.page">
-<code class="descname">page</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.page" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page, accesses the <a class="reference internal" href="cms.models.pages.html#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.page_feedback.PageFeedback.page_id">
-<code class="descname">page_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/page_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.page_feedback.PageFeedback.page_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page</p>
 </dd></dl>
 
 </dd></dl>
@@ -1002,7 +758,7 @@
 <p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.region_feedback.RegionFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.region_feedback.</code><code class="descname">RegionFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.region_feedback.</code><code class="descname">RegionFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <p>General feedback for regions</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1026,38 +782,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.region_feedback.RegionFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.region_feedback.RegionFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.region_feedback.RegionFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.region_feedback.RegionFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.region_feedback.RegionFeedback.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.region_feedback.RegionFeedback.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/region_feedback.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.region_feedback.RegionFeedback.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
 </dd></dl>
 
 </dd></dl>
@@ -1068,7 +800,7 @@
 <p>Module for models storing feedback from front end users</p>
 <dl class="py class">
 <dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback">
-<em class="property">class </em><code class="descclassname">cms.models.feedback.search_result_feedback.</code><code class="descname">SearchResultFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.feedback.search_result_feedback.</code><code class="descname">SearchResultFeedback</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback</span></code></a></p>
 <p>Feedback on (i.e. empty) search results</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1092,32 +824,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.DoesNotExist" title="cms.models.feedback.feedback.Feedback.DoesNotExist"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.DoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cms.models.feedback.feedback.Feedback.MultipleObjectsReturned" title="cms.models.feedback.feedback.Feedback.MultipleObjectsReturned"><code class="xref py py-class docutils literal notranslate"><span class="pre">cms.models.feedback.feedback.Feedback.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback.feedback_ptr">
-<code class="descname">feedback_ptr</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.feedback_ptr" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr, accesses the <a class="reference internal" href="#cms.models.feedback.feedback.Feedback" title="cms.models.feedback.feedback.Feedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback.feedback_ptr_id">
-<code class="descname">feedback_ptr_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.feedback_ptr_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> feedback ptr</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.feedback.search_result_feedback.SearchResultFeedback.searchQuery">
-<code class="descname">searchQuery</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/feedback/search_result_feedback.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.feedback.search_result_feedback.SearchResultFeedback.searchQuery" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> searchQuery</p>
 </dd></dl>
 
 </dd></dl>

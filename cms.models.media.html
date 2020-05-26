@@ -511,7 +511,7 @@
 <span id="document"></span><h2>Document<a class="headerlink" href="#module-cms.models.media.document" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.media.document.Document">
-<em class="property">class </em><code class="descclassname">cms.models.media.document.</code><code class="descname">Document</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">description</span></em>, <em><span class="n">document</span></em>, <em><span class="n">uploaded_at</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.media.document.</code><code class="descname">Document</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">description</span></em>, <em><span class="n">document</span></em>, <em><span class="n">uploaded_at</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -529,61 +529,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.media.document.Document.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.media.document.Document.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.media.document.Document.delete">
-<code class="descname">delete</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.delete" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.media.document.Document.description">
-<code class="descname">description</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.description" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> description</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.media.document.Document.document">
-<code class="descname">document</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.document" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> document
-<strong>Return type:</strong> <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/models/fields/#django.db.models.fields.files.FieldFile" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldFile</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.media.document.Document.get_next_by_uploaded_at">
-<code class="descname">get_next_by_uploaded_at</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: uploaded_at&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.get_next_by_uploaded_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.media.document.Document.uploaded_at" title="cms.models.media.document.Document.uploaded_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">uploaded_at</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.media.document.Document.get_previous_by_uploaded_at">
-<code class="descname">get_previous_by_uploaded_at</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: uploaded_at&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.get_previous_by_uploaded_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.media.document.Document.uploaded_at" title="cms.models.media.document.Document.uploaded_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">uploaded_at</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.media.document.Document.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.media.document.Document.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.media.document.Document.uploaded_at">
-<code class="descname">uploaded_at</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/media/document.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.media.document.Document.uploaded_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> uploaded at</p>
 </dd></dl>
 
 </dd></dl>

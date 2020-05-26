@@ -512,7 +512,7 @@
 <p>Models representing a page and page translation with content</p>
 <dl class="py class">
 <dt id="cms.models.pages.page.Page">
-<em class="property">class </em><code class="descclassname">cms.models.pages.page.</code><code class="descname">Page</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.pages.page.</code><code class="descname">Page</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">mptt.models.MPTTModel</span></code></p>
 <p>Class that represents an Page database object</p>
 <dl class="docutils">
@@ -545,237 +545,40 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.pages.page.Page.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.pages.page.Page.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.archived">
-<code class="descname">archived</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.archived" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> archived</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.archived_count">
-<em class="property">static </em><code class="descname">archived_count</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L106" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.archived_count" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.best_language_title">
-<code class="descname">best_language_title</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L137" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.best_language_title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.children">
-<code class="descname">children</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.children" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent, accesses the M2M <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="cms.models.pages.page.Page.depth">
-<em class="property">property </em><code class="descname">depth</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.depth" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">depth</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.depth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Provide level of inheritance</p>
 <dl class="docutils">
 <dt>Returns:</dt><dd>Int : Number of ancestors</dd>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.editors">
-<code class="descname">editors</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.editors" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> editors, accesses the M2M <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_absolute_url">
-<code class="descname">get_absolute_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L95" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_absolute_url" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_archived">
-<em class="property">static </em><code class="descname">get_archived</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L102" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_archived" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_first_translation">
-<code class="descname">get_first_translation</code><span class="sig-paren">(</span><em><span class="n">priority_language_codes</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L72" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_first_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt id="cms.models.pages.page.Page.get_mirrored_text">
-<code class="descname">get_mirrored_text</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L87" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_mirrored_text" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_mirrored_text</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L87" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_mirrored_text" title="Permalink to this definition">¶</a></dt>
 <dd><p>This content needs to be added when delivering content to end users</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="cms.models.pages.page.Page.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.pages.page.Page.created_date" title="cms.models.pages.page.Page.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.pages.page.Page.last_updated" title="cms.models.pages.page.Page.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.pages.page.Page.created_date" title="cms.models.pages.page.Page.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.pages.page.Page.last_updated" title="cms.models.pages.page.Page.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_public_translation">
-<code class="descname">get_public_translation</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L81" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_public_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.get_translation">
-<code class="descname">get_translation</code><span class="sig-paren">(</span><em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L66" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
 <dt id="cms.models.pages.page.Page.get_tree">
-<em class="property">classmethod </em><code class="descname">get_tree</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em>, <em><span class="n">archived</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L118" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_tree" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="descname">get_tree</code><span class="sig-paren">(</span><em><span class="n">region_slug</span></em>, <em><span class="n">archived</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page.py#L118" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.get_tree" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function for building up a Treeview of all pages</p>
 <dl class="docutils">
 <dt>Args:</dt><dd>region_slug: slug of the region the page belongs to
 archived:  if true archived pages will be included</dd>
 <dt>Returns:</dt><dd>[pages]: Array of pages connected with their relations</dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.icon">
-<code class="descname">icon</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.icon" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> icon
-<strong>Return type:</strong> <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/models/fields/#django.db.models.fields.files.FieldFile" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldFile</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page.Page.languages">
-<em class="property">property </em><code class="descname">languages</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.languages" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.level">
-<code class="descname">level</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.level" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> level</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.lft">
-<code class="descname">lft</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.lft" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> lft</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.mirrored_page">
-<code class="descname">mirrored_page</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.mirrored_page" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> mirrored page, accesses the <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.mirrored_page_first">
-<code class="descname">mirrored_page_first</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.mirrored_page_first" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> mirrored page first</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.mirrored_page_id">
-<code class="descname">mirrored_page_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.mirrored_page_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> mirrored page</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.page_set">
-<code class="descname">page_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.page_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> mirrored page, accesses the M2M <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.pagefeedback_set">
-<code class="descname">pagefeedback_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.pagefeedback_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page, accesses the M2M <a class="reference internal" href="cms.models.feedback.html#cms.models.feedback.page_feedback.PageFeedback" title="cms.models.feedback.page_feedback.PageFeedback"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageFeedback</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.parent">
-<code class="descname">parent</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.parent" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent, accesses the <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.parent_id">
-<code class="descname">parent_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.parent_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.publishers">
-<code class="descname">publishers</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.publishers" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> publishers, accesses the M2M <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.rght">
-<code class="descname">rght</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.rght" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> rght</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.translations">
-<code class="descname">translations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.translations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page, accesses the M2M <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation" title="cms.models.pages.page_translation.PageTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageTranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page.Page.tree_id">
-<code class="descname">tree_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page.py#L19" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page.Page.tree_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> tree id</p>
 </dd></dl>
 
 </dd></dl>
@@ -786,7 +589,7 @@ archived:  if true archived pages will be included</dd>
 <p>Models representing a page and page translation with content</p>
 <dl class="py class">
 <dt id="cms.models.pages.page_translation.PageTranslation">
-<em class="property">class </em><code class="descclassname">cms.models.pages.page_translation.</code><code class="descname">PageTranslation</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.pages.page_translation.</code><code class="descname">PageTranslation</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Class defining a Translation of a Page</p>
 <dl class="docutils">
@@ -817,226 +620,20 @@ archived:  if true archived pages will be included</dd>
 </table>
 <dl class="py exception">
 <dt id="cms.models.pages.page_translation.PageTranslation.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.pages.page_translation.PageTranslation.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.ancestor_path">
-<em class="property">property </em><code class="descname">ancestor_path</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.ancestor_path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.available_languages">
-<em class="property">property </em><code class="descname">available_languages</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.available_languages" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
 <dt id="cms.models.pages.page_translation.PageTranslation.combined_text">
-<em class="property">property </em><code class="descname">combined_text</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.combined_text" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">combined_text</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.combined_text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Combines the text from the PageTranslation with the text from the mirrored page.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.creator">
-<code class="descname">creator</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.creator" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> creator, accesses the <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/contrib/auth/#django.contrib.auth.models.User" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.creator_id">
-<code class="descname">creator_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.creator_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> creator</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.currently_in_translation">
-<code class="descname">currently_in_translation</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.currently_in_translation" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> currently in translation</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.foreign_object">
-<em class="property">property </em><code class="descname">foreign_object</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.foreign_object" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_current_translations">
-<em class="property">classmethod </em><code class="descname">get_current_translations</code><span class="sig-paren">(</span><em><span class="n">region</span></em>, <em><span class="n">language</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L155" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_current_translations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation.created_date" title="cms.models.pages.page_translation.PageTranslation.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation.last_updated" title="cms.models.pages.page_translation.PageTranslation.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_outdated_translations">
-<em class="property">classmethod </em><code class="descname">get_outdated_translations</code><span class="sig-paren">(</span><em><span class="n">region</span></em>, <em><span class="n">language</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L159" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_outdated_translations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation.created_date" title="cms.models.pages.page_translation.PageTranslation.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation.last_updated" title="cms.models.pages.page_translation.PageTranslation.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_status_display">
-<code class="descname">get_status_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: status&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_status_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.pages.page_translation.PageTranslation.status" title="cms.models.pages.page_translation.PageTranslation.status"><code class="xref py py-attr docutils literal notranslate"><span class="pre">status</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_translations">
-<em class="property">classmethod </em><code class="descname">get_translations</code><span class="sig-paren">(</span><em><span class="n">region</span></em>, <em><span class="n">language</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L147" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_translations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.get_up_to_date_translations">
-<em class="property">classmethod </em><code class="descname">get_up_to_date_translations</code><span class="sig-paren">(</span><em><span class="n">region</span></em>, <em><span class="n">language</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L151" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.get_up_to_date_translations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.is_outdated">
-<em class="property">property </em><code class="descname">is_outdated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.is_outdated" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.is_up_to_date">
-<em class="property">property </em><code class="descname">is_up_to_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.is_up_to_date" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.language">
-<code class="descname">language</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.language" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the <a class="reference internal" href="cms.models.languages.html#cms.models.languages.language.Language" title="cms.models.languages.language.Language"><code class="xref py py-class docutils literal notranslate"><span class="pre">Language</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.language_id">
-<code class="descname">language_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.language_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.latest_major_public_revision">
-<em class="property">property </em><code class="descname">latest_major_public_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.latest_major_public_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.latest_major_revision">
-<em class="property">property </em><code class="descname">latest_major_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.latest_major_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.latest_public_revision">
-<em class="property">property </em><code class="descname">latest_public_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.latest_public_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.minor_edit">
-<code class="descname">minor_edit</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.minor_edit" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> minor edit</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.page">
-<code class="descname">page</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.page" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page, accesses the <a class="reference internal" href="#cms.models.pages.page.Page" title="cms.models.pages.page.Page"><code class="xref py py-class docutils literal notranslate"><span class="pre">Page</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.page_id">
-<code class="descname">page_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.page_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> page</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.permalink">
-<em class="property">property </em><code class="descname">permalink</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.permalink" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.previous_revision">
-<em class="property">property </em><code class="descname">previous_revision</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.previous_revision" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.slug">
-<code class="descname">slug</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.slug" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> slug</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.pages.page_translation.PageTranslation.source_translation">
-<em class="property">property </em><code class="descname">source_translation</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.source_translation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.status">
-<code class="descname">status</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.status" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> status</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.text">
-<code class="descname">text</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.text" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> text</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.title">
-<code class="descname">title</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.title" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> title</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.pages.page_translation.PageTranslation.version">
-<code class="descname">version</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/pages/page_translation.py#L17" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.pages.page_translation.PageTranslation.version" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> version</p>
 </dd></dl>
 
 </dd></dl>

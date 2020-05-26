@@ -1,0 +1,22 @@
+Accommodations
+================================
+
+.. automodule:: cms.forms.accommodations
+   :members:
+   :show-inheritance:
+
+
+Accommodation Form
+---------------------------------------------------
+
+.. automodule:: cms.forms.accommodations.accommodation_form
+   :members:
+   :show-inheritance:
+
+Accommodation Translation Form
+----------------------------------------------------------------
+
+.. automodule:: cms.forms.accommodations.accommodation_translation_form
+   :members:
+   :show-inheritance:
+

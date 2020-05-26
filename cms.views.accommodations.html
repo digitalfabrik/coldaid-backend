@@ -510,73 +510,13 @@
 <div class="section" id="module-cms.views.accommodations.accommodation_actions">
 <span id="accommodation-actions"></span><h2>Accommodation Actions<a class="headerlink" href="#module-cms.views.accommodations.accommodation_actions" title="Permalink to this headline">¶</a></h2>
 <p>A view representing an instance of a accommodationnt of interest. Accommodations can be added, changed or retrieved via this view.</p>
-<dl class="py function">
-<dt id="cms.views.accommodations.accommodation_actions.archive_accommodation">
-<code class="descclassname">cms.views.accommodations.accommodation_actions.</code><code class="descname">archive_accommodation</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">accommodation_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_actions.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_actions.archive_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.accommodations.accommodation_actions.delete_accommodation">
-<code class="descclassname">cms.views.accommodations.accommodation_actions.</code><code class="descname">delete_accommodation</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">accommodation_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_actions.py#L52" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_actions.delete_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.accommodations.accommodation_actions.restore_accommodation">
-<code class="descclassname">cms.views.accommodations.accommodation_actions.</code><code class="descname">restore_accommodation</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">accommodation_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_actions.py#L35" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_actions.restore_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.views.accommodations.accommodation_actions.view_accommodation">
-<code class="descclassname">cms.views.accommodations.accommodation_actions.</code><code class="descname">view_accommodation</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">accommodation_id</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_actions.py#L66" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_actions.view_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.accommodations.accommodation_list_view">
 <span id="accommodation-list-view"></span><h2>Accommodation List View<a class="headerlink" href="#module-cms.views.accommodations.accommodation_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView">
-<em class="property">class </em><code class="descclassname">cms.views.accommodations.accommodation_list_view.</code><code class="descname">AccommodationListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.accommodations.accommodation_list_view.</code><code class="descname">AccommodationListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.archived">
-<code class="descname">archived</code><em class="property"> = False</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.archived" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_accommodations'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.template">
-<code class="descname">template</code><em class="property"> = 'accommodations/accommodation_list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.template" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.template_archived">
-<code class="descname">template_archived</code><em class="property"> = 'accommodations/accommodation_list_archived.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.template_archived" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_list_view.AccommodationListView.template_name">
-<em class="property">property </em><code class="descname">template_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_list_view.py#L15" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_list_view.AccommodationListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -585,43 +525,8 @@
 <p>A view representing an instance of a accommodationnt of interest. Accommodations can be added, changed or retrieved via this view.</p>
 <dl class="py class">
 <dt id="cms.views.accommodations.accommodation_view.AccommodationView">
-<em class="property">class </em><code class="descclassname">cms.views.accommodations.accommodation_view.</code><code class="descname">AccommodationView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.accommodations.accommodation_view.</code><code class="descname">AccommodationView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'accommodations'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L34" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_accommodations'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L75" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.accommodation_view.AccommodationView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'accommodations/accommodation_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/accommodation_view.py#L27" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.accommodation_view.AccommodationView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -630,43 +535,8 @@
 <p>A view representing an instance of a accommodationnt of interest. Accommodations can be added, changed or retrieved via this view.</p>
 <dl class="py class">
 <dt id="cms.views.accommodations.beds_view.BedsView">
-<em class="property">class </em><code class="descclassname">cms.views.accommodations.beds_view.</code><code class="descname">BedsView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.accommodations.beds_view.</code><code class="descname">BedsView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.accommodations.beds_view.BedsView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'accommodations'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.beds_view.BedsView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.beds_view.BedsView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L30" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.beds_view.BedsView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_beds'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.accommodations.beds_view.BedsView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L51" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.beds_view.BedsView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.accommodations.beds_view.BedsView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'accommodations/bed_management.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/accommodations/beds_view.py#L22" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.accommodations.beds_view.BedsView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

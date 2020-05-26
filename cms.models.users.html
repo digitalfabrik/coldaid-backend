@@ -511,7 +511,7 @@
 <span id="organization"></span><h2>Organization<a class="headerlink" href="#module-cms.models.users.organization" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.users.organization.Organization">
-<em class="property">class </em><code class="descclassname">cms.models.users.organization.</code><code class="descname">Organization</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">name</span></em>, <em><span class="n">slug</span></em>, <em><span class="n">thumbnail</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.users.organization.</code><code class="descname">Organization</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">name</span></em>, <em><span class="n">slug</span></em>, <em><span class="n">thumbnail</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -531,91 +531,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.users.organization.Organization.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.users.organization.Organization.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.accommodations">
-<code class="descname">accommodations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.accommodations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> institution, accesses the M2M <a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation.Accommodation" title="cms.models.accommodations.accommodation.Accommodation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Accommodation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.organization.Organization.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.users.organization.Organization.created_date" title="cms.models.users.organization.Organization.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.organization.Organization.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.users.organization.Organization.last_updated" title="cms.models.users.organization.Organization.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.organization.Organization.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.users.organization.Organization.created_date" title="cms.models.users.organization.Organization.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.organization.Organization.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.users.organization.Organization.last_updated" title="cms.models.users.organization.Organization.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.name">
-<code class="descname">name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.name" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> name</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.slug">
-<code class="descname">slug</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.slug" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> slug</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.thumbnail">
-<code class="descname">thumbnail</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.thumbnail" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> thumbnail</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.organization.Organization.userprofile_set">
-<code class="descname">userprofile_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/organization.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.organization.Organization.userprofile_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> organization, accesses the M2M <a class="reference internal" href="#cms.models.users.user_profile.UserProfile" title="cms.models.users.user_profile.UserProfile"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserProfile</span></code></a> model.</p>
 </dd></dl>
 
 </dd></dl>
@@ -625,7 +548,7 @@
 <span id="user-mfa"></span><h2>User MFA<a class="headerlink" href="#module-cms.models.users.user_mfa" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.users.user_mfa.UserMfa">
-<em class="property">class </em><code class="descclassname">cms.models.users.user_mfa.</code><code class="descname">UserMfa</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">user</span></em>, <em><span class="n">name</span></em>, <em><span class="n">key_id</span></em>, <em><span class="n">public_key</span></em>, <em><span class="n">sign_count</span></em>, <em><span class="n">last_usage</span></em>, <em><span class="n">created_at</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.users.user_mfa.</code><code class="descname">UserMfa</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">user</span></em>, <em><span class="n">name</span></em>, <em><span class="n">key_id</span></em>, <em><span class="n">public_key</span></em>, <em><span class="n">sign_count</span></em>, <em><span class="n">last_usage</span></em>, <em><span class="n">created_at</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -647,85 +570,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.users.user_mfa.UserMfa.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.users.user_mfa.UserMfa.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.created_at">
-<code class="descname">created_at</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created at</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.user_mfa.UserMfa.get_next_by_created_at">
-<code class="descname">get_next_by_created_at</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_at&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.users.user_mfa.UserMfa.created_at" title="cms.models.users.user_mfa.UserMfa.created_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_at</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.user_mfa.UserMfa.get_previous_by_created_at">
-<code class="descname">get_previous_by_created_at</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_at&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.users.user_mfa.UserMfa.created_at" title="cms.models.users.user_mfa.UserMfa.created_at"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_at</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.key_id">
-<code class="descname">key_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.key_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> key id</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.last_usage">
-<code class="descname">last_usage</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.last_usage" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last usage</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.name">
-<code class="descname">name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.name" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> name</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.public_key">
-<code class="descname">public_key</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.public_key" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> public key</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.sign_count">
-<code class="descname">sign_count</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.sign_count" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> sign count</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.user">
-<code class="descname">user</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.user" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> user, accesses the <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/contrib/auth/#django.contrib.auth.models.User" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_mfa.UserMfa.user_id">
-<code class="descname">user_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_mfa.py#L5" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_mfa.UserMfa.user_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> user</p>
 </dd></dl>
 
 </dd></dl>
@@ -735,7 +587,7 @@
 <span id="user-profile"></span><h2>User Profile<a class="headerlink" href="#module-cms.models.users.user_profile" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.users.user_profile.UserProfile">
-<em class="property">class </em><code class="descclassname">cms.models.users.user_profile.</code><code class="descname">UserProfile</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">user</span></em>, <em><span class="n">organization</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.users.user_profile.</code><code class="descname">UserProfile</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">user</span></em>, <em><span class="n">organization</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -753,60 +605,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.users.user_profile.UserProfile.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.users.user_profile.UserProfile.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.organization">
-<code class="descname">organization</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.organization" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> organization, accesses the <a class="reference internal" href="#cms.models.users.organization.Organization" title="cms.models.users.organization.Organization"><code class="xref py py-class docutils literal notranslate"><span class="pre">Organization</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.organization_id">
-<code class="descname">organization_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.organization_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> organization</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.regions">
-<code class="descname">regions</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.regions" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> regions, accesses the M2M <a class="reference internal" href="#cms.models.users.user_profile.UserProfile" title="cms.models.users.user_profile.UserProfile"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserProfile</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.users.user_profile.UserProfile.roles">
-<em class="property">property </em><code class="descname">roles</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.roles" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.user">
-<code class="descname">user</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.user" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> user, accesses the <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/contrib/auth/#django.contrib.auth.models.User" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.users.user_profile.UserProfile.user_id">
-<code class="descname">user_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/users/user_profile.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.users.user_profile.UserProfile.user_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> user</p>
 </dd></dl>
 
 </dd></dl>

@@ -1,0 +1,29 @@
+Bed Target Groups
+=====================================
+
+.. automodule:: cms.views.bed_target_groups
+   :members:
+   :show-inheritance:
+
+
+Bed Target Group Actions
+----------------------------------------------------------------
+
+.. automodule:: cms.views.bed_target_groups.bed_target_group_actions
+   :members:
+   :show-inheritance:
+
+Bed Target Group List View
+-------------------------------------------------------------------
+
+.. automodule:: cms.views.bed_target_groups.bed_target_group_list_view
+   :members:
+   :show-inheritance:
+
+Bed Target Group View
+-------------------------------------------------------------
+
+.. automodule:: cms.views.bed_target_groups.bed_target_group_view
+   :members:
+   :show-inheritance:
+

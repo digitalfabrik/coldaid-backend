@@ -510,48 +510,13 @@
 <p>Python standard Init-File</p>
 <div class="section" id="module-cms.views.regions.region_actions">
 <span id="region-actions"></span><h2>Region Actions<a class="headerlink" href="#module-cms.views.regions.region_actions" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="cms.views.regions.region_actions.delete_region">
-<code class="descclassname">cms.views.regions.region_actions.</code><code class="descname">delete_region</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_actions.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_actions.delete_region" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.views.regions.region_list_view">
 <span id="region-list-view"></span><h2>Region List View<a class="headerlink" href="#module-cms.views.regions.region_list_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.regions.region_list_view.RegionListView">
-<em class="property">class </em><code class="descclassname">cms.views.regions.region_list_view.</code><code class="descname">RegionListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.regions.region_list_view.</code><code class="descname">RegionListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.regions.region_list_view.RegionListView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'regions'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.regions.region_list_view.RegionListView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.regions.region_list_view.RegionListView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L20" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_list_view.RegionListView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_regions'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_list_view.RegionListView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_list_view.RegionListView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'regions/region_list.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_list_view.RegionListView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
@@ -559,43 +524,8 @@
 <span id="region-view"></span><h2>Region View<a class="headerlink" href="#module-cms.views.regions.region_view" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.views.regions.region_view.RegionView">
-<em class="property">class </em><code class="descclassname">cms.views.regions.region_view.</code><code class="descname">RegionView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.views.regions.region_view.</code><code class="descname">RegionView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
-<dl class="py attribute">
-<dt id="cms.views.regions.region_view.RegionView.base_context">
-<code class="descname">base_context</code><em class="property"> = {'current_menu_item': 'regions'}</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.base_context" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.regions.region_view.RegionView.dispatch">
-<code class="descname">dispatch</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L82" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.dispatch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.regions.region_view.RegionView.get">
-<code class="descname">get</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L23" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.get" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_view.RegionView.permission_required">
-<code class="descname">permission_required</code><em class="property"> = 'cms.manage_regions'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.views.regions.region_view.RegionView.post">
-<code class="descname">post</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L43" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.post" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_view.RegionView.raise_exception">
-<code class="descname">raise_exception</code><em class="property"> = True</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.raise_exception" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.views.regions.region_view.RegionView.template_name">
-<code class="descname">template_name</code><em class="property"> = 'regions/region_form.html'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/views/regions/region_view.py#L16" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.regions.region_view.RegionView.template_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>

@@ -511,7 +511,7 @@
 <span id="configuration"></span><h2>Configuration<a class="headerlink" href="#module-cms.models.config.configuration" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="cms.models.config.configuration.Configuration">
-<em class="property">class </em><code class="descclassname">cms.models.config.configuration.</code><code class="descname">Configuration</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">key</span></em>, <em><span class="n">value</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.config.configuration.</code><code class="descname">Configuration</code><span class="sig-paren">(</span><em><span class="n">id</span></em>, <em><span class="n">key</span></em>, <em><span class="n">value</span></em>, <em><span class="n">created_date</span></em>, <em><span class="n">last_updated</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -530,73 +530,14 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.config.configuration.Configuration.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.config.configuration.Configuration.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.config.configuration.Configuration.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.config.configuration.Configuration.created_date" title="cms.models.config.configuration.Configuration.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.config.configuration.Configuration.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.config.configuration.Configuration.last_updated" title="cms.models.config.configuration.Configuration.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.config.configuration.Configuration.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.config.configuration.Configuration.created_date" title="cms.models.config.configuration.Configuration.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.config.configuration.Configuration.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.config.configuration.Configuration.last_updated" title="cms.models.config.configuration.Configuration.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.key">
-<code class="descname">key</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.key" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> key</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.config.configuration.Configuration.value">
-<code class="descname">value</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/config/configuration.py#L4" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.config.configuration.Configuration.value" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> value</p>
 </dd></dl>
 
 </dd></dl>

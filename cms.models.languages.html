@@ -512,7 +512,7 @@
 <p>Model to define a Language</p>
 <dl class="py class">
 <dt id="cms.models.languages.language.Language">
-<em class="property">class </em><code class="descclassname">cms.models.languages.language.</code><code class="descname">Language</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.languages.language.</code><code class="descname">Language</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
 <p>Class to define language database objects</p>
 <dl class="docutils">
@@ -535,146 +535,17 @@
 </tr>
 </tbody>
 </table>
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.DIRECTION">
-<code class="descname">DIRECTION</code><em class="property"> = (('ltr', 'Left to right'), ('rtl', 'Right to left'))</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.DIRECTION" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py exception">
 <dt id="cms.models.languages.language.Language.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.languages.language.Language.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.accommodation_translations">
-<code class="descname">accommodation_translations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.accommodation_translations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation_translation.AccommodationTranslation" title="cms.models.accommodations.accommodation_translation.AccommodationTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">AccommodationTranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.accommodations">
-<code class="descname">accommodations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.accommodations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> spoken languages, accesses the M2M <a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation.Accommodation" title="cms.models.accommodations.accommodation.Accommodation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Accommodation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.code">
-<code class="descname">code</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.code" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> code</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.english_name">
-<code class="descname">english_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.english_name" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> english name</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.event_translations">
-<code class="descname">event_translations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.event_translations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="cms.models.events.html#cms.models.events.event_translation.EventTranslation" title="cms.models.events.event_translation.EventTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventTranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.languages.language.Language.created_date" title="cms.models.languages.language.Language.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.languages.language.Language.last_updated" title="cms.models.languages.language.Language.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.languages.language.Language.created_date" title="cms.models.languages.language.Language.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.languages.language.Language.last_updated" title="cms.models.languages.language.Language.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.get_text_direction_display">
-<code class="descname">get_text_direction_display</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.CharField: text_direction&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.get_text_direction_display" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Shows the label of the <a class="reference internal" href="#cms.models.languages.language.Language.text_direction" title="cms.models.languages.language.Language.text_direction"><code class="xref py py-attr docutils literal notranslate"><span class="pre">text_direction</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.language_tree_nodes">
-<code class="descname">language_tree_nodes</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.language_tree_nodes" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode" title="cms.models.languages.language_tree_node.LanguageTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">LanguageTreeNode</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.native_name">
-<code class="descname">native_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.native_name" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> native name</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.objects">
-<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.objects" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.page_translations">
-<code class="descname">page_translations</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.page_translations" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="cms.models.pages.html#cms.models.pages.page_translation.PageTranslation" title="cms.models.pages.page_translation.PageTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageTranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.poitranslation_set">
-<code class="descname">poitranslation_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.poitranslation_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="cms.models.pois.html#cms.models.pois.poi_translation.POITranslation" title="cms.models.pois.poi_translation.POITranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">POITranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.pushnotificationtranslation_set">
-<code class="descname">pushnotificationtranslation_set</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.pushnotificationtranslation_set" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the M2M <a class="reference internal" href="cms.models.push_notifications.html#cms.models.push_notifications.push_notification_translation.PushNotificationTranslation" title="cms.models.push_notifications.push_notification_translation.PushNotificationTranslation"><code class="xref py py-class docutils literal notranslate"><span class="pre">PushNotificationTranslation</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language.Language.text_direction">
-<code class="descname">text_direction</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.text_direction" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> text direction</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language.Language.translated_name">
-<em class="property">property </em><code class="descname">translated_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language.Language.translated_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -684,7 +555,7 @@
 <p>Model to define a Language</p>
 <dl class="py class">
 <dt id="cms.models.languages.language_tree_node.LanguageTreeNode">
-<em class="property">class </em><code class="descclassname">cms.models.languages.language_tree_node.</code><code class="descname">LanguageTreeNode</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.models.languages.language_tree_node.</code><code class="descname">LanguageTreeNode</code><span class="sig-paren">(</span><em><span class="o">*</span><span class="n">args</span></em>, <em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">mptt.models.MPTTModel</span></code></p>
 <p>Class defining a LanguageTree database object.</p>
 <dl class="docutils">
@@ -713,162 +584,23 @@
 </table>
 <dl class="py exception">
 <dt id="cms.models.languages.language_tree_node.LanguageTreeNode.DoesNotExist">
-<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></a></p>
 </dd></dl>
 
 <dl class="py exception">
 <dt id="cms.models.languages.language_tree_node.LanguageTreeNode.MultipleObjectsReturned">
-<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></a></p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.active">
-<code class="descname">active</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.active" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> active</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.children">
-<code class="descname">children</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.children" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent, accesses the M2M <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode" title="cms.models.languages.language_tree_node.LanguageTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">LanguageTreeNode</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.code">
-<em class="property">property </em><code class="descname">code</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.code" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.created_date">
-<code class="descname">created_date</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> created date</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="cms.models.languages.language_tree_node.LanguageTreeNode.depth">
-<em class="property">property </em><code class="descname">depth</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.depth" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">depth</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.depth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Provide level of inheritance</p>
 <dl class="docutils">
 <dt>Returns:</dt><dd>Int : Number of ancestors</dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.english_name">
-<em class="property">property </em><code class="descname">english_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.english_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.get_next_by_created_date">
-<code class="descname">get_next_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.get_next_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode.created_date" title="cms.models.languages.language_tree_node.LanguageTreeNode.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.get_next_by_last_updated">
-<code class="descname">get_next_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.get_next_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds next instance based on <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode.last_updated" title="cms.models.languages.language_tree_node.LanguageTreeNode.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.get_previous_by_created_date">
-<code class="descname">get_previous_by_created_date</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: created_date&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.get_previous_by_created_date" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode.created_date" title="cms.models.languages.language_tree_node.LanguageTreeNode.created_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">created_date</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.get_previous_by_last_updated">
-<code class="descname">get_previous_by_last_updated</code><span class="sig-paren">(</span><em>*</em>, <em>field=&lt;django.db.models.fields.DateTimeField: last_updated&gt;</em>, <em>is_next=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L371" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.get_previous_by_last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Autogenerated:</strong> Finds previous instance based on <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode.last_updated" title="cms.models.languages.language_tree_node.LanguageTreeNode.last_updated"><code class="xref py py-attr docutils literal notranslate"><span class="pre">last_updated</span></code></a>.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.id">
-<code class="descname">id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.language">
-<code class="descname">language</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.language" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language, accesses the <a class="reference internal" href="#cms.models.languages.language.Language" title="cms.models.languages.language.Language"><code class="xref py py-class docutils literal notranslate"><span class="pre">Language</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.language_id">
-<code class="descname">language_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.language_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> language</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.last_updated">
-<code class="descname">last_updated</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.last_updated" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> last updated</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.level">
-<code class="descname">level</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.level" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> level</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.lft">
-<code class="descname">lft</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.lft" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> lft</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.native_name">
-<em class="property">property </em><code class="descname">native_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.native_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.parent">
-<code class="descname">parent</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.parent" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent, accesses the <a class="reference internal" href="#cms.models.languages.language_tree_node.LanguageTreeNode" title="cms.models.languages.language_tree_node.LanguageTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">LanguageTreeNode</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.parent_id">
-<code class="descname">parent_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.parent_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> parent</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.region">
-<code class="descname">region</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.region" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region, accesses the <a class="reference internal" href="cms.models.regions.html#cms.models.regions.region.Region" title="cms.models.regions.region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> model.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.region_id">
-<code class="descname">region_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.region_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> region</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.rght">
-<code class="descname">rght</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.rght" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> rght</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.text_direction">
-<em class="property">property </em><code class="descname">text_direction</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.text_direction" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.translated_name">
-<em class="property">property </em><code class="descname">translated_name</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.translated_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="cms.models.languages.language_tree_node.LanguageTreeNode.tree_id">
-<code class="descname">tree_id</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/models/languages/language_tree_node.py#L14" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.models.languages.language_tree_node.LanguageTreeNode.tree_id" title="Permalink to this definition">¶</a></dt>
-<dd><p><strong>Model field:</strong> tree id</p>
 </dd></dl>
 
 </dd></dl>

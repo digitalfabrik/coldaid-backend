@@ -520,23 +520,13 @@
 </div>
 <div class="section" id="module-api.v3.accommodations">
 <span id="accommodations"></span><h2>Accommodations<a class="headerlink" href="#module-api.v3.accommodations" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="api.v3.accommodations.accommodations">
-<code class="descclassname">api.v3.accommodations.</code><code class="descname">accommodations</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/accommodations.py#L70" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.accommodations.accommodations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.accommodations.transform_accommodation">
-<code class="descclassname">api.v3.accommodations.</code><code class="descname">transform_accommodation</code><span class="sig-paren">(</span><em><span class="n">accommodation</span><span class="p">:</span> <span class="n"><a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation.Accommodation" title="cms.models.accommodations.accommodation.Accommodation">cms.models.accommodations.accommodation.Accommodation</a></span></em>, <em><span class="n">translation</span><span class="p">:</span> <span class="n"><a class="reference internal" href="cms.models.accommodations.html#cms.models.accommodations.accommodation_translation.AccommodationTranslation" title="cms.models.accommodations.accommodation_translation.AccommodationTranslation">cms.models.accommodations.accommodation_translation.AccommodationTranslation</a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/accommodations.py#L6" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.accommodations.transform_accommodation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-api.v3.languages">
 <span id="languages"></span><h2>Languages<a class="headerlink" href="#module-api.v3.languages" title="Permalink to this headline">¶</a></h2>
 <p>API-endpoint to deliver a JSON with all active languages of an region.</p>
 <dl class="py function">
 <dt id="api.v3.languages.languages">
-<code class="descclassname">api.v3.languages.</code><code class="descname">languages</code><span class="sig-paren">(</span><em><span class="n">_</span></em>, <em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/languages.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.languages.languages" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">api.v3.languages.</code><code class="descname">languages</code><span class="sig-paren">(</span><em><span class="n">_</span></em>, <em><span class="n">region_slug</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/languages.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.languages.languages" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to add all languages related to a region to a JSON.</p>
 <dl class="docutils">
 <dt>Args:</dt><dd>_ : Originally the request paramenter, but is not used in this case.
@@ -551,7 +541,7 @@ region_slug ([String]): Slug to identify the desired region.</dd>
 <p>Provides an endpoint for delivering a JSON with all active offers.</p>
 <dl class="py function">
 <dt id="api.v3.offers.offers">
-<code class="descclassname">api.v3.offers.</code><code class="descname">offers</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/offers.py#L23" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.offers.offers" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">api.v3.offers.</code><code class="descname">offers</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/offers.py#L23" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.offers.offers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to iterate through all offers related to a region and adds them to a JSON.</p>
 <dl class="docutils">
 <dt>Returns:</dt><dd>[String]: [description]</dd>
@@ -560,7 +550,7 @@ region_slug ([String]): Slug to identify the desired region.</dd>
 
 <dl class="py function">
 <dt id="api.v3.offers.transform_offer">
-<code class="descclassname">api.v3.offers.</code><code class="descname">transform_offer</code><span class="sig-paren">(</span><em><span class="n">offer</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/offers.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.offers.transform_offer" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">api.v3.offers.</code><code class="descname">transform_offer</code><span class="sig-paren">(</span><em><span class="n">offer</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/offers.py#L8" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.offers.transform_offer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to create a JSON from a single offer Object.
 Returns:</p>
 <blockquote>
@@ -570,43 +560,13 @@ Returns:</p>
 </div>
 <div class="section" id="module-api.v3.pages">
 <span id="pages"></span><h2>Pages<a class="headerlink" href="#module-api.v3.pages" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="api.v3.pages.pages">
-<code class="descclassname">api.v3.pages.</code><code class="descname">pages</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/pages.py#L34" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.pages.pages" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.pages.transform_page">
-<code class="descclassname">api.v3.pages.</code><code class="descname">transform_page</code><span class="sig-paren">(</span><em><span class="n">page_translation</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/pages.py#L6" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.pages.transform_page" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-api.v3.push_notifications">
 <span id="push-notifications"></span><h2>Push Notifications<a class="headerlink" href="#module-api.v3.push_notifications" title="Permalink to this headline">¶</a></h2>
 <p>Retrieve push notifications that have been sent, optionally filtering by channel.</p>
-<dl class="py function">
-<dt id="api.v3.push_notifications.sent_push_notifications">
-<code class="descclassname">api.v3.push_notifications.</code><code class="descname">sent_push_notifications</code><span class="sig-paren">(</span><em><span class="n">req</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">lan_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/push_notifications.py#L9" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.push_notifications.sent_push_notifications" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.push_notifications.transform_notification">
-<code class="descclassname">api.v3.push_notifications.</code><code class="descname">transform_notification</code><span class="sig-paren">(</span><em><span class="n">pn</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/push_notifications.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.push_notifications.transform_notification" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-api.v3.regions">
 <span id="regions"></span><h2>Regions<a class="headerlink" href="#module-api.v3.regions" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="api.v3.regions.regions">
-<code class="descclassname">api.v3.regions.</code><code class="descname">regions</code><span class="sig-paren">(</span><em><span class="n">_</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/regions.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.regions.regions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="api.v3.regions.transform_region">
-<code class="descclassname">api.v3.regions.</code><code class="descname">transform_region</code><span class="sig-paren">(</span><em><span class="n">region</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/regions.py#L7" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.regions.transform_region" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-api.v3.single_page">
 <span id="single-page"></span><h2>Single Page<a class="headerlink" href="#module-api.v3.single_page" title="Permalink to this headline">¶</a></h2>
@@ -614,7 +574,7 @@ Returns:</p>
 be selected via the id or the permalink.</p>
 <dl class="py function">
 <dt id="api.v3.single_page.single_page">
-<code class="descclassname">api.v3.single_page.</code><code class="descname">single_page</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/api/v3/single_page.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.single_page.single_page" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">api.v3.single_page.</code><code class="descname">single_page</code><span class="sig-paren">(</span><em><span class="n">request</span></em>, <em><span class="n">region_slug</span></em>, <em><span class="n">language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/api/v3/single_page.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api.v3.single_page.single_page" title="Permalink to this definition">¶</a></dt>
 <dd><p>View function returning the desired page as a JSON or a 404 if the
 requested page does not exist.</p>
 <table class="docutils field-list" frame="void" rules="none">

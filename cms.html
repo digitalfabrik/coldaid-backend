@@ -819,17 +819,12 @@
 <p>Django related class representing a config of an app</p>
 <dl class="py class">
 <dt id="cms.apps.CmsConfig">
-<em class="property">class </em><code class="descclassname">cms.apps.</code><code class="descname">CmsConfig</code><span class="sig-paren">(</span><em><span class="n">app_name</span></em>, <em><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/apps.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.apps.CmsConfig" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">cms.apps.</code><code class="descname">CmsConfig</code><span class="sig-paren">(</span><em><span class="n">app_name</span></em>, <em><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/apps.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.apps.CmsConfig" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
 <p>Class inheriting the django AppConfig</p>
-<dl class="py attribute">
-<dt id="cms.apps.CmsConfig.name">
-<code class="descname">name</code><em class="property"> = 'cms'</em><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/apps.py#L11" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.apps.CmsConfig.name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt id="cms.apps.CmsConfig.ready">
-<code class="descname">ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/apps.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.apps.CmsConfig.ready" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/apps.py#L18" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.apps.CmsConfig.ready" title="Permalink to this definition">¶</a></dt>
 <dd><p>Override this method in subclasses to run code when Django starts.</p>
 </dd></dl>
 
@@ -838,112 +833,12 @@
 </div>
 <div class="section" id="module-cms.decorators">
 <span id="decorators"></span><h2>Decorators<a class="headerlink" href="#module-cms.decorators" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt id="cms.decorators.modify_mfa_authenticated">
-<code class="descclassname">cms.decorators.</code><code class="descname">modify_mfa_authenticated</code><span class="sig-paren">(</span><em><span class="n">function</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/decorators.py#L34" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.decorators.modify_mfa_authenticated" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.decorators.region_permission_required">
-<code class="descclassname">cms.decorators.</code><code class="descname">region_permission_required</code><span class="sig-paren">(</span><em><span class="n">function</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/decorators.py#L21" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.decorators.region_permission_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="cms.decorators.staff_required">
-<code class="descclassname">cms.decorators.</code><code class="descname">staff_required</code><span class="sig-paren">(</span><em><span class="n">function</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/decorators.py#L10" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.decorators.staff_required" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="module-cms.page_xliff_converter">
 <span id="page-xliff-converter"></span><h2>Page Xliff Converter<a class="headerlink" href="#module-cms.page_xliff_converter" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="cms.page_xliff_converter.PageXliff">
-<em class="property">class </em><code class="descclassname">cms.page_xliff_converter.</code><code class="descname">PageXliff</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">language_code</span></em>, <em><span class="n">title</span></em>, <em><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L52" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliff" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliff.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em><span class="n">page_id</span></em>, <em><span class="n">language_code</span></em>, <em><span class="n">title</span></em>, <em><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L53" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliff.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="cms.page_xliff_converter.PageXliffConverter">
-<em class="property">class </em><code class="descclassname">cms.page_xliff_converter.</code><code class="descname">PageXliffConverter</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L60" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffConverter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffConverter.html_to_xliff">
-<code class="descname">html_to_xliff</code><span class="sig-paren">(</span><em><span class="n">source</span></em>, <em><span class="n">target</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L145" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffConverter.html_to_xliff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffConverter.page_translation_to_xliff">
-<code class="descname">page_translation_to_xliff</code><span class="sig-paren">(</span><em><span class="n">source_translation_page</span></em>, <em><span class="n">target_language_code</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L177" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffConverter.page_translation_to_xliff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffConverter.xliff_to_html">
-<em class="property">static </em><code class="descname">xliff_to_html</code><span class="sig-paren">(</span><em><span class="n">xliff</span></em>, <em><span class="n">target</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L160" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffConverter.xliff_to_html" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffConverter.xliff_to_page_xliff">
-<code class="descname">xliff_to_page_xliff</code><span class="sig-paren">(</span><em><span class="n">xliff</span></em>, <em><span class="n">target</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L207" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffConverter.xliff_to_page_xliff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="cms.page_xliff_converter.PageXliffHelper">
-<em class="property">class </em><code class="descclassname">cms.page_xliff_converter.</code><code class="descname">PageXliffHelper</code><span class="sig-paren">(</span><em><span class="n">converter</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L248" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em><span class="n">converter</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L249" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.delete_tmp_in_xliff_folder">
-<em class="property">static </em><code class="descname">delete_tmp_in_xliff_folder</code><span class="sig-paren">(</span><em><span class="n">file_path</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L287" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.delete_tmp_in_xliff_folder" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.export_page_translation_xliff">
-<code class="descname">export_page_translation_xliff</code><span class="sig-paren">(</span><em><span class="n">source_translation_page</span></em>, <em><span class="n">target_language_code</span></em>, <em><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L261" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.export_page_translation_xliff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.export_page_xliffs_to_zip">
-<code class="descname">export_page_xliffs_to_zip</code><span class="sig-paren">(</span><em><span class="n">page</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L319" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.export_page_xliffs_to_zip" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.import_xliff_file">
-<code class="descname">import_xliff_file</code><span class="sig-paren">(</span><em><span class="n">file_path</span></em>, <em><span class="n">user</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L411" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.import_xliff_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.import_xliffs_zip_file">
-<code class="descname">import_xliffs_zip_file</code><span class="sig-paren">(</span><em><span class="n">zip_file_path</span></em>, <em><span class="n">user</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L422" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.import_xliffs_zip_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.save_file">
-<em class="property">static </em><code class="descname">save_file</code><span class="sig-paren">(</span><em><span class="n">content</span></em>, <em><span class="n">file_path</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L255" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.save_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="cms.page_xliff_converter.PageXliffHelper.save_page_xliff">
-<em class="property">static </em><code class="descname">save_page_xliff</code><span class="sig-paren">(</span><em><span class="n">page_xliff</span></em>, <em><span class="n">user</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L370" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.PageXliffHelper.save_page_xliff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
 <dl class="py exception">
 <dt id="cms.page_xliff_converter.XliffValidationException">
-<em class="property">exception </em><code class="descclassname">cms.page_xliff_converter.</code><code class="descname">XliffValidationException</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/master/src/cms/page_xliff_converter.py#L48" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.XliffValidationException" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="descclassname">cms.page_xliff_converter.</code><code class="descname">XliffValidationException</code><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/page_xliff_converter.py#L48" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.page_xliff_converter.XliffValidationException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.7/library/exceptions.html#Exception" target="_blank" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
 </dd></dl>
 
