@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-22 15:05+0000\n"
+"POT-Creation-Date: 2020-05-26 12:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Integreat <info@integreat-app.de>\n"
 "Language-Team: Integreat <info@integreat-app.de>\n"
@@ -423,12 +423,12 @@ msgstr "Points of Interest"
 msgid "Accommodations"
 msgstr "Unterkünfte"
 
-#: templates/_base.html:169 templates/_base.html:238
+#: templates/_base.html:169 templates/_base.html:237
 #: templates/regions/region_form.html:203
 msgid "Users"
 msgstr "Benutzer"
 
-#: templates/_base.html:176 templates/_base.html:272
+#: templates/_base.html:176 templates/_base.html:271
 msgid "Feedback"
 msgstr "Feedback"
 
@@ -436,55 +436,55 @@ msgstr "Feedback"
 msgid "Push Notifications"
 msgstr "Push-Benachrichtigungen"
 
-#: templates/_base.html:189
+#: templates/_base.html:188
 msgid "PDF Export"
 msgstr "PDF Export"
 
-#: templates/_base.html:195 templates/offers/offer_list.html:9
+#: templates/_base.html:194 templates/offers/offer_list.html:9
 msgid "Offers"
 msgstr "Angebote"
 
-#: templates/_base.html:200
+#: templates/_base.html:199
 msgid "Imprint"
 msgstr "Impressum"
 
-#: templates/_base.html:206 templates/language_tree/language_tree.html:9
+#: templates/_base.html:205 templates/language_tree/language_tree.html:9
 msgid "Language tree"
 msgstr "Sprach-Baum"
 
-#: templates/_base.html:211 templates/_base.html:278
+#: templates/_base.html:210 templates/_base.html:277
 #: templates/statistics/statistics_dashboard.html:62
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: templates/_base.html:217
+#: templates/_base.html:216
 msgid "Admin Dashboard"
 msgstr "Admin Dashboard"
 
-#: templates/_base.html:224 templates/users/admin/user.html:92
+#: templates/_base.html:223 templates/users/admin/user.html:92
 msgid "Regions"
 msgstr "Regionen"
 
-#: templates/_base.html:231
+#: templates/_base.html:230
 #: templates/accommodations/accommodation_form.html:244
 #: templates/regions/region_form.html:204
 msgid "Languages"
 msgstr "Sprachen"
 
-#: templates/_base.html:244 templates/users/admin/user.html:87
+#: templates/_base.html:243 templates/users/admin/user.html:87
 #: templates/users/region/user.html:77
 msgid "Roles"
 msgstr "Rollen"
 
-#: templates/_base.html:251
+#: templates/_base.html:250
 msgid "Organizations"
 msgstr "Organisationen"
 
-#: templates/_base.html:258
+#: templates/_base.html:257
 msgid "Bed Target Groups"
 msgstr "Betten-Kategorien"
 
-#: templates/_base.html:265
+#: templates/_base.html:264
 msgid "Offer templates"
 msgstr "Angebots-Vorlagen"
 
