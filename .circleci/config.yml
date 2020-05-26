@@ -157,8 +157,8 @@ jobs:
       - run:
           name: Prepare git config
           command: |
-            git config --global user.name IntegreatAPI
-            git config --global user.email 41921676+IntegreatAPI@users.noreply.github.com
+            git config --global user.name DigitalfabrikAPI
+            git config --global user.email 58770244+DigitalfabrikAPI@users.noreply.github.com
       - run:
           name: Clone existing gh-pages branch into temporary directory
           command: git clone --depth=1 $CIRCLE_REPOSITORY_URL -b $BRANCH $TMP_DIR
@@ -180,7 +180,7 @@ jobs:
           command: |
             cd $TMP_DIR
             git add --all
-            git commit -m "Update documentation of commit ${CIRCLE_SHA1}" || true
+            git commit -m "Update documentation of commit ${CIRCLE_SHA1} [skip ci]" || true
             git push origin $BRANCH
 
 workflows:
