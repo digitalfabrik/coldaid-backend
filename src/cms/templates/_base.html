@@ -155,15 +155,15 @@
 			    {% trans 'Points of Interest' %}
 			</a>
 			{% endif%}
-			{% has_perm 'cms.manage_accommodations' request.user as can_manage_accommodations%}
+			{% has_perm 'cms.manage_accommodations' request.user as can_manage_accommodations %}
 			{% if can_manage_accommodations %}	
 	        <a href="{% url 'accommodations' region_slug=region.slug %}" class="relative block text-gray-300 hover:text-gray-600 hover:bg-integreat  {% if current_menu_item == 'accommodations' %}active{% endif %}">
 		        <i data-feather="home" class="absolute"></i>
 		        {% trans 'Accommodations' %}
 			</a>
 			{% endif %}
-			{% has_perm 'cms.change_user' request.user as can_change_user'%}
-			{%if can_change_user%}
+			{% has_perm 'cms.change_user' request.user as can_change_user %}
+			{% if can_change_user%}
 	        <a href="{% url 'region_users' region_slug=region.slug %}" class="relative block text-gray-300 hover:text-gray-600 hover:bg-integreat {% if current_menu_item == 'region_users' %}active{% endif %}">
 	            <i data-feather="users" class="absolute"></i>
 		        {% trans 'Users' %}
