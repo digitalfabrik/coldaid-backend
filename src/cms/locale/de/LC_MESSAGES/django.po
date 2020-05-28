@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-26 09:33+0000\n"
+"POT-Creation-Date: 2020-05-28 12:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Integreat <info@integreat-app.de>\n"
 "Language-Team: Integreat <info@integreat-app.de>\n"
@@ -20,7 +20,6 @@ msgstr ""
 
 #: constants/administrative_division.py:52
 #: templates/accommodations/accommodation_form.html:218
-#: templates/accommodations/accommodation_list.html:57
 #: templates/accommodations/accommodation_list_archived.html:30
 #: templates/events/event_form.html:279 templates/pois/poi_form.html:186
 #: templates/pois/poi_list.html:67 templates/pois/poi_list_archived.html:41
@@ -699,7 +698,6 @@ msgid "Insert city here"
 msgstr "Stadt hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:221
-#: templates/accommodations/accommodation_list.html:58
 #: templates/accommodations/accommodation_list_archived.html:31
 #: templates/events/event_form.html:281 templates/pois/poi_form.html:189
 #: templates/pois/poi_list.html:68 templates/pois/poi_list_archived.html:42
@@ -839,7 +837,7 @@ msgstr "Diese Unterkunft wiederherstellen"
 
 #: templates/accommodations/accommodation_form.html:326
 #: templates/accommodations/accommodation_form.html:327
-#: templates/accommodations/accommodation_list_row.html:47
+#: templates/accommodations/accommodation_list_row.html:44
 msgid "Archive Accommodation"
 msgstr "Unterkunft archivieren"
 
@@ -849,7 +847,7 @@ msgstr "Diese Unterkunft archivieren"
 
 #: templates/accommodations/accommodation_form.html:334
 #: templates/accommodations/accommodation_form.html:335
-#: templates/accommodations/accommodation_list_row.html:51
+#: templates/accommodations/accommodation_list_row.html:48
 msgid "Delete Accommodation"
 msgstr "Unterkunft löschen"
 
@@ -917,7 +915,12 @@ msgstr "Unterkunft erstellen"
 msgid "ID"
 msgstr ""
 
-#: templates/accommodations/accommodation_list.html:59
+#: templates/accommodations/accommodation_list.html:57
+#: templates/accommodations/accommodation_list_row.html:34
+msgid "Manage Beds"
+msgstr "Bettenverwaltung"
+
+#: templates/accommodations/accommodation_list.html:58
 #: templates/accommodations/accommodation_list_archived.html:34
 #: templates/bed_target_groups/bed_target_group_list.html:27
 #: templates/events/event_list.html:67
@@ -931,7 +934,7 @@ msgstr ""
 msgid "Options"
 msgstr "Optionen"
 
-#: templates/accommodations/accommodation_list.html:68
+#: templates/accommodations/accommodation_list.html:67
 #: templates/accommodations/accommodation_list_archived.html:43
 msgid "No Accommodations available yet."
 msgstr "Noch keine Unterkünfte vorhanden."
@@ -949,9 +952,9 @@ msgstr "POI Wiederherstellen"
 msgid "Delete POI"
 msgstr "POI löschen"
 
-#: templates/accommodations/accommodation_list_row.html:44
-msgid "Manage Beds"
-msgstr "Bettenverwaltung"
+#: templates/accommodations/accommodation_list_row.html:36
+msgid "Open Management"
+msgstr "Zur Verwaltung"
 
 #: templates/accommodations/bed_management.html:14
 #, python-format
@@ -3283,9 +3286,6 @@ msgstr ""
 
 #~ msgid "was successfully deactivated."
 #~ msgstr "wurde erfolgreich deaktiviert."
-
-#~ msgid "Bed management"
-#~ msgstr "Bettenverwaltung"
 
 #~ msgid "You don't have the permission to edit this Accommodation."
 #~ msgstr ""
