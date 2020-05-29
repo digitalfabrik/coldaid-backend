@@ -20,4 +20,5 @@ urlpatterns = [
         url(r'(?P<language_code>[-\w]+)/page/$', single_page),
     ])),
     url(r'vehicles/$', vehicles, name='vehicles'),
+    url(r'requests/$', requests, name='requests'),
 ]
