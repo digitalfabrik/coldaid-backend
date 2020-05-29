@@ -18,6 +18,6 @@ urlpatterns = [
         url(r'(?P<language_code>[-\w]+)/accommodations/$', accommodations),
         url(r'(?P<language_code>[-\w]+)/pages/$', pages),
         url(r'(?P<language_code>[-\w]+)/page/$', single_page),
-        url(r'vehicles/$', vehicles, name='vehicles'),
     ])),
+    url(r'vehicles/$', vehicles, name='vehicles'),
 ]
