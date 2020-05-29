@@ -12,10 +12,9 @@ def transform_vehicle(vehicle: Vehicle):
         'equipment': vehicle.equipment,
     }
 
-def vehicles(request, region_slug):
+def vehicles(request):
     _vehicles = Vehicle.objects.all()
     result = []
     for vehicle in _vehicles:
-        if vehicle.region.slug == region_slug:
-            result.append(transform_vehicle(vehicle))
+        result.append(transform_vehicle(vehicle))
     return JsonResponse(result, safe=False)  # Turn off Safe-Mode to allow serializing arrays
