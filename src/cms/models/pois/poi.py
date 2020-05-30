@@ -26,8 +26,8 @@ class POI(models.Model):
     postcode = models.CharField(max_length=10)
     city = models.CharField(max_length=250)
     country = models.CharField(max_length=250)
-    latitude = models.FloatField(blank=True)
-    longitude = models.FloatField(blank=True)
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
     archived = models.BooleanField(default=False)
 
     objects = POIManager()
