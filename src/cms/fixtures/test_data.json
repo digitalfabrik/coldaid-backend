@@ -18,6 +18,99 @@
     }
   },
   {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Verwalter",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Redakteur",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Rezeptionist",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [
+        4
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "cms.userprofile",
+    "pk": 5,
+    "fields": {
+      "user": 2,
+      "regions": [
+        3
+      ],
+      "organization": 1
+    }
+  },
+  {
+    "model": "cms.userprofile",
+    "pk": 6,
+    "fields": {
+      "user": 3,
+      "regions": [
+        3
+      ],
+      "organization": 1
+    }
+  },
+  {
+    "model": "cms.userprofile",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "regions": [
+        3
+      ],
+      "organization": 1
+    }
+  },
+  {
     "model": "cms.region",
     "pk": 1,
     "fields": {
@@ -117,24 +210,24 @@
     "model": "cms.language",
     "pk": 3,
     "fields": {
-      "code": "ar-ma",
-      "english_name": "Arabic",
-      "native_name": "العربية",
-      "text_direction": "rtl",
-      "created_date": "2019-08-12T07:51:29.233Z",
-      "last_updated": "2019-08-12T07:51:29.233Z"
+      "code": "fr-fra",
+      "english_name": "French",
+      "native_name": "Français",
+      "text_direction": "ltr",
+      "created_date": "2019-08-12T07:50:18.139Z",
+      "last_updated": "2019-08-12T07:50:18.140Z"
     }
   },
   {
     "model": "cms.language",
     "pk": 4,
     "fields": {
-      "code": "fa-ir",
-      "english_name": "Farsi",
-      "native_name": "فارسی",
-      "text_direction": "rtl",
-      "created_date": "2019-08-12T07:52:21.399Z",
-      "last_updated": "2019-08-12T07:52:21.400Z"
+      "code": "ru-rus",
+      "english_name": "Russian",
+      "native_name": "русский язык",
+      "text_direction": "ltr",
+      "created_date": "2019-08-12T07:50:18.139Z",
+      "last_updated": "2019-08-12T07:50:18.140Z"
     }
   },
   {
@@ -174,23 +267,7 @@
     "pk": 3,
     "fields": {
       "language": 3,
-      "parent": 2,
-      "region": 1,
-      "active": true,
-      "created_date": "2019-08-12T07:52:52.560Z",
-      "last_updated": "2019-08-12T07:52:52.564Z",
-      "lft": 3,
-      "rght": 4,
-      "tree_id": 1,
-      "level": 2
-    }
-  },
-  {
-    "model": "cms.languagetreenode",
-    "pk": 4,
-    "fields": {
-      "language": 4,
-      "parent": 2,
+      "parent": 1,
       "region": 1,
       "active": true,
       "created_date": "2019-08-12T07:53:00.429Z",
@@ -198,7 +275,23 @@
       "lft": 5,
       "rght": 6,
       "tree_id": 1,
-      "level": 2
+      "level": 1
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 4,
+    "fields": {
+      "language": 4,
+      "parent": 1,
+      "region": 1,
+      "active": true,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 1
     }
   },
   {
@@ -238,13 +331,13 @@
     "pk": 7,
     "fields": {
       "language": 3,
-      "parent": 6,
+      "parent": 5,
       "region": 2,
       "active": true,
-      "created_date": "2019-08-12T07:53:43.197Z",
-      "last_updated": "2019-08-12T07:53:43.201Z",
-      "lft": 3,
-      "rght": 6,
+      "created_date": "2019-08-12T07:53:50.363Z",
+      "last_updated": "2019-08-12T07:53:50.374Z",
+      "lft": 4,
+      "rght": 5,
       "tree_id": 2,
       "level": 2
     }
@@ -254,7 +347,7 @@
     "pk": 8,
     "fields": {
       "language": 4,
-      "parent": 7,
+      "parent": 5,
       "region": 2,
       "active": true,
       "created_date": "2019-08-12T07:53:50.363Z",
@@ -262,7 +355,7 @@
       "lft": 4,
       "rght": 5,
       "tree_id": 2,
-      "level": 3
+      "level": 2
     }
   },
   {
@@ -286,7 +379,7 @@
     "pk": 10,
     "fields": {
       "language": 2,
-      "parent": 1,
+      "parent": 9,
       "region": 3,
       "active": true,
       "created_date": "2019-08-12T07:52:44.617Z",
@@ -302,13 +395,13 @@
     "pk": 11,
     "fields": {
       "language": 3,
-      "parent": 2,
+      "parent": 9,
       "region": 3,
       "active": true,
-      "created_date": "2019-08-12T07:52:52.560Z",
-      "last_updated": "2019-08-12T07:52:52.564Z",
-      "lft": 3,
-      "rght": 4,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
       "tree_id": 1,
       "level": 2
     }
@@ -318,7 +411,7 @@
     "pk": 12,
     "fields": {
       "language": 4,
-      "parent": 2,
+      "parent": 9,
       "region": 3,
       "active": true,
       "created_date": "2019-08-12T07:53:00.429Z",
@@ -439,6 +532,42 @@
   },
   {
     "model": "cms.pagetranslation",
+    "pk": 44,
+    "fields": {
+      "page": 18,
+      "slug": "Gesundheit",
+      "title": "Gesundheit",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 45,
+    "fields": {
+      "page": 19,
+      "slug": "rechtliches-beratungsangebote",
+      "title": "Rechtliches Beratungsangebote",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
     "pk": 7,
     "fields": {
       "page": 1,
@@ -511,139 +640,211 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 11,
+    "pk": 46,
     "fields": {
-      "page": 1,
-      "slug": "\u06af\u0627\u0645-\u0646\u062e\u0633\u062a",
-      "title": "\u06af\u0627\u0645 \u0646\u062e\u0633\u062a",
+      "page": 18,
+      "slug": "Health",
+      "title": "Health",
       "status": "PUBLIC",
-      "text": "<p>\u06af\u0627\u0645 \u0646\u062e\u0633\u062a</p>",
-      "language": 4,
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.<p>",
+      "language": 2,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:08:37.158Z",
-      "last_updated": "2019-08-12T08:08:37.172Z"
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 47,
+    "fields": {
+      "page": 19,
+      "slug": "Legal-advice-services",
+      "title": "Legal advice services",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.<p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 11,
+    "fields": {
+      "page": 1,
+      "slug": "Bienvenue",
+      "title": "Bienvenue",
+      "status": "PUBLIC",
+      "text": "<p>Bienvenue à Augsburg</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 12,
     "fields": {
-      "page": 5,
-      "slug": "\u0646\u0642\u0634\u0647-\u0634\u0647\u0631",
-      "title": "\u0646\u0642\u0634\u0647 \u0634\u0647\u0631",
+      "page": 3,
+      "slug": "à-propos-de-la-application-integreat-augsburg",
+      "title": "À propos de l'application Integreat-augsburg",
       "status": "PUBLIC",
-      "text": "<p>\u0622\u06cc\u0627 \u0628\u0647 \u0646\u0642\u0634\u0647 \u0634\u0647\u0631 \u0646\u06cc\u0627\u0632 \u062f\u0627\u0631\u06cc\u062f\u061f \u062f\u0631 \u0627\u06cc\u0646\u062c\u0627 \u0628\u0647 \u06cc\u06a9 \u0646\u0642\u0634\u0647 \u0627\u0632 \u0634\u0647\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u062f\u0633\u062a\u0631\u0633\u06cc \u067e\u06cc\u062f\u0627 \u0645\u06cc \u06a9\u0646\u06cc\u062f. \u0646\u0642\u0634\u0647 \u0634\u0647\u0631 \u0631\u0627\u06cc\u06af\u0627\u0646 \u0627\u0633\u062a. \u0627\u06cc\u0646 \u0646\u0642\u0634\u0647 \u0628\u062f\u0648\u0646 \u0646\u06cc\u0627\u0632 \u0628\u0647 \u0627\u062a\u0635\u0627\u0644 \u0628\u0647 \u0627\u06cc\u0646\u062a\u0631\u0646\u062a \u0647\u0645 \u06a9\u0627\u0631 \u0645\u06cc \u06a9\u0646\u062f \u0648 \u0642\u0627\u0628\u0644\u06cc\u062a \u062c\u0647\u062a \u06cc\u0627\u0628\u06cc \u0647\u0645 \u062f\u0627\u0631\u062f. \u0646\u0642\u0634\u0647 \u0634\u0647\u0631 \u0631\u0627 \u0628\u0647 \u0627\u06cc\u0646 \u062a\u0631\u062a\u06cc\u0628 \u0645\u06cc \u062a\u0648\u0627\u0646\u06cc\u062f \u0628\u062f\u0633\u062a \u0622\u0648\u0631\u06cc\u062f: \u0627\u067e MAPS.ME \u0631\u0627 \u062f\u0627\u0646\u0644\u0648\u062f \u06a9\u0646\u06cc\u062f. \u0627\u06cc\u0646 \u0627\u067e \u062f\u0631 \u067e\u0644\u06cc \u0627\u0633\u062a\u0648\u0631 \u0627\u0646\u062f\u0631\u0648\u06cc\u062f \u0645\u0648\u062c\u0648\u062f \u0627\u0633\u062a. \u0627\u06cc\u0646 \u0627\u067e \u0631\u0627\u06cc\u06af\u0627\u0646 \u0627\u0633\u062a. \u0628\u0647 \u0627\u06cc\u0646 \u0634\u06a9\u0644 \u06a9\u0627\u0631 \u0645\u06cc \u06a9\u0646\u062f: \u0646\u0642\u0634\u0647 \u0627\u06cc\u0627\u0644\u062a \u062e\u0648\u062f \u0631\u0627 \u062f\u0627\u0646\u0644\u0648\u062f \u06a9\u0646\u06cc\u062f. \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u062f\u0631 \u0627\u06cc\u0627\u0644\u062a \u0628\u0627\u06cc\u0631\u0646 (\u0628\u0627\u0648\u0627\u0631\u06cc\u0627) \u0642\u0631\u0627\u0631 \u062f\u0627\u0631\u062f. \u0633\u067e\u0633 \u0646\u0642\u0634\u0647 \u0634\u0647\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u0631\u0627 \u062f\u0627\u0646\u0644\u0648\u062f \u0646\u0645\u0627\u06cc\u06cc\u062f. \u062f\u0627\u0644\u0648\u062f MAPS.ME \u062f\u0631 \u067e\u0644\u06cc \u0627\u0633\u062a\u0648\u0631 \u0627\u0646\u062f\u0631\u0648\u06cc\u062f \u0627\u06af\u0631 \u062f\u0646\u0628\u0627\u0644 \u06cc\u06a9 \u0646\u0642\u0634\u0647 \u0633\u0627\u062f\u0647 \u0627\u0632 \u0634\u0647\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u0647\u0633\u062a\u06cc\u062f \u0645\u06cc \u062a\u0648\u0627\u0646\u06cc\u062f \u0622\u0646 \u0631\u0627 \u062f\u0631 \u0627\u06cc\u0646\u062a\u0631\u0646\u062a \u062f\u0631 \u0627\u06cc\u0646 \u0622\u062f\u0631\u0633 \u067e\u06cc\u062f\u0627 \u06a9\u0646\u06cc\u062fwww.stadtplan.augsburg.de</p>",
-      "language": 4,
+      "text": "<p>Ce guide vous aidera dans votre vie quotidienne à Augsburg. Vous y trouverez des adresses importantes, des personnes à contacter et des conseils et astuces qui vous aideront à vous repérer dans Berlin. Votre guide de tous les jours comporte plusieurs chapitres. Chaque chapitre traite d'un sujet différent. Vous y trouverez par exemple des informations sur les médecins, les écoles, les cours d'allemand ou d'autres institutions. Un chapitre est également consacré aux idées sur ce que vous pouvez faire pendant votre temps libre. Les informations et les activités de loisirs changent et nous mettons régulièrement cette page à jour. C'est pourquoi il est très bon que vous consultiez souvent votre application mobile et que vous vous teniez informé des activités et des événements en cours. Vous pouvez également utiliser cette application hors ligne si vous n'avez pas accès à l'internet. Lorsque vous serez de nouveau en ligne, l'application se mettra à jour. Nous espérons que cette application facilitera votre séjour à Berlin. Nous nous réjouissons de vous accueillir ici à Berlin. Coordinateurs de l'éducation pour les nouveaux immigrants</p>",
+      "language": 3,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:08:54.805Z",
-      "last_updated": "2019-08-12T08:08:54.855Z"
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 13,
     "fields": {
-      "page": 1,
-      "slug": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a-\u0627\u0644\u0648\u0635\u0648\u0644",
-      "title": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0648\u0635\u0648\u0644",
+      "page": 5,
+      "slug": "Plan-de-la-ville",
+      "title": "Plan de la ville",
       "status": "PUBLIC",
-      "text": "<p>\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0648\u0635\u0648\u0644</p>",
+      "text": "<p>Vous cherchez un plan de ville ? Voici un plan des rues de Augsburg. Le plan de la ville est gratuit, il fonctionne hors ligne et dispose d'une fonction de navigation : Téléchargez l'application MAPS.ME. L'application se trouve dans Google Play sur Android. Elle est gratuite. Comment ça marche : téléchargez une carte de votre État fédéral. Berlin est situé à Berlin. Téléchargez ensuite le plan de la ville de Augsburg : Téléchargez sur MAPS.ME dans Google Play sur Android ou dans l'App Store. Vous cherchez un plan de la ville de Berlin de style classique ? Vous pouvez en trouver un en ligne sur www.stadtplan.berlin.de.<p>",
       "language": 3,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:09:45.042Z",
-      "last_updated": "2019-08-12T08:09:45.052Z"
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 14,
     "fields": {
-      "page": 2,
-      "slug": "\u0645\u0631\u062d\u0628\u0627-\u0628\u0643\u0645-\u0641\u064a-\u0645\u062f\u064a\u0646\u0629-\u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c",
-      "title": "\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c",
+      "page": 6,
+      "slug": "Contacter-l-équipe-de-l-application-augsburg",
+      "title": "Contacter l'équipe d'application à Augsburg",
       "status": "PUBLIC",
-      "text": "<p>\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c ! \u0645\u0646 \u0623\u062c\u0644 \u062f\u0639\u0645\u0643\u0645 \u0643\u0637\u0627\u0644\u0628\u0649 \u0648\u0637\u0627\u0644\u0628\u0627\u062a \u0644\u062c\u0648\u0621 \u0643\u064f\u062a\u0628\u062a \u0647\u0630\u0647 \u0627\u0644\u062e\u0637\u0648\u0637 \u0627\u0644\u0625\u0631\u0634\u0627\u062f\u064a\u0629 \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0627\u0644\u062d\u064a\u0627\u0629 \u0627\u0644\u064a\u0648\u0645\u064a\u0629 \u0641\u064a \u0645\u062f\u064a\u0646\u062a\u0646\u0627. \u0641\u0636\u0644\u064b\u0627 \u0639\u0646 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0645\u062e\u062a\u0635\u064a\u0646 \u0648\u0627\u0644\u0639\u0646\u0627\u0648\u064a\u0646 \u0627\u0644\u0647\u0627\u0645\u0629 \u062a\u062c\u062f\u0648\u0646 \u0646\u0635\u0627\u0626\u062d \u062a\u0633\u0627\u0639\u062f\u0643\u0645 \u0639\u0646\u062f \u0627\u0644\u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u0649. \u064a\u062a\u0643\u0648\u0646 \u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u064a\u0648\u0645\u0649 \u0627\u0644\u0630\u0649 \u0628\u064a\u0646 \u0623\u064a\u062f\u064a\u0643\u0645 \u0645\u0646 \u0639\u062f\u0629 \u0641\u0635\u0648\u0644 \u064a\u062a\u0646\u0627\u0648\u0644 \u0643\u0644 \u0645\u0646\u0647\u0627 \u0645\u0648\u0636\u0648\u0639\u0627\u062a \u0645\u062e\u062a\u0644\u0641\u0629. \u0641\u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0639\u0646 \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0648\u0627\u0644\u0645\u062f\u0631\u0633\u0629 \u0648\u062f\u0648\u0631\u0627\u062a \u062a\u0639\u0644\u0645 \u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629 \u0648\u0639\u0631\u0636 \u0645\u062e\u062a\u0644\u0641 \u0627\u0644\u0645\u0624\u0633\u0633\u0627\u062a \u062e\u0635\u0635\u0646\u0627 \u0644\u0643\u0645 \u0641\u0635\u0644\u064b\u0627 \u0643\u0627\u0645\u0644\u064b\u0627 \u0639\u0646 \u0627\u0644\u062a\u0631\u0641\u064a\u0647 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0631\u062c. \u0648\u0646\u0638\u0631\u064b\u0627 \u0644\u0623\u0646 \u0647\u0630\u0627 \u0627\u0644\u0639\u0631\u0636 \u064a\u062a\u062c\u062f\u062f \u0628\u0625\u0633\u062a\u0645\u0631\u0627\u0631 \u0641\u0645\u0646 \u0627\u0644\u0645\u0641\u064a\u062f \u063a\u0627\u0644\u0628\u064b\u0627 \u0625\u0644\u0642\u0627\u0621 \u0646\u0638\u0631\u0629 \u0639\u0644\u0649 \u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0647\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 \u0644\u0644\u0625\u0637\u0644\u0627\u0639 \u0639\u0644\u0649 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0623\u062d\u062f\u0627\u062b \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u0646\u0623\u0645\u0644 \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u0645 \u0641\u064a \u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0628\u062f\u0621 \u0628\u0625\u0633\u062a\u0639\u0645\u0627\u0644 \u062f\u0644\u064a\u0644 \u0627\u0644\u0647\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 \u0627\u0644\u0645\u062a\u0648\u0641\u0631 \u0648\u0646\u062a\u0637\u0644\u0639 \u0625\u0644\u0649 \u0627\u0644\u062a\u0631\u062d\u064a\u0628 \u0628\u0643\u0645 \u0641\u064a \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0641\u0648\u062c\u0631\u0632.</p>",
+      "text": "<p>Si vous avez des questions ou si vous souhaitez nous faire part de vos commentaires, veuillez nous écrire ou nous appeler : Coordination pédagogique pour les nouveaux immigrants <br><br><br>Ville de Augsburg <br><br><br>Office pour la migration, l'interculturalité et la diversité <br><br><br>Office de l'enfance, de la jeunesse et de la famille <br><br><br><br><br> Mots clés : coordination pédagogique, contact, App Team Augsburg, questions, suggestions, suggestions d'amélioration, critique, éloge<p>",
       "language": 3,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:10:22.985Z",
-      "last_updated": "2019-08-12T08:10:23.049Z"
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 48,
+    "fields": {
+      "page": 18,
+      "slug": "santé",
+      "title": "Santé",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 49,
+    "fields": {
+      "page": 19,
+      "slug": "services-de-conseil-juridique",
+      "title": "Services de conseil juridique",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 15,
     "fields": {
-      "page": 3,
-      "slug": "\u0645\u0631\u062d\u0628\u0627-\u0628\u0643\u0645-\u0641\u064a-\u0645\u062f\u064a\u0646\u0629-\u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c",
-      "title": "\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c",
+      "page": 1,
+      "slug": "Добро пожаловать на  ",
+      "title": "Добро пожаловать на  ",
       "status": "PUBLIC",
-      "text": "<p>\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0648\u0631\u062c ! \u0645\u0646 \u0623\u062c\u0644 \u062f\u0639\u0645\u0643\u0645 \u0643\u0637\u0627\u0644\u0628\u0649 \u0648\u0637\u0627\u0644\u0628\u0627\u062a \u0644\u062c\u0648\u0621 \u0643\u064f\u062a\u0628\u062a \u0647\u0630\u0647 \u0627\u0644\u062e\u0637\u0648\u0637 \u0627\u0644\u0625\u0631\u0634\u0627\u062f\u064a\u0629 \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0627\u0644\u062d\u064a\u0627\u0629 \u0627\u0644\u064a\u0648\u0645\u064a\u0629 \u0641\u064a \u0645\u062f\u064a\u0646\u062a\u0646\u0627. \u0641\u0636\u0644\u064b\u0627 \u0639\u0646 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0645\u062e\u062a\u0635\u064a\u0646 \u0648\u0627\u0644\u0639\u0646\u0627\u0648\u064a\u0646 \u0627\u0644\u0647\u0627\u0645\u0629 \u062a\u062c\u062f\u0648\u0646 \u0646\u0635\u0627\u0626\u062d \u062a\u0633\u0627\u0639\u062f\u0643\u0645 \u0639\u0646\u062f \u0627\u0644\u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0623\u0648\u0644\u0649. \u064a\u062a\u0643\u0648\u0646 \u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u064a\u0648\u0645\u0649 \u0627\u0644\u0630\u0649 \u0628\u064a\u0646 \u0623\u064a\u062f\u064a\u0643\u0645 \u0645\u0646 \u0639\u062f\u0629 \u0641\u0635\u0648\u0644 \u064a\u062a\u0646\u0627\u0648\u0644 \u0643\u0644 \u0645\u0646\u0647\u0627 \u0645\u0648\u0636\u0648\u0639\u0627\u062a \u0645\u062e\u062a\u0644\u0641\u0629. \u0641\u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0639\u0646 \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0648\u0627\u0644\u0645\u062f\u0631\u0633\u0629 \u0648\u062f\u0648\u0631\u0627\u062a \u062a\u0639\u0644\u0645 \u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629 \u0648\u0639\u0631\u0636 \u0645\u062e\u062a\u0644\u0641 \u0627\u0644\u0645\u0624\u0633\u0633\u0627\u062a \u062e\u0635\u0635\u0646\u0627 \u0644\u0643\u0645 \u0641\u0635\u0644\u064b\u0627 \u0643\u0627\u0645\u0644\u064b\u0627 \u0639\u0646 \u0627\u0644\u062a\u0631\u0641\u064a\u0647 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0631\u062c. \u0648\u0646\u0638\u0631\u064b\u0627 \u0644\u0623\u0646 \u0647\u0630\u0627 \u0627\u0644\u0639\u0631\u0636 \u064a\u062a\u062c\u062f\u062f \u0628\u0625\u0633\u062a\u0645\u0631\u0627\u0631 \u0641\u0645\u0646 \u0627\u0644\u0645\u0641\u064a\u062f \u063a\u0627\u0644\u0628\u064b\u0627 \u0625\u0644\u0642\u0627\u0621 \u0646\u0638\u0631\u0629 \u0639\u0644\u0649 \u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0647\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 \u0644\u0644\u0625\u0637\u0644\u0627\u0639 \u0639\u0644\u0649 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0623\u062d\u062f\u0627\u062b \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u0646\u0623\u0645\u0644 \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u0645 \u0641\u064a \u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0628\u062f\u0621 \u0628\u0625\u0633\u062a\u0639\u0645\u0627\u0644 \u062f\u0644\u064a\u0644 \u0627\u0644\u0647\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 \u0627\u0644\u0645\u062a\u0648\u0641\u0631 \u0648\u0646\u062a\u0637\u0644\u0639 \u0625\u0644\u0649 \u0627\u0644\u062a\u0631\u062d\u064a\u0628 \u0628\u0643\u0645 \u0641\u064a \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0641\u0648\u062c\u0631\u0632.</p>",
-      "language": 3,
+      "text": "<p>Добро пожаловать в Аугсбург</p>",
+      "language": 4,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:11:24.417Z",
-      "last_updated": "2019-08-12T08:11:24.443Z"
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 50,
+    "fields": {
+      "page": 18,
+      "slug": "Здравоохранение",
+      "title": "Здравоохранение",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 51,
+    "fields": {
+      "page": 19,
+      "slug": "Юридические консультации",
+      "title": "Юридические консультации",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 16,
     "fields": {
-      "page": 3,
-      "slug": "\u0628\u0647-\u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af-\u062e\u0648\u0634-\u0622\u0645\u062f\u06cc\u062f",
-      "title": "\u0628\u0647 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u062e\u0648\u0634 \u0622\u0645\u062f\u06cc\u062f",
-      "status": "PUBLIC",
-      "text": "<p>\u0628\u0647 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u062e\u0648\u0634 \u0622\u0645\u062f\u06cc\u062f! \u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627 \u0634\u0645\u0627 \u0631\u0627 \u062f\u0631 \u0627\u0646\u062c\u0627\u0645 \u0627\u0645\u0648\u0631 \u0631\u0648\u0632\u0645\u0631\u0647 \u062a\u0627\u0646 \u062f\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u06cc\u0627\u0631\u06cc \u0645\u06cc \u06a9\u0646\u062f. \u0627\u06cc\u0646\u062c\u0627 \u0645\u06cc \u062a\u0648\u0627\u0646\u06cc\u062f \u0646\u0627\u0645 \u0648 \u0646\u0634\u0627\u0646\u06cc \u0647\u0627\u06cc \u0645\u0647\u0645 \u0648 \u0646\u06cc\u0632 \u0646\u06a9\u0627\u062a \u0645\u0641\u06cc\u062f\u06cc \u0631\u0627 \u067e\u06cc\u062f\u0627 \u06a9\u0646\u06cc\u062f \u06a9\u0647 \u0634\u0645\u0627 \u0631\u0627 \u062f\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u0631\u0627\u0647\u0646\u0645\u0627\u06cc\u06cc \u0645\u06cc \u06a9\u0646\u0646\u062f. \u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627 \u0686\u0646\u062f \u0641\u0635\u0644 \u062f\u0627\u0631\u062f. \u0648 \u0647\u0631 \u0641\u0635\u0644 \u0628\u0647 \u062a\u0648\u0636\u06cc\u062d \u06cc\u06a9 \u0645\u0648\u0636\u0648\u0639 \u0627\u062e\u062a\u0635\u0627\u0635 \u062f\u0627\u0631\u062f. \u0628\u0647 \u0639\u0646\u0648\u0627\u0646 \u0645\u062b\u0627\u0644 \u062f\u0631 \u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627 \u0627\u0637\u0644\u0627\u0639\u0627\u062a\u06cc \u062f\u0631 \u0645\u0648\u0631\u062f \u067e\u0632\u0634\u06a9\u0627\u0646\u060c \u0645\u062f\u0627\u0631\u0633\u060c \u06a9\u0644\u0627\u0633 \u0647\u0627\u06cc \u0632\u0628\u0627\u0646 \u0622\u0644\u0645\u0627\u0646\u06cc \u0648 \u0627\u062f\u0627\u0631\u0647 \u062c\u0627\u062a \u0622\u0644\u0645\u0627\u0646 \u0645\u0648\u062c\u0648\u062f \u0627\u0633\u062a. \u062f\u0631 \u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627 \u0647\u0645\u0686\u0646\u06cc\u0646 \u06cc\u06a9 \u0628\u062e\u0634 \u062f\u0631\u0628\u0627\u0631\u0647 \u0627\u0645\u06a9\u0627\u0646\u0627\u062a \u0645\u0648\u062c\u0648\u062f \u0628\u0631\u0627\u06cc \u06af\u0630\u0631\u0627\u0646\u062f\u0646 \u0627\u0648\u0642\u0627\u062a \u0641\u0631\u0627\u063a\u062a \u062a\u0646\u0638\u06cc\u0645 \u0634\u062f\u0647 \u0627\u0633\u062a. \u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0645\u0631\u0628\u0648\u0637 \u0628\u0647 \u0627\u0648\u0642\u0627\u062a \u0641\u0631\u0627\u063a\u062a \u0645\u0645\u06a9\u0646 \u0627\u0633\u062a \u0645\u0631\u062a\u0628 \u062a\u063a\u06cc\u06cc\u0631 \u06a9\u0646\u062f \u0648 \u0645\u0627 \u0627\u06cc\u0646 \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a \u0631\u0627 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647 \u0628\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc \u062e\u0648\u0627\u0647\u06cc\u0645 \u06a9\u0631\u062f. \u0628\u0647 \u0647\u0645\u06cc\u0646 \u062e\u0627\u0637\u0631 \u062a\u0648\u0636\u06cc\u0647 \u0645\u06cc \u06a9\u0646\u06cc\u0645 \u0645\u0631\u062a\u0628 \u0628\u0647 \u0633\u0627\u06cc\u062a \u0633\u0631 \u0628\u0632\u0646\u06cc\u062f \u06cc\u0627 \u0627\u067e \u062e\u0648\u062f \u0631\u0627 \u0686\u06a9 \u06a9\u0646\u06cc\u062f \u062a\u0627 \u0627\u0632 \u062a\u0627\u0632\u0647 \u062a\u0631\u06cc\u0646 \u0627\u062e\u0628\u0627\u0631 \u0648 \u0628\u0631\u0646\u0627\u0645\u0647 \u0647\u0627 \u0645\u0637\u0644\u0627\u0639 \u0634\u0648\u06cc\u062f. \u0645\u0627 \u0627\u0645\u06cc\u062f\u0648\u0627\u0631\u06cc\u0645 \u0628\u0627 \u0627\u06cc\u0646 \u0627\u067e \u0628\u062a\u0648\u0627\u0646\u06cc\u0645 \u0631\u0648\u0632\u0647\u0627\u06cc \u0627\u0648\u0644 \u0627\u0642\u0627\u0645\u062a \u0634\u0645\u0627 \u0631\u0627 \u062f\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u0631\u0627\u062d\u062a \u062a\u0631 \u0648 \u0628\u0639\u062f \u0627\u0632 \u0627\u06cc\u0646 \u0632\u0646\u062f\u06af\u06cc \u062f\u0631 \u0622\u0648\u06af\u0633\u0628\u0648\u0631\u06af \u0631\u0627 \u0628\u0631\u0627\u06cc\u062a\u0627\u0646 \u062f\u0644\u067e\u0630\u06cc\u0631 \u062a\u0631 \u0646\u0645\u0627\u06cc\u06cc\u0645. \u0628\u0633\u06cc\u0627\u0631 \u062e\u0631\u0633\u0646\u062f\u06cc\u0645 \u0627\u0632 \u0627\u06cc\u0646\u06a9\u0647 \u0628\u0647 \u0634\u0645\u0627 \u062f\u0631 \u0634\u0647\u0631 \u0635\u0644\u062d \u0648 \u062f\u0648\u0633\u062a\u06cc\u060c \u0622\u06af\u0633\u0628\u0648\u0631\u06af \u062e\u0648\u0634 \u0622\u0645\u062f \u0628\u06af\u0648\u06cc\u06cc\u0645.</p>",
-      "language": 4,
-      "currently_in_translation": false,
-      "version": 1,
-      "minor_edit": false,
-      "creator": 1,
-      "created_date": "2019-08-12T08:11:53.038Z",
-      "last_updated": "2019-08-12T08:11:53.052Z"
-    }
-  },
-  {
-    "model": "cms.pagetranslation",
-    "pk": 17,
-    "fields": {
-      "page": 4,
-      "slug": "\u0627\u0644\u062d\u064a\u0627\u0629-\u0641\u064a-\u0623\u0648\u062c\u0633\u0628\u0631\u062c",
-      "title": "\u0627\u0644\u062d\u064a\u0627\u0629 \u0641\u064a \u0623\u0648\u062c\u0633\u0628\u0631\u062c",
-      "status": "PUBLIC",
-      "text": "<p>\u062a\u0642\u0639 \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0641\u064a \u062c\u0646\u0648\u0628 \u063a\u0631\u0628 \u0628\u0627\u0641\u0627\u0631\u064a\u0627 \u0648\u062a\u0628\u0639\u062f \u0639\u0646 \u0645\u062f\u064a\u0646\u0629 \u0645\u064a\u0648\u0646\u062e \u062d\u0648\u0627\u0644\u0649 60 \u0643\u0645. \u0628\u062d\u0648\u0627\u0644\u0649 284.000 \u0646\u0633\u0645\u0629 \u062a\u0639\u062f \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u062b\u0627\u0644\u062b \u0623\u0643\u0628\u0631 \u0645\u062f\u064a\u0646\u0629 \u0641\u064a \u0628\u0627\u0641\u0627\u0631\u064a\u0627 \u0628\u0639\u062f \u0645\u064a\u0648\u0646\u062e \u0648\u0646\u0648\u0631\u0646\u0628\u0631\u062c. . \u0648\u064a\u0639\u0648\u062f \u0625\u0633\u0645 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0625\u0644\u0649 \u0627\u0644\u0642\u064a\u0635\u0631 \u0627\u0644\u0631\u0648\u0645\u0627\u0646\u0649 \u0623\u063a\u0633\u0637\u0633 \u0627\u0644\u0630\u0649 \u0623\u0633\u0633 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0628\u064a\u0646 \u0627\u0644\u0623\u0646\u0647\u0627\u0631 \u0648\u0627\u0644\u0641\u0631\u062a \u0623\u062e (\u0646\u0647\u0631) \u0642\u0628\u0644 \u0623\u0643\u062b\u0631 \u0645\u0646 2000 \u0639\u0627\u0645. \u062a\u0646\u0641\u0631\u062f \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0639\u0646 \u0628\u0642\u064a\u0629 \u0645\u062f\u0646 \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u0628\u0627\u0644\u0625\u062d\u062a\u0641\u0627\u0644 \u0643\u0644 \u0639\u0627\u0645 \u0628\u0645\u0647\u0631\u062c\u0627\u0646 \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0627\u0644\u0623\u0639\u0644\u0649 \u0644\u0644\u0633\u0644\u0627\u0645 \u0627\u0644\u0630\u0649 \u064a\u0639\u0628\u0631\u062a\u0639\u0628\u064a\u0631\u064e\u0627 \u062a\u0627\u0645\u064e\u0627 \u0639\u0646 \u062d\u0631\u064a\u0629 \u0627\u0644\u0623\u062f\u064a\u0627\u0646 \u0648\u0627\u0644\u0633\u0644\u0627\u0645 \u0628\u064a\u0646\u0647\u0627. \u0645\u0646 \u0627\u0644\u062c\u062f\u064a\u0631 \u0628\u0627\u0644\u0645\u0634\u0627\u0647\u062f\u0629 \u0647\u0648 \u0645\u062c\u0644\u0633 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0628\u0635\u0627\u0644\u062a\u0647 \u0627\u0644\u0630\u0647\u0628\u064a\u0629 \u0648\u0627\u0644\u0640 Fuggerei \" \u0633\u0643\u0646 \u0625\u062c\u062a\u0645\u0627\u0639\u0649\" \u0643\u0648\u0627\u062d\u062f\u0629 \u0645\u0646 \u0623\u0642\u062f\u0645 \u0627\u0644\u0645\u0633\u0627\u0643\u0646 \u0627\u0644\u0625\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0628\u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0648\u0627\u0643\u062a\u062f\u0631\u0627\u0626\u064a\u0629 \u0623\u0648\u062c\u0633\u0628\u0631\u062c. \u0648\u0645\u0634\u062c\u0639\u0649 \u0643\u0631\u0629 \u0627\u0644\u0642\u062f\u0645 \u064a\u0645\u0643\u0646\u0647\u0645 \u0645\u062a\u0627\u0628\u0639\u0629 \u0641\u0631\u064a\u0642 \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0627\u0644\u0631\u064a\u0627\u0636\u0649 \u0627\u0644\u0630\u0649 \u064a\u0644\u0639\u0628 \u0641\u064a \u0627\u0644\u062f\u0648\u0631\u0649 \u0627\u0644\u0645\u0645\u062a\u0627\u0632 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u0649 \u0645\u0646\u0630 2011 \u0648\u064a\u0634\u0627\u0631\u0643 \u0639\u0644\u0649 \u0627\u0644\u0635\u0639\u064a\u062f \u0627\u0644\u062f\u0648\u0644\u0649 \u0641\u064a \u062f\u0648\u0631\u0649 \u0623\u0628\u0637\u0627\u0644 \u0623\u0648\u0631\u0628\u0627 \u0645\u0646\u0630 2015. \u0641\u064a \u0627\u0644\u0641\u0642\u0631\u0629 \u0627\u0644\u062a\u0627\u0644\u064a\u0629 \u062a\u062c\u062f\u0648\u0646 \u0639\u062f\u062f \u0645\u0646 \u0625\u0645\u0643\u0627\u0646\u064a\u0627\u062a \u0642\u0636\u0627\u0621 \u0623\u0648\u0642\u0627\u062a \u0627\u0644\u0641\u0631\u0627\u063a \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u0623\u0648\u062c\u0633\u0628\u0631\u062c \u0648\u0645\u062d\u064a\u0637\u0647\u0627. \u064a\u062a\u0645 \u062a\u062d\u062f\u064a\u062b \u0647\u0630\u0627 \u0627\u0644\u0645\u062c\u0627\u0644 \u0628\u0625\u0633\u062a\u0645\u0631\u0627\u0631 \u0648\u064a\u0639\u062a\u0646\u0649 \u0628\u0647 \u0627\u0644\u0639\u0627\u0645\u0644\u0648\u0646 \u0623\u0646\u0641\u0633\u0647\u0645. \u0627\u062e\u0631 \u062a\u062d\u062f\u064a\u062b: \u0669 \u062f\u064a\u0633\u0645\u0628\u0631 \u0662\u0660\u0661\u0667</p>",
-      "language": 3,
-      "currently_in_translation": false,
-      "version": 1,
-      "minor_edit": false,
-      "creator": 1,
-      "created_date": "2019-08-12T08:13:41.021Z",
-      "last_updated": "2019-08-12T08:13:41.049Z"
-    }
-  },
-  {
-    "model": "cms.pagetranslation",
-    "pk": 18,
-    "fields": {
       "page": 7,
       "slug": "willkommen",
       "title": "Willkommen",
       "status": "PUBLIC",
-      "text": "<p>Willkommen in N&uuml;rnberg</p>",
+      "text": "<p>Willkommen in N&uuml;rnberg</p",
       "language": 1,
       "currently_in_translation": false,
       "version": 1,
@@ -655,7 +856,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 19,
+    "pk": 17,
     "fields": {
       "page": 8,
       "slug": "willkommen-in-nurnberg",
@@ -673,7 +874,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 20,
+    "pk": 18,
     "fields": {
       "page": 9,
       "slug": "zusammenleben-in-deutschland",
@@ -691,7 +892,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 21,
+    "pk": 19,
     "fields": {
       "page": 10,
       "slug": "wissenswertes-uber-nurnberg",
@@ -709,7 +910,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 22,
+    "pk": 20,
     "fields": {
       "page": 11,
       "slug": "stadtplan",
@@ -727,7 +928,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 23,
+    "pk": 21,
     "fields": {
       "page": 12,
       "slug": "uber-integreat",
@@ -745,7 +946,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 24,
+    "pk": 22,
     "fields": {
       "page": 13,
       "slug": "aufenthaltstitel",
@@ -763,43 +964,43 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 25,
-    "fields": {
-      "page": 7,
-      "slug": "\u0627\u0644\u062a\u0631\u062d\u064a\u0628",
-      "title": "\u0627\u0644\u062a\u0631\u062d\u064a\u0628",
-      "status": "PUBLIC",
-      "text": "<p>\u0627\u0644\u062a\u0631\u062d\u064a\u0628</p>",
-      "language": 3,
-      "currently_in_translation": false,
-      "version": 1,
-      "minor_edit": false,
-      "creator": 1,
-      "created_date": "2019-08-12T08:22:18.585Z",
-      "last_updated": "2019-08-12T08:22:18.602Z"
-    }
-  },
-  {
-    "model": "cms.pagetranslation",
-    "pk": 26,
-    "fields": {
-      "page": 8,
-      "slug": "\u0645\u0631\u062d\u0628\u0627-\u0628\u0643\u0645-\u0641\u064a-\u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a",
-      "title": "\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a!",
-      "status": "PUBLIC",
-      "text": "<p>\u0645\u0631\u062d\u0628\u064b\u0627 \u0628\u0643\u0645 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0648\u0627\u0644\u0633\u0627\u062f\u0629\u060c \u064a\u0633\u0631\u0646\u064a\u060c \u0643\u0639\u0645\u062f\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u0646 \u0623\u062a\u062d\u062f\u064a\u062b \u0625\u0644\u064a\u0643\u0645 \u0627\u0644\u064a\u0648\u0645 \u0628\u0646\u0641\u0633\u064a \u0648\u0623\u0631\u062d\u0628 \u0628\u0643\u0645 \u0641\u064a \u0645\u062f\u064a\u0646\u062a\u0646\u0627. \u062a\u062a\u0645\u062a\u0639 \u0645\u062f\u064a\u0646\u062a\u0646\u0627\u060c \u0627\u0644\u062a\u064a \u064a\u0639\u064a\u0634 \u0628\u0647\u0627 \u0642\u0631\u0627\u0628\u0629 500000 \u0646\u0633\u064e\u0645\u0629\u060c \u0628\u062a\u0627\u0631\u064a\u062e \u0639\u0631\u064a\u0642. \u0641\u0641\u064a \u0643\u0644 \u0632\u0645\u0627\u0646 \u064a\u0623\u062a\u064a \u0627\u0644\u0645\u0647\u0627\u062c\u0631\u0648\u0646 \u0625\u0644\u0649 \u0647\u0630\u0647 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0648\u064a\u0635\u0628\u062d\u0648\u0646 \u0645\u0646 \u0623\u0647\u0644\u0647\u0627.\u062d\u064a\u062b \u064a\u0631\u0648\u0646 \u0637\u0627\u0628\u0639 \u0627\u0644\u062a\u0646\u0648\u0651\u0639 \u0627\u0644\u0630\u064a \u064a\u062a\u0633\u0645 \u0628\u0647 \u0645\u062c\u062a\u0645\u0639\u0646\u0627:\u0641\u0623\u0643\u062b\u0631 \u0645\u0646 \u062e\u064f\u0645\u0633\u064a \u0633\u0643\u0627\u0646 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0645\u0646 \u0627\u0644\u0645\u0647\u0627\u062c\u0631\u064a\u0646 \u0623\u0648 \u0645\u0646 \u0623\u0635\u0648\u0644 \u0645\u0634\u0627\u0628\u0647\u0629 \u062e\u0627\u0631\u062c \u0623\u0644\u0645\u0627\u0646\u064a\u0627. \u0644\u0642\u062f \u0648\u062c\u062f\u062a\u0645 \u0647\u0646\u0627 \u0627\u0644\u0628\u064a\u062a\u060c \u0648\u0627\u0644\u062c\u064a\u0631\u0627\u0646\u060c \u0648\u0627\u0644\u0623\u0635\u062f\u0642\u0627\u0621\u060c \u0628\u0635\u0641\u0629 \u0645\u0624\u0642\u062a\u0629 \u0644\u0628\u0639\u0636\u0643\u0645 \u0648\u0628\u0635\u0641\u0629 \u062f\u0627\u0626\u0645\u0629 \u0644\u0644\u0628\u0639\u0636 \u0627\u0644\u0622\u062e\u0631. \u0646\u062a\u0645\u0646\u0649 \u0644\u0643\u0645 \u0623\u0646 \u062a\u062a\u0623\u0642\u0644\u0645\u0648\u0627 \u0645\u0639 \u0648\u062c\u0648\u062f\u0643\u0645 \u0628\u064a\u0646\u0646\u0627 \u0633\u0631\u064a\u0639\u064b\u0627. \u0648\u0645\u0645\u0627 \u0633\u064a\u0633\u0627\u0639\u062f\u0643\u0645 \u0639\u0644\u0649 \u0630\u0644\u0643\u060c \u062a\u0639\u0644\u0645 \u0644\u063a\u062a\u0646\u0627 \u0648\u0641\u0647\u0645 \u0642\u064a\u0645\u0646\u0627 \u0648\u062b\u0642\u0627\u0641\u062a\u0646\u0627. \u0648\u0645\u0646 \u0636\u0645\u0646 \u062b\u0642\u0627\u0641\u062a\u0646\u0627 \u0627\u0644\u062a\u0631\u062d\u064a\u0628\u064a\u0629\u060c \u0646\u0648\u0641\u0631 \u0644\u0643\u0645 \u0628\u064a\u0626\u0629 \u0625\u064a\u062c\u0627\u0628\u064a\u0629 \u0648\u0645\u0641\u062a\u0648\u062d\u0629 \u0645\u0644\u064a\u0626\u0629 \u0628\u0627\u0644\u062a\u0646\u0648\u0639 \u0641\u064a \u0645\u062f\u064a\u0646\u062a\u0646\u0627. \u0648\u0627\u0644\u062a\u064a \u062a\u062d\u062b \u0639\u0644\u0649 \u0627\u0644\u062a\u0633\u0627\u0645\u062d \u0648\u0645\u0631\u0627\u0639\u0627\u0629 \u0627\u0644\u0622\u062e\u0631\u064a\u0646 \u0645\u0646 \u0627\u0644\u062c\u0630\u0648\u0631 \u0627\u0644\u0642\u0648\u0645\u064a\u0629 \u0648\u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0627\u0644\u0623\u062e\u0631\u0649. \u0648\u0628\u0648\u0635\u0641\u0646\u0627 \u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u062d\u0642\u0648\u0642 \u0627\u0644\u0625\u0646\u0633\u0627\u0646\u060c \u062a\u0644\u062a\u0632\u0645 \u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0628\u062d\u0642\u0648\u0642 \u0627\u0644\u0625\u0646\u0633\u0627\u0646 \u0639\u0644\u0649 \u0646\u062d\u0648 \u062e\u0627\u0635 \u0644\u0644\u063a\u0627\u064a\u0629.\u0641\u0627\u0644\u0627\u062d\u062a\u0631\u0627\u0645 \u0648\u0627\u0644\u062a\u0642\u062f\u064a\u0631 \u0627\u0644\u0645\u062a\u0628\u0627\u062f\u0644 \u062a\u062c\u0627\u0647 \u0645\u0646 \u062d\u0648\u0644\u0646\u0627 \u0645\u0646 \u0627\u0644\u0628\u0634\u0631 \u0647\u0648 \u0627\u0644\u0645\u0642\u0648\u0651\u0645 \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0644\u0646\u062a\u0639\u0627\u064a\u0634 \u0645\u0639\u064b\u0627 \u0641\u064a \u0633\u0644\u0627\u0645 \u0648\u062a\u0636\u0627\u0645\u0646. \u0648\u062a\u0634\u0645\u0644 \u0642\u064a\u0645\u0646\u0627 \u0623\u064a\u0636\u064b\u0627 \u0627\u0644\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0627\u0644\u062a\u0641\u0631\u0642\u0629 \u0648\u0643\u0630\u0644\u0643 \u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0623\u0642\u0644\u064a\u0627\u062a \u0648\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0627\u0644\u0636\u0639\u064a\u0641\u0629 \u0641\u064a \u0645\u062c\u062a\u0645\u0639\u0646\u0627 \u0645\u062b\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644 \u0648\u0643\u0628\u0627\u0631 \u0627\u0644\u0633\u0646\u060c \u0623\u0648 \u0627\u0644\u0644\u0627\u062c\u0626\u064a\u0646\u060c \u0623\u0648 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0630\u0648\u064a \u0627\u0644\u0625\u0639\u0627\u0642\u0629. \u0648\u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0623\u0633\u0627\u0633\u060c \u0623\u062a\u0645\u0646\u0649 \u0623\u0646 \u0646\u062a\u0645\u0643\u0646 \u0645\u0646 \u0627\u0644\u062a\u0639\u0627\u064a\u0634 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0628\u0646\u062c\u0627\u062d \u0648\u0623\u0646 \u0646\u062a\u0623\u0642\u0644\u0645 \u0645\u0639\u064b\u0627 \u0628\u0643\u0644 \u0627\u062d\u062a\u0631\u0627\u0645. \u062a\u062d\u064a\u0627\u062a\u064a\u060c \u062f. \u0623\u0648\u0644\u0631\u064a\u0634 \u0645\u0627\u0644\u064a \u0639\u0645\u062f\u0629 \u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0627\u062e\u0631 \u062a\u062d\u062f\u064a\u062b: \u0663\u0661 \u0623\u063a\u0633\u0637\u0633 \u0662\u0660\u0661\u0667</p>",
-      "language": 3,
-      "currently_in_translation": false,
-      "version": 1,
-      "minor_edit": false,
-      "creator": 1,
-      "created_date": "2019-08-12T08:22:31.256Z",
-      "last_updated": "2019-08-12T08:22:31.270Z"
-    }
-  },
-  {
-    "model": "cms.pagetranslation",
     "pk": 27,
+    "fields": {
+      "page": 20,
+      "slug": "Gesundheit",
+      "title": "Gesundheit",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:17:48.342Z",
+      "last_updated": "2019-08-12T08:17:48.382Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 52,
+    "fields": {
+      "page": 21,
+      "slug": "rechtliches-beratungsangebote",
+      "title": "rechtliches-beratungsangebote",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:17:48.342Z",
+      "last_updated": "2019-08-12T08:17:48.382Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 23,
     "fields": {
       "page": 7,
       "slug": "welcome",
@@ -817,7 +1018,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 28,
+    "pk": 24,
     "fields": {
       "page": 9,
       "slug": "community-life-in-germany",
@@ -835,7 +1036,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 29,
+    "pk": 25,
     "fields": {
       "page": 12,
       "slug": "about-integreat",
@@ -853,7 +1054,7 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 30,
+    "pk": 26,
     "fields": {
       "page": 10,
       "slug": "trivia-about-nuremberg",
@@ -871,56 +1072,741 @@
   },
   {
     "model": "cms.pagetranslation",
-    "pk": 31,
+    "pk": 53,
     "fields": {
-      "page": 10,
-      "slug": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a-\u0642\u064a\u0645\u0629-\u0639\u0646-\u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a",
-      "title": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0642\u064a\u0651\u0645\u0629 \u0639\u0646 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a",
+      "page": 20,
+      "slug": "Health",
+      "title": "Health",
       "status": "PUBLIC",
-      "text": "<p>\u062a\u0642\u0639 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0641\u064a \u0627\u0644\u0645\u0642\u0627\u0637\u0639\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f\u064a\u0629 \u0628\u0627\u0641\u0627\u0631\u064a\u0627 \u0648\u0628\u0645\u0646\u0637\u0642\u0629 \u0648\u0633\u0637 \u0641\u0631\u0627\u0646\u0643\u0646. \u064a\u0639\u064a\u0634 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u0643\u062b\u0631 \u0645\u0646 500000 \u0646\u0633\u064e\u0645\u0629\u060c \u0648\u0647\u064a \u062b\u0627\u0646\u064a \u0623\u0643\u0628\u0631 \u0645\u062f\u064a\u0646\u0629 \u0641\u064a \u0628\u0627\u0641\u0627\u0631\u064a\u0627 \u0628\u0639\u062f \u0645\u064a\u0648\u0646\u064a\u062e. \u0648\u064a\u062a\u062f\u0641\u0642 \u0639\u0628\u0631 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0646\u0647\u0631 \u064a\u064f\u0633\u0645\u0649 \"\u0628\u064a\u063a\u0646\u064a\u062a\u0633\". \u0647\u0646\u0627\u0643 \u0623\u0631\u0628\u0639\u0629 \u0623\u0645\u0627\u0643\u0646 \u062c\u0645\u064a\u0644\u0629 \u0648\u0645\u062b\u064a\u0631\u0629 \u0644\u0644\u0627\u0647\u062a\u0645\u0627\u0645 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a. \u0648\u0644\u0643\u0646 \u062a\u0634\u062a\u0647\u0631 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0628\u0634\u0643\u0644 \u062e\u0627\u0635\u0628\u0642\u0644\u0639\u0629 \u0627\u0644\u0639\u0635\u0648\u0631 \u0627\u0644\u0648\u0633\u0637\u0649 (\u0643\u0627\u064a\u0632\u0631\u0628\u0648\u0631\u063a), \u0648\u0627\u0644\u0645\u062a\u062d\u0641 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u062c\u0631\u0645\u0627\u0646\u064a \u0648 \u0633\u0648\u0642 \u0627\u0644\u0643\u0631\u064a\u0633\u0645\u0627\u0633\u0628\u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u0631\u0626\u064a\u0633\u064a. \u064f\u0630\u064f\u0643\u0631\u062a \u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0641\u064a \u0627\u0644\u0634\u0647\u0627\u062f\u0627\u062a \u0627\u0644\u0625\u0645\u0628\u0631\u0627\u0637\u0648\u0631\u064a\u0629 \u0644\u0623\u0648\u0644 \u0645\u0631\u0629 \u0639\u0627\u0645 1050. \u0648\u0627\u0633\u0645 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0645\u0634\u062a\u0642 \u0645\u0646 \u0643\u0644\u0645\u0629 \"Norenberc\" (\u0646\u0648\u0631\u0646\u0628\u064a\u0631\u0643) \u0648\u062a\u0639\u0646\u064a \"\u0627\u0644\u062c\u0628\u0644 \u0627\u0644\u0635\u062e\u0631\u064a\". \u0648\u064a\u0631\u062c\u0639 \u0627\u0633\u0645 \"\u0627\u0644\u062c\u064a\u0644 \u0627\u0644\u0635\u062e\u0631\u064a\" \u0625\u0644\u0649 \u0623\u0646 \u0642\u0644\u0639\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0642\u062f \u0628\u064f\u0646\u064a\u062a \u0639\u0644\u0649 \u0635\u062e\u0631\u0629 \u0631\u0645\u0644\u064a\u0629. \u0648\u0627\u0644\u0637\u0631\u064a\u0642 \u0646\u062d\u0648 \u0634\u0627\u0631\u0639 \u0627\u0644\u0642\u0644\u0639\u0629 \u0645\u0646\u062d\u062f\u0631 \u0644\u0644\u063a\u0627\u064a\u0629\u060c \u0644\u0643\u0646\u0647 \u064a\u0633\u062a\u062d\u0642 \u0627\u0644\u0639\u0646\u0627\u0621! \u0648\u0645\u0646 \u0641\u0648\u0642 \u0645\u064a\u062f\u0627\u0646 \u0623\u0648\u0633\u0632\u064a\u0634\u062a \u0628\u0644\u0627\u062a\u0633 \u064a\u0645\u0643\u0646\u0643\u0645 \u0627\u0644\u0627\u0633\u062a\u0645\u062a\u0627\u0639 \u0628\u0645\u0646\u0638\u0631 \u0631\u0627\u0626\u0639 \u0644\u0644\u0645\u062f\u064a\u0646\u0629.\u0648\u064a\u0643\u0648\u0646 \u062f\u062e\u0648\u0644 \u0647\u0630\u0627 \u0627\u0644\u062c\u0632\u0621 \u0645\u0646 \u0627\u0644\u0642\u0644\u0639\u0629 \u0645\u062c\u0627\u0646\u064a\u064b\u0627. \u064a\u0645\u0643\u0646\u0643\u0645 \u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u0623\u0645\u0648\u0631 \u0627\u0644\u0634\u064a\u0651\u0642\u0629 \u062d\u0648\u0644 \u062a\u0627\u0631\u064a\u062e \u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0641\u064a \u0645\u062a\u062d\u0641 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0641\u064a\u0645\u0628\u0648\u0647\u0627\u0648\u0633. \u0648\u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 &lt;&lt;\u062c\u0648\u0627\u0632 \u0627\u0644\u0645\u0631\u0648\u0631 \u0625\u0644\u0649 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a&gt;&gt; \u0633\u064a\u0643\u0644\u0641\u0643\u0645 \u0627\u0644\u062f\u062e\u0648\u0644 1.50 \u064a\u0648\u0631\u0648 \u0641\u0642\u0637. \"\u0623\u0644\u0628\u0631\u064a\u0634\u062a \u062f\u0648\u0631\u0631\" \u0647\u0648 \u0623\u062d\u062f \u0623\u0634\u0647\u0631 \u0623\u0628\u0646\u0627\u0621 \u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a. \u0644\u0642\u062f \u0648\u064f\u0644\u062f \u0639\u0627\u0645 1497 \u0648\u062a\u0648\u0641\u064a \u0639\u0627\u0645 1528. \u0648\u0643\u0627\u0646 \u0631\u0633\u0651\u0627\u0645\u064b\u0627\u060c \u0648\u0639\u0627\u0644\u0645 \u0631\u064a\u0627\u0636\u064a\u0627\u062a\u060c \u0648\u0645\u0624\u0631\u062e \u0641\u0646\u064a. \u0648\u062d\u062a\u0649 \u0627\u0644\u064a\u0648\u0645 \u0644\u0627 \u0632\u0627\u0644\u062a \u0647\u0646\u0627\u0643 \u0627\u0644\u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u0623\u0645\u0648\u0631 \u0627\u0644\u062a\u064a \u062a\u0630\u0643\u0631\u0646\u0627 \u0628\u0640\"\u0623\u0644\u0628\u0631\u064a\u0634\u062a \u062f\u0648\u0631\u0631\". \u0641\u0639\u0644\u0649 \u0633\u0628\u064a\u0644 \u0627\u0644\u0645\u062b\u0627\u0644\u060c \u0647\u0646\u0627\u0643 \u0645\u064a\u062f\u0627\u0646 \u0623\u0644\u0628\u0631\u064a\u0634\u062a \u062f\u0648\u0631\u0631 \u0648\u0627\u0644\u0630\u064a \u064a\u0636\u0645 \u062a\u0645\u062b\u0627\u0644\u0627\u064b \u0644\u0647\u060c \u0648\u0627\u0644\u064a\u0648\u0645 \u0623\u0635\u0628\u062d \u0645\u0646\u0632\u0644\u0647 \u0627\u0644\u0633\u0627\u0628\u0642 \u0645\u062a\u062d\u0641\u064b\u0627\u060c \u0648\u064a\u064f\u0639\u0631\u0641 \u0628\u0627\u0633\u0645\u0628\u064a\u062a \u0623\u0644\u0628\u0631\u064a\u0634\u062a \u062f\u0648\u0631\u0631. \u0643\u0645\u0627 \u062a\u0634\u062a\u0647\u0631 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u064a\u0636\u064b\u0627 \u0628\u0627\u0644\u0644\u0639\u0628. \u0644\u0630\u0644\u0643 \u064a\u064f\u0642\u0627\u0645 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u0643\u0628\u0631 \u0645\u0639\u0631\u0636 \u0644\u0644\u0639\u0628 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645. \u0648\u0645\u0646\u0630 \u0627\u0644\u0639\u0635\u0648\u0631 \u0627\u0644\u0648\u0633\u0637\u0649\u060c \u062a\u0642\u0648\u0645 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0628\u062a\u0635\u0646\u064a\u0639 \u0627\u0644\u0644\u0639\u0628. \u0641\u064a\u0645\u062a\u062d\u0641 \u0627\u0644\u0644\u0639\u0628 \u0633\u064a\u064f\u062f\u0647\u0634\u0643\u0645 \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0644\u0639\u0628 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0648\u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645. \u0648\u0647\u0646\u0627 \u0623\u064a\u0636\u064b\u0627 \u064a\u0633\u062f\u062f \u062d\u0627\u0645\u0644\u0648 &lt;&lt;\u062c\u0648\u0627\u0632 \u0627\u0644\u0645\u0631\u0648\u0631 \u0625\u0644\u0649 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a&gt;&gt; \u0645\u0628\u0644\u063a 1.50 \u064a\u0648\u0631\u0648 \u0641\u0642\u0637! \u0643\u0645\u0627 \u062a\u0634\u062a\u0647\u0631 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u064a\u0636\u064b\u0627 \u0628\u0643\u0639\u0643 \u0627\u0644\u0632\u0646\u062c\u0628\u064a\u0644 \u0648\u0627\u0644\u0646\u0642\u0627\u0646\u0642 \u0627\u0644\u0645\u0642\u0644\u064a\u0629. \u0643\u0639\u0643 \u0627\u0644\u0632\u0646\u062c\u0628\u064a\u0644 \u0647\u0648 \u0643\u0639\u0643 \u064a\u062d\u062a\u0648\u064a \u0639\u0644\u0649 \u0627\u0644\u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u062a\u0648\u0627\u0628\u0644. \u0648\u064a\u062a\u0645 \u062a\u062d\u0636\u064a\u0631\u0647\u0627 \u0645\u0646 \u0648\u0635\u0641\u0629 \u0633\u0631\u064a\u0629 \u0645\u0646\u0630 \u0627\u0644\u0642\u0631\u0646 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631 \u0648\u0647\u064a \u0645\u0634\u0647\u0648\u0631\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645 \u0628\u0623\u0643\u0645\u0644\u0647. \u062d\u062a\u0649 \u0623\u064f\u0637\u0644\u0642 \u0639\u0644\u0649 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0627\u0633\u0645 \"\u0645\u062f\u064a\u0646\u0629 \u0643\u0639\u0643 \u0627\u0644\u0632\u0646\u062c\u0628\u064a\u0644\". \u0643\u0645\u0627 \u064a\u062a\u0645 \u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0646\u0642\u0627\u0646\u0642 \u0627\u0644\u0645\u0642\u0644\u064a\u0629 \u0645\u0646 \u0648\u0635\u0641\u0629 \u0645\u062e\u0641\u064a\u0651\u0629 \u0648\u062a\u064f\u0628\u0627\u0639 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645 \u0628\u0623\u0643\u0645\u0644\u0647 \u0643\u0633\u0644\u0639\u0629 \u062a\u062c\u0627\u0631\u064a\u0629 \u0645\u0639\u0631\u0648\u0641\u0629. \u0648\u0641\u064a \u0643\u0644 \u0623\u0646\u062d\u0627\u0621 \u0627\u0644\u0645\u062f\u064a\u0646\u0629\u060c \u062a\u062c\u062f\u0648\u0646 \u0623\u0643\u0648\u0627\u062e\u064b\u0627 \u0635\u063a\u064a\u0631\u0629\u060c \u062a\u0628\u064a\u0639 \u0646\u0642\u0627\u0646\u0642 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0627\u0644\u0634\u0647\u064a\u0631\u0629 \"Drei im Weggla\". \u0648\u0647\u064a \u0639\u0628\u0627\u0631\u0629 \u0639\u0646 \u0646\u0642\u0627\u0646\u0642 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0641\u064a \u0627\u0644\u062e\u0628\u0632 \u0627\u0644\u0635\u063a\u064a\u0631. \u0628\u062f\u0623 \u0623\u0648\u0644 \u0642\u0637\u0627\u0631 \u0628\u062e\u0627\u0631\u064a \u0641\u064a \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0641\u064a 7 \u062f\u064a\u0633\u0645\u0628\u0631 1835 \u0648\u0643\u0627\u0646 \u064a\u063a\u0637\u064a \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0645\u0646 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0625\u0644\u0649 \u0641\u0648\u0631\u062a.\u0648\u0628\u0630\u0644\u0643 \u0628\u062f\u0623 \u0627\u0644\u0639\u0635\u064a\u0631 \u0627\u0644\u0635\u0646\u0627\u0639\u064a \u0644\u0645\u062f\u064a\u0646\u0629 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a. \u0648\u0642\u062f \u0623\u064f\u0637\u0644\u0642 \u0639\u0644\u0649 \u0627\u0644\u0642\u0637\u0627\u0631 \u0627\u0644\u0628\u062e\u0627\u0631\u064a \u0627\u0633\u0645 \"\u0627\u0644\u0646\u0633\u0631\" \u0648\u064a\u0645\u0643\u0646 \u0645\u0634\u0627\u0647\u062f\u062a\u0647 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a\u0645\u062a\u062d\u0641 \u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u0646\u0642\u0644. \u062a\u0634\u062a\u0647\u0631 \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a \u0623\u064a\u0636\u064b\u0627 \u0628\u0623\u0646\u0647\u0627 \u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0646\u0627\u0632\u064a.\u062e\u0644\u0627\u0644 \u0627\u0644\u0639\u0647\u062f \u0627\u0644\u0646\u0627\u0631\u064a \u062a\u0645 \u0625\u0646\u0634\u0627\u0621 \u0645\u0628\u0646\u0649 \u0627\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0646\u0627\u0632\u064a \u0641\u064a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a\u060c \u0644\u064a\u0643\u0648\u0646 \u0645\u0642\u0631\u064b\u0627 \u0644\u0644\u0645\u0624\u062a\u0645\u0631 \u0627\u0644\u062d\u0632\u0628\u064a \u0644\u0644\u062d\u0632\u0628 \u0627\u0644\u0646\u0627\u0632\u064a \u0627\u0644\u0630\u064a \u0643\u0627\u0646 \u064a\u0636\u0645 \u0645\u0626\u0627\u062a \u0627\u0644\u0622\u0644\u0627\u0641 \u0645\u0646 \u0627\u0644\u0623\u0639\u0636\u0627\u0621.\u0648\u062d\u062a\u0649 \u0627\u0644\u064a\u0648\u0645 \u0644\u0627 \u0632\u0627\u0644 \u0645\u0646 \u0627\u0644\u0645\u0645\u0643\u0646 \u0632\u064a\u0627\u0631\u0629 \u062c\u0632\u0621 \u0643\u0628\u064a\u0631 \u0645\u0646 \u0627\u0644\u0645\u0643\u0627\u0646\u060c \u0643\u0645\u0627 \u064a\u0642\u062f\u0645 \u0645\u0631\u0643\u0632 \u0627\u0644\u062a\u0648\u062b\u064a\u0642 \u0628\u0645\u0628\u0646\u0649 \u0627\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0646\u0627\u0632\u064a\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0645\u0641\u0635\u0651\u0644\u0629 \u062d\u0648\u0644 \u0627\u0644\u0623\u062d\u062f\u0627\u062b \u0627\u0644\u062a\u0627\u0631\u064a\u062e\u064a\u0629. \u0623\u0645\u0627 \u0627\u0644\u064a\u0648\u0645 \u0641\u062a\u064f\u0642\u0627\u0645 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0645\u0643\u0627\u0646 \u0623\u062d\u062f\u0627\u062b \u0645\u0648\u0633\u064a\u0642\u064a\u0629 \u0643\u0628\u0631\u0649 \u0648\u0633\u0628\u0627\u0642\u0627\u062a \u0644\u0644\u0633\u064a\u0627\u0631\u0627\u062a. \u0628\u0639\u062f \u0627\u0646\u062a\u0647\u0627\u0621 \u0627\u0644\u062d\u0631\u0628 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629\u060c \u0643\u0627\u0646 \u0644\u0632\u0627\u0645\u064b\u0627 \u0639\u0644\u0649 \u0643\u0628\u0627\u0631 \u0645\u0645\u062b\u0644\u064a \u0627\u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u0646\u0627\u0632\u064a \u0627\u0644\u0645\u062b\u0648\u0644 \u0623\u0645\u0627\u0645 \u0645\u062d\u0643\u0645\u0629 \u0627\u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0627\u0644\u062f\u0648\u0644\u064a\u0629 \u0644\u0644\u0631\u062f\u0651 \u0639\u0644\u0649 \u062c\u0631\u0627\u0626\u0645\u0647\u0645.\u0648\u062a\u0645\u062b\u0644 \"\u0645\u062d\u0627\u0643\u0645\u0627\u062a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a\" \u0647\u0630\u0647 \u0623\u0633\u0627\u0633\u064b\u0627 \u0644\u0645\u0648\u0627\u0635\u0644\u0629 \u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0642\u0627\u0646\u0648\u0646 \u0627\u0644\u062f\u0648\u0644\u064a \u0648\u0647\u064a \u0645\u0648\u062b\u0642\u0629 \u0641\u064a \u0645\u062a\u062d\u0641 \u0627\u0644\u0645\u0639\u0631\u0636 \u0627\u0644\u062a\u0630\u0643\u0627\u0631\u064a \u0644\u0645\u062d\u0627\u0643\u0645\u0627\u062a \u0646\u0648\u0631\u0646\u0628\u064a\u0631\u063a . \u0648\u0643\u062a\u0630\u0643\u0627\u0631 \u0622\u062e\u0631 \u0628\u062c\u0631\u0627\u0626\u0645 \u0627\u0644\u0646\u0627\u0632\u064a\u0629\u060c \u064a\u0630\u0643\u0631\u0646\u0627 \u0634\u0627\u0631\u0639 \u062d\u0642\u0648\u0642 \u0627\u0644\u0625\u0646\u0633\u0627\u0646 \u0627\u0644\u0630\u064a \u064a\u0636\u0645 27 \u0639\u0645\u0648\u062f\u064b\u0627 \u062d\u064f\u0641\u0631\u062a \u0639\u0644\u064a\u0647\u0645 \u0645\u0648\u0627\u062f \u062d\u0642\u0648\u0642 \u0627\u0644\u0625\u0646\u0633\u0627\u0646\u060c \u0628\u0644\u063a\u0627\u062a \u0645\u062e\u062a\u0644\u0641\u0629\u060c \u0628\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u062d\u0627\u0644\u064a \u0641\u064a \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u062f\u0648\u0644 \u0648\u064a\u062f\u0639\u0648 \u0625\u0644\u0649 \u062a\u0639\u0627\u064a\u0634 \u0627\u0644\u062b\u0642\u0627\u0641\u0627\u062a \u0645\u0639\u064b\u0627 \u0641\u064a \u0633\u0644\u0627\u0645. \u0627\u062e\u0631 \u062a\u062d\u062f\u064a\u062b: \u0663\u0661 \u0623\u063a\u0633\u0637\u0633 \u0662\u0660\u0661\u0667</p>",
-      "language": 3,
+      "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+      "language": 2,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:25:47.171Z",
-      "last_updated": "2019-08-12T08:25:47.203Z"
+      "created_date": "2019-08-12T08:17:48.342Z",
+      "last_updated": "2019-08-12T08:17:48.382Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 54,
+    "fields": {
+      "page": 21,
+      "slug": "legal-consulting-services",
+      "title": "Legal consulting services",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:17:48.342Z",
+      "last_updated": "2019-08-12T08:17:48.382Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 28,
+    "fields": {
+      "page": 14,
+      "slug": "willkommen",
+      "title": "Willkommen",
+      "status": "PUBLIC",
+      "text": "<p>Willkommen in Berlin</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 29,
+    "fields": {
+      "page": 15,
+      "slug": "uber-die-app-integreat-berlin",
+      "title": "\u00dcber die App Integreat Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Willkommen in Berlin!  Dieser Leitfaden wird Sie in Ihrem Alltag in Berlin unterstützen. Hier finden Sie wichtige Adressen, Ansprechpartner sowie Tipps und Tricks, die Ihnen helfen, sich in Berlin besser zu orientieren. Dieser Alltagsführer ist in mehrere Kapitel gegliedert. Jedes Kapitel behandelt ein anderes Thema. So finden Sie z.B. Informationen zu Ärzten, Schulen, Deutschkursen und anderen Institutionen. Es gibt auch ein Kapitel mit Ideen, was Sie in Ihrer Freizeit unternehmen können. Die Informationen und Freizeitmöglichkeiten ändern sich häufig, deshalb aktualisieren wir sie regelmäßig. Deshalb ist es eine gute Idee, regelmäßig einen Blick auf Ihre mobile App zu werfen und sich über aktuelle Aktivitäten und Veranstaltungen zu informieren. Sie können diese App auch offline benutzen, wenn Sie keinen Internetzugang haben. Die App wird automatisch aktualisiert, wenn Sie wieder online sind. Wir hoffen, dass diese App Ihr Leben in Berlin ein wenig einfacher macht und freuen uns, Sie hier in der Friedensstadt Berlin begrüßen zu dürfen. BMFSFJ DemokratieLeben</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:59:50.954Z",
+      "last_updated": "2019-08-12T08:05:39.369Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 30,
+    "fields": {
+      "page": 16,
+      "slug": "stadtplan",
+      "title": "Stadtplan",
+      "status": "PUBLIC",
+      "text": "<p>Suchen Sie einen Stadtplan? Hier ist ein Stadtplan von Berlin. Der Stadtplan ist kostenlos, funktioniert offline und verfügt über eine Navigationsfunktion: <br><br>So erhalten Sie den Plan: Laden Sie die MAPS.ME-App herunter.Die App ist in Google Play auf Android zu finden.Sie ist kostenlos. So funktioniert's:Laden Sie einen Stadtplan Ihres Bundeslandes herunter.Berlin liegt in Berlin. Dann laden Sie sich den Stadtplan von Berlin herunter.Berlin befindet sich in Berlin: Download von MAPS.ME in Google Play on Android oder im App Store.<br><br>Suchen Sie einen Stadtplan im klassischen Stil von Berlin? Sie finden ihn online unter www.stadtplan.berlin.de</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:13.169Z",
+      "last_updated": "2019-08-12T08:01:13.187Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 31,
+    "fields": {
+      "page": 17,
+      "slug": "kontakt-zu-app-team-berlin",
+      "title": "Kontakt zu App Team Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Wenn Sie Fragen haben oder uns etwas mitteilen m\u00f6chten, schreiben Sie uns oder rufen Sie uns an:<br><br>Bildungskoordination f&uuml;r Neuzugewanderte<br><br>Stadt Berlin<br>B&uuml;ro f&uuml;r Migration, Interkultur und Vielfalt<br>Amt f&uuml;r Kinder, Jugend und Familie<br> 082132434494 oder 082132434493<br> bildungskoordination@augsburg.de<br><br>Schlagworte: Bildungskoordination, Kontakt, App Team Berlin, Fragen, Anregungen, Verbesserungsvorschlag, Kritik, Lob</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 55,
+    "fields": {
+      "page": 22,
+      "slug": "Gesundheit",
+      "title": "Gesundheit",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 56,
+    "fields": {
+      "page": 23,
+      "slug": "rechtliches-beratungsangebote",
+      "title": "Rechtliches Beratungsangebote",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 32,
     "fields": {
-      "page": 7,
-      "slug": "\u062e\u0648\u0634-\u0622\u0645\u062f\u06cc\u062f",
-      "title": "\u062e\u0648\u0634 \u0622\u0645\u062f\u06cc\u062f",
+      "page": 14,
+      "slug": "welcome",
+      "title": "Welcome",
       "status": "PUBLIC",
-      "text": "<p>\u062e\u0648\u0634 \u0622\u0645\u062f\u06cc\u062f</p>",
-      "language": 4,
+      "text": "<p>Welcome to Berlin</p>",
+      "language": 2,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:26:21.704Z",
-      "last_updated": "2019-08-12T08:26:21.723Z"
+      "created_date": "2019-08-12T08:02:48.827Z",
+      "last_updated": "2019-08-12T08:02:48.852Z"
     }
   },
   {
     "model": "cms.pagetranslation",
     "pk": 33,
     "fields": {
-      "page": 12,
-      "slug": "\u062f\u0631\u0628\u0627\u0631\u0647-integreat",
-      "title": "\u062f\u0631\u0628\u0627\u0631\u0647 Integreat",
+      "page": 15,
+      "slug": "about-the-integreat-app-berlin",
+      "title": "About the Integreat App Berlin",
       "status": "PUBLIC",
-      "text": "<p>\u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627\u060c \u062f\u0631 \u0632\u0646\u062f\u06af\u06cc \u0631\u0648\u0632\u0645\u0631\u0647 \u062f\u0631 \u0646\u0648\u0631\u0646\u0628\u0631\u06af \u0628\u0647 \u0634\u0645\u0627 \u06a9\u0645\u06a9 \u0645\u06cc \u06a9\u0646\u062f. \u0634\u0645\u0627 \u062f\u0631 \u0622\u0646 \u0646\u0634\u0627\u0646\u06cc \u0647\u0627\u06cc \u0645\u0647\u0645\u060c \u0645\u0631\u0627\u06a9\u0632 \u067e\u0627\u0633\u062e\u06af\u0648\u06cc\u06cc \u0648 \u0646\u06a9\u0627\u062a \u0648 \u0631\u0648\u0634 \u0647\u0627\u06cc\u06cc \u0631\u0627 \u067e\u06cc\u062f\u0627 \u0645\u06cc \u06a9\u0646\u06cc\u062f \u06a9\u0647 \u0628\u0631\u0627\u06cc \u062a\u062b\u0628\u06cc\u062a \u0634\u062f\u0646 \u062f\u0631 \u0646\u0648\u0631\u0646\u0628\u0631\u06af \u0628\u0647 \u0634\u0645\u0627 \u06a9\u0645\u06a9 \u0645\u06cc \u06a9\u0646\u0646\u062f.&rlm; \u0627\u06cc\u0646 \u0631\u0627\u0647\u0646\u0645\u0627\u06cc \u0645\u0633\u0627\u0626\u0644 \u0631\u0648\u0632\u0645\u0631\u0647 \u0686\u0646\u062f\u06cc\u0646 \u0628\u062e\u0634 \u062f\u0627\u0631\u062f. \u0647\u0631 \u0628\u062e\u0634 \u0628\u0647 \u0645\u0648\u0636\u0648\u0639 \u0645\u062a\u0641\u0627\u0648\u062a\u06cc \u0645\u06cc \u067e\u0631\u062f\u0627\u0632\u062f. \u0634\u0645\u0627 \u0645\u062b\u0644\u0627 \u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0645\u0631\u0628\u0648\u0637 \u0628\u0647 \u067e\u0632\u0634\u06a9\u0627\u0646\u060c \u0645\u062f\u0627\u0631\u0633\u060c \u062f\u0648\u0631\u0647 \u0647\u0627\u06cc \u0622\u0644\u0645\u0627\u0646\u06cc \u06cc\u0627 \u0645\u0648\u0633\u0633\u0627\u062a \u062f\u06cc\u06af\u0631 \u0631\u0627 \u067e\u06cc\u062f\u0627 \u0645\u06cc \u06a9\u0646\u06cc\u062f. \u0647\u0645\u0686\u0646\u06cc\u0646 \u0628\u062e\u0634\u06cc \u0627\u0632 \u0622\u0646 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a \u0628\u0647 \u06a9\u0627\u0631\u0647\u0627\u06cc\u06cc \u06a9\u0647 \u0634\u0645\u0627 \u062f\u0631 \u0627\u0648\u0642\u0627\u062a \u0641\u0631\u0627\u063a\u062a \u0645\u06cc \u062a\u0648\u0627\u0646\u06cc\u062f \u0627\u0646\u062c\u0627\u0645 \u062f\u0647\u06cc\u062f. \u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0648 \u0627\u0645\u06a9\u0627\u0646\u0627\u062a \u0627\u0648\u0642\u0627\u062a \u0641\u0631\u0627\u063a\u062a \u062a\u063a\u06cc\u06cc\u0631 \u0645\u06cc \u06a9\u0646\u0646\u062f \u0648 \u0645\u0627 \u0645\u0631\u062a\u0628 \u0622\u0646\u0647\u0627 \u0631\u0627 \u0628\u0647 \u0631\u0648\u0632 \u0645\u06cc \u06a9\u0646\u06cc\u0645. \u0628\u0647 \u0647\u0645\u06cc\u0646 \u062f\u0644\u06cc\u0644 \u0628\u0633\u06cc\u0627\u0631 \u062e\u0648\u0628 \u0627\u0633\u062a \u0627\u06af\u0631 \u0634\u0645\u0627 \u0645\u0631\u062a\u0628 \u062f\u0631 \u0627\u067e\u0644\u06cc\u06a9\u06cc\u0634\u0646 \u062a\u0644\u0641\u0646 \u0647\u0645\u0631\u0627\u0647 \u062e\u0648\u062f \u0646\u06af\u0627\u0647 \u06a9\u0646\u06cc\u062f \u0648 \u062f\u0631\u0628\u0627\u0631\u0647 \u0631\u0648\u06cc\u062f\u0627\u062f\u0647\u0627 \u0648 \u0628\u0631\u0646\u0627\u0645\u0647 \u0647\u0627\u06cc \u0631\u0648\u0632 \u0645\u0637\u0644\u0639 \u0634\u0648\u06cc\u062f.&rlm; \u0627\u06af\u0631 \u0628\u0647 \u0627\u06cc\u0646\u062a\u0631\u0646\u062a \u062f\u0633\u062a\u0631\u0633\u06cc \u0646\u062f\u0627\u0631\u06cc\u062f\u060c \u0645\u06cc \u062a\u0648\u0627\u0646\u06cc\u062f \u0627\u0632 \u0627\u06cc\u0646 \u0627\u067e\u0644\u06cc\u06a9\u06cc\u0634\u0646 \u0628\u0647 \u0635\u0648\u0631\u062a \u0622\u0641\u0644\u0627\u06cc\u0646 \u0646\u06cc\u0632 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u06a9\u0646\u06cc\u062f. \u0647\u0646\u06af\u0627\u0645\u06cc \u06a9\u0647 \u062f\u0648\u0628\u0627\u0631\u0647 \u0622\u0646\u0644\u0627\u06cc\u0646 \u0634\u062f\u06cc\u062f\u060c \u0627\u067e\u0644\u06cc\u06a9\u06cc\u0634\u0646 \u0628\u0635\u0648\u0631\u062a \u062e\u0648\u062f\u06a9\u0627\u0631 \u0628\u0647 \u0631\u0648\u0632 \u0645\u06cc \u0634\u0648\u062f.&rlm; \u0628\u0633\u06cc\u0627\u0631 \u0627\u0645\u06cc\u062f\u0648\u0627\u0631\u06cc\u0645 \u06a9\u0647 \u0628\u0627 \u0627\u06cc\u0646 \u0627\u067e\u0644\u06cc\u06a9\u06cc\u0634\u0646\u060c \u0628\u062a\u0648\u0627\u0646\u06cc\u0645 \u0627\u0642\u0627\u0645\u062a \u0634\u0645\u0627 \u0631\u0627 \u062f\u0631 \u0646\u0648\u0631\u0646\u0628\u0631\u06af \u0622\u0633\u0627\u0646 \u06a9\u0646\u06cc\u0645. \u062e\u0648\u0634\u062d\u0627\u0644 \u0645\u06cc \u0634\u0648\u06cc\u0645 \u06a9\u0647 \u0628\u0647 \u0634\u0645\u0627 \u062f\u0631 \u0646\u0648\u0631\u0646\u0628\u0631\u06af\u060c \u0634\u0647\u0631 \u0635\u0644\u062d \u0648 \u062d\u0642\u0648\u0642 \u0628\u0634\u0631\u060c \u062e\u0648\u0634 \u0622\u0645\u062f \u0628\u06af\u0648\u06cc\u06cc\u0645.&rlm; BMFSFJ_DemokratieLeben</p>",
+      "text": "<p>Welcome to Berlin!<br><br>This guide will support you in your everyday life in Berlin. Here you will find important addresses, contact persons, and tips and tricks to help you orientate yourself better in Berlin.<br><br>This everyday guide has several chapters. Every chapter deals with a different subject. For example, you will find information on doctors, schools, German courses and other institutions.There is also a chapter with ideas for what you can do in your spare time.The information and leisure options change often, so we update them regularly. That's why it is a good idea to take a regular look at your mobile app and get information about current activities and events.<br><br>You can also use this app offline for when you have no internet access. The app will update automatically when you are back online again.<br><br>We hope that this app makes your life in Berlin a little bit easier.We look forward to welcoming you here in the Peace City of Berlin.<br><br>BMFSFJ_DemokratieLeben</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 34,
+    "fields": {
+      "page": 16,
+      "slug": "city-map",
+      "title": "City Map",
+      "status": "PUBLIC",
+      "text": "<p>Are you looking for a city map? Here is a street map of Berlin. The street map is free of charge.It works offline and has a navigation feature.<br><br>How to get the map: Download the MAPS.ME app.The app can be found in Google Play on Android.It is free.How it works:Download a map of your federal state.Berlin is located in Berlin. Then download the city map for Berlin: Download from MAPS.ME in Google Play on Android or in the App Store.<br><br>Are you looking for a classic-style map of the City of Berlin? You can find one online on www.stadtplan.berlin.de<p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 35,
+    "fields": {
+      "page": 17,
+      "slug": "trivia-about-berlin",
+      "title": "Trivia about Berlin",
+      "status": "PUBLIC",
+      "text": "<p>If you have any questions or comments, please write or call us: <br>Pedagogical Coordination for New Immigrants <br>City of Berlin <br>Office for Migration, Interculturality and Diversity <br>Office for Children, Youth and Family <br>Keywords: pedagogical coordination, contact, App Team Berlin, questions, suggestions for improvement, criticism, praise</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:04:39.710Z",
+      "last_updated": "2019-08-12T08:04:39.746Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 36,
+    "fields": {
+      "page": 14,
+      "slug": "Bienvenue ",
+      "title": "Bienvenue ",
+      "status": "PUBLIC",
+      "text": "<p>Bienvenue à Berlin<p> ",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 37,
+    "fields": {
+      "page": 15,
+      "slug": "à-propos-de-la-application-integreat-berlin",
+      "title": "À propos de l'application Integreat-Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Ce guide vous aidera dans votre vie quotidienne à Berlin. Vous y trouverez des adresses importantes, des personnes à contacter et des conseils et astuces qui vous aideront à vous repérer dans Berlin. Votre guide de tous les jours comporte plusieurs chapitres. Chaque chapitre traite d'un sujet différent. Vous y trouverez par exemple des informations sur les médecins, les écoles, les cours d'allemand ou d'autres institutions. Un chapitre est également consacré aux idées sur ce que vous pouvez faire pendant votre temps libre. Les informations et les activités de loisirs changent et nous mettons régulièrement cette page à jour. C'est pourquoi il est très bon que vous consultiez souvent votre application mobile et que vous vous teniez informé des activités et des événements en cours. Vous pouvez également utiliser cette application hors ligne si vous n'avez pas accès à l'internet. Lorsque vous serez de nouveau en ligne, l'application se mettra à jour. Nous espérons que cette application facilitera votre séjour à Berlin. Nous nous réjouissons de vous accueillir ici à Berlin. Coordinateurs de l'éducation pour les nouveaux immigrants</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 38,
+    "fields": {
+      "page": 16,
+      "slug": "Plan-de-la-ville",
+      "title": "Plan de la ville",
+      "status": "PUBLIC",
+      "text": "<p>Vous cherchez un plan de ville? Voici un plan des rues de Berlin. Le plan de la ville est gratuit, il fonctionne hors ligne et dispose d'une fonction de navigation : Téléchargez l'application MAPS.ME. L'application se trouve dans Google Play sur Android. Elle est gratuite. Comment ça marche : téléchargez une carte de votre État fédéral. Berlin est situé à Berlin. Téléchargez ensuite le plan de la ville de Berlin : Téléchargez sur MAPS.ME dans Google Play sur Android ou dans l'App Store. Vous cherchez un plan de la ville de Berlin de style classique ? Vous pouvez en trouver un en ligne sur www.stadtplan.berlin.de.</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 39,
+    "fields": {
+      "page": 17,
+      "slug": " Contacter-l-équipe-de-l-application-Berlin ",
+      "title": " Contacter l'équipe d'application à Berlin ",
+      "status": "PUBLIC",
+      "text": "<p>Si vous avez des questions ou si vous souhaitez nous faire part de vos commentaires, veuillez nous écrire ou nous appeler : <br><br><br>Coordination pédagogique pour les nouveaux immigrants <br><br><br>Ville de Berlin <br><br><br>Office pour la migration, l'interculturalité et la diversité <br><br><br>Office de l'enfance, de la jeunesse et de la famille <br><br><br><br><br> Mots clés : coordination pédagogique, contact, App Team Berlin, questions, suggestions, suggestions d'amélioration, critique, éloge<p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 57,
+    "fields": {
+      "page": 22,
+      "slug": "Health",
+      "title": "Health",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 58,
+    "fields": {
+      "page": 23,
+      "slug": "legal-consulting-services",
+      "title": "Legal consulting services",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 40,
+    "fields": {
+      "page": 14,
+      "slug": "Добро пожаловать на  ",
+      "title": "Добро пожаловать на  ",
+      "status": "PUBLIC",
+      "text": "<p>Добро пожаловать в Берлин</p>",
       "language": 4,
       "currently_in_translation": false,
       "version": 1,
       "minor_edit": false,
       "creator": 1,
-      "created_date": "2019-08-12T08:26:50.465Z",
-      "last_updated": "2019-08-12T08:26:50.483Z"
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 41,
+    "fields": {
+      "page": 15,
+      "slug": "О-приложении-Integreat-Берлин",
+      "title": "О приложении Integreat-Берлин",
+      "status": "PUBLIC",
+      "text": "<p>Этот справочник поможет вам в вашей повседневной жизни в Берлине. Вы найдете важные адреса, контактные лица, а также советы и рекомендации, которые помогут Вам найти дорогу по Берлину. Ваш ежедневный путеводитель состоит из нескольких глав. Каждая глава посвящена отдельной теме. Например, вы найдете информацию о врачах, школах, курсах немецкого языка и других учебных заведениях. Существует также глава, посвященная идеям о том, что вы можете делать в свободное время. Информация и досуг меняются, и мы регулярно обновляем эту страницу. Поэтому рекомендуется часто проверять мобильное приложение и быть в курсе текущих событий и событий. Вы также можете использовать это приложение в автономном режиме, если у вас нет доступа к Интернету. Когда вы вернетесь в интернет, приложение обновится само. Мы надеемся, что это заявление облегчит Ваше пребывание в Берлине. Мы с нетерпением ждем встречи с вами здесь, в Берлине. Координаторы по вопросам образования для новых иммигрантов</p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 42,
+    "fields": {
+      "page": 16,
+      "slug": " Карта города ",
+      "title": " Карта города",
+      "status": "PUBLIC",
+      "text": "<p>Вы ищете карту города? Вот карта улиц Берлина. Карта улиц является бесплатной, работает в автономном режиме и имеет функцию навигации.<br><br> Как получить карту: Скачать приложение MAPS.ME. Приложение можно найти в Google Play на Android.It is free.How it works:Скачать карту вашей федеральной земли.Berlin находится в Берлине. Затем скачайте карту города Берлин:Скачать с MAPS.ME в Google Play на Android или в App Store.<br><br> Вы ищете карту города Берлина в классическом стиле?  Ее можно найти в Интернете на сайте www.stadtplan.berlin.de.<p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 43,
+    "fields": {
+      "page": 17,
+      "slug": "Связаться с командой Берлина",
+      "title": " Связаться с командой Берлина ",
+      "status": "PUBLIC",
+      "text": " <p> Если у вас есть вопросы или вы хотите нам что-то сказать, пожалуйста, напишите нам или позвоните: <br><br><br> Координация образования для новых иммигрантов <br><br><br> Город Берлин <br> за миграцию, интеркультуру и многообразие <br> Управление по делам детей, молодежи и семьи <br> <br><br><br><br><br> Ключевые слова: Координация образования, контакт, группа по работе с приложениями в Берлине, вопросы, предложения, предложения по улучшению, критика, хвалебные отзывы.<p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 1,
+    "fields": {
+      "parent": null,
+      "icon": "",
+      "region": 1,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T07:57:42.432Z",
+      "last_updated": "2019-08-12T08:09:45.047Z",
+      "lft": 1,
+      "rght": 12,
+      "tree_id": 1,
+      "level": 0,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 30,
+    "fields": {
+      "page": 16,
+      "slug": "stadtplan",
+      "title": "Stadtplan",
+      "status": "PUBLIC",
+      "text": "<p>Suchen Sie einen Stadtplan? Hier ist ein Stadtplan von Berlin. Der Stadtplan ist kostenlos, funktioniert offline und verfügt über eine Navigationsfunktion: <br><br>So erhalten Sie den Plan: Laden Sie die MAPS.ME-App herunter.Die App ist in Google Play auf Android zu finden.Sie ist kostenlos. So funktioniert's:Laden Sie einen Stadtplan Ihres Bundeslandes herunter.Berlin liegt in Berlin. Dann laden Sie sich den Stadtplan von Berlin herunter.Berlin befindet sich in Berlin: Download von MAPS.ME in Google Play on Android oder im App Store.<br><br>Suchen Sie einen Stadtplan im klassischen Stil von Berlin? Sie finden ihn online unter www.stadtplan.berlin.de</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:13.169Z",
+      "last_updated": "2019-08-12T08:01:13.187Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 31,
+    "fields": {
+      "page": 17,
+      "slug": "kontakt-zu-app-team-berlin",
+      "title": "Kontakt zu App Team Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Wenn Sie Fragen haben oder uns etwas mitteilen m\u00f6chten, schreiben Sie uns oder rufen Sie uns an:<br><br>Bildungskoordination f&uuml;r Neuzugewanderte<br><br>Stadt Berlin<br>B&uuml;ro f&uuml;r Migration, Interkultur und Vielfalt<br>Amt f&uuml;r Kinder, Jugend und Familie<br> 082132434494 oder 082132434493<br> bildungskoordination@augsburg.de<br><br>Schlagworte: Bildungskoordination, Kontakt, App Team Berlin, Fragen, Anregungen, Verbesserungsvorschlag, Kritik, Lob</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 55,
+    "fields": {
+      "page": 22,
+      "slug": "Gesundheit",
+      "title": "Gesundheit",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 56,
+    "fields": {
+      "page": 23,
+      "slug": "rechtliches-beratungsangebote",
+      "title": "Rechtliches Beratungsangebote",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 32,
+    "fields": {
+      "page": 14,
+      "slug": "welcome",
+      "title": "Welcome",
+      "status": "PUBLIC",
+      "text": "<p>Welcome to Berlin</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:02:48.827Z",
+      "last_updated": "2019-08-12T08:02:48.852Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 33,
+    "fields": {
+      "page": 15,
+      "slug": "about-the-integreat-app-berlin",
+      "title": "About the Integreat App Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Welcome to Berlin!<br><br>This guide will support you in your everyday life in Berlin. Here you will find important addresses, contact persons, and tips and tricks to help you orientate yourself better in Berlin.<br><br>This everyday guide has several chapters. Every chapter deals with a different subject. For example, you will find information on doctors, schools, German courses and other institutions.There is also a chapter with ideas for what you can do in your spare time.The information and leisure options change often, so we update them regularly. That's why it is a good idea to take a regular look at your mobile app and get information about current activities and events.<br><br>You can also use this app offline for when you have no internet access. The app will update automatically when you are back online again.<br><br>We hope that this app makes your life in Berlin a little bit easier.We look forward to welcoming you here in the Peace City of Berlin.<br><br>BMFSFJ_DemokratieLeben</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 34,
+    "fields": {
+      "page": 16,
+      "slug": "city-map",
+      "title": "City Map",
+      "status": "PUBLIC",
+      "text": "<p>Are you looking for a city map? Here is a street map of Berlin. The street map is free of charge.It works offline and has a navigation feature.<br><br>How to get the map: Download the MAPS.ME app.The app can be found in Google Play on Android.It is free.How it works:Download a map of your federal state.Berlin is located in Berlin. Then download the city map for Berlin: Download from MAPS.ME in Google Play on Android or in the App Store.<br><br>Are you looking for a classic-style map of the City of Berlin? You can find one online on www.stadtplan.berlin.de<p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 35,
+    "fields": {
+      "page": 17,
+      "slug": "trivia-about-berlin",
+      "title": "Trivia about Berlin",
+      "status": "PUBLIC",
+      "text": "<p>If you have any questions or comments, please write or call us: <br>Pedagogical Coordination for New Immigrants <br>City of Berlin <br>Office for Migration, Interculturality and Diversity <br>Office for Children, Youth and Family <br>Keywords: pedagogical coordination, contact, App Team Berlin, questions, suggestions for improvement, criticism, praise</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:04:39.710Z",
+      "last_updated": "2019-08-12T08:04:39.746Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 36,
+    "fields": {
+      "page": 14,
+      "slug": "Bienvenue ",
+      "title": "Bienvenue ",
+      "status": "PUBLIC",
+      "text": "<p>Bienvenue à Berlin<p> ",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 37,
+    "fields": {
+      "page": 15,
+      "slug": "à-propos-de-la-application-integreat-berlin",
+      "title": "À propos de l'application Integreat-Berlin",
+      "status": "PUBLIC",
+      "text": "<p>Ce guide vous aidera dans votre vie quotidienne à Berlin. Vous y trouverez des adresses importantes, des personnes à contacter et des conseils et astuces qui vous aideront à vous repérer dans Berlin. Votre guide de tous les jours comporte plusieurs chapitres. Chaque chapitre traite d'un sujet différent. Vous y trouverez par exemple des informations sur les médecins, les écoles, les cours d'allemand ou d'autres institutions. Un chapitre est également consacré aux idées sur ce que vous pouvez faire pendant votre temps libre. Les informations et les activités de loisirs changent et nous mettons régulièrement cette page à jour. C'est pourquoi il est très bon que vous consultiez souvent votre application mobile et que vous vous teniez informé des activités et des événements en cours. Vous pouvez également utiliser cette application hors ligne si vous n'avez pas accès à l'internet. Lorsque vous serez de nouveau en ligne, l'application se mettra à jour. Nous espérons que cette application facilitera votre séjour à Berlin. Nous nous réjouissons de vous accueillir ici à Berlin. Coordinateurs de l'éducation pour les nouveaux immigrants</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 38,
+    "fields": {
+      "page": 16,
+      "slug": "Plan-de-la-ville",
+      "title": "Plan de la ville",
+      "status": "PUBLIC",
+      "text": "<p>Vous cherchez un plan de ville ? Voici un plan des rues de Berlin. Le plan de la ville est gratuit, il fonctionne hors ligne et dispose d'une fonction de navigation : Téléchargez l'application MAPS.ME. L'application se trouve dans Google Play sur Android. Elle est gratuite. Comment ça marche : téléchargez une carte de votre État fédéral. Berlin est situé à Berlin. Téléchargez ensuite le plan de la ville de Berlin : Téléchargez sur MAPS.ME dans Google Play sur Android ou dans l'App Store. Vous cherchez un plan de la ville de Berlin de style classique ? Vous pouvez en trouver un en ligne sur www.stadtplan.berlin.de.</p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 39,
+    "fields": {
+      "page": 17,
+      "slug": " Contacter-l-équipe-de-l-application-Berlin ",
+      "title": " Contacter l'équipe d'application à Berlin ",
+      "status": "PUBLIC",
+      "text": "<p>Si vous avez des questions ou si vous souhaitez nous faire part de vos commentaires, veuillez nous écrire ou nous appeler : <br><br><br>Coordination pédagogique pour les nouveaux immigrants <br><br><br>Ville de Berlin <br><br><br>Office pour la migration, l'interculturalité et la diversité <br><br><br>Office de l'enfance, de la jeunesse et de la famille <br><br><br><br><br> Mots clés : coordination pédagogique, contact, App Team Berlin, questions, suggestions, suggestions d'amélioration, critique, éloge<p>",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 57,
+    "fields": {
+      "page": 22,
+      "slug": "Health",
+      "title": "Health",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 58,
+    "fields": {
+      "page": 23,
+      "slug": "legal-consulting-services",
+      "title": "Legal consulting services",
+      "status": "PUBLIC",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ante eu nulla mattis luctus. Etiam nec pellentesque tellus, sit amet tristique erat. Donec eu erat ac dui sagittis mollis a vel velit. Donec tincidunt mauris ipsum, vel hendrerit odio pharetra quis. Phasellus sollicitudin risus et vulputate posuere. Nulla sed nisi molestie elit varius posuere. Nulla eu orci eros. Phasellus at hendrerit dolor, et semper leo. Cras auctor enim urna, ut blandit urna elementum quis.</p>",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 40,
+    "fields": {
+      "page": 14,
+      "slug": "Добро пожаловать на  ",
+      "title": "Добро пожаловать на  ",
+      "status": "PUBLIC",
+      "text": "<p>Добро пожаловать в Берлин</p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 41,
+    "fields": {
+      "page": 15,
+      "slug": "О-приложении-Integreat-Берлин",
+      "title": "О приложении Integreat-Берлин",
+      "status": "PUBLIC",
+      "text": "<p>Этот справочник поможет вам в вашей повседневной жизни в Берлине. Вы найдете важные адреса, контактные лица, а также советы и рекомендации, которые помогут Вам найти дорогу по Берлину. Ваш ежедневный путеводитель состоит из нескольких глав. Каждая глава посвящена отдельной теме. Например, вы найдете информацию о врачах, школах, курсах немецкого языка и других учебных заведениях. Существует также глава, посвященная идеям о том, что вы можете делать в свободное время. Информация и досуг меняются, и мы регулярно обновляем эту страницу. Поэтому рекомендуется часто проверять мобильное приложение и быть в курсе текущих событий и событий. Вы также можете использовать это приложение в автономном режиме, если у вас нет доступа к Интернету. Когда вы вернетесь в интернет, приложение обновится само. Мы надеемся, что это заявление облегчит Ваше пребывание в Берлине. Мы с нетерпением ждем встречи с вами здесь, в Берлине. Координаторы по вопросам образования для новых иммигрантов</p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 42,
+    "fields": {
+      "page": 16,
+      "slug": " Карта города ",
+      "title": " Карта города",
+      "status": "PUBLIC",
+      "text": "<p>Вы ищете карту города? Вот карта улиц Берлина. Карта улиц является бесплатной, работает в автономном режиме и имеет функцию навигации.<br><br> Как получить карту: Скачать приложение MAPS.ME. Приложение можно найти в Google Play на Android.It is free.How it works:Скачать карту вашей федеральной земли.Berlin находится в Берлине. Затем скачайте карту города Берлин:Скачать с MAPS.ME в Google Play на Android или в App Store.<br><br> Вы ищете карту города Берлина в классическом стиле?  Ее можно найти в Интернете на сайте www.stadtplan.berlin.de.<p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 43,
+    "fields": {
+      "page": 17,
+      "slug": "Связаться с командой Берлина",
+      "title": " Связаться с командой Берлина ",
+      "status": "PUBLIC",
+      "text": " <p>Если у вас есть вопросы или вы хотите нам что-то сказать, пожалуйста, напишите нам или позвоните: <br><br><br> Координация образования для новых иммигрантов <br><br><br> Город Берлин <br> за миграцию, интеркультуру и многообразие <br> Управление по делам детей, молодежи и семьи <br> <br><br><br><br><br> Ключевые слова: Координация образования, контакт, группа по работе с приложениями в Берлине, вопросы, предложения, предложения по улучшению, критика, хвалебные отзывы.<p>",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
     }
   },
   {
@@ -1021,6 +1907,44 @@
   {
     "model": "cms.page",
     "pk": 6,
+    "fields": {
+      "parent": 1,
+      "icon": "",
+      "region": 1,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:01:42.227Z",
+      "last_updated": "2019-08-12T08:01:42.271Z",
+      "lft": 10,
+      "rght": 11,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 18,
+    "fields": {
+      "parent": 1,
+      "icon": "",
+      "region": 1,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:01:42.227Z",
+      "last_updated": "2019-08-12T08:01:42.271Z",
+      "lft": 10,
+      "rght": 11,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 19,
     "fields": {
       "parent": 1,
       "icon": "",
@@ -1165,6 +2089,158 @@
       "lft": 12,
       "rght": 13,
       "tree_id": 2,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 20,
+    "fields": {
+      "parent": 7,
+      "icon": "",
+      "region": 2,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:18:09.754Z",
+      "last_updated": "2019-08-12T08:27:30.170Z",
+      "lft": 2,
+      "rght": 3,
+      "tree_id": 2,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 21,
+    "fields": {
+      "parent": 7,
+      "icon": "",
+      "region": 2,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:18:09.754Z",
+      "last_updated": "2019-08-12T08:27:30.170Z",
+      "lft": 2,
+      "rght": 3,
+      "tree_id": 2,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 14,
+    "fields": {
+      "parent": null,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T07:57:42.432Z",
+      "last_updated": "2019-08-12T08:09:45.047Z",
+      "lft": 1,
+      "rght": 12,
+      "tree_id": 1,
+      "level": 0,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 15,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 16,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 17,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 22,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 23,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
       "level": 1,
       "editors": [],
       "publishers": []
@@ -1464,7 +2540,7 @@
       "accommodation": 1,
       "status": "PUBLIC",
       "short_description": "Not\u00fcbernachtung I der Berliner Stadtmission",
-      "description": "<ul>\r\n<li>Einlass von 21:00 bis 21:30 Uhr und 23-4 Uhr</li>\r\n<li>125 Schlafpl&auml;tze</li>\r\n<li>soziale Beratung von Mo bis Fr ab 07:00 Uhr</li>\r\n<li>medizinische Betreuung von Mo bis Fr, 21:00 bis 24:00 Uhr</li>\r\n</ul>",
+      "description": "<ul><li>Einlass von 21:00 bis 21:30 Uhr und 23-4 Uhr</li><li>125 Schlafpl&auml;tze</li><li>soziale Beratung von Mo bis Fr ab 07:00 Uhr</li><li>medizinische Betreuung von Mo bis Fr, 21:00 bis 24:00 Uhr</li></ul>",
       "language": 1,
       "version": 1,
       "minor_edit": false,
@@ -1482,7 +2558,7 @@
       "accommodation": 2,
       "status": "PUBLIC",
       "short_description": "Not\u00fcbernachtung II der Berliner Stadtmission",
-      "description": "<p>Die Not&uuml;bernachtung in der Kopenhagener Stra&szlig;e gew&auml;hrt 52 G&auml;sten einen Schlafplatz.</p>\r\n<p>&nbsp;</p>\r\n<p>E-Mail: <a class=\"email\" title=\"E-Mail schreiben\" href=\"mailto:neugebauer@berliner-stadtmission.de\">neugebauer(at)berliner-stadtmission.de</a></p>",
+      "description": "<p>Die Not&uuml;bernachtung in der Kopenhagener Stra&szlig;e gew&auml;hrt 52 G&auml;sten einen Schlafplatz.</p><br><p>&nbsp;</p><br><p>E-Mail: <a class=\"email\" title=\"E-Mail schreiben\" href=\"mailto:neugebauer@berliner-stadtmission.de\">neugebauer(at)berliner-stadtmission.de</a></p>",
       "language": 1,
       "version": 1,
       "minor_edit": false,
@@ -1500,7 +2576,7 @@
       "accommodation": 3,
       "status": "PUBLIC",
       "short_description": "Not\u00fcbernachtung III der Berliner Stadtmission",
-      "description": "<ul>\r\n<li>Am Containerbahnhof 1 (hinter dem Ring-Center Frankfurter Allee)<br />10367 Berlin</li>\r\n<li>Einlass ab 20 Uhr</li>\r\n<li>120 Schlafpl&auml;tze</li>\r\n<li>f&uuml;r Frauen (24 Pl&auml;tze) und M&auml;nner (96 Pl&auml;tze)</li>\r\n<li>Haustiere erlaubt</li>\r\n<li>ge&ouml;ffnet bis 27.04.2019</li>\r\n<li>4-5 mal w&ouml;chentlich soziale Beratung</li>\r\n<li>3 mal w&ouml;chentlich medizinische Betreuung</li>\r\n</ul>",
+      "description": "<ul><li>Am Containerbahnhof 1 (hinter dem Ring-Center Frankfurter Allee)<br />10367 Berlin</li><li>Einlass ab 20 Uhr</li><li>120 Schlafpl&auml;tze</li><li>f&uuml;r Frauen (24 Pl&auml;tze) und M&auml;nner (96 Pl&auml;tze)</li><li>Haustiere erlaubt</li><li>ge&ouml;ffnet bis 27.04.2019</li><li>4-5 mal w&ouml;chentlich soziale Beratung</li><li>3 mal w&ouml;chentlich medizinische Betreuung</li></ul>",
       "language": 1,
       "version": 1,
       "minor_edit": false,
@@ -1518,7 +2594,7 @@
       "accommodation": 4,
       "status": "PUBLIC",
       "short_description": "Not\u00fcbernachtung in der Franklinstra\u00dfe",
-      "description": "<ul>\r\n<li>Einlass von 18:00 bis 21:30 Uhr</li>\r\n</ul>",
+      "description": "<ul><li>Einlass von 18:00 bis 21:30 Uhr</li></ul>",
       "language": 1,
       "version": 1,
       "minor_edit": false,

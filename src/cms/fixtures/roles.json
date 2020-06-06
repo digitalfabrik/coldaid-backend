@@ -1,1 +1,80 @@
-[{"model": "auth.group", "pk": 1, "fields": {"name": "Verwaltung", "permissions": [51, 3, 4, 2, 7, 9, 10, 12, 14, 13, 11, 15, 17, 18, 16, 19, 20, 21]}}, {"model": "auth.group", "pk": 2, "fields": {"name": "Redakteur", "permissions": [12, 14, 13, 11]}}, {"model": "auth.group", "pk": 3, "fields": {"name": "Terminplaner", "permissions": [3, 4, 2, 19, 20, 21]}}]
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "Verwaltung",
+      "permissions": [
+        51,
+        3,
+        8,
+        27,
+        26,
+        4,
+        2,
+        7,
+        9,
+        10,
+        11,
+        14,
+        15,
+        17,
+        18,
+        16,
+        24,
+        28,
+        1,
+        23,
+        25,
+        7,
+        10,
+        16
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "Redakteur",
+      "permissions": [
+        3.7,
+        12,
+        13,
+        11,
+        15,
+        9
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+      "name": "Terminplaner",
+      "permissions": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        26,
+        15
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+      "name": "Rezeptionist",
+      "permissions": [
+        1,
+        3,
+        7,
+        24,
+        28
+      ]
+    }
+  }
+]
