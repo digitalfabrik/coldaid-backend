@@ -18,6 +18,90 @@
     }
   },
   {
+    "model": "auth.user",
+    "pk": 2,
+    "fields":{
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Verwalter",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [1],
+      "user_permissions": []
+     }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Redakteur",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [2],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user", 
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$6GBOYJT9gM6Z$fUrVoa16jJuWcG5G/cEjEGUZ14e9DWJAus8ygWHN4nk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Rezeptionist",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-05-23T09:15:20.960Z",
+      "groups": [4],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "cms.userprofile", 
+    "pk": 5,
+    "fields": {
+      "user": ["Verwalter"],
+      "regions": [3],
+      "organization":1
+    }
+  },
+  {
+    "model": "cms.userprofile", 
+    "pk": 6,
+    "fields": {
+      "user": ["Redakteur"],
+      "regions": [3],
+      "organization":1
+    }
+  },
+  {
+    "model": "cms.userprofile", 
+    "pk": 7,
+    "fields": {
+      "user": ["Rezeptionist"],
+      "regions": [3],
+      "organization":1
+    }
+  },
+
+
+
+  {
     "model": "cms.region",
     "pk": 1,
     "fields": {
@@ -138,6 +222,30 @@
     }
   },
   {
+    "model": "cms.language",
+    "pk": 5,
+    "fields": {
+      "code": "fr-fra",
+      "english_name": "French",
+      "native_name": "Français",
+      "text_direction": "ltr",
+      "created_date": "2019-08-12T07:50:18.139Z",
+      "last_updated": "2019-08-12T07:50:18.140Z"
+    }
+  },
+  {
+    "model": "cms.language",
+    "pk": 6,
+    "fields": {
+      "code": "ru-rus",
+      "english_name": "Russian",
+      "native_name": "русский язык",
+      "text_direction": "ltr",
+      "created_date": "2019-08-12T07:50:18.139Z",
+      "last_updated": "2019-08-12T07:50:18.140Z"
+    }
+  },
+  {
     "model": "cms.languagetreenode",
     "pk": 1,
     "fields": {
@@ -205,6 +313,38 @@
     "model": "cms.languagetreenode",
     "pk": 5,
     "fields": {
+      "language": 5,
+      "parent": 1,
+      "region": 1,
+      "active": true,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 1
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 6,
+    "fields": {
+      "language": 6,
+      "parent": 1,
+      "region": 1,
+      "active": true,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 1
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 7,
+    "fields": {
       "language": 1,
       "parent": null,
       "region": 2,
@@ -219,10 +359,10 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 6,
+    "pk": 8,
     "fields": {
       "language": 2,
-      "parent": 5,
+      "parent": 7,
       "region": 2,
       "active": true,
       "created_date": "2019-08-12T07:53:28.892Z",
@@ -235,10 +375,10 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 7,
+    "pk": 9,
     "fields": {
       "language": 3,
-      "parent": 6,
+      "parent": 9,
       "region": 2,
       "active": true,
       "created_date": "2019-08-12T07:53:43.197Z",
@@ -251,10 +391,10 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 8,
+    "pk": 10,
     "fields": {
       "language": 4,
-      "parent": 7,
+      "parent": 9,
       "region": 2,
       "active": true,
       "created_date": "2019-08-12T07:53:50.363Z",
@@ -267,7 +407,39 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 9,
+    "pk": 11,
+    "fields": {
+      "language": 5,
+      "parent": 11,
+      "region": 2,
+      "active": true,
+      "created_date": "2019-08-12T07:53:50.363Z",
+      "last_updated": "2019-08-12T07:53:50.374Z",
+      "lft": 4,
+      "rght": 5,
+      "tree_id": 2,
+      "level": 2
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 12,
+    "fields": {
+      "language": 6,
+      "parent": 12,
+      "region": 2,
+      "active": true,
+      "created_date": "2019-08-12T07:53:50.363Z",
+      "last_updated": "2019-08-12T07:53:50.374Z",
+      "lft": 4,
+      "rght": 5,
+      "tree_id": 2,
+      "level": 2
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 13,
     "fields": {
       "language": 1,
       "parent": null,
@@ -283,10 +455,10 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 10,
+    "pk": 14,
     "fields": {
       "language": 2,
-      "parent": 1,
+      "parent": 13,
       "region": 3,
       "active": true,
       "created_date": "2019-08-12T07:52:44.617Z",
@@ -299,10 +471,10 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 11,
+    "pk": 15,
     "fields": {
       "language": 3,
-      "parent": 2,
+      "parent": 13,
       "region": 3,
       "active": true,
       "created_date": "2019-08-12T07:52:52.560Z",
@@ -315,10 +487,42 @@
   },
   {
     "model": "cms.languagetreenode",
-    "pk": 12,
+    "pk": 16,
     "fields": {
       "language": 4,
-      "parent": 2,
+      "parent": 13,
+      "region": 3,
+      "active": true,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 2
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 17,
+    "fields": {
+      "language": 5,
+      "parent": 13,
+      "region": 3,
+      "active": true,
+      "created_date": "2019-08-12T07:53:00.429Z",
+      "last_updated": "2019-08-12T07:53:00.441Z",
+      "lft": 5,
+      "rght": 6,
+      "tree_id": 1,
+      "level": 2
+    }
+  },
+  {
+    "model": "cms.languagetreenode",
+    "pk": 18,
+    "fields": {
+      "language": 6,
+      "parent": 13,
       "region": 3,
       "active": true,
       "created_date": "2019-08-12T07:53:00.429Z",
@@ -637,6 +841,97 @@
   },
   {
     "model": "cms.pagetranslation",
+    "pk": 59,
+    "fields": {
+      "page": 1,
+      "slug": "Bienvenue ",
+      "title": "Bienvenue ",
+      "status": "PUBLIC",
+      "text": " Bienvenue à Augsburg ",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 60,
+    "fields": {
+      "page": 3,
+      "slug": "à-propos-de-la-application-integreat-augsburg",
+      "title": "À propos de l'application Integreat-augsburg",
+      "status": "PUBLIC",
+      "text": "Ce guide vous aidera dans votre vie quotidienne à Augsburg. Vous y trouverez des adresses importantes, des personnes à contacter et des conseils et astuces qui vous aideront à vous repérer dans Berlin. Votre guide de tous les jours comporte plusieurs chapitres. Chaque chapitre traite d'un sujet différent. Vous y trouverez par exemple des informations sur les médecins, les écoles, les cours d'allemand ou d'autres institutions. Un chapitre est également consacré aux idées sur ce que vous pouvez faire pendant votre temps libre. Les informations et les activités de loisirs changent et nous mettons régulièrement cette page à jour. C'est pourquoi il est très bon que vous consultiez souvent votre application mobile et que vous vous teniez informé des activités et des événements en cours. Vous pouvez également utiliser cette application hors ligne si vous n'avez pas accès à l'internet. Lorsque vous serez de nouveau en ligne, l'application se mettra à jour. Nous espérons que cette application facilitera votre séjour à Berlin. Nous nous réjouissons de vous accueillir ici à Berlin. Coordinateurs de l'éducation pour les nouveaux immigrants",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  }, 
+  {
+    "model": "cms.pagetranslation",
+    "pk": 61,
+    "fields": {
+      "page": 5,
+      "slug": "Plan-de-la-ville",
+      "title": "Plan de la ville",
+      "status": "PUBLIC",
+      "text": "  Vous cherchez un plan de ville ? Voici un plan des rues de Augsburg. Le plan de la ville est gratuit, il fonctionne hors ligne et dispose d'une fonction de navigation : Téléchargez l'application MAPS.ME. L'application se trouve dans Google Play sur Android. Elle est gratuite. Comment ça marche : téléchargez une carte de votre État fédéral. Berlin est situé à Berlin. Téléchargez ensuite le plan de la ville de Augsburg : Téléchargez sur MAPS.ME dans Google Play sur Android ou dans l'App Store. Vous cherchez un plan de la ville de Berlin de style classique ? Vous pouvez en trouver un en ligne sur www.stadtplan.berlin.de.",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 62,
+    "fields": {
+      "page": 6,
+      "slug": " Contacter-l-équipe-de-l-application-Berlin ",
+      "title": " Contacter l'équipe d'application à Berlin ",
+      "status": "PUBLIC",
+      "text": "  Si vous avez des questions ou si vous souhaitez nous faire part de vos commentaires, veuillez nous écrire ou nous appeler : \r\n\n\nCoordination pédagogique pour les nouveaux immigrants \r\n\n\nVille de Augsburg \n\n\nOffice pour la migration, l'interculturalité et la diversité \n\n\nOffice de l'enfance, de la jeunesse et de la famille \n\n\n\n\n Mots clés : coordination pédagogique, contact, App Team Augsburg, questions, suggestions, suggestions d'amélioration, critique, éloge",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 63,
+    "fields": {
+      "page": 1,
+      "slug": "Добро пожаловать на  ",
+      "title": "Добро пожаловать на  ",
+      "status": "PUBLIC",
+      "text": "Добро пожаловать в Аугсбург",
+      "language": 6,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+
+  {
+    "model": "cms.pagetranslation",
     "pk": 18,
     "fields": {
       "page": 7,
@@ -924,6 +1219,439 @@
     }
   },
   {
+    "model": "cms.pagetranslation",
+    "pk": 34,
+    "fields": {
+      "page": 14,
+      "slug": "willkommen",
+      "title": "Willkommen",
+      "status": "PUBLIC",
+      "text": "Willkommen in Berlin",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 35,
+    "fields": {
+      "page": 15,
+      "slug": "uber-die-app-integreat-berlin",
+      "title": "\u00dcber die App Integreat Berlin",
+      "status": "PUBLIC",
+      "text": " Willkommen in Berlin!  Dieser Leitfaden wird Sie in Ihrem Alltag in Berlin unterstützen. Hier finden Sie wichtige Adressen, Ansprechpartner sowie Tipps und Tricks, die Ihnen helfen, sich in Berlin besser zu orientieren. Dieser Alltagsführer ist in mehrere Kapitel gegliedert. Jedes Kapitel behandelt ein anderes Thema. So finden Sie z.B. Informationen zu Ärzten, Schulen, Deutschkursen und anderen Institutionen. Es gibt auch ein Kapitel mit Ideen, was Sie in Ihrer Freizeit unternehmen können. Die Informationen und Freizeitmöglichkeiten ändern sich häufig, deshalb aktualisieren wir sie regelmäßig. Deshalb ist es eine gute Idee, regelmäßig einen Blick auf Ihre mobile App zu werfen und sich über aktuelle Aktivitäten und Veranstaltungen zu informieren. Sie können diese App auch offline benutzen, wenn Sie keinen Internetzugang haben. Die App wird automatisch aktualisiert, wenn Sie wieder online sind. Wir hoffen, dass diese App Ihr Leben in Berlin ein wenig einfacher macht und freuen uns, Sie hier in der Friedensstadt Berlin begrüßen zu dürfen. BMFSFJ DemokratieLeben",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:59:50.954Z",
+      "last_updated": "2019-08-12T08:05:39.369Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 36,
+    "fields": {
+      "page": 16,
+      "slug": "stadtplan",
+      "title": "Stadtplan",
+      "status": "PUBLIC",
+      "text":  "Suchen Sie einen Stadtplan? Hier ist ein Stadtplan von Berlin. Der Stadtplan ist kostenlos, funktioniert offline und verfügt über eine Navigationsfunktion: \r\n\r\r\nSo erhalten Sie den Plan: Laden Sie die MAPS.ME-App herunter.Die App ist in Google Play auf Android zu finden.Sie ist kostenlos. So funktioniert's:Laden Sie einen Stadtplan Ihres Bundeslandes herunter.Berlin liegt in Berlin. Dann laden Sie sich den Stadtplan von Berlin herunter.Berlin befindet sich in Berlin: Download von MAPS.ME in Google Play on Android oder im App Store.\r\n\r\nSuchen Sie einen Stadtplan im klassischen Stil von Berlin? Sie finden ihn online unter www.stadtplan.berlin.de",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:13.169Z",
+      "last_updated": "2019-08-12T08:01:13.187Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 37,
+    "fields": {
+      "page": 17,
+      "slug": "kontakt-zu-app-team-berlin",
+      "title": "Kontakt zu App Team Berlin",
+      "status": "PUBLIC",
+      "text": "Wenn Sie Fragen haben oder uns etwas mitteilen m\u00f6chten, schreiben Sie uns oder rufen Sie uns an:\r\n\r\nBildungskoordination f\u00fcr Neuzugewanderte\r\n\r\nStadt Berlin\r\nB\u00fcro f\u00fcr Migration, Interkultur und Vielfalt\r\nAmt f\u00fcr Kinder, Jugend und Familie\r\n 082132434494 oder 082132434493\r\n bildungskoordination@augsburg.de\r\n\r\nSchlagworte: Bildungskoordination, Kontakt, App Team Berlin, Fragen, Anregungen, Verbesserungsvorschlag, Kritik, Lob",
+      "language": 1,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 38,
+    "fields": {
+      "page": 14,
+      "slug": "welcome",
+      "title": "Welcome",
+      "status": "PUBLIC",
+      "text": "Welcome to Berlin",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:02:48.827Z",
+      "last_updated": "2019-08-12T08:02:48.852Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 39,
+    "fields": {
+      "page": 15,
+      "slug": "about-the-integreat-app-berlin",
+      "title": "About the Integreat App Berlin",
+      "status": "PUBLIC",
+      "text": "Welcome to Berlin!\r\n\r\nThis guide will support you in your everyday life in Berlin. Here you will find important addresses, contact persons, and tips and tricks to help you orientate yourself better in Berlin.\r\n\r\nThis everyday guide has several chapters. Every chapter deals with a different subject. For example, you will find information on doctors, schools, German courses and other institutions.There is also a chapter with ideas for what you can do in your spare time.The information and leisure options change often, so we update them regularly. That's why it is a good idea to take a regular look at your mobile app and get information about current activities and events.\r\n\r\nYou can also use this app offline for when you have no internet access. The app will update automatically when you are back online again.\r\n\r\nWe hope that this app makes your life in Berlin a little bit easier.We look forward to welcoming you here in the Peace City of Berlin.\r\n\r\nBMFSFJ_DemokratieLeben",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 40,
+    "fields": {
+      "page": 16,
+      "slug": "city-map",
+      "title": "City Map",
+      "status": "PUBLIC",
+      "text": "Are you looking for a city map? Here is a street map of Berlin. The street map is free of charge.It works offline and has a navigation feature.\r\n\r\nHow to get the map: Download the MAPS.ME app.The app can be found in Google Play on Android.It is free.How it works:Download a map of your federal state.Berlin is located in Berlin. Then download the city map for Berlin: Download from MAPS.ME in Google Play on Android or in the App Store.\r\n\r\nAre you looking for a classic-style map of the City of Berlin? You can find one online on www.stadtplan.berlin.de",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk":41,
+    "fields": {
+      "page": 17,
+      "slug": "trivia-about-berlin",
+      "title": "Trivia about Berlin",
+      "status": "PUBLIC",
+      "text":    "If you have any questions or comments, please write or call us: \r\nPedagogical Coordination for New Immigrants \r\nCity of Berlin \nOffice for Migration, Interculturality and Diversity \nOffice for Children, Youth and Family \nKeywords: pedagogical coordination, contact, App Team Berlin, questions, suggestions for improvement, criticism, praise",
+      "language": 2,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:04:39.710Z",
+      "last_updated": "2019-08-12T08:04:39.746Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 42,
+    "fields": {
+      "page": 14,
+      "slug": "Bienvenue ",
+      "title": "Bienvenue ",
+      "status": "PUBLIC",
+      "text": " Bienvenue à Berlin ",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 43,
+    "fields": {
+      "page": 15,
+      "slug": "à-propos-de-la-application-integreat-berlin",
+      "title": "À propos de l'application Integreat-Berlin",
+      "status": "PUBLIC",
+      "text": "Ce guide vous aidera dans votre vie quotidienne à Berlin. Vous y trouverez des adresses importantes, des personnes à contacter et des conseils et astuces qui vous aideront à vous repérer dans Berlin. Votre guide de tous les jours comporte plusieurs chapitres. Chaque chapitre traite d'un sujet différent. Vous y trouverez par exemple des informations sur les médecins, les écoles, les cours d'allemand ou d'autres institutions. Un chapitre est également consacré aux idées sur ce que vous pouvez faire pendant votre temps libre. Les informations et les activités de loisirs changent et nous mettons régulièrement cette page à jour. C'est pourquoi il est très bon que vous consultiez souvent votre application mobile et que vous vous teniez informé des activités et des événements en cours. Vous pouvez également utiliser cette application hors ligne si vous n'avez pas accès à l'internet. Lorsque vous serez de nouveau en ligne, l'application se mettra à jour. Nous espérons que cette application facilitera votre séjour à Berlin. Nous nous réjouissons de vous accueillir ici à Berlin. Coordinateurs de l'éducation pour les nouveaux immigrants",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  }, 
+  {
+    "model": "cms.pagetranslation",
+    "pk": 44,
+    "fields": {
+      "page": 16,
+      "slug": "Plan-de-la-ville",
+      "title": "Plan de la ville",
+      "status": "PUBLIC",
+      "text": "  Vous cherchez un plan de ville ? Voici un plan des rues de Berlin. Le plan de la ville est gratuit, il fonctionne hors ligne et dispose d'une fonction de navigation : Téléchargez l'application MAPS.ME. L'application se trouve dans Google Play sur Android. Elle est gratuite. Comment ça marche : téléchargez une carte de votre État fédéral. Berlin est situé à Berlin. Téléchargez ensuite le plan de la ville de Berlin : Téléchargez sur MAPS.ME dans Google Play sur Android ou dans l'App Store. Vous cherchez un plan de la ville de Berlin de style classique ? Vous pouvez en trouver un en ligne sur www.stadtplan.berlin.de.",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 45,
+    "fields": {
+      "page": 17,
+      "slug": " Contacter-l-équipe-de-l-application-Berlin ",
+      "title": " Contacter l'équipe d'application à Berlin ",
+      "status": "PUBLIC",
+      "text": "  Si vous avez des questions ou si vous souhaitez nous faire part de vos commentaires, veuillez nous écrire ou nous appeler : \r\n\n\nCoordination pédagogique pour les nouveaux immigrants \r\n\n\nVille de Berlin \n\n\nOffice pour la migration, l'interculturalité et la diversité \n\n\nOffice de l'enfance, de la jeunesse et de la famille \n\n\n\n\n Mots clés : coordination pédagogique, contact, App Team Berlin, questions, suggestions, suggestions d'amélioration, critique, éloge",
+      "language": 5,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 46,
+    "fields": {
+      "page": 14,
+      "slug": "Добро пожаловать на  ",
+      "title": "Добро пожаловать на  ",
+      "status": "PUBLIC",
+      "text": "Добро пожаловать в Берлин",
+      "language": 6,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+
+   {
+    "model": "cms.pagetranslation",
+    "pk": 47,
+    "fields": {
+      "page": 15,
+      "slug": "О-приложении-Integreat-Берлин",
+      "title": "О приложении Integreat-Берлин",
+      "status": "PUBLIC",
+      "text": "Этот справочник поможет вам в вашей повседневной жизни в Берлине. Вы найдете важные адреса, контактные лица, а также советы и рекомендации, которые помогут Вам найти дорогу по Берлину. Ваш ежедневный путеводитель состоит из нескольких глав. Каждая глава посвящена отдельной теме. Например, вы найдете информацию о врачах, школах, курсах немецкого языка и других учебных заведениях. Существует также глава, посвященная идеям о том, что вы можете делать в свободное время. Информация и досуг меняются, и мы регулярно обновляем эту страницу. Поэтому рекомендуется часто проверять мобильное приложение и быть в курсе текущих событий и событий. Вы также можете использовать это приложение в автономном режиме, если у вас нет доступа к Интернету. Когда вы вернетесь в интернет, приложение обновится само. Мы надеемся, что это заявление облегчит Ваше пребывание в Берлине. Мы с нетерпением ждем встречи с вами здесь, в Берлине. Координаторы по вопросам образования для новых иммигрантов",
+      "language": 6,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 48,
+    "fields": {
+      "page": 16,
+      "slug": " Карта города ",
+      "title": " Карта города",
+      "status": "PUBLIC",
+      "text": " Вы ищете карту города? Вот карта улиц Берлина. Карта улиц является бесплатной, работает в автономном режиме и имеет функцию навигации.\r\n\r\n Как получить карту: Скачать приложение MAPS.ME. Приложение можно найти в Google Play на Android.It is free.How it works:Скачать карту вашей федеральной земли.Berlin находится в Берлине. Затем скачайте карту города Берлин:Скачать с MAPS.ME в Google Play на Android или в App Store.\r\n\r\n Вы ищете карту города Берлина в классическом стиле?  Ее можно найти в Интернете на сайте www.stadtplan.berlin.de. ", 
+      "language": 6,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 49,
+    "fields": {
+      "page": 17,
+      "slug": "Связаться с командой Берлина",
+      "title": " Связаться с командой Берлина ",
+      "status": "PUBLIC",
+      "text": "    Если у вас есть вопросы или вы хотите нам что-то сказать, пожалуйста, напишите нам или позвоните: \r\n\n\n Координация образования для новых иммигрантов \r\n\n\n Город Берлин \r\n за миграцию, интеркультуру и многообразие \r\n Управление по делам детей, молодежи и семьи \r\n \r\n\n\n\n\n Ключевые слова: Координация образования, контакт, группа по работе с приложениями в Берлине, вопросы, предложения, предложения по улучшению, критика, хвалебные отзывы.",
+      "language": 6,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 50,
+    "fields": {
+      "page": 14,
+      "slug": " مرحبا ",
+      "title": " مرحبا ",
+      "status": "PUBLIC",
+      "text": " مرحبا بكم في برلين ",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 51,
+    "fields": {
+      "page": 15,
+      "slug": "عن تطبيق integreat-berlin",
+      "title": "عن تطبيق integreat-berlin",
+      "status": "PUBLIC",
+      "text": "سيساعدك هذا الدليل في حياتك اليومية في برلين. ستجد عناوين مهمة وأشخاصًا للاتصال بهم ونصائح وحيل لمساعدتك في العثور على طريقك إلى برلين. دليلك اليومي يحتوي على عدة فصول. يتعامل كل فصل مع موضوع مختلف. ستجد هنا ، على سبيل المثال ، معلومات حول الأطباء والمدارس ودورات اللغة الألمانية أو المؤسسات الأخرى. كما تم تخصيص فصل للأفكار حول ما يمكنك القيام به في وقت فراغك. تتغير المعلومات والأنشطة الترفيهية ونحن نقوم بتحديث هذه الصفحة بانتظام. هذا هو السبب في أنه من الجيد جدًا أن تقوم غالبًا باستشارة تطبيق الهاتف المحمول الخاص بك وأن تكون على اطلاع على الأنشطة والأحداث الحالية. يمكنك أيضًا استخدام هذا التطبيق في وضع عدم الاتصال إذا لم يكن لديك اتصال بالإنترنت. عندما تعود إلى الإنترنت ، سيتم تحديث التطبيق. نأمل أن يجعل هذا التطبيق إقامتك في برلين أسهل. نتطلع إلى الترحيب بكم هنا في برلين. منسقي التعليم للمهاجرين ",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 52,
+    "fields": {
+      "page": 16,
+      "slug": " خريطة المدينة ",
+      "title": " خريطة المدينة ",
+      "status": "PUBLIC",
+      "text": " هل تبحث عن خريطة المدينة. وهنا خريطة شارع برلين. خريطة الشارع مجانية ، وهي تعمل في وضع عدم الاتصال وتحتوي على ميزة التنقل. كيفية الحصول على الخريطة: قم بتنزيل تطبيق MAPS.ME ، ويمكن العثور على التطبيق في Google Play على Android. إنه مجاني. خريطة دولتك الفيدرالية. Berlin موجود في برلين. ثم قم بتنزيل خريطة المدينة لبرلين: قم بتنزيلها من MAPS.ME في Google Play على Android أو في App Store. \r \n \r \n هل تبحث عن خريطة كلاسيكية لمدينة برلين؟ يمكنك العثور على موقع على الإنترنت على www.stadtplan.berlin.de",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 53,
+    "fields": {
+      "page": 17,
+      "slug": "kontakt-zu-app-team-berlin",
+      "title": " اتصل بـ App Team Berlin ",
+      "status": "PUBLIC",
+      "text": " إذا كان لديك أي أسئلة أو تريد إخبارنا بشيء ما ، فاكتب إلينا أو اتصل بنا على: \r \n \r \n التنسيق التعليمي للمهاجرين الجدد \r \n \r \n مدينة برلين \r \n مكتب الهجرة والثقافات و التنوع \r \n مكتب الأطفال والشباب والأسرة \r \n \r \n \r \n العلامات: التنسيق التعليمي ، الاتصال ، App Team Berlin ، الأسئلة ، الاقتراحات ، اقتراحات للتحسين ، النقد ، الثناء",
+      "language": 3,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 54,
+    "fields": {
+      "page": 14,
+      "slug": " خوش آمدی ",
+      "title": " خوش آمدی ",
+      "status": "PUBLIC",
+      "text": "به برلین خوش آمدید",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T07:57:42.436Z",
+      "last_updated": "2019-08-12T07:57:42.456Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 55,
+    "fields": {
+      "page": 15,
+      "slug": "درباره-برنامه -کامل-برلین",
+      "title": "درباره برنامه integreat-berlin",
+      "status": "PUBLIC",
+      "text": "این راهنما به شما در زندگی روزمره خود در برلین کمک می کند. شما می توانید آدرس های مهم ، افرادی که با آنها ارتباط برقرار می کنید ، و راهنمایی ها و ترفندهایی را برای کمک به شما در یافتن مسیر خود در برلین پیدا کنید راهنمای روزمره شما دارای چندین فصل است. هر فصل به یک موضوع متفاوت می پردازد. در اینجا ، به عنوان مثال ، اطلاعاتی در مورد پزشکان ، مدارس ، دوره های آلمانی یا موسسات دیگر پیدا خواهید کرد. یک فصل همچنین به ایده هایی در مورد کارهایی که می توانید در اوقات فراغت خود انجام دهید اختصاص داده شده است. اطلاعات و فعالیت های اوقات فراغت تغییر می کند و ما به طور مرتب این صفحه را بروز می کنیم. به همین دلیل بسیار خوب است که شما اغلب با برنامه تلفن همراه خود مشورت کرده و از فعالیت ها و رویدادهای جاری مطلع می شوید. همچنین اگر دسترسی به اینترنت ندارید می توانید از این برنامه به صورت آفلاین نیز استفاده کنید. وقتی دوباره آنلاین شوید ، برنامه به روز می شود. امیدواریم این برنامه اقامت شما در برلین را آسانتر کند. ما مشتاقانه منتظر استقبال از شما در اینجا در برلین هستیم. هماهنگ کنندگان آموزش و پرورش برای مهاجران جدید",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:03:48.554Z",
+      "last_updated": "2019-08-12T08:03:48.584Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 56,
+    "fields": {
+      "page": 16,
+      "slug": "city-map",
+      "title": "City Map",
+      "status": "PUBLIC",
+      "text": "آیا به دنبال نقشه شهر هستید. اینجا نقشه خیابان برلین است. نقشه خیابان رایگان است. به صورت آفلاین کار می کند و دارای ویژگی ناوبری است. برای دریافت نقشه: برنامه MAPS.ME را بارگیری کنید. برنامه را می توانید در Google Play در Android پیدا کنید. این برنامه رایگان است. چگونه کار می کند: نقشه ایالت فدرال شما برلین در برلین واقع شده است. سپس نقشه شهر را برای برلین بارگیری کنید: از MAPS.ME در Google Play در Android یا در فروشگاه App بارگیری کنید. \r \n \r \n آیا به دنبال نقشه ای با سبک کلاسیک از شهر برلین هستید؟ می توانید یکی از طریق اینترنت را در www.stadtplan.berlin.de پیدا کنید ",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:05:26.597Z",
+      "last_updated": "2019-08-12T08:05:26.616Z"
+    }
+  },
+  {
+    "model": "cms.pagetranslation",
+    "pk": 57,
+    "fields": {
+      "page": 17,
+      "slug": "kontakt-zu-app-team-berlin",
+      "title": " تماس با برنامه تیم برلین ",
+      "status": "PUBLIC",
+      "text": " إذا كان لديك أي أسئلة أو تريد إخبارنا بشيء ما ، فاكتب إلينا أو اتصل الله على: \r \n \r \n التنسيق التعليمي للمهاجرين الجيد \r \n \r \n مدينة برلين \r \n ببق \r \n مکتب الأطفال والشباب والأسرة \r \n \r \n \r \n العلامات: التنسيق التعليمي ، الاتصال ، برنامه تیم برلین ، الأسئلة ، الاقت طراح ال ، ق حي",
+      "language": 4,
+      "currently_in_translation": false,
+      "version": 1,
+      "minor_edit": false,
+      "creator": 1,
+      "created_date": "2019-08-12T08:01:42.253Z",
+      "last_updated": "2019-08-12T08:01:42.279Z"
+    }
+  },
+  {
     "model": "cms.page",
     "pk": 1,
     "fields": {
@@ -1165,6 +1893,82 @@
       "lft": 12,
       "rght": 13,
       "tree_id": 2,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },  
+  {
+    "model": "cms.page",
+    "pk": 14,
+    "fields": {
+      "parent": null,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T07:57:42.432Z",
+      "last_updated": "2019-08-12T08:09:45.047Z",
+      "lft": 1,
+      "rght": 12,
+      "tree_id": 1,
+      "level": 0,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 15,
+    "fields": {
+      "parent":14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 16,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
+      "level": 1,
+      "editors": [],
+      "publishers": []
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 17,
+    "fields": {
+      "parent": 14,
+      "icon": "",
+      "region": 3,
+      "archived": false,
+      "mirrored_page": null,
+      "created_date": "2019-08-12T08:20:43.643Z",
+      "last_updated": "2019-08-12T08:27:07.539Z",
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 1,
       "level": 1,
       "editors": [],
       "publishers": []
