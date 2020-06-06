@@ -23,6 +23,9 @@
         <a href="#" class="py-3">
             <i data-feather="eye" class="inline-block text-gray-800"></i>
         </a>
+        <a href="{% url 'edit_request' request_id=request.id region_slug=region.slug %}" class="py-3 pl-4" title="{% trans 'Edit request' %}">
+		    <i data-feather="sliders" class="inline-block text-gray-800"></i>
+	    </a>
         <button title="{% trans 'Archive request' %}" class="confirmation-button py-3 pl-4" data-confirmation-title="{{ request.id }}" data-action="{% url 'archive_request' request_id=request.id region_slug=region.slug %}" data-confirmation-popup="#confirm-archive-request">
             <i data-feather="archive" class="inline-block text-gray-800"></i>
         </button>
