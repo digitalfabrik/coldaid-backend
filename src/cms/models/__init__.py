@@ -43,4 +43,3 @@ from .users.user_mfa import UserMfa
 from .vehicles.vehicle import Vehicle
 
 from .requests.request import Request
-from .requests.request_translation import RequestTranslation

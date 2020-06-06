@@ -1,0 +1,31 @@
+{% load i18n %}
+{% load rules %}
+{% load content_filters %}
+
+<tr class="border-t border-solid border-gray-200 hover:bg-gray-100">
+    <td>
+		{{ request.id }}
+	</td>
+    <td>
+		{{ request.address }}
+	</td>
+	<td>
+		{{ request.postcode }}
+	</td>
+	<td>
+		{{ request.city }}
+	</td>
+	<td>
+		{{ request.country }}
+    </td>
+    <td class="pl-2 pr-4 text-right min">
+        <button title="{% trans 'Restore request' %}" class="confirmation-button py-3 pl-4" data-confirmation-title="{{ request.id }}" data-action="{% url 'restore_request' request_id=request.id region_slug=region.slug %}" data-confirmation-popup="#confirm-restore-request">
+            <i data-feather="refresh-ccw" class="text-gray-800"></i>
+        </button>
+        {% if user.is_superuser or user.is_staff %}
+            <button title="{% trans 'Delete request' %}" class="confirmation-button py-3 pl-4" data-confirmation-title="{{ request.id }}" data-action="{% url 'delete_request' request_id=request.id region_slug=region.slug %}" data-confirmation-popup="#confirm-delete-request">
+                <i data-feather="trash-2" class="text-gray-800"></i>
+            </button>
+        {% endif %}
+    </td>
+</tr>

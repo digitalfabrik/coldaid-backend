@@ -9,11 +9,11 @@ from cms.models.vehicles.vehicle import Vehicle
 
 
 # pylint: disable=too-few-public-methods
-#class RequestManager(models.Manager):
-#    def get_queryset(self):
-#        # only return true Requests, no accommodations
-#        return super(RequestManager, self).get_queryset()
-#        # .filter(accommodation__isnull=True)
+class RequestManager(models.Manager):
+    def get_queryset(self):
+        # only return true Requests, no accommodations
+        return super(RequestManager, self).get_queryset()
+        # .filter(accommodation__isnull=True)
 
 
 class Request(models.Model):
@@ -59,14 +59,14 @@ class Request(models.Model):
     postcode = models.CharField(max_length=10, validators=[
         RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
     city = models.CharField(max_length=250, default="Berlin")
-    state = models.CharField(max_length=250, default="Berlin")
+    country = models.CharField(max_length=250, default="Berlin")
     latitude = models.FloatField(default=0, blank=True)
     longitude = models.FloatField(default=0, blank=True)
 
     # other metadata
     # date=models.DateTimeField(default=now)
     archived = models.BooleanField(default=False)
-    #objects = RequestManager()  # TODO figure out what this was for
+    objects = RequestManager()
     assigned_bus = models.ForeignKey(Vehicle, related_name='assignedRequests', on_delete=models.SET_NULL, null=True, blank=True)
     active_route = models.BooleanField(default=True)
 
@@ -81,17 +81,13 @@ class Request(models.Model):
 
     @classmethod
     def get_list_view(cls):
-        """Provides List of all Requests in german
+        """Provides List of all requests
 
         Returns:
-            [Request]: List of all german Requests
+            [Request]: List of all requests
         """
 
-        requests = cls.objects.all().prefetch_related(
-            'translations'
-        )
-
-        return requests
+        return cls.objects.all()
 
 
     class Meta:
@@ -100,20 +96,3 @@ class Request(models.Model):
             ('manage_requests', 'Can manage Requests'),
         )
         ordering = ['pinname']
-
-
-    @property
-    def languages(self):
-        request_translations = self.translations.prefetch_related('language').all()
-        language_list = []
-        for request_translation in request_translations:
-            language_list.append(request_translation.language)
-        return language_list
-
-
-    def get_translation(self, language_code):
-        try:
-            request_translation = self.translations.get(language__code=language_code)
-        except ObjectDoesNotExist:
-            request_translation = None
-        return request_translation

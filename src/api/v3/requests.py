@@ -2,7 +2,7 @@ import json
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
-from cms.models import Request, Region, Vehicle
+from cms.models import Request, Region
 
 
 def transform_request(request: Request):
@@ -27,7 +27,7 @@ def transform_request(request: Request):
             'address': request.address,
             'postcode': request.postcode,
             'city': request.city,
-            'state': request.state,
+            'country': request.country,
             'latitude': request.latitude,
             'longitude': request.longitude,
             'archived': request.archived,
@@ -53,7 +53,7 @@ def transform_request(request: Request):
         'address': request.address,
         'postcode': request.postcode,
         'city': request.city,
-        'state': request.state,
+        'country': request.country,
         'latitude': request.latitude,
         'longitude': request.longitude,
         'archived': request.archived,
@@ -84,39 +84,6 @@ def newrequest(request):
                           address=data["address"], postcode=data["postcode"], latitude=data["latitude"], longitude=data["longitude"]
                           )
         request.save()
-        return HttpResponse(status=200)
-    except ValueError:
-        return HttpResponse("Bad request.", content_type='text/plain', status=400)
-
-@csrf_exempt
-def acceptrequest(request):
-    if request.method != 'POST':
-        return HttpResponse(f'Invalid request method.', status=405)
-
-    data = json.loads(request.body)
-    data = data.get("data")
-    data = json.loads(data)
-    try:
-        requestobj = get_object_or_404(Request, id=data["id"])
-        vehicle = get_object_or_404(Vehicle, id=data["vehicle"])
-        requestobj.assigned_bus = vehicle
-        requestobj.save()
-        return HttpResponse(status=200)
-    except ValueError:
-        return HttpResponse("Bad request.", content_type='text/plain', status=400)
-
-@csrf_exempt
-def finishrequest(request):
-    if request.method != 'POST':
-        return HttpResponse(f'Invalid request method.', status=405)
-
-    data = json.loads(request.body)
-    data = data.get("data")
-    data = json.loads(data)
-    try:
-        requestobj = get_object_or_404(Request, id=data["id"])
-        requestobj.archived = True
-        requestobj.save()
         return HttpResponse(status=200)
     except ValueError:
         return HttpResponse("Bad request.", content_type='text/plain', status=400)

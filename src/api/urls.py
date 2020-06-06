@@ -8,8 +8,7 @@ from .v3.regions import regions
 from .v3.accommodations import accommodations
 from .v3.pages import pages
 from .v3.single_page import single_page
-from .v3.vehicles import vehicles
-from .v3.requests import requests, newrequest, acceptrequest, finishrequest
+from .v3.requests import newrequest
 
 
 urlpatterns = [
@@ -20,9 +19,5 @@ urlpatterns = [
         url(r'(?P<language_code>[-\w]+)/pages/$', pages),
         url(r'(?P<language_code>[-\w]+)/page/$', single_page),
     ])),
-    url(r'vehicles/$', vehicles, name='vehicles'),
-    url(r'requests/$', requests, name='requests'),
     url(r'requests/new/$', newrequest, name='newrequest'),
-    url(r'requests/accept/$', acceptrequest, name='acceptrequest'),
-    url(r'requests/finish/$', finishrequest, name='finishrequest'),
 ]

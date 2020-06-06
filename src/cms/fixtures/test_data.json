@@ -1637,7 +1637,7 @@
       "address": "test address",
       "postcode": "12345",
       "city": "Augsburg",
-      "state": "Bavaria",
+      "country": "Bavaria",
       "assigned_bus": "1"
     }
   }

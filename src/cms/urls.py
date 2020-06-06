@@ -23,6 +23,7 @@ from .views import (
     pois,
     push_notifications,
     regions,
+    requests,
     roles,
     settings,
     statistics,
@@ -277,6 +278,18 @@ urlpatterns = [
                     url(r'^restore$', events.restore, name='restore_event'),
                     url(r'^delete$', events.delete, name='delete_event'),
                 ])),
+            ])),
+        ])),
+        url(r'^requests/', include([
+            url(r'^$', requests.RequestListView.as_view(), name='requests'),
+            url(r'^archived$', requests.RequestListView.as_view(archived=True), name='archived_requests'),
+            url(r'^new$', requests.RequestView.as_view(), name='new_request'),
+            url(r'^(?P<request_id>[0-9]+)/', include([
+                url(r'^view$', requests.view_request, name='view_request'),
+                url(r'^edit$', requests.RequestView.as_view(), name='edit_request'),
+                url(r'^archive$', requests.archive_request, name='archive_request'),
+                url(r'^restore$', requests.restore_request, name='restore_request'),
+                url(r'^delete$', requests.delete_request, name='delete_request'),
             ])),
         ])),
         url(r'^pois/', include([
