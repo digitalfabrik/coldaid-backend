@@ -38,8 +38,9 @@
         <div class="w-4/5 flex flex-wrap flex-col justify-center mb-6">
             <h2 class="heading font-normal">
                 {% if request_form.instance.id %}
-                <!-- TODO pinname not displayed on page -->
-                    {% blocktrans %}Edit request "{{ request_form.pinname }}"{% endblocktrans %}
+                    {% with request_form.instance.pinname as request_pinname %}
+                        {% blocktrans %}Edit Request "{{ request_pinname }}"{% endblocktrans %}
+                    {% endwith %}
                 {% else %}
                     {% trans 'Create new Request' %}
                 {% endif %}
@@ -47,10 +48,10 @@
         </div>
     </div>
     {% csrf_token %}
-    <table>
+    <table class="w-full mt-4 rounded border border-solid border-gray-400 shadow bg-white table-fixed">
         {{ request_form.as_table }}
     </table>
-    <input type="submit" value="Submit">
+    <input type="submit" class="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded" value="Submit">
 </form>
 
 {% if request_form.instance.id %}
