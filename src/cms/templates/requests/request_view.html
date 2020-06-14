@@ -2,5 +2,9 @@
 {% load i18n %}
 
 {% block raw_content %}
-<h1>{{request.pinname}}</h1>
+<p>Pinname: {{ request.pinname }}</p>
+<p>Address: {{ request.address }}</p>
+<p>Postcode: {{ request.postcode }}</p>
+<p>Bags: {{ request.luggage }}</p>
+<p>Group: {{ request.group }}</p>
 {% endblock %}
