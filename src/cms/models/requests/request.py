@@ -60,8 +60,8 @@ class Request(models.Model):
         RegexValidator(regex='^.{5}$', message='Length has to be 5', code='nomatch')])
     city = models.CharField(max_length=250, default="Berlin")
     country = models.CharField(max_length=250, default="Berlin")
-    latitude = models.FloatField(default=0, blank=True)
-    longitude = models.FloatField(default=0, blank=True)
+    latitude = models.FloatField(default=0.0, blank=True)
+    longitude = models.FloatField(default=0.0, blank=True)
 
     # other metadata
     # date=models.DateTimeField(default=now)
