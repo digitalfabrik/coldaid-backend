@@ -1,13 +1,11 @@
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.utils.decorators import method_decorator
-from django.utils.translation import ugettext as _
 from django.views.generic import TemplateView
+from cms.models import Region
 
 from ...decorators import region_permission_required
-from ...models import Region, Vehicle
 
 
 @method_decorator(login_required, name='dispatch')

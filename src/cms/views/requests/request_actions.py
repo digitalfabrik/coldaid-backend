@@ -5,7 +5,6 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required, permission_required
-from django.http import Http404
 from django.shortcuts import render, redirect
 from django.utils.translation import ugettext as _
 

@@ -1,7 +1,6 @@
 """Database model for requests
 
 """
-from django.core.exceptions import ObjectDoesNotExist
 from django.core.validators import RegexValidator
 from django.db import models
 from cms.models.regions.region import Region
@@ -11,9 +10,8 @@ from cms.models.vehicles.vehicle import Vehicle
 # pylint: disable=too-few-public-methods
 class RequestManager(models.Manager):
     def get_queryset(self):
-        # only return true Requests, no accommodations
+        # only return true Requests
         return super(RequestManager, self).get_queryset()
-        # .filter(accommodation__isnull=True)
 
 
 class Request(models.Model):
@@ -64,9 +62,8 @@ class Request(models.Model):
     longitude = models.FloatField(default=0.0, blank=True)
 
     # other metadata
-    # date=models.DateTimeField(default=now)
     archived = models.BooleanField(default=False)
-    objects = RequestManager()
+    #objects = RequestManager()
     assigned_bus = models.ForeignKey(Vehicle, related_name='assignedRequests', on_delete=models.SET_NULL, null=True, blank=True)
     active_route = models.BooleanField(default=True)
 
