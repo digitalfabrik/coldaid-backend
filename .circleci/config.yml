@@ -24,6 +24,7 @@ jobs:
           root: .
           paths:
             - .venv
+            - src/integreat_cms.egg-info
   npm-install:
     docker:
         - image: circleci/node:lts
@@ -70,9 +71,6 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Install integreat-cms
-          command: pipenv install '-e .[dev]'
-      - run:
           name: Migrate database
           command: |
             pipenv run integreat-cms-cli makemigrations cms
@@ -82,7 +80,7 @@ jobs:
           command: pipenv run integreat-cms-cli test cms --set=COVERAGE
       - store_artifacts:
           path: htmlcov
-  bundle-static-files:
+  check-translations:
     docker:
       - image: timoludwig/python-node-gettext:latest
     resource_class: small
@@ -91,8 +89,16 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Install integreat-cms
-          command: pipenv install '-e .[dev]'
+          name: Check translation file for missing or empty entries
+          command: ./dev-tools/check_translations.sh
+  bundle-static-files:
+    docker:
+      - image: timoludwig/python-node-gettext:latest
+    resource_class: small
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Compile CSS
           command: npx lessc -clean-css src/cms/static/css/style.less src/cms/static/css/style.min.css
@@ -192,6 +198,9 @@ workflows:
           requires:
             - pipenv-install
       - tests:
+          requires:
+            - pipenv-install
+      - check-translations:
           requires:
             - pipenv-install
       - bundle-static-files:

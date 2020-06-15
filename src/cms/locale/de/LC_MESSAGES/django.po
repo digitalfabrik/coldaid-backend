@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-06 08:10+0000\n"
+"POT-Creation-Date: 2020-06-15 15:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Integreat <info@integreat-app.de>\n"
 "Language-Team: Integreat <info@integreat-app.de>\n"
@@ -553,7 +553,7 @@ msgstr "Status"
 #: templates/events/event_form.html:150 templates/pages/page_form.html:152
 #: templates/pois/poi_form.html:141 templates/regions/region_form.html:53
 msgid "Permalink"
-msgstr ""
+msgstr "Permalink"
 
 #: templates/accommodations/accommodation_form.html:96
 #: templates/pois/poi_form.html:143
@@ -913,7 +913,7 @@ msgstr "Unterkunft erstellen"
 #: templates/pages/page_tree.html:74 templates/pages/page_tree_archived.html:30
 #: templates/pois/poi_list.html:47 templates/pois/poi_list_archived.html:30
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: templates/accommodations/accommodation_list.html:57
 #: templates/accommodations/accommodation_list_row.html:34
@@ -2701,7 +2701,7 @@ msgstr "Dies kann nicht rückgängig gemacht werden."
 msgid "Yes, delete this user now"
 msgstr "Ja, diesen Benutzer jetzt löschen"
 
-#: utils/slug_utils.py:32
+#: utils/slug_utils.py:59
 #, python-format
 msgid "Cannot generate slug from %(fallback)s."
 msgstr "Slug kann nicht aus dem %(fallback)s abgeleitet werden."
@@ -2740,7 +2740,7 @@ msgstr ""
 
 #: views/accommodations/accommodation_view.py:127
 #: views/accommodations/beds_view.py:72 views/events/event_view.py:137
-#: views/pages/page_sbs_view.py:107 views/pages/page_view.py:127
+#: views/pages/page_sbs_view.py:107 views/pages/page_view.py:130
 #: views/pois/poi_view.py:106 views/regions/region_view.py:67
 #: views/settings/user_settings_view.py:54
 #: views/settings/user_settings_view.py:74 views/users/region_user_view.py:84
@@ -2814,7 +2814,7 @@ msgstr "Betten-Kategorie wurde erfolgreich erstellt."
 #: views/language_tree/language_tree_node_view.py:69
 #: views/offer_templates/offer_template_view.py:52
 #: views/organizations/organization_view.py:50 views/pages/page_sbs_view.py:109
-#: views/pages/page_view.py:115
+#: views/pages/page_view.py:118
 #: views/push_notifications/push_notification_view.py:126
 #: views/regions/region_view.py:56 views/roles/role_view.py:49
 #: views/users/region_user_view.py:87 views/users/user_actions.py:93
@@ -3023,11 +3023,11 @@ msgstr ""
 msgid "Success: The user {user} cannot publish this page anymore."
 msgstr "Erfolg: Der Nutzer {user} kann diese Seite nicht mehr veröffentlichen"
 
-#: views/pages/page_sbs_view.py:103 views/pages/page_view.py:154
+#: views/pages/page_sbs_view.py:103 views/pages/page_view.py:157
 msgid "Translation was successfully created."
 msgstr "Übersetzung wurde erfolgreich erstellt."
 
-#: views/pages/page_sbs_view.py:105 views/pages/page_view.py:159
+#: views/pages/page_sbs_view.py:105 views/pages/page_view.py:162
 msgid "Translation was successfully saved."
 msgstr "Übersetzung wurde erfolgreich gespeichert."
 
@@ -3043,27 +3043,31 @@ msgstr ""
 "Sie haben nicht die nötige Berechtigung, um Seiten zu bearbeiten oder zu "
 "erstellen."
 
-#: views/pages/page_view.py:53
-msgid "You don't have the permission to edit this page."
-msgstr "Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten."
-
-#: views/pages/page_view.py:56
+#: views/pages/page_view.py:55
 msgid "You cannot edit this page because it is archived."
 msgstr "Sie können diese Seite nicht bearbeiten, weil sie archiviert ist."
 
-#: views/pages/page_view.py:147
+#: views/pages/page_view.py:58
+msgid ""
+"You don't have the permission to edit this page, but you can propose changes "
+"and submit them for review instead."
+msgstr ""
+"Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten, aber "
+"Sie können Änderungen vornehmen und diese zur Überprüfung vorlegen."
+
+#: views/pages/page_view.py:150
 msgid "Page was successfully created and published."
 msgstr "Seite wurde erfolgreich erstellt und veröffentlicht."
 
-#: views/pages/page_view.py:149
+#: views/pages/page_view.py:152
 msgid "Page was successfully created."
 msgstr "Seite wurde erfolgreich erstellt."
 
-#: views/pages/page_view.py:152
+#: views/pages/page_view.py:155
 msgid "Translation was successfully created and published."
 msgstr "Übersetzung wurde erfolgreich erstellt und veröffentlicht."
 
-#: views/pages/page_view.py:157
+#: views/pages/page_view.py:160
 msgid "Translation was successfully published."
 msgstr "Übersetzung wurde erfolgreich veröffentlicht."
 
@@ -3223,6 +3227,10 @@ msgstr ""
 
 #~ msgid "Extra templates"
 #~ msgstr "Extra-Vorlagen"
+
+#~ msgid "You don't have the permission to edit this page."
+#~ msgstr ""
+#~ "Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten."
 
 #~ msgid "This event does not have a physical location"
 #~ msgstr "Diese Veranstaltung hat keinen Veranstaltungsort"
