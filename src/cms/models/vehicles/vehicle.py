@@ -16,7 +16,7 @@ class Vehicle(models.Model):
     license_plate = models.CharField(max_length=20)
     seats = models.IntegerField()
     backseats = models.IntegerField()
-    equipment = models.CharField(max_length=200)  # TODO should we define constants for this?
+    equipment = models.CharField(max_length=200)
 
     def generate_route(self):
         """

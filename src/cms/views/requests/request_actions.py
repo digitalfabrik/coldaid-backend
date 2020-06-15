@@ -67,10 +67,6 @@ def view_request(request, request_id, region_slug):
     template_name = 'requests/request_view.html'
     _request = Request.objects.get(id=request_id)
 
-    #TODO does Request.objects.get() return None if there's no such request?
-    #if not _request:
-    #    raise Http404
-
     return render(
         request,
         template_name,
