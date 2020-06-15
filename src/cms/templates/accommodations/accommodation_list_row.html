@@ -31,19 +31,16 @@
 		{{ accommodation.postcode }}
 	</td>
 	<td>
-		{{ accommodation.city }}
-	</td>
-	<td>
-		{{ accommodation.country }}
+		<a title="{% trans 'Manage Beds' %}" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" href="{% url 'manage_beds' accommodation_id=accommodation.id region_slug=region.slug language_code=language.code %}">
+		    <!--<i data-feather="moon" class="text-gray-800"></i> -->
+			<span class="">{% trans "Open Management" %}</span>
+	    </a>
 	</td>
     <td class="pl-2 pr-4 flex">
         <!-- TODO: add link to view accommodation in web app -->
         <a href="#" class="py-3">
             <i data-feather="eye" class="text-gray-800"></i>
         </a>
-	    <a href="{% url 'manage_beds' accommodation_id=accommodation.id region_slug=region.slug language_code=language.code %}" class="py-3 pl-2" title="{% trans 'Manage Beds' %}">
-		    <i data-feather="moon" class="text-gray-800"></i>
-	    </a>
 	    <button title="{% trans 'Archive Accommodation' %}" class="confirmation-button py-3 pl-2" data-accommodation-id="{{ accommodation.id }}" data-accommodation-title="{{ accommodation|accommodation_translation_title:language }}" data-action="{% url 'archive_accommodation' accommodation_id=accommodation.id region_slug=region.slug language_code=language.code %}" data-confirmation-popup="#confirm-archive-accommodation">
 		    <i data-feather="archive" class="text-gray-800"></i>
 	    </button>

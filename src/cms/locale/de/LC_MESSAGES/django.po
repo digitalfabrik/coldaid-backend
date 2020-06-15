@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 16:42+0000\n"
+"POT-Creation-Date: 2020-06-15 15:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Integreat <info@integreat-app.de>\n"
 "Language-Team: Integreat <info@integreat-app.de>\n"
@@ -20,7 +20,6 @@ msgstr ""
 
 #: constants/administrative_division.py:52
 #: templates/accommodations/accommodation_form.html:218
-#: templates/accommodations/accommodation_list.html:57
 #: templates/accommodations/accommodation_list_archived.html:30
 #: templates/events/event_form.html:279 templates/pois/poi_form.html:186
 #: templates/pois/poi_list.html:67 templates/pois/poi_list_archived.html:41
@@ -344,7 +343,7 @@ msgstr "Links nach Rechts"
 msgid "Right to left"
 msgstr "Rechts nach Links"
 
-#: templates/_base.html:11 templates/accommodations/accommodation_list.html:27
+#: templates/_base.html:12 templates/accommodations/accommodation_list.html:27
 #: templates/accommodations/accommodation_list_archived.html:16
 #: templates/language_tree/language_tree.html:15
 #: templates/media/media_list.html:8 templates/offers/offer_list.html:15
@@ -356,31 +355,31 @@ msgstr "Rechts nach Links"
 msgid "Search"
 msgstr "Suchen"
 
-#: templates/_base.html:28 templates/_base.html:43
+#: templates/_base.html:29 templates/_base.html:44
 msgid "Network Management"
 msgstr "Netzwerkverwaltung"
 
-#: templates/_base.html:86
+#: templates/_base.html:87
 msgid "Help"
 msgstr "Hilfe"
 
-#: templates/_base.html:90
+#: templates/_base.html:91
 msgid "Author Chat"
 msgstr "Autorenchat"
 
-#: templates/_base.html:94
+#: templates/_base.html:95
 msgid "User Settings"
 msgstr "Benutzereinstellungen"
 
-#: templates/_base.html:98
+#: templates/_base.html:100
 msgid "Django Administration"
 msgstr "Django Administration"
 
-#: templates/_base.html:102
+#: templates/_base.html:105
 msgid "Log out"
 msgstr "Abmelden"
 
-#: templates/_base.html:109 templates/authentication/login.html:10
+#: templates/_base.html:112 templates/authentication/login.html:10
 #: templates/authentication/login_mfa.html:10
 #: templates/settings/mfa/add_key.html:10
 #: templates/settings/mfa/authenticate.html:10
@@ -388,103 +387,103 @@ msgstr "Abmelden"
 msgid "Integreat Logo"
 msgstr "Integreat Logo"
 
-#: templates/_base.html:115
+#: templates/_base.html:118
 msgid "My Dashboard"
 msgstr "Mein Dashboard"
 
-#: templates/_base.html:119 templates/analytics/translation_coverage.html:12
+#: templates/_base.html:122 templates/analytics/translation_coverage.html:12
 msgid "Translation Report"
 msgstr "Übersetzungs-Bericht"
 
-#: templates/_base.html:124 templates/regions/region_form.html:131
+#: templates/_base.html:127 templates/regions/region_form.html:131
 #: templates/statistics/statistics_dashboard.html:8
 msgid "Statistics"
 msgstr "Statistiken"
 
-#: templates/_base.html:129
+#: templates/_base.html:134
 msgid "Media Library"
 msgstr "Medienbibliothek"
 
-#: templates/_base.html:133 templates/pages/page_tree.html:17
+#: templates/_base.html:141 templates/pages/page_tree.html:17
 #: templates/regions/region_form.html:205
 msgid "Pages"
 msgstr "Seiten"
 
-#: templates/_base.html:137 templates/events/event_list.html:14
+#: templates/_base.html:148 templates/events/event_list.html:14
 #: templates/regions/region_form.html:206
 msgid "Events"
 msgstr "Veranstaltungen"
 
-#: templates/_base.html:141 templates/pois/poi_list.html:15
+#: templates/_base.html:155 templates/pois/poi_list.html:15
 msgid "Points of Interest"
 msgstr "Points of Interest"
 
-#: templates/_base.html:145 templates/accommodations/accommodation_list.html:11
+#: templates/_base.html:162 templates/accommodations/accommodation_list.html:11
 msgid "Accommodations"
 msgstr "Unterkünfte"
 
-#: templates/_base.html:149 templates/_base.html:194
+#: templates/_base.html:169 templates/_base.html:237
 #: templates/regions/region_form.html:203
 msgid "Users"
 msgstr "Benutzer"
 
-#: templates/_base.html:153 templates/_base.html:214
+#: templates/_base.html:176 templates/_base.html:271
 msgid "Feedback"
 msgstr "Feedback"
 
-#: templates/_base.html:157
+#: templates/_base.html:183
 msgid "Push Notifications"
 msgstr "Push-Benachrichtigungen"
 
-#: templates/_base.html:161
+#: templates/_base.html:188
 msgid "PDF Export"
 msgstr "PDF Export"
 
-#: templates/_base.html:165 templates/offers/offer_list.html:9
+#: templates/_base.html:194 templates/offers/offer_list.html:9
 msgid "Offers"
 msgstr "Angebote"
 
-#: templates/_base.html:169
+#: templates/_base.html:199
 msgid "Imprint"
 msgstr "Impressum"
 
-#: templates/_base.html:173 templates/language_tree/language_tree.html:9
+#: templates/_base.html:205 templates/language_tree/language_tree.html:9
 msgid "Language tree"
 msgstr "Sprach-Baum"
 
-#: templates/_base.html:177 templates/_base.html:218
+#: templates/_base.html:210 templates/_base.html:277
 #: templates/statistics/statistics_dashboard.html:62
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: templates/_base.html:182
+#: templates/_base.html:216
 msgid "Admin Dashboard"
 msgstr "Admin Dashboard"
 
-#: templates/_base.html:186 templates/users/admin/user.html:92
+#: templates/_base.html:223 templates/users/admin/user.html:92
 msgid "Regions"
 msgstr "Regionen"
 
-#: templates/_base.html:190
+#: templates/_base.html:230
 #: templates/accommodations/accommodation_form.html:244
 #: templates/regions/region_form.html:204
 msgid "Languages"
 msgstr "Sprachen"
 
-#: templates/_base.html:198 templates/users/admin/user.html:87
+#: templates/_base.html:243 templates/users/admin/user.html:87
 #: templates/users/region/user.html:77
 msgid "Roles"
 msgstr "Rollen"
 
-#: templates/_base.html:202
+#: templates/_base.html:250
 msgid "Organizations"
 msgstr "Organisationen"
 
-#: templates/_base.html:206
+#: templates/_base.html:257
 msgid "Bed Target Groups"
 msgstr "Betten-Kategorien"
 
-#: templates/_base.html:210
+#: templates/_base.html:264
 msgid "Offer templates"
 msgstr "Angebots-Vorlagen"
 
@@ -554,7 +553,7 @@ msgstr "Status"
 #: templates/events/event_form.html:150 templates/pages/page_form.html:152
 #: templates/pois/poi_form.html:141 templates/regions/region_form.html:53
 msgid "Permalink"
-msgstr ""
+msgstr "Permalink"
 
 #: templates/accommodations/accommodation_form.html:96
 #: templates/pois/poi_form.html:143
@@ -699,7 +698,6 @@ msgid "Insert city here"
 msgstr "Stadt hier eingeben"
 
 #: templates/accommodations/accommodation_form.html:221
-#: templates/accommodations/accommodation_list.html:58
 #: templates/accommodations/accommodation_list_archived.html:31
 #: templates/events/event_form.html:281 templates/pois/poi_form.html:189
 #: templates/pois/poi_list.html:68 templates/pois/poi_list_archived.html:42
@@ -839,7 +837,7 @@ msgstr "Diese Unterkunft wiederherstellen"
 
 #: templates/accommodations/accommodation_form.html:326
 #: templates/accommodations/accommodation_form.html:327
-#: templates/accommodations/accommodation_list_row.html:47
+#: templates/accommodations/accommodation_list_row.html:44
 msgid "Archive Accommodation"
 msgstr "Unterkunft archivieren"
 
@@ -849,7 +847,7 @@ msgstr "Diese Unterkunft archivieren"
 
 #: templates/accommodations/accommodation_form.html:334
 #: templates/accommodations/accommodation_form.html:335
-#: templates/accommodations/accommodation_list_row.html:51
+#: templates/accommodations/accommodation_list_row.html:48
 msgid "Delete Accommodation"
 msgstr "Unterkunft löschen"
 
@@ -915,9 +913,14 @@ msgstr "Unterkunft erstellen"
 #: templates/pages/page_tree.html:74 templates/pages/page_tree_archived.html:30
 #: templates/pois/poi_list.html:47 templates/pois/poi_list_archived.html:30
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
-#: templates/accommodations/accommodation_list.html:59
+#: templates/accommodations/accommodation_list.html:57
+#: templates/accommodations/accommodation_list_row.html:34
+msgid "Manage Beds"
+msgstr "Bettenverwaltung"
+
+#: templates/accommodations/accommodation_list.html:58
 #: templates/accommodations/accommodation_list_archived.html:34
 #: templates/bed_target_groups/bed_target_group_list.html:27
 #: templates/events/event_list.html:67
@@ -931,7 +934,7 @@ msgstr ""
 msgid "Options"
 msgstr "Optionen"
 
-#: templates/accommodations/accommodation_list.html:68
+#: templates/accommodations/accommodation_list.html:67
 #: templates/accommodations/accommodation_list_archived.html:43
 msgid "No Accommodations available yet."
 msgstr "Noch keine Unterkünfte vorhanden."
@@ -949,9 +952,9 @@ msgstr "POI Wiederherstellen"
 msgid "Delete POI"
 msgstr "POI löschen"
 
-#: templates/accommodations/accommodation_list_row.html:44
-msgid "Manage Beds"
-msgstr "Bettenverwaltung"
+#: templates/accommodations/accommodation_list_row.html:36
+msgid "Open Management"
+msgstr "Zur Verwaltung"
 
 #: templates/accommodations/bed_management.html:14
 #, python-format
@@ -2698,7 +2701,7 @@ msgstr "Dies kann nicht rückgängig gemacht werden."
 msgid "Yes, delete this user now"
 msgstr "Ja, diesen Benutzer jetzt löschen"
 
-#: utils/slug_utils.py:32
+#: utils/slug_utils.py:59
 #, python-format
 msgid "Cannot generate slug from %(fallback)s."
 msgstr "Slug kann nicht aus dem %(fallback)s abgeleitet werden."
@@ -2737,12 +2740,12 @@ msgstr ""
 
 #: views/accommodations/accommodation_view.py:127
 #: views/accommodations/beds_view.py:72 views/events/event_view.py:137
-#: views/pages/page_sbs_view.py:107 views/pages/page_view.py:127
+#: views/pages/page_sbs_view.py:107 views/pages/page_view.py:130
 #: views/pois/poi_view.py:106 views/regions/region_view.py:67
 #: views/settings/user_settings_view.py:54
 #: views/settings/user_settings_view.py:74 views/users/region_user_view.py:84
 #: views/users/user_actions.py:90 views/users/user_list_view.py:90
-#: views/users/user_view.py:90
+#: views/users/user_view.py:92
 msgid "No changes detected."
 msgstr "Keine Änderungen vorgenommen."
 
@@ -2811,11 +2814,11 @@ msgstr "Betten-Kategorie wurde erfolgreich erstellt."
 #: views/language_tree/language_tree_node_view.py:69
 #: views/offer_templates/offer_template_view.py:52
 #: views/organizations/organization_view.py:50 views/pages/page_sbs_view.py:109
-#: views/pages/page_view.py:115
+#: views/pages/page_view.py:118
 #: views/push_notifications/push_notification_view.py:126
 #: views/regions/region_view.py:56 views/roles/role_view.py:49
 #: views/users/region_user_view.py:87 views/users/user_actions.py:93
-#: views/users/user_list_view.py:93 views/users/user_view.py:93
+#: views/users/user_list_view.py:93 views/users/user_view.py:97
 msgid "Errors have occurred."
 msgstr "Es sind Fehler aufgetreten."
 
@@ -3020,11 +3023,11 @@ msgstr ""
 msgid "Success: The user {user} cannot publish this page anymore."
 msgstr "Erfolg: Der Nutzer {user} kann diese Seite nicht mehr veröffentlichen"
 
-#: views/pages/page_sbs_view.py:103 views/pages/page_view.py:154
+#: views/pages/page_sbs_view.py:103 views/pages/page_view.py:157
 msgid "Translation was successfully created."
 msgstr "Übersetzung wurde erfolgreich erstellt."
 
-#: views/pages/page_sbs_view.py:105 views/pages/page_view.py:159
+#: views/pages/page_sbs_view.py:105 views/pages/page_view.py:162
 msgid "Translation was successfully saved."
 msgstr "Übersetzung wurde erfolgreich gespeichert."
 
@@ -3040,27 +3043,31 @@ msgstr ""
 "Sie haben nicht die nötige Berechtigung, um Seiten zu bearbeiten oder zu "
 "erstellen."
 
-#: views/pages/page_view.py:53
-msgid "You don't have the permission to edit this page."
-msgstr "Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten."
-
-#: views/pages/page_view.py:56
+#: views/pages/page_view.py:55
 msgid "You cannot edit this page because it is archived."
 msgstr "Sie können diese Seite nicht bearbeiten, weil sie archiviert ist."
 
-#: views/pages/page_view.py:147
+#: views/pages/page_view.py:58
+msgid ""
+"You don't have the permission to edit this page, but you can propose changes "
+"and submit them for review instead."
+msgstr ""
+"Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten, aber "
+"Sie können Änderungen vornehmen und diese zur Überprüfung vorlegen."
+
+#: views/pages/page_view.py:150
 msgid "Page was successfully created and published."
 msgstr "Seite wurde erfolgreich erstellt und veröffentlicht."
 
-#: views/pages/page_view.py:149
+#: views/pages/page_view.py:152
 msgid "Page was successfully created."
 msgstr "Seite wurde erfolgreich erstellt."
 
-#: views/pages/page_view.py:152
+#: views/pages/page_view.py:155
 msgid "Translation was successfully created and published."
 msgstr "Übersetzung wurde erfolgreich erstellt und veröffentlicht."
 
-#: views/pages/page_view.py:157
+#: views/pages/page_view.py:160
 msgid "Translation was successfully published."
 msgstr "Übersetzung wurde erfolgreich veröffentlicht."
 
@@ -3193,19 +3200,27 @@ msgstr ""
 "Ihre Einstellungen."
 
 #: views/users/region_user_actions.py:19 views/users/user_actions.py:108
-#: views/users/user_list_view.py:108 views/users/user_view.py:108
+#: views/users/user_list_view.py:108 views/users/user_view.py:112
 msgid "User was successfully deleted."
 msgstr "Benutzer wurde erfolgreich gelöscht."
 
 #: views/users/region_user_view.py:73 views/users/user_actions.py:83
-#: views/users/user_list_view.py:83 views/users/user_view.py:83
+#: views/users/user_list_view.py:83 views/users/user_view.py:85
 msgid "User was successfully saved."
 msgstr "Benutzer wurde erfolgreich gespeichert."
 
 #: views/users/region_user_view.py:75 views/users/user_actions.py:85
-#: views/users/user_list_view.py:85 views/users/user_view.py:85
+#: views/users/user_list_view.py:85 views/users/user_view.py:87
 msgid "User was successfully created."
 msgstr "Benutzer wurde erfolgreich erstellt."
+
+#: views/users/user_view.py:94
+msgid ""
+"A user has to be either staff/superuser or needs to be restricted to at "
+"least one region."
+msgstr ""
+"Ein Benutzer muss entweder Mitarbeiter/Super-Administrator sein, oder "
+"mindestens einer Region zugewiesen sein."
 
 #~ msgid "Extras"
 #~ msgstr "Extras"
@@ -3213,13 +3228,16 @@ msgstr "Benutzer wurde erfolgreich erstellt."
 #~ msgid "Extra templates"
 #~ msgstr "Extra-Vorlagen"
 
+#~ msgid "You don't have the permission to edit this page."
+#~ msgstr ""
+#~ "Sie haben nicht die nötige Berechtigung, um diese Seite zu bearbeiten."
+
 #~ msgid "This event does not have a physical location"
 #~ msgstr "Diese Veranstaltung hat keinen Veranstaltungsort"
 
 #~ msgid "Germany"
 #~ msgstr "Deutschland"
 
-#, python-format
 #~ msgid "Edit extra template \"%(extra_template_name)s\""
 #~ msgstr "Extra-Vorlage \"%(extra_template_name)s\" bearbeiten"
 
@@ -3276,9 +3294,6 @@ msgstr "Benutzer wurde erfolgreich erstellt."
 
 #~ msgid "was successfully deactivated."
 #~ msgstr "wurde erfolgreich deaktiviert."
-
-#~ msgid "Bed management"
-#~ msgstr "Bettenverwaltung"
 
 #~ msgid "You don't have the permission to edit this Accommodation."
 #~ msgstr ""
