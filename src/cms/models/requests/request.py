@@ -7,13 +7,6 @@ from cms.models.regions.region import Region
 from cms.models.vehicles.vehicle import Vehicle
 
 
-# pylint: disable=too-few-public-methods
-class RequestManager(models.Manager):
-    def get_queryset(self):
-        # only return true Requests
-        return super(RequestManager, self).get_queryset()
-
-
 class Request(models.Model):
     """Object for a request
 
@@ -63,7 +56,6 @@ class Request(models.Model):
 
     # other metadata
     archived = models.BooleanField(default=False)
-    #objects = RequestManager()
     assigned_bus = models.ForeignKey(Vehicle, related_name='assignedRequests', on_delete=models.SET_NULL, null=True, blank=True)
     active_route = models.BooleanField(default=True)
 
