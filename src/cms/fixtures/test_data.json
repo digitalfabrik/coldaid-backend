@@ -2679,5 +2679,42 @@
       "target_group": 3,
       "num_beds": 60
     }
+  },
+  {
+    "model": "cms.vehicle",
+    "pk": 1,
+    "fields": {
+      "region": 1,
+      "vehicle_type": "VW",
+      "license_plate": "B-US 505",
+      "seats": 8,
+      "backseats": 6,
+      "equipment": "all"
+    }
+  },
+  {
+    "model": "cms.vehicle",
+    "pk": 2,
+    "fields": {
+      "region": 2,
+      "vehicle_type": "Toyota",
+      "license_plate": "B-US 123",
+      "seats": 6,
+      "backseats": 4,
+      "equipment": "all"
+    }
+  },
+  {
+    "model": "cms.request",
+    "pk": 1,
+    "fields": {
+      "pinname": "pin",
+      "region": "1",
+      "address": "test address",
+      "postcode": "12345",
+      "city": "Augsburg",
+      "country": "Bavaria",
+      "assigned_bus": "1"
+    }
   }
 ]

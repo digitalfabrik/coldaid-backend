@@ -154,7 +154,14 @@
 			    <i data-feather="map-pin" class="absolute"></i>
 			    {% trans 'Points of Interest' %}
 			</a>
-			{% endif%}
+      {% endif%}
+      {% has_perm 'cms.manage_requests' request.user as can_manage_requests %}
+			{% if can_manage_requests %}
+			<a href="{% url 'requests' region_slug=region.slug %}" class="relative block text-gray-300 hover:text-gray-600 hover:bg-integreat {% if current_menu_item == 'requests' %}active{% endif %}">
+				<i data-feather="map-pin" class="absolute"></i>
+				{% trans 'Requests' %}
+			</a>
+      {% endif%}
 			{% has_perm 'cms.manage_accommodations' request.user as can_manage_accommodations %}
 			{% if can_manage_accommodations %}	
 	        <a href="{% url 'accommodations' region_slug=region.slug %}" class="relative block text-gray-300 hover:text-gray-600 hover:bg-integreat  {% if current_menu_item == 'accommodations' %}active{% endif %}">

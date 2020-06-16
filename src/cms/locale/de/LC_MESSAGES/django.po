@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-15 15:12+0000\n"
+"POT-Creation-Date: 2020-06-16 18:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Integreat <info@integreat-app.de>\n"
 "Language-Team: Integreat <info@integreat-app.de>\n"
@@ -23,6 +23,8 @@ msgstr ""
 #: templates/accommodations/accommodation_list_archived.html:30
 #: templates/events/event_form.html:279 templates/pois/poi_form.html:186
 #: templates/pois/poi_list.html:67 templates/pois/poi_list_archived.html:41
+#: templates/requests/request_list.html:50
+#: templates/requests/request_list_archived.html:33
 msgid "City"
 msgstr "Stadt"
 
@@ -350,8 +352,10 @@ msgstr "Rechts nach Links"
 #: templates/pages/page_tree.html:33 templates/pages/page_tree_archived.html:21
 #: templates/pois/poi_list.html:31 templates/pois/poi_list_archived.html:21
 #: templates/push_notifications/push_notification_list.html:9
-#: templates/regions/region_list.html:14 templates/users/admin/list.html:14
-#: templates/users/region/list.html:9
+#: templates/regions/region_list.html:14
+#: templates/requests/request_list.html:31
+#: templates/requests/request_list_archived.html:21
+#: templates/users/admin/list.html:14 templates/users/region/list.html:9
 msgid "Search"
 msgstr "Suchen"
 
@@ -418,72 +422,76 @@ msgstr "Veranstaltungen"
 msgid "Points of Interest"
 msgstr "Points of Interest"
 
-#: templates/_base.html:162 templates/accommodations/accommodation_list.html:11
+#: templates/_base.html:162 templates/requests/request_list.html:15
+msgid "Requests"
+msgstr "Anfragen"
+
+#: templates/_base.html:169 templates/accommodations/accommodation_list.html:11
 msgid "Accommodations"
 msgstr "Unterkünfte"
 
-#: templates/_base.html:169 templates/_base.html:237
+#: templates/_base.html:176 templates/_base.html:244
 #: templates/regions/region_form.html:203
 msgid "Users"
 msgstr "Benutzer"
 
-#: templates/_base.html:176 templates/_base.html:271
+#: templates/_base.html:183 templates/_base.html:278
 msgid "Feedback"
 msgstr "Feedback"
 
-#: templates/_base.html:183
+#: templates/_base.html:190
 msgid "Push Notifications"
 msgstr "Push-Benachrichtigungen"
 
-#: templates/_base.html:188
+#: templates/_base.html:195
 msgid "PDF Export"
 msgstr "PDF Export"
 
-#: templates/_base.html:194 templates/offers/offer_list.html:9
+#: templates/_base.html:201 templates/offers/offer_list.html:9
 msgid "Offers"
 msgstr "Angebote"
 
-#: templates/_base.html:199
+#: templates/_base.html:206
 msgid "Imprint"
 msgstr "Impressum"
 
-#: templates/_base.html:205 templates/language_tree/language_tree.html:9
+#: templates/_base.html:212 templates/language_tree/language_tree.html:9
 msgid "Language tree"
 msgstr "Sprach-Baum"
 
-#: templates/_base.html:210 templates/_base.html:277
+#: templates/_base.html:217 templates/_base.html:284
 #: templates/statistics/statistics_dashboard.html:62
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: templates/_base.html:216
+#: templates/_base.html:223
 msgid "Admin Dashboard"
 msgstr "Admin Dashboard"
 
-#: templates/_base.html:223 templates/users/admin/user.html:92
+#: templates/_base.html:230 templates/users/admin/user.html:92
 msgid "Regions"
 msgstr "Regionen"
 
-#: templates/_base.html:230
+#: templates/_base.html:237
 #: templates/accommodations/accommodation_form.html:244
 #: templates/regions/region_form.html:204
 msgid "Languages"
 msgstr "Sprachen"
 
-#: templates/_base.html:243 templates/users/admin/user.html:87
+#: templates/_base.html:250 templates/users/admin/user.html:87
 #: templates/users/region/user.html:77
 msgid "Roles"
 msgstr "Rollen"
 
-#: templates/_base.html:250
+#: templates/_base.html:257
 msgid "Organizations"
 msgstr "Organisationen"
 
-#: templates/_base.html:257
+#: templates/_base.html:264
 msgid "Bed Target Groups"
 msgstr "Betten-Kategorien"
 
-#: templates/_base.html:264
+#: templates/_base.html:271
 msgid "Offer templates"
 msgstr "Angebots-Vorlagen"
 
@@ -671,6 +679,8 @@ msgstr "Adresse"
 #: templates/accommodations/accommodation_list_archived.html:28
 #: templates/events/event_form.html:277 templates/pois/poi_form.html:180
 #: templates/pois/poi_list.html:65 templates/pois/poi_list_archived.html:39
+#: templates/requests/request_list.html:48
+#: templates/requests/request_list_archived.html:31
 msgid "Street"
 msgstr "Straße"
 
@@ -684,6 +694,8 @@ msgstr "Straße hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:29
 #: templates/pois/poi_form.html:183 templates/pois/poi_list.html:66
 #: templates/pois/poi_list_archived.html:40
+#: templates/requests/request_list.html:49
+#: templates/requests/request_list_archived.html:32
 msgid "Postal Code"
 msgstr "Postleitzahl"
 
@@ -701,6 +713,8 @@ msgstr "Stadt hier eingeben"
 #: templates/accommodations/accommodation_list_archived.html:31
 #: templates/events/event_form.html:281 templates/pois/poi_form.html:189
 #: templates/pois/poi_list.html:68 templates/pois/poi_list_archived.html:42
+#: templates/requests/request_list.html:51
+#: templates/requests/request_list_archived.html:34
 msgid "Country"
 msgstr "Land"
 
@@ -912,6 +926,8 @@ msgstr "Unterkunft erstellen"
 #: templates/events/event_list_archived.html:22
 #: templates/pages/page_tree.html:74 templates/pages/page_tree_archived.html:30
 #: templates/pois/poi_list.html:47 templates/pois/poi_list_archived.html:30
+#: templates/requests/request_list.html:45
+#: templates/requests/request_list_archived.html:30
 msgid "ID"
 msgstr "ID"
 
@@ -1016,6 +1032,9 @@ msgstr "Ja, diese Unterkunft jetzt archivieren"
 #: templates/pois/confirmation_popups/delete_poi.html:14
 #: templates/pois/confirmation_popups/restore_poi.html:14
 #: templates/regions/region_form.html:215
+#: templates/requests/confirmation_popups/archive_request.html:11
+#: templates/requests/confirmation_popups/delete_request.html:11
+#: templates/requests/confirmation_popups/restore_request.html:11
 #: templates/users/confirmation_popups/delete_region_user.html:12
 #: templates/users/confirmation_popups/delete_user.html:12
 msgid "Cancel"
@@ -2351,6 +2370,81 @@ msgstr "WebApp-URL"
 msgid "No regions available yet."
 msgstr "Noch keine Regionen vorhanden."
 
+#: templates/requests/confirmation_popups/archive_request.html:5
+msgid "Please confirm that you really want to archive this request"
+msgstr "Bitte bestätigen Sie, dass diese Anfrage archiviert werden soll."
+
+#: templates/requests/confirmation_popups/archive_request.html:9
+msgid "Yes, archive this request now."
+msgstr "Ja, diese Anfrage jetzt archivieren."
+
+#: templates/requests/confirmation_popups/delete_request.html:5
+msgid "Please confirm that you really want to delete this request"
+msgstr "Bitte bestätigen Sie, dass diese Anfrage gelöscht werden soll"
+
+#: templates/requests/confirmation_popups/delete_request.html:9
+msgid "Yes, delete this request now."
+msgstr "Ja, diese Anfrage jetzt löschen"
+
+#: templates/requests/confirmation_popups/restore_request.html:5
+msgid "Please confirm that you really want to restore this request"
+msgstr "Bitte bestätigen Sie, dass diese Anfrage wiederhergestellt werden soll"
+
+#: templates/requests/confirmation_popups/restore_request.html:9
+msgid "Yes, restore this request now."
+msgstr "Ja, diese Anfrage jetzt wiederherstellen."
+
+#: templates/requests/request_form.html:42
+#, python-format
+msgid "Edit Request \"%(request_pinname)s\""
+msgstr "Anfrage \"%(request_pinname)s\" bearbeiten"
+
+#: templates/requests/request_form.html:45
+msgid "Create new Request"
+msgstr "Anfrage erstellen"
+
+#: templates/requests/request_list.html:20
+#: templates/requests/request_list_archived.html:15
+msgid "Archived Requests"
+msgstr "Archivierte Anfragen"
+
+#: templates/requests/request_list.html:35
+msgid "Create Request"
+msgstr "Anfrage erstellen"
+
+#: templates/requests/request_list.html:46
+msgid "Pinname"
+msgstr "Pinname"
+
+#: templates/requests/request_list.html:47
+msgid "Assigned bus"
+msgstr "Zugeordneter Bus"
+
+#: templates/requests/request_list.html:60
+msgid "No requests available yet."
+msgstr "Noch keine Anfragen vorhanden."
+
+#: templates/requests/request_list_archived.html:43
+msgid "No archived requests available yet."
+msgstr "Noch keine archivierten Anfragen vorhanden."
+
+#: templates/requests/request_list_archived_row.html:22
+msgid "Restore request"
+msgstr "Anfrage wiederherstellen"
+
+#: templates/requests/request_list_archived_row.html:26
+#: templates/requests/request_list_row.html:39
+msgid "Delete request"
+msgstr "Anfrage löschen"
+
+#: templates/requests/request_list_row.html:32
+msgid "Edit request"
+msgstr "Anfrage bearbeiten"
+
+#: templates/requests/request_list_row.html:35
+msgid "Archive request"
+msgstr "Anfrage archivieren"
+
 #: templates/roles/list.html:9
 msgid "Manage Roles"
 msgstr "Rollen"
@@ -2742,7 +2836,7 @@ msgstr ""
 #: views/accommodations/beds_view.py:72 views/events/event_view.py:137
 #: views/pages/page_sbs_view.py:107 views/pages/page_view.py:130
 #: views/pois/poi_view.py:106 views/regions/region_view.py:67
-#: views/settings/user_settings_view.py:54
+#: views/requests/request_view.py:72 views/settings/user_settings_view.py:54
 #: views/settings/user_settings_view.py:74 views/users/region_user_view.py:84
 #: views/users/user_actions.py:90 views/users/user_list_view.py:90
 #: views/users/user_view.py:92
@@ -3147,6 +3241,30 @@ msgstr "Region wurde erfolgreich gespeichert."
 #: views/regions/region_view.py:82
 msgid "Region created successfully"
 msgstr "Region wurde erfolgreich erstellt."
+
+#: views/requests/request_actions.py:26
+msgid "Request was successfully archived."
+msgstr "Anfrage wurde erfolgreich archiviert."
+
+#: views/requests/request_actions.py:42
+msgid "Request was successfully restored."
+msgstr "Anfrage wurde erfolgreich wiederhergestellt."
+
+#: views/requests/request_actions.py:55
+msgid "Request was successfully deleted."
+msgstr "Anfrage wurde erfolgreich gelöscht."
+
+#: views/requests/request_view.py:36
+msgid "You cannot edit this request because it is archived."
+msgstr "Sie können diese Anfrage nicht bearbeiten, weil sie archiviert ist."
+
+#: views/requests/request_view.py:77
+msgid "Request was successfully created."
+msgstr "Anfrage wurde erfolgreich erstellt."
+
+#: views/requests/request_view.py:82
+msgid "Request was successfully saved."
+msgstr "Anfrage wurde erfolgreich gespeichert."
 
 #: views/roles/role_view.py:40
 msgid "Role saved successfully"

@@ -1,0 +1,44 @@
+{% load i18n %}
+{% load rules %}
+{% load content_filters %}
+
+<tr class="border-t border-solid border-gray-200 hover:bg-gray-100">
+    <td>
+		{{ request.id }}
+    </td>
+    <td>
+		{{ request.pinname }}
+    </td>
+    <td>
+		{{ request.assigned_bus }}
+	</td>
+    <td>
+		{{ request.address }}
+	</td>
+	<td>
+		{{ request.postcode }}
+	</td>
+	<td>
+		{{ request.city }}
+	</td>
+	<td>
+		{{ request.country }}
+    </td>
+    <td class="pl-2 pr-4 min text-right">
+        <!-- TODO: add link to view request in web app -->
+        <a href="#" class="py-3">
+            <i data-feather="eye" class="inline-block text-gray-800"></i>
+        </a>
+        <a href="{% url 'edit_request' request_id=request.id region_slug=region.slug %}" class="py-3 pl-4" title="{% trans 'Edit request' %}">
+		    <i data-feather="sliders" class="inline-block text-gray-800"></i>
+	    </a>
+        <button title="{% trans 'Archive request' %}" class="confirmation-button py-3 pl-4" data-confirmation-title="{{ request.id }}" data-action="{% url 'archive_request' request_id=request.id region_slug=region.slug %}" data-confirmation-popup="#confirm-archive-request">
+            <i data-feather="archive" class="inline-block text-gray-800"></i>
+        </button>
+        {% if user.is_superuser or user.is_staff %}
+            <button title="{% trans 'Delete request' %}" class="confirmation-button py-3 pl-4" data-confirmation-title="{{ request.id }}" data-action="{% url 'delete_request' request_id=request.id region_slug=region.slug %}" data-confirmation-popup="#confirm-delete-request">
+                <i data-feather="trash-2" class="inline-block text-gray-800"></i>
+            </button>
+        {% endif %}
+    </td>
+</tr>
