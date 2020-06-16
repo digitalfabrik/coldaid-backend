@@ -1,0 +1,29 @@
+Requests
+==========================
+
+.. automodule:: cms.views.requests
+   :members:
+   :show-inheritance:
+
+
+Request Actions
+------------------------------------------
+
+.. automodule:: cms.views.requests.request_actions
+   :members:
+   :show-inheritance:
+
+Request List View
+---------------------------------------------
+
+.. automodule:: cms.views.requests.request_list_view
+   :members:
+   :show-inheritance:
+
+Request View
+---------------------------------------
+
+.. automodule:: cms.views.requests.request_view
+   :members:
+   :show-inheritance:
+

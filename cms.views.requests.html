@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Constants &mdash; coldaid-backend 0.0.14 documentation</title>
+  <title>Requests &mdash; coldaid-backend 0.0.14 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Forms" href="cms.forms.html" />
-    <link rel="prev" title="CMS" href="cms.html" /> 
+    <link rel="next" title="Roles" href="cms.views.roles.html" />
+    <link rel="prev" title="Regions" href="cms.views.regions.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,16 +94,16 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="cms.html">CMS</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Constants</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.administrative_division">Administrative Division</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.frequency">Frequency</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.months">Months</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.position">Position</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.postal_code">Postal Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.region_status">Region Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.status">Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.weekdays">Weekdays</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-cms.constants.weeks">Weeks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cms.constants.html">Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.administrative_division">Administrative Division</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.frequency">Frequency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.months">Months</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.position">Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.postal_code">Postal Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.region_status">Region Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.status">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.weekdays">Weekdays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cms.constants.html#module-cms.constants.weeks">Weeks</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="cms.forms.html">Forms</a><ul>
@@ -284,7 +284,7 @@
 <li class="toctree-l3"><a class="reference internal" href="cms.utils.html#module-cms.utils.slug_utils">Slug Utils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="cms.views.html">Views</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="cms.views.html">Views</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="cms.views.accommodations.html">Accommodations</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="cms.views.accommodations.html#module-cms.views.accommodations.accommodation_actions">Accommodation Actions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cms.views.accommodations.html#module-cms.views.accommodations.accommodation_list_view">Accommodation List View</a></li>
@@ -378,10 +378,10 @@
 <li class="toctree-l4"><a class="reference internal" href="cms.views.regions.html#module-cms.views.regions.region_view">Region View</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="cms.views.requests.html">Requests</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="cms.views.requests.html#module-cms.views.requests.request_actions">Request Actions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cms.views.requests.html#module-cms.views.requests.request_list_view">Request List View</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cms.views.requests.html#module-cms.views.requests.request_view">Request View</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Requests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-cms.views.requests.request_actions">Request Actions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cms.views.requests.request_list_view">Request List View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cms.views.requests.request_view">Request View</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="cms.views.roles.html">Roles</a><ul>
@@ -506,7 +506,9 @@
         
           <li><a href="cms.html">CMS</a> &raquo;</li>
         
-      <li>Constants</li>
+          <li><a href="cms.views.html">Views</a> &raquo;</li>
+        
+      <li>Requests</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -523,125 +525,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-cms.constants">
-<span id="constants"></span><h1>Constants<a class="headerlink" href="#module-cms.constants" title="Permalink to this headline">¶</a></h1>
-<p>Constants are used whenever we store values in the database which are chosen from a very limited set.
-Defining constants here adds an abstract layer on top of the actual values that are stored in the database.
-This improves readability of the code, enables auto-completion of values and minimizes the risk of mistakes.
-The actual values which are stored in the database are completely irrelevant, because neither the developer,
-nor the end users gets to see them.
-The developer only sees the defined constant, and the end user only sees the (translated) string representation
-defined in a mapping which is called <code class="docutils literal notranslate"><span class="pre">CHOICES</span></code> for every submodule.</p>
-<div class="section" id="module-cms.constants.administrative_division">
-<span id="administrative-division"></span><h2>Administrative Division<a class="headerlink" href="#module-cms.constants.administrative_division" title="Permalink to this headline">¶</a></h2>
-<p>This module contains constants which represent all possible administrative divisions of a region in Germany:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">CITY</span></code>: City (German: “Stadt”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">DISTRICT</span></code>: District (German: “Kreis”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">RURAL_DISTRICT</span></code>: Rural district (German: “Landkreis”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">REGION</span></code>: Region (German: “Region”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">CITY_AND_DISTRICT</span></code>: City and district (German: “Stadt und Landkreis”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">URBAN_DISTRICT</span></code>: Urban district (German: “Kreisfreie Stadt”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">GOVERNMENTAL_DISTRICT</span></code>: Governmental district (German: “Regierungsbezirk”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">CITY_STATE</span></code>: City state (German: “Stadtstaat”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">AREA_STATE</span></code>: Area state (German: “Flächenland”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">FREE_STATE</span></code>: Free state (German: “Freistaat”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">FEDERAL_STATE</span></code>: Federal state (German: “Bundesland”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">MUNICIPALITY</span></code>: Municipality (German: “Gemeinde”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">COLLECTIVE_MUNICIPALITY</span></code>: Collective municipality (German: “Gemeindeverband”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">INITIAL_RECEPTION_CENTER</span></code>: Initial reception center (German: “Erstaufnahmeeinrichtung”)</li>
-</ul>
+  <div class="section" id="module-cms.views.requests">
+<span id="requests"></span><h1>Requests<a class="headerlink" href="#module-cms.views.requests" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-cms.views.requests.request_actions">
+<span id="request-actions"></span><h2>Request Actions<a class="headerlink" href="#module-cms.views.requests.request_actions" title="Permalink to this headline">¶</a></h2>
+<p>A view representing an instance of a requestnt of interest. Requests can be added, changed or retrieved via this view.</p>
 </div>
-<div class="section" id="module-cms.constants.frequency">
-<span id="frequency"></span><h2>Frequency<a class="headerlink" href="#module-cms.constants.frequency" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all constants representing the frequency of an event’s recurrence rule:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">DAILY</span></code>: Daily</li>
-<li><code class="docutils literal notranslate"><span class="pre">WEEKLY</span></code>: Weekly</li>
-<li><code class="docutils literal notranslate"><span class="pre">MONTHLY</span></code>: Monthly</li>
-<li><code class="docutils literal notranslate"><span class="pre">YEARLY</span></code>: Yearly</li>
-</ul>
+<div class="section" id="module-cms.views.requests.request_list_view">
+<span id="request-list-view"></span><h2>Request List View<a class="headerlink" href="#module-cms.views.requests.request_list_view" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="cms.views.requests.request_list_view.RequestListView">
+<em class="property">class </em><code class="descclassname">cms.views.requests.request_list_view.</code><code class="descname">RequestListView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/requests/request_list_view.py#L13" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.requests.request_list_view.RequestListView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
+</dd></dl>
+
 </div>
-<div class="section" id="module-cms.constants.months">
-<span id="months"></span><h2>Months<a class="headerlink" href="#module-cms.constants.months" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all string representations of months, used by events:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">JANUARY</span></code>: January</li>
-<li><code class="docutils literal notranslate"><span class="pre">FEBRUARY</span></code>: February</li>
-<li><code class="docutils literal notranslate"><span class="pre">MARCH</span></code>: March</li>
-<li><code class="docutils literal notranslate"><span class="pre">APRIL</span></code>: April</li>
-<li><code class="docutils literal notranslate"><span class="pre">MAY</span></code>: May</li>
-<li><code class="docutils literal notranslate"><span class="pre">JUNE</span></code>: June</li>
-<li><code class="docutils literal notranslate"><span class="pre">JULY</span></code>: July</li>
-<li><code class="docutils literal notranslate"><span class="pre">AUGUST</span></code>: August</li>
-<li><code class="docutils literal notranslate"><span class="pre">SEPTEMBER</span></code>: September</li>
-<li><code class="docutils literal notranslate"><span class="pre">OCTOBER</span></code>: October</li>
-<li><code class="docutils literal notranslate"><span class="pre">NOVEMBER</span></code>: November</li>
-<li><code class="docutils literal notranslate"><span class="pre">DECEMBER</span></code>: December</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.position">
-<span id="position"></span><h2>Position<a class="headerlink" href="#module-cms.constants.position" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all possible positions inside a MPTT tree model.
-It is used to determine the relative position of pages in relation to another page.
-Possible values are:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">FIRST_CHILD</span></code>: First child of page</li>
-<li><code class="docutils literal notranslate"><span class="pre">LAST_CHILD</span></code>: Last child of page</li>
-<li><code class="docutils literal notranslate"><span class="pre">LEFT</span></code>: Left neighbor of page</li>
-<li><code class="docutils literal notranslate"><span class="pre">RIGHT</span></code>: Right neighbor of page</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.postal_code">
-<span id="postal-code"></span><h2>Postal Code<a class="headerlink" href="#module-cms.constants.postal_code" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all possible configurations of postal codes in offers.
-This is needed when the postal code is placed inside the offer’s url or api request data.</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">NONE</span></code>: No postal code needed for this offer</li>
-<li><code class="docutils literal notranslate"><span class="pre">GET</span></code>: Append postal code to offer URL</li>
-<li><code class="docutils literal notranslate"><span class="pre">POST</span></code>: Add postal code to post parameters of the offer’s api</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.region_status">
-<span id="region-status"></span><h2>Region Status<a class="headerlink" href="#module-cms.constants.region_status" title="Permalink to this headline">¶</a></h2>
-<p>This module contains the possible status of regions:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code>: Active</li>
-<li><code class="docutils literal notranslate"><span class="pre">HIDDEN</span></code>: Hidden</li>
-<li><code class="docutils literal notranslate"><span class="pre">ARCHIVED</span></code>: Archived</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.status">
-<span id="status"></span><h2>Status<a class="headerlink" href="#module-cms.constants.status" title="Permalink to this headline">¶</a></h2>
-<p>This module contains the possible status of translations:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">DRAFT</span></code>: Draft</li>
-<li><code class="docutils literal notranslate"><span class="pre">REVIEW</span></code>: Pending Review</li>
-<li><code class="docutils literal notranslate"><span class="pre">PUBLIC</span></code>: Public</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.weekdays">
-<span id="weekdays"></span><h2>Weekdays<a class="headerlink" href="#module-cms.constants.weekdays" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all string representations of weekdays, used by events:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">MONDAY</span></code>: Monday</li>
-<li><code class="docutils literal notranslate"><span class="pre">TUESDAY</span></code>: Tuesday</li>
-<li><code class="docutils literal notranslate"><span class="pre">WEDNESDAY</span></code>: Wednesday</li>
-<li><code class="docutils literal notranslate"><span class="pre">THURSDAY</span></code>: Thursday</li>
-<li><code class="docutils literal notranslate"><span class="pre">FRIDAY</span></code>: Friday</li>
-<li><code class="docutils literal notranslate"><span class="pre">SATURDAY</span></code>: Saturday</li>
-<li><code class="docutils literal notranslate"><span class="pre">SUNDAY</span></code>: Sunday</li>
-</ul>
-</div>
-<div class="section" id="module-cms.constants.weeks">
-<span id="weeks"></span><h2>Weeks<a class="headerlink" href="#module-cms.constants.weeks" title="Permalink to this headline">¶</a></h2>
-<p>This module contains all string representations of a month’s week, used by events:</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">FIRST</span></code>: First week of the month</li>
-<li><code class="docutils literal notranslate"><span class="pre">SECOND</span></code>: Second week of the month</li>
-<li><code class="docutils literal notranslate"><span class="pre">THIRD</span></code>: Third week of the month</li>
-<li><code class="docutils literal notranslate"><span class="pre">FOURTH</span></code>: Fourth week of the month</li>
-</ul>
+<div class="section" id="module-cms.views.requests.request_view">
+<span id="request-view"></span><h2>Request View<a class="headerlink" href="#module-cms.views.requests.request_view" title="Permalink to this headline">¶</a></h2>
+<p>A view representing an instance of a request of interest. Requests can be added, changed or retrieved via this view.</p>
+<dl class="py class">
+<dt id="cms.views.requests.request_view.RequestView">
+<em class="property">class </em><code class="descclassname">cms.views.requests.request_view.</code><code class="descname">RequestView</code><span class="sig-paren">(</span><em><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/digitalfabrik/coldaid-backend/blob/develop/src/cms/views/requests/request_view.py#L23" target="_blank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cms.views.requests.request_view.RequestView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/auth/default/#django.contrib.auth.mixins.PermissionRequiredMixin" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.mixins.PermissionRequiredMixin</span></code></a>, <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/class-based-views/base/#django.views.generic.base.TemplateView" target="_blank" title="(in Django v2.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></a></p>
+</dd></dl>
+
 </div>
 </div>
 
@@ -653,10 +560,10 @@ This is needed when the postal code is placed inside the offer’s url or api re
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cms.forms.html" class="btn btn-neutral float-right" title="Forms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="cms.views.roles.html" class="btn btn-neutral float-right" title="Roles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cms.html" class="btn btn-neutral float-left" title="CMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cms.views.regions.html" class="btn btn-neutral float-left" title="Regions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

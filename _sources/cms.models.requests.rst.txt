@@ -1,0 +1,15 @@
+Requests
+===========================
+
+.. automodule:: cms.models.requests
+   :members:
+   :show-inheritance:
+
+
+Request
+----------------------------------
+
+.. automodule:: cms.models.requests.request
+   :members:
+   :show-inheritance:
+

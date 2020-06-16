@@ -54,10 +54,24 @@ Regions
    :members:
    :show-inheritance:
 
+Requests
+----------------------
+
+.. automodule:: api.v3.requests
+   :members:
+   :show-inheritance:
+
 Single Page
 --------------------------
 
 .. automodule:: api.v3.single_page
+   :members:
+   :show-inheritance:
+
+Vehicles
+----------------------
+
+.. automodule:: api.v3.vehicles
    :members:
    :show-inheritance:
 

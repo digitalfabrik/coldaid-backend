@@ -26,6 +26,7 @@ Views
    cms.views.pois
    cms.views.push_notifications
    cms.views.regions
+   cms.views.requests
    cms.views.roles
    cms.views.settings
    cms.views.statistics

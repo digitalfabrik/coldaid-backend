@@ -1,0 +1,15 @@
+Vehicles
+===========================
+
+.. automodule:: cms.models.vehicles
+   :members:
+   :show-inheritance:
+
+
+Vehicle
+----------------------------------
+
+.. automodule:: cms.models.vehicles.vehicle
+   :members:
+   :show-inheritance:
+

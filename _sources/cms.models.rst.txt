@@ -21,4 +21,6 @@ Models
    cms.models.pois
    cms.models.push_notifications
    cms.models.regions
+   cms.models.requests
    cms.models.users
+   cms.models.vehicles
